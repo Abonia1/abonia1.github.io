@@ -1,0 +1,1135 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2024-04-09T19:21:16+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Abonia Sojasingarayar</title><subtitle>Holds a Masters degree in Artificial Intelligence and boasts over 7 years of experience. With a robust background in crafting and implementing ML systems across diverse domains, including cybersecurity, banking, transit,cosmetics &amp; hygiene research, and e-commerce.
+</subtitle><author><name>Abonia Sojasingarayar</name><email>aboniaa@gmail.com</email></author><entry><title type="html">How I Passed the GCP Professional Data Engineer Exam</title><link href="http://localhost:4000/blogs-todel/2024-04-09-How-I-Passed-the-GCP-Professional/" rel="alternate" type="text/html" title="How I Passed the GCP Professional Data Engineer Exam" /><published>2024-04-09T00:00:00+02:00</published><updated>2024-04-09T18:58:13+02:00</updated><id>http://localhost:4000/blogs-todel/How-I-Passed-the-GCP-Professional</id><content type="html" xml:base="http://localhost:4000/blogs-todel/2024-04-09-How-I-Passed-the-GCP-Professional/"><![CDATA[<p><strong>Date:</strong> 2024-05-24<br />
+  <strong>Reading_time:</strong> 6 min<br />
+  <strong>Tags:</strong> [GCP, Data Engineering, Cloud, Certification]</p>
+<ul class="large-only" id="markdown-toc">
+  <li><a href="#1-basic-concept-from-udemy-courses" id="markdown-toc-1-basic-concept-from-udemy-courses">1. Basic concept from udemy courses</a></li>
+  <li><a href="#2google-official-video-coursestheory--practical" id="markdown-toc-2google-official-video-coursestheory--practical">2.Google official video courses(Theory + Practical)</a></li>
+  <li><a href="#3-books-and-resource" id="markdown-toc-3-books-and-resource">3. Books and resource</a></li>
+  <li><a href="#4-official-documentation" id="markdown-toc-4-official-documentation">4. Official documentation</a></li>
+  <li><a href="#5-quizzesexamtopicsmock-test" id="markdown-toc-5-quizzesexamtopicsmock-test">5. Quizzes/ExamTopics/Mock test</a></li>
+  <li><a href="#6-cheatsheet" id="markdown-toc-6-cheatsheet">6. <strong><em>Cheatsheet</em></strong></a></li>
+  <li><a href="#7-notes" id="markdown-toc-7-notes">7. Notes</a></li>
+  <li><a href="#8-tips" id="markdown-toc-8-tips">8. Tips</a></li>
+  <li><a href="#9-assessment" id="markdown-toc-9-assessment">9. Assessment</a></li>
+  <li><a href="#colclusion" id="markdown-toc-colclusion">Colclusion:</a></li>
+  <li><a href="#success-is-easy-to-achieve-once-you-set-your-mind-on-a-specific-goal" id="markdown-toc-success-is-easy-to-achieve-once-you-set-your-mind-on-a-specific-goal">Success is easy to achieve once you set your mind on a specific goal.</a></li>
+  <li><a href="#--atticus-aristotle" id="markdown-toc---atticus-aristotle">- Atticus Aristotle</a></li>
+</ul>
+<p><strong>Table of Contents:</strong></p>
+<ul>
+  <li><a href="#1-basic-concept-from-udemy-courses">Basic concept from udemy courses</a></li>
+  <li><a href="#2google-official-video-coursestheory--practical">Google official video courses(Theory + Practical)</a></li>
+</ul>
+
+<p><strong>In this article , I would like to share my experiences for preparing and taking the exam. I hope they’ll help you in one way or another.</strong></p>
+
+<p>Google Cloud Certified Professional Data Engineer exam tests your ability to design, deploy, monitor, and adapt services and infrastructure for data-driven decision-making.</p>
+
+<p>The whole preparation took me nearly 2 months , but with some more focus time I could’ve done it in 1 month. Following steps that I have taken to pass the exam :</p>
+
+<ul>
+  <li>
+    <p>Basic concept from udemy course</p>
+  </li>
+  <li>
+    <p>Google official video courses(Theory + Practical)</p>
+  </li>
+  <li>
+    <p>Books and resources</p>
+  </li>
+  <li>
+    <p>Official documentation</p>
+  </li>
+  <li>
+    <p>Quizzes/ExamTopics/Mock test</p>
+  </li>
+  <li>
+    <p>Cheatsheet</p>
+  </li>
+  <li>
+    <p>Notes</p>
+  </li>
+  <li>
+    <p>Assessment</p>
+  </li>
+  <li>
+    <p>Tips</p>
+  </li>
+</ul>
+
+<h3 id="1-basic-concept-from-udemy-courses">1. Basic concept from udemy courses</h3>
+
+<p>I have followed the course <strong><em><a href="https://www.udemy.com/course/google-cloud-professional-data-engineer-get-certified/">Google Cloud Professional Data Engineer: Get Certified 2022</a></em></strong> by Dan Sullivan. I have followed all the classes in this course.As for public it costs 79,99€ and it covers following topics:</p>
+
+<ul>
+  <li>
+    <p>Build scalable, reliable data pipelines</p>
+  </li>
+  <li>
+    <p>Choose appropriate storage systems, including relational, NoSQL and analytical databases</p>
+  </li>
+  <li>
+    <p>Apply multiple types of machine learning techniques to different use cases</p>
+  </li>
+  <li>
+    <p>Deploy machine learning models in production</p>
+  </li>
+  <li>
+    <p>Monitor data pipelines and machine learning models</p>
+  </li>
+  <li>
+    <p>Design scalable, resilient distributed data intensive applications</p>
+  </li>
+  <li>
+    <p>Migrate data warehouse from on-premises to Google Cloud</p>
+  </li>
+  <li>
+    <p>Evaluate and improve the quality of machine learning models</p>
+  </li>
+  <li>
+    <p>Grasp fundamental concepts in machine learning, such as backpropagation, feature engineering, overfitting and underfitting.</p>
+  </li>
+</ul>
+
+<p>At the end of the course there will be 50 sample questions to solve which gives you 2 hours as like you are in exam.</p>
+
+<h3 id="2google-official-video-coursestheory--practical">2.Google official video courses(Theory + Practical)</h3>
+
+<p>I recommend to go through all the <strong><em><a href="http://Professional Data Engineer">Professional Data Engineer Google course</a></em></strong> videos and practicals from the official site.</p>
+
+<p>Official guide for the data engineer exam is <a href="https://cloud.google.com/certification/guides/data-engineer">here</a>.</p>
+
+<p>This course covers following topics:</p>
+
+<ul>
+  <li>
+    <p>Design data processing systems</p>
+  </li>
+  <li>
+    <p>Ensure solution quality</p>
+  </li>
+  <li>
+    <p>Operationalize machine learning models</p>
+  </li>
+  <li>
+    <p>Build and operationalize data processing systems</p>
+  </li>
+</ul>
+
+<p>It has following 9 major classes with which you can attain a badge from google :</p>
+<blockquote>
+  <ol>
+    <li>Google Cloud Big Data and Machine Learning Fundamentals</li>
+    <li>Data Engineering on Google Cloud</li>
+    <li>Serverless Data Processing with Dataflow Specialization</li>
+    <li>Create and Manage Cloud Resources</li>
+    <li>Perform Foundational Data, ML, and AI Tasks in Google Cloud</li>
+    <li>Engineer Data in Google Cloud</li>
+    <li>Preparing for the Google Cloud Professional Data Engineer Exam</li>
+    <li>Professional Data Engineer</li>
+    <li>Register for your certification exam</li>
+  </ol>
+</blockquote>
+
+<p>I have followed the above courses using Partner account so it was completely free and there were free credits available to solve the lab.</p>
+
+<ul>
+  <li>
+    <p><strong><em><a href="https://linuxacademy.com/course/google-cloud-data-engineer/">Linux Academy course</a></em></strong> (Took 4 weeks + 2 weeks (revision)) — 75% success rate</p>
+  </li>
+  <li>
+    <p><strong><em><a href="https://www.coursera.org/professional-certificates/gcp-data-engineering">Coursera GCP Data Engineering Specialization</a></em></strong> (6 courses)(Took ~4 Weeks) — 20%</p>
+  </li>
+</ul>
+
+<h3 id="3-books-and-resource">3. Books and resource</h3>
+
+<p>I strongly recommend you to going through <strong><em><a href="https://www.oreilly.com/library/view/official-google-cloud/9781119618430/f07.xhtml#usec0005">Official Google Cloud Certified Professional Data Engineer Study Guide</a></em></strong> [Book] by Dan Sullivan. This study guide offers 100% coverage of every objective for the Google Cloud Certified Professional Data Engineer exam.</p>
+
+<p>This books covers most of the exam topics and there are around 20 quizzes for each chapter.</p>
+
+<h3 id="4-official-documentation">4. Official documentation</h3>
+
+<p>It is also very important to going through the <strong><em><a href="https://cloud.google.com/">official documentation</a></em></strong> to get updated information about the google products and services.</p>
+
+<p><em>For example,sometimes an old mock question’s answers will guide you in a wrong way. Access control on table level is now possible in BigQuery but it wasn’t before.</em> So please dont follow the quiz answers that were provided by default but also I recommend you to do your proper search in official docs , if you have doubt in it.I have used this scenerio as an example and there are other similar cases.</p>
+
+<h3 id="5-quizzesexamtopicsmock-test">5. Quizzes/ExamTopics/Mock test</h3>
+
+<p>Most important part of the preparation is going through as many quizzes as possible and verifing with reasonable answer. To pass the actual exam, you have to spend more time on learning &amp; re-learning through multiple practice tests.</p>
+
+<p>I recommend the following sites for preparing exam:</p>
+
+<ol>
+  <li>
+    <p><strong><em><a href="https://www.examtopics.com/exams/google/professional-data-engineer/">Examtopics</a></em></strong> : There will be robotic check once after 10 questions and we should pay to get rid of those check and which allow you to focus well in the preparation.Please be aware of wrong answers in Examtopics try to do a search by yourself to assure that its the correct one. Cost : <strong>FREE</strong></p>
+  </li>
+  <li>
+    <p><strong><em><a href="https://www.passnexam.com/google/google-data-engineer/01">PassExam</a></em></strong>: I have also prepared with PassExam which provides right answers for most of the questions with a reason in description and related offical links. Cost : <strong>FREE</strong></p>
+  </li>
+  <li>
+    <p><strong><em><a href="https://www.whizlabs.com/blog/google-cloud-professional-data-engineer-exam-questions/">WhizLabs</a></em></strong> : There are around 25 multiple choice questions with what we can able to get insights on the certification and feel a little more confident. Cost : <strong>FREE</strong></p>
+  </li>
+  <li>
+    <p><strong><em><a href="https://docs.google.com/forms/d/e/1FAIpQLSfkWEzBCP0wQ09ZuFm7G2_4qtkYbfmk_0getojdnPdCYmq37Q/viewform">Sample Questions fom Google</a></em></strong> : There are around 25 sample questions from google at the end of its official course.You can get the answer and explanation once you submit the form. But it is not guaranteed to help you pass the exam.</p>
+  </li>
+</ol>
+
+<h3 id="6-cheatsheet">6. <strong><em>Cheatsheet</em></strong></h3>
+
+<p>I recommend you to go through the <strong><em><a href="https://github.com/ml874/Data-Engineering-on-GCP-Cheatsheet/blob/master/data_engineering_on_GCP.pdf">Cheatsheet</a></em></strong> once. Cheatsheet is currently a 9-page reference Data Engineering on the Google Cloud Platform. It covers the data engineering lifecycle, machine learning, Google case studies, and GCP’s storage, compute, and big data products.</p>
+
+<p>Going through only this cheatsheet is not guaranteed to help you pass.But it can help you with your revision and refreshing the topics that you have pepared over the period before.</p>
+
+<h3 id="7-notes">7. Notes</h3>
+
+<p>Note taking app : [<strong>Notion](https://www.notion.so)</strong>. The best app for note taking.</p>
+
+<p>Notion has helped us to <strong>revise effectively before exams on all the essential topics.</strong>I recommend to take notes for following topics.</p>
+
+<p>These are the core GCP products that the assessment covers.</p>
+
+<ul>
+  <li>
+    <p><a href="https://cloud.google.com/ai-platform/docs/technical-overview">AI Platform</a> (+ general AI and ML concepts)</p>
+  </li>
+  <li>
+    <p><a href="https://cloud.google.com/bigquery">BigQuery</a></p>
+  </li>
+  <li>
+    <p><a href="https://cloud.google.com/bigtable">BigTable</a></p>
+  </li>
+  <li>
+    <p><a href="https://cloud.google.com/sql">Cloud SQL</a></p>
+  </li>
+  <li>
+    <p><a href="https://cloud.google.com/dataflow">Dataflow</a></p>
+  </li>
+  <li>
+    <p><a href="https://cloud.google.com/dataproc">Dataproc</a></p>
+  </li>
+  <li>
+    <p><a href="https://cloud.google.com/pubsub">Pub/Sub</a></p>
+  </li>
+</ul>
+
+<p>But there was some overlap with other Google tools too.</p>
+
+<ul>
+  <li>
+    <p><a href="https://cloud.google.com/storage">Cloud Storage</a></p>
+  </li>
+  <li>
+    <p><a href="https://cloud.google.com/spanner">Cloud Spanner</a></p>
+  </li>
+  <li>
+    <p><a href="https://cloud.google.com/composer">Composer</a></p>
+  </li>
+  <li>
+    <p><a href="https://cloud.google.com/compute">Compute Engine</a></p>
+  </li>
+  <li>
+    <p><a href="https://cloud.google.com/dlp">Data Loss Prevention</a></p>
+  </li>
+  <li>
+    <p><a href="https://cloud.google.com/dataprep">Dataprep</a></p>
+  </li>
+  <li>
+    <p><a href="https://cloud.google.com/datastore">Datastore</a></p>
+  </li>
+  <li>
+    <p><a href="https://firebase.google.com/docs/firestore">Firestore</a></p>
+  </li>
+  <li>
+    <p><a href="https://cloud.google.com/natural-language">Natural Language AI</a></p>
+  </li>
+  <li>
+    <p><a href="https://www.tensorflow.org/">Tensorflow</a></p>
+  </li>
+  <li>
+    <p><a href="https://cloud.google.com/text-to-speech">Text-to-speech</a></p>
+  </li>
+  <li>
+    <p><a href="https://cloud.google.com/video-intelligence">Video AI</a></p>
+  </li>
+</ul>
+
+<h3 id="8-tips">8. Tips</h3>
+
+<ul>
+  <li>
+    <p>Preparation is key to success. so many weekends, many holidays, I spent preparing for this exam.</p>
+  </li>
+  <li>
+    <p>You can eliminate all the answer that recommend <strong>non-GCP solutions</strong>.</p>
+  </li>
+  <li>
+    <p>As with many multiple-choice exams, <strong>eliminate</strong>. If you can’t eliminate to one possible answer, make a guess.</p>
+  </li>
+</ul>
+
+<h3 id="9-assessment">9. Assessment</h3>
+
+<p>I took the assessment via Kryterion’s <a href="https://www.webassessor.com/googlecloud/">Webassessor</a>. <strong>Exam Duration</strong>: 2 hours, <strong>Registration fee</strong>: $200 (plus tax where applicable) <strong>, Languages</strong>: English, Japanese and <strong>Exam format</strong>: Multiple choice and multiple select taken remotely or in person at a test center.</p>
+
+<p>On exam day, I had to show my surroundings via webcam, turn off my phone, empty my desk, If your name is not visible you should take photo from your mobile a,d then you should show it to the sponser staff at the other end etc. All this took ~ half an hour. I didn’t have to talk to the person behind the camera, but we can chat. The person also monitor you via webcam during the assessment.</p>
+
+<p>I found the questions are bit hard and challenging. In the end, I got a provisional <em>Pass</em>, but it should be confirmed by Google — for whatever reason. That confirmation came 4 –10 days later. So now I am officially Google Certified Professional Data Engineer 🎉 and here is my Official Google Certification!</p>
+
+<p><img src="https://cdn-images-1.medium.com/max/2548/1*73NRxlyIZ8OH_2-CSYK4dQ.png" alt="Image by Author on [Professional Data Engineer Certification](https://www.credential.net/4e184ed8-23eb-4783-810c-a3c3e4e10b7d)" /></p>
+
+<p>Tada 🎉</p>
+
+<p><img src="https://cdn-images-1.medium.com/max/2214/1*-kDC5Id6bejn-wY7aRlHAw.jpeg" alt="Image by Author" /></p>
+
+<p>Got this amazing <strong>Google hoodie</strong> for free from google, after a month from the date of ordering. You can order it via the link that they send you with your official confirmation mail.</p>
+
+<h2 id="colclusion">Colclusion:</h2>
+
+<p>I hope this will help you pass the exam. All in all, you need to have solid Google Cloud knowledge to start with. If you are not familiar with the technology, the advised courses will help you. To get well prepared for the exam, I encourage you to complete the Official Data Engineer course videos and read about the best practices of GCP products, followed by the ML Crash Course provided by Google or Coursera. You should be ready to pass the exam by combining your studies with your knowledge. Good luck!</p>
+<blockquote>
+  <h1 id="success-is-easy-to-achieve-once-you-set-your-mind-on-a-specific-goal">Success is easy to achieve once you set your mind on a specific goal.</h1>
+  <h1 id="--atticus-aristotle">- Atticus Aristotle</h1>
+</blockquote>
+
+<p><strong>Wish you the very best with your GCP certifications. You can reach me via:</strong></p>
+
+<blockquote>
+  <p><strong><a href="https://www.linkedin.com/in/aboniasojasingarayar/">LinkedIn</a></strong>.</p>
+</blockquote>
+
+<blockquote>
+  <p><strong>Connect with me on <a href="https://www.linkedin.com/in/aboniasojasingarayar/">Linkedin</a></strong></p>
+</blockquote>
+
+<blockquote>
+  <p><strong>Find me on <a href="https://github.com/Abonia1">Github</a></strong></p>
+</blockquote>
+
+<blockquote>
+  <p><strong>Visit my technical channel on <a href="https://www.youtube.com/@AboniaSojasingarayar">Youtube</a></strong></p>
+</blockquote>
+
+<blockquote>
+  <p><strong>Support: <a href="https://www.buymeacoffee.com/abonia">Buy me a Cofee/Chai</a></strong></p>
+</blockquote>]]></content><author><name>Abonia Sojasingarayar</name><email>aboniaa@gmail.com</email></author><category term="blogs-TODEL" /><summary type="html"><![CDATA[Learn about my journey of preparing for and passing the Google Cloud Certified Professional Data Engineer exam.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/gcp-exam.webp" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/gcp-exam.webp" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">How I Passed the GCP Professional Data Engineer Exam</title><link href="http://localhost:4000/blogs/2024-04-09-How-I-Passed-the-GCP-Professional/" rel="alternate" type="text/html" title="How I Passed the GCP Professional Data Engineer Exam" /><published>2024-04-09T00:00:00+02:00</published><updated>2024-04-09T19:04:13+02:00</updated><id>http://localhost:4000/blogs/How-I-Passed-the-GCP-Professional</id><content type="html" xml:base="http://localhost:4000/blogs/2024-04-09-How-I-Passed-the-GCP-Professional/"><![CDATA[<p><strong>Date:</strong> 2024-05-24<br />
+  <strong>Reading_time:</strong> 6 min<br />
+  <strong>Tags:</strong> [GCP, Data Engineering, Cloud, Certification]</p>
+<ul class="large-only" id="markdown-toc">
+  <li><a href="#1-basic-concept-from-udemy-courses" id="markdown-toc-1-basic-concept-from-udemy-courses">1. Basic concept from udemy courses</a></li>
+  <li><a href="#2google-official-video-coursestheory--practical" id="markdown-toc-2google-official-video-coursestheory--practical">2.Google official video courses(Theory + Practical)</a></li>
+  <li><a href="#3-books-and-resource" id="markdown-toc-3-books-and-resource">3. Books and resource</a></li>
+  <li><a href="#4-official-documentation" id="markdown-toc-4-official-documentation">4. Official documentation</a></li>
+  <li><a href="#5-quizzesexamtopicsmock-test" id="markdown-toc-5-quizzesexamtopicsmock-test">5. Quizzes/ExamTopics/Mock test</a></li>
+  <li><a href="#6-cheatsheet" id="markdown-toc-6-cheatsheet">6. <strong><em>Cheatsheet</em></strong></a></li>
+  <li><a href="#7-notes" id="markdown-toc-7-notes">7. Notes</a></li>
+  <li><a href="#8-tips" id="markdown-toc-8-tips">8. Tips</a></li>
+  <li><a href="#9-assessment" id="markdown-toc-9-assessment">9. Assessment</a></li>
+  <li><a href="#colclusion" id="markdown-toc-colclusion">Colclusion:</a></li>
+  <li><a href="#success-is-easy-to-achieve-once-you-set-your-mind-on-a-specific-goal" id="markdown-toc-success-is-easy-to-achieve-once-you-set-your-mind-on-a-specific-goal">Success is easy to achieve once you set your mind on a specific goal.</a></li>
+  <li><a href="#--atticus-aristotle" id="markdown-toc---atticus-aristotle">- Atticus Aristotle</a></li>
+</ul>
+<p><strong>Table of Contents:</strong></p>
+<ul>
+  <li><a href="#1-basic-concept-from-udemy-courses">Basic concept from udemy courses</a></li>
+  <li><a href="#2google-official-video-coursestheory--practical">Google official video courses(Theory + Practical)</a></li>
+</ul>
+
+<p><strong>In this article , I would like to share my experiences for preparing and taking the exam. I hope they’ll help you in one way or another.</strong></p>
+
+<p>Google Cloud Certified Professional Data Engineer exam tests your ability to design, deploy, monitor, and adapt services and infrastructure for data-driven decision-making.</p>
+
+<p>The whole preparation took me nearly 2 months , but with some more focus time I could’ve done it in 1 month. Following steps that I have taken to pass the exam :</p>
+
+<ul>
+  <li>
+    <p>Basic concept from udemy course</p>
+  </li>
+  <li>
+    <p>Google official video courses(Theory + Practical)</p>
+  </li>
+  <li>
+    <p>Books and resources</p>
+  </li>
+  <li>
+    <p>Official documentation</p>
+  </li>
+  <li>
+    <p>Quizzes/ExamTopics/Mock test</p>
+  </li>
+  <li>
+    <p>Cheatsheet</p>
+  </li>
+  <li>
+    <p>Notes</p>
+  </li>
+  <li>
+    <p>Assessment</p>
+  </li>
+  <li>
+    <p>Tips</p>
+  </li>
+</ul>
+
+<h3 id="1-basic-concept-from-udemy-courses">1. Basic concept from udemy courses</h3>
+
+<p>I have followed the course <strong><em><a href="https://www.udemy.com/course/google-cloud-professional-data-engineer-get-certified/">Google Cloud Professional Data Engineer: Get Certified 2022</a></em></strong> by Dan Sullivan. I have followed all the classes in this course.As for public it costs 79,99€ and it covers following topics:</p>
+
+<ul>
+  <li>
+    <p>Build scalable, reliable data pipelines</p>
+  </li>
+  <li>
+    <p>Choose appropriate storage systems, including relational, NoSQL and analytical databases</p>
+  </li>
+  <li>
+    <p>Apply multiple types of machine learning techniques to different use cases</p>
+  </li>
+  <li>
+    <p>Deploy machine learning models in production</p>
+  </li>
+  <li>
+    <p>Monitor data pipelines and machine learning models</p>
+  </li>
+  <li>
+    <p>Design scalable, resilient distributed data intensive applications</p>
+  </li>
+  <li>
+    <p>Migrate data warehouse from on-premises to Google Cloud</p>
+  </li>
+  <li>
+    <p>Evaluate and improve the quality of machine learning models</p>
+  </li>
+  <li>
+    <p>Grasp fundamental concepts in machine learning, such as backpropagation, feature engineering, overfitting and underfitting.</p>
+  </li>
+</ul>
+
+<p>At the end of the course there will be 50 sample questions to solve which gives you 2 hours as like you are in exam.</p>
+
+<h3 id="2google-official-video-coursestheory--practical">2.Google official video courses(Theory + Practical)</h3>
+
+<p>I recommend to go through all the <strong><em><a href="http://Professional Data Engineer">Professional Data Engineer Google course</a></em></strong> videos and practicals from the official site.</p>
+
+<p>Official guide for the data engineer exam is <a href="https://cloud.google.com/certification/guides/data-engineer">here</a>.</p>
+
+<p>This course covers following topics:</p>
+
+<ul>
+  <li>
+    <p>Design data processing systems</p>
+  </li>
+  <li>
+    <p>Ensure solution quality</p>
+  </li>
+  <li>
+    <p>Operationalize machine learning models</p>
+  </li>
+  <li>
+    <p>Build and operationalize data processing systems</p>
+  </li>
+</ul>
+
+<p>It has following 9 major classes with which you can attain a badge from google :</p>
+<blockquote>
+  <ol>
+    <li>Google Cloud Big Data and Machine Learning Fundamentals</li>
+    <li>Data Engineering on Google Cloud</li>
+    <li>Serverless Data Processing with Dataflow Specialization</li>
+    <li>Create and Manage Cloud Resources</li>
+    <li>Perform Foundational Data, ML, and AI Tasks in Google Cloud</li>
+    <li>Engineer Data in Google Cloud</li>
+    <li>Preparing for the Google Cloud Professional Data Engineer Exam</li>
+    <li>Professional Data Engineer</li>
+    <li>Register for your certification exam</li>
+  </ol>
+</blockquote>
+
+<p>I have followed the above courses using Partner account so it was completely free and there were free credits available to solve the lab.</p>
+
+<ul>
+  <li>
+    <p><strong><em><a href="https://linuxacademy.com/course/google-cloud-data-engineer/">Linux Academy course</a></em></strong> (Took 4 weeks + 2 weeks (revision)) — 75% success rate</p>
+  </li>
+  <li>
+    <p><strong><em><a href="https://www.coursera.org/professional-certificates/gcp-data-engineering">Coursera GCP Data Engineering Specialization</a></em></strong> (6 courses)(Took ~4 Weeks) — 20%</p>
+  </li>
+</ul>
+
+<h3 id="3-books-and-resource">3. Books and resource</h3>
+
+<p>I strongly recommend you to going through <strong><em><a href="https://www.oreilly.com/library/view/official-google-cloud/9781119618430/f07.xhtml#usec0005">Official Google Cloud Certified Professional Data Engineer Study Guide</a></em></strong> [Book] by Dan Sullivan. This study guide offers 100% coverage of every objective for the Google Cloud Certified Professional Data Engineer exam.</p>
+
+<p>This books covers most of the exam topics and there are around 20 quizzes for each chapter.</p>
+
+<h3 id="4-official-documentation">4. Official documentation</h3>
+
+<p>It is also very important to going through the <strong><em><a href="https://cloud.google.com/">official documentation</a></em></strong> to get updated information about the google products and services.</p>
+
+<p><em>For example,sometimes an old mock question’s answers will guide you in a wrong way. Access control on table level is now possible in BigQuery but it wasn’t before.</em> So please dont follow the quiz answers that were provided by default but also I recommend you to do your proper search in official docs , if you have doubt in it.I have used this scenerio as an example and there are other similar cases.</p>
+
+<h3 id="5-quizzesexamtopicsmock-test">5. Quizzes/ExamTopics/Mock test</h3>
+
+<p>Most important part of the preparation is going through as many quizzes as possible and verifing with reasonable answer. To pass the actual exam, you have to spend more time on learning &amp; re-learning through multiple practice tests.</p>
+
+<p>I recommend the following sites for preparing exam:</p>
+
+<ol>
+  <li>
+    <p><strong><em><a href="https://www.examtopics.com/exams/google/professional-data-engineer/">Examtopics</a></em></strong> : There will be robotic check once after 10 questions and we should pay to get rid of those check and which allow you to focus well in the preparation.Please be aware of wrong answers in Examtopics try to do a search by yourself to assure that its the correct one. Cost : <strong>FREE</strong></p>
+  </li>
+  <li>
+    <p><strong><em><a href="https://www.passnexam.com/google/google-data-engineer/01">PassExam</a></em></strong>: I have also prepared with PassExam which provides right answers for most of the questions with a reason in description and related offical links. Cost : <strong>FREE</strong></p>
+  </li>
+  <li>
+    <p><strong><em><a href="https://www.whizlabs.com/blog/google-cloud-professional-data-engineer-exam-questions/">WhizLabs</a></em></strong> : There are around 25 multiple choice questions with what we can able to get insights on the certification and feel a little more confident. Cost : <strong>FREE</strong></p>
+  </li>
+  <li>
+    <p><strong><em><a href="https://docs.google.com/forms/d/e/1FAIpQLSfkWEzBCP0wQ09ZuFm7G2_4qtkYbfmk_0getojdnPdCYmq37Q/viewform">Sample Questions fom Google</a></em></strong> : There are around 25 sample questions from google at the end of its official course.You can get the answer and explanation once you submit the form. But it is not guaranteed to help you pass the exam.</p>
+  </li>
+</ol>
+
+<h3 id="6-cheatsheet">6. <strong><em>Cheatsheet</em></strong></h3>
+
+<p>I recommend you to go through the <strong><em><a href="https://github.com/ml874/Data-Engineering-on-GCP-Cheatsheet/blob/master/data_engineering_on_GCP.pdf">Cheatsheet</a></em></strong> once. Cheatsheet is currently a 9-page reference Data Engineering on the Google Cloud Platform. It covers the data engineering lifecycle, machine learning, Google case studies, and GCP’s storage, compute, and big data products.</p>
+
+<p>Going through only this cheatsheet is not guaranteed to help you pass.But it can help you with your revision and refreshing the topics that you have pepared over the period before.</p>
+
+<h3 id="7-notes">7. Notes</h3>
+
+<p>Note taking app : [<strong>Notion](https://www.notion.so)</strong>. The best app for note taking.</p>
+
+<p>Notion has helped us to <strong>revise effectively before exams on all the essential topics.</strong>I recommend to take notes for following topics.</p>
+
+<p>These are the core GCP products that the assessment covers.</p>
+
+<ul>
+  <li>
+    <p><a href="https://cloud.google.com/ai-platform/docs/technical-overview">AI Platform</a> (+ general AI and ML concepts)</p>
+  </li>
+  <li>
+    <p><a href="https://cloud.google.com/bigquery">BigQuery</a></p>
+  </li>
+  <li>
+    <p><a href="https://cloud.google.com/bigtable">BigTable</a></p>
+  </li>
+  <li>
+    <p><a href="https://cloud.google.com/sql">Cloud SQL</a></p>
+  </li>
+  <li>
+    <p><a href="https://cloud.google.com/dataflow">Dataflow</a></p>
+  </li>
+  <li>
+    <p><a href="https://cloud.google.com/dataproc">Dataproc</a></p>
+  </li>
+  <li>
+    <p><a href="https://cloud.google.com/pubsub">Pub/Sub</a></p>
+  </li>
+</ul>
+
+<p>But there was some overlap with other Google tools too.</p>
+
+<ul>
+  <li>
+    <p><a href="https://cloud.google.com/storage">Cloud Storage</a></p>
+  </li>
+  <li>
+    <p><a href="https://cloud.google.com/spanner">Cloud Spanner</a></p>
+  </li>
+  <li>
+    <p><a href="https://cloud.google.com/composer">Composer</a></p>
+  </li>
+  <li>
+    <p><a href="https://cloud.google.com/compute">Compute Engine</a></p>
+  </li>
+  <li>
+    <p><a href="https://cloud.google.com/dlp">Data Loss Prevention</a></p>
+  </li>
+  <li>
+    <p><a href="https://cloud.google.com/dataprep">Dataprep</a></p>
+  </li>
+  <li>
+    <p><a href="https://cloud.google.com/datastore">Datastore</a></p>
+  </li>
+  <li>
+    <p><a href="https://firebase.google.com/docs/firestore">Firestore</a></p>
+  </li>
+  <li>
+    <p><a href="https://cloud.google.com/natural-language">Natural Language AI</a></p>
+  </li>
+  <li>
+    <p><a href="https://www.tensorflow.org/">Tensorflow</a></p>
+  </li>
+  <li>
+    <p><a href="https://cloud.google.com/text-to-speech">Text-to-speech</a></p>
+  </li>
+  <li>
+    <p><a href="https://cloud.google.com/video-intelligence">Video AI</a></p>
+  </li>
+</ul>
+
+<h3 id="8-tips">8. Tips</h3>
+
+<ul>
+  <li>
+    <p>Preparation is key to success. so many weekends, many holidays, I spent preparing for this exam.</p>
+  </li>
+  <li>
+    <p>You can eliminate all the answer that recommend <strong>non-GCP solutions</strong>.</p>
+  </li>
+  <li>
+    <p>As with many multiple-choice exams, <strong>eliminate</strong>. If you can’t eliminate to one possible answer, make a guess.</p>
+  </li>
+</ul>
+
+<h3 id="9-assessment">9. Assessment</h3>
+
+<p>I took the assessment via Kryterion’s <a href="https://www.webassessor.com/googlecloud/">Webassessor</a>. <strong>Exam Duration</strong>: 2 hours, <strong>Registration fee</strong>: $200 (plus tax where applicable) <strong>, Languages</strong>: English, Japanese and <strong>Exam format</strong>: Multiple choice and multiple select taken remotely or in person at a test center.</p>
+
+<p>On exam day, I had to show my surroundings via webcam, turn off my phone, empty my desk, If your name is not visible you should take photo from your mobile a,d then you should show it to the sponser staff at the other end etc. All this took ~ half an hour. I didn’t have to talk to the person behind the camera, but we can chat. The person also monitor you via webcam during the assessment.</p>
+
+<p>I found the questions are bit hard and challenging. In the end, I got a provisional <em>Pass</em>, but it should be confirmed by Google — for whatever reason. That confirmation came 4 –10 days later. So now I am officially Google Certified Professional Data Engineer 🎉 and here is my Official Google Certification!</p>
+
+<p><img src="https://cdn-images-1.medium.com/max/2548/1*73NRxlyIZ8OH_2-CSYK4dQ.png" alt="Image by Author on [Professional Data Engineer Certification](https://www.credential.net/4e184ed8-23eb-4783-810c-a3c3e4e10b7d)" /></p>
+
+<p>Tada 🎉</p>
+
+<p><img src="https://cdn-images-1.medium.com/max/2214/1*-kDC5Id6bejn-wY7aRlHAw.jpeg" alt="Image by Author" /></p>
+
+<p>Got this amazing <strong>Google hoodie</strong> for free from google, after a month from the date of ordering. You can order it via the link that they send you with your official confirmation mail.</p>
+
+<h2 id="colclusion">Colclusion:</h2>
+
+<p>I hope this will help you pass the exam. All in all, you need to have solid Google Cloud knowledge to start with. If you are not familiar with the technology, the advised courses will help you. To get well prepared for the exam, I encourage you to complete the Official Data Engineer course videos and read about the best practices of GCP products, followed by the ML Crash Course provided by Google or Coursera. You should be ready to pass the exam by combining your studies with your knowledge. Good luck!</p>
+<blockquote>
+  <h1 id="success-is-easy-to-achieve-once-you-set-your-mind-on-a-specific-goal">Success is easy to achieve once you set your mind on a specific goal.</h1>
+  <h1 id="--atticus-aristotle">- Atticus Aristotle</h1>
+</blockquote>
+
+<p><strong>Wish you the very best with your GCP certifications. You can reach me via:</strong></p>
+
+<blockquote>
+  <p><strong><a href="https://www.linkedin.com/in/aboniasojasingarayar/">LinkedIn</a></strong>.</p>
+</blockquote>
+
+<blockquote>
+  <p><strong>Connect with me on <a href="https://www.linkedin.com/in/aboniasojasingarayar/">Linkedin</a></strong></p>
+</blockquote>
+
+<blockquote>
+  <p><strong>Find me on <a href="https://github.com/Abonia1">Github</a></strong></p>
+</blockquote>
+
+<blockquote>
+  <p><strong>Visit my technical channel on <a href="https://www.youtube.com/@AboniaSojasingarayar">Youtube</a></strong></p>
+</blockquote>
+
+<blockquote>
+  <p><strong>Support: <a href="https://www.buymeacoffee.com/abonia">Buy me a Cofee/Chai</a></strong></p>
+</blockquote>]]></content><author><name>Abonia Sojasingarayar</name><email>aboniaa@gmail.com</email></author><category term="blogs" /><summary type="html"><![CDATA[Learn about my journey of preparing for and passing the Google Cloud Certified Professional Data Engineer exam.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/gcp-exam.webp" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/gcp-exam.webp" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Example Content III</title><link href="http://localhost:4000/blogs-todel/2018-06-01-example-content-iii/" rel="alternate" type="text/html" title="Example Content III" /><published>2018-06-01T00:00:00+02:00</published><updated>2022-02-07T05:43:30+01:00</updated><id>http://localhost:4000/blogs-todel/example-content-iii</id><content type="html" xml:base="http://localhost:4000/blogs-todel/2018-06-01-example-content-iii/"><![CDATA[<p>Hydejack offers a few additional features to markup your markdown.
+Don’t worry, these are merely CSS classes added with kramdown’s <code class="language-plaintext highlighter-rouge">{:...}</code> syntax,
+so that your content remains compatible with other Jekyll themes.</p>
+
+<h2 id="large-tables">Large Tables</h2>
+
+<table class="scroll-table">
+  <thead>
+    <tr>
+      <th>Default aligned</th>
+      <th style="text-align: left">Left aligned</th>
+      <th style="text-align: center">Center aligned</th>
+      <th style="text-align: right">Right aligned</th>
+      <th>Default aligned</th>
+      <th style="text-align: left">Left aligned</th>
+      <th style="text-align: center">Center aligned</th>
+      <th style="text-align: right">Right aligned</th>
+      <th>Default aligned</th>
+      <th style="text-align: left">Left aligned</th>
+      <th style="text-align: center">Center aligned</th>
+      <th style="text-align: right">Right aligned</th>
+      <th>Default aligned</th>
+      <th style="text-align: left">Left aligned</th>
+      <th style="text-align: center">Center aligned</th>
+      <th style="text-align: right">Right aligned</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>First body part</td>
+      <td style="text-align: left">Second cell</td>
+      <td style="text-align: center">Third cell</td>
+      <td style="text-align: right">fourth cell</td>
+      <td>First body part</td>
+      <td style="text-align: left">Second cell</td>
+      <td style="text-align: center">Third cell</td>
+      <td style="text-align: right">fourth cell</td>
+      <td>First body part</td>
+      <td style="text-align: left">Second cell</td>
+      <td style="text-align: center">Third cell</td>
+      <td style="text-align: right">fourth cell</td>
+      <td>First body part</td>
+      <td style="text-align: left">Second cell</td>
+      <td style="text-align: center">Third cell</td>
+      <td style="text-align: right">fourth cell</td>
+    </tr>
+    <tr>
+      <td>Second line</td>
+      <td style="text-align: left">foo</td>
+      <td style="text-align: center"><strong>strong</strong></td>
+      <td style="text-align: right">baz</td>
+      <td>Second line</td>
+      <td style="text-align: left">foo</td>
+      <td style="text-align: center"><strong>strong</strong></td>
+      <td style="text-align: right">baz</td>
+      <td>Second line</td>
+      <td style="text-align: left">foo</td>
+      <td style="text-align: center"><strong>strong</strong></td>
+      <td style="text-align: right">baz</td>
+      <td>Second line</td>
+      <td style="text-align: left">foo</td>
+      <td style="text-align: center"><strong>strong</strong></td>
+      <td style="text-align: right">baz</td>
+    </tr>
+    <tr>
+      <td>Third line</td>
+      <td style="text-align: left">quux</td>
+      <td style="text-align: center">baz</td>
+      <td style="text-align: right">bar</td>
+      <td>Third line</td>
+      <td style="text-align: left">quux</td>
+      <td style="text-align: center">baz</td>
+      <td style="text-align: right">bar</td>
+      <td>Third line</td>
+      <td style="text-align: left">quux</td>
+      <td style="text-align: center">baz</td>
+      <td style="text-align: right">bar</td>
+      <td>Third line</td>
+      <td style="text-align: left">quux</td>
+      <td style="text-align: center">baz</td>
+      <td style="text-align: right">bar</td>
+    </tr>
+    <tr>
+      <td>Second body</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: right"> </td>
+      <td>Second body</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: right"> </td>
+      <td>Second body</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: right"> </td>
+      <td>Second body</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: right"> </td>
+    </tr>
+    <tr>
+      <td>2 line</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: right"> </td>
+      <td>2 line</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: right"> </td>
+      <td>2 line</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: right"> </td>
+      <td>2 line</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: right"> </td>
+    </tr>
+    <tr>
+      <td>Footer row</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: right"> </td>
+      <td>Footer row</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: right"> </td>
+      <td>Footer row</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: right"> </td>
+      <td>Footer row</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: right"> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="code-blocks">Code blocks</h2>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Example can be run directly in your JavaScript console</span>
+
+<span class="c1">// Create a function that takes two arguments and returns the sum of those</span>
+<span class="c1">// arguments</span>
+<span class="kd">var</span> <span class="nx">adder</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Function</span><span class="p">(</span><span class="dl">"</span><span class="s2">a</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">b</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">return a + b</span><span class="dl">"</span><span class="p">);</span>
+
+<span class="c1">// Call the function</span>
+<span class="nf">adder</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">);</span>
+<span class="c1">// &gt; 8</span>
+</code></pre></div></div>
+
+<h2 id="math">Math</h2>
+<p>Lorem ipsum \(f(x) = x^2\).</p>
+
+\[\begin{aligned}
+  \phi(x,y) &amp;= \phi \left(\sum_{i=1}^n x_ie_i, \sum_{j=1}^n y_je_j \right) \\[2em]
+            &amp;= \sum_{i=1}^n \sum_{j=1}^n x_i y_j \phi(e_i, e_j)            \\[2em]
+            &amp;= (x_1, \ldots, x_n)
+               \left(\begin{array}{ccc}
+                 \phi(e_1, e_1)  &amp; \cdots &amp; \phi(e_1, e_n) \\
+                 \vdots          &amp; \ddots &amp; \vdots         \\
+                 \phi(e_n, e_1)  &amp; \cdots &amp; \phi(e_n, e_n)
+               \end{array}\right)
+               \left(\begin{array}{c}
+                 y_1    \\
+                 \vdots \\
+                 y_n
+               \end{array}\right)
+\end{aligned}\]
+
+<h2 id="message-boxes">Message boxes</h2>
+<p class="message"><strong>NOTE</strong>: You can add a message box.</p>
+
+<h2 id="large-text">Large text</h2>
+<p class="lead">You can add large text.</p>
+
+<h2 id="large-images">Large images</h2>
+<p><img src="https://via.placeholder.com/800x100" alt="Full-width image" class="lead" width="800" height="100" /></p>
+
+<h2 id="captions-to-images">Captions to images</h2>
+<p class="figure"><img src="https://via.placeholder.com/800x100" alt="Full-width image" class="lead" width="800" height="100" />
+A caption to an image.</p>
+
+<h2 id="large-quotes">Large quotes</h2>
+<blockquote class="lead">
+  <p>You can make a quote “pop out”.</p>
+</blockquote>
+
+<h2 id="faded-text">Faded text</h2>
+<p class="faded">I’m faded, faded, faded.</p>]]></content><author><name>Abonia Sojasingarayar</name><email>aboniaa@gmail.com</email></author><category term="blogs-TODEL" /><summary type="html"><![CDATA[A page showing Hydejack-specific markdown content.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/example-content-iii.jpg" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/example-content-iii.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Example Content II</title><link href="http://localhost:4000/blogs-todel/2017-11-23-example-content-ii/" rel="alternate" type="text/html" title="Example Content II" /><published>2017-11-23T00:00:00+01:00</published><updated>2022-02-07T05:43:30+01:00</updated><id>http://localhost:4000/blogs-todel/example-content-ii</id><content type="html" xml:base="http://localhost:4000/blogs-todel/2017-11-23-example-content-ii/"><![CDATA[<p>There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.</p>
+
+<p>There should be whitespace between paragraphs.</p>
+
+<p>Text can be <strong>bold</strong>, <em>italic</em>, or <del>strikethrough</del>.</p>
+
+<p><a href="another-page">Link to another page</a>.</p>
+
+<ul class="large-only" id="markdown-toc">
+  <li><a href="#header-2" id="markdown-toc-header-2">Header 2</a>    <ul>
+      <li><a href="#header-3" id="markdown-toc-header-3">Header 3</a>        <ul>
+          <li><a href="#header-4" id="markdown-toc-header-4">Header 4</a>            <ul>
+              <li><a href="#header-5" id="markdown-toc-header-5">Header 5</a>                <ul>
+                  <li><a href="#header-6" id="markdown-toc-header-6">Header 6</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a href="#theres-a-horizontal-rule-below-this" id="markdown-toc-theres-a-horizontal-rule-below-this">There’s a horizontal rule below this.</a></li>
+      <li><a href="#here-is-an-unordered-list" id="markdown-toc-here-is-an-unordered-list">Here is an unordered list:</a></li>
+      <li><a href="#and-an-ordered-list" id="markdown-toc-and-an-ordered-list">And an ordered list:</a></li>
+      <li><a href="#and-a-nested-list" id="markdown-toc-and-a-nested-list">And a nested list:</a></li>
+      <li><a href="#small-image" id="markdown-toc-small-image">Small image</a></li>
+      <li><a href="#large-image" id="markdown-toc-large-image">Large image</a></li>
+      <li><a href="#definition-lists" id="markdown-toc-definition-lists">Definition lists</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="header-2">Header 2</h2>
+
+<p>This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.</p>
+
+<h3 id="header-3">Header 3</h3>
+
+<blockquote>
+  <p>This is a blockquote following a header.</p>
+
+  <p>When something is important enough, you do it even if the odds are not in your favor.</p>
+</blockquote>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Javascript code with syntax highlighting.</span>
+<span class="kd">var</span> <span class="nx">fun</span> <span class="o">=</span> <span class="kd">function</span> <span class="nf">lang</span><span class="p">(</span><span class="nx">l</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">dateformat</span><span class="p">.</span><span class="nx">i18n</span> <span class="o">=</span> <span class="nf">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">./lang/</span><span class="dl">'</span> <span class="o">+</span> <span class="nx">l</span><span class="p">)</span>
+  <span class="k">return</span> <span class="kc">true</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Ruby code with syntax highlighting</span>
+<span class="no">GitHubPages</span><span class="o">::</span><span class="no">Dependencies</span><span class="p">.</span><span class="nf">gems</span><span class="p">.</span><span class="nf">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">gem</span><span class="p">,</span> <span class="n">version</span><span class="o">|</span>
+  <span class="n">s</span><span class="p">.</span><span class="nf">add_dependency</span><span class="p">(</span><span class="n">gem</span><span class="p">,</span> <span class="s2">"= </span><span class="si">#{</span><span class="n">version</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<h4 id="header-4">Header 4</h4>
+
+<ul>
+  <li>This is an unordered list following a header.</li>
+  <li>This is an unordered list following a header.</li>
+  <li>This is an unordered list following a header.</li>
+</ul>
+
+<h5 id="header-5">Header 5</h5>
+
+<ol>
+  <li>This is an ordered list following a header.</li>
+  <li>This is an ordered list following a header.</li>
+  <li>This is an ordered list following a header.</li>
+</ol>
+
+<h6 id="header-6">Header 6</h6>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">head1</th>
+      <th style="text-align: left">head two</th>
+      <th style="text-align: left">three</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">ok</td>
+      <td style="text-align: left">good swedish fish</td>
+      <td style="text-align: left">nice</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">out of stock</td>
+      <td style="text-align: left">good and plenty</td>
+      <td style="text-align: left">nice</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">ok</td>
+      <td style="text-align: left">good <code class="language-plaintext highlighter-rouge">oreos</code></td>
+      <td style="text-align: left">hmm</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">ok</td>
+      <td style="text-align: left">good <code class="language-plaintext highlighter-rouge">zoute</code> drop</td>
+      <td style="text-align: left">yumm</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="theres-a-horizontal-rule-below-this">There’s a horizontal rule below this.</h3>
+
+<hr />
+
+<h3 id="here-is-an-unordered-list">Here is an unordered list:</h3>
+
+<ul>
+  <li>Item foo</li>
+  <li>Item bar</li>
+  <li>Item baz</li>
+  <li>Item zip</li>
+</ul>
+
+<h3 id="and-an-ordered-list">And an ordered list:</h3>
+
+<ol>
+  <li>Item one</li>
+  <li>Item two</li>
+  <li>Item three</li>
+  <li>Item four</li>
+</ol>
+
+<h3 id="and-a-nested-list">And a nested list:</h3>
+
+<ul>
+  <li>level 1 item
+    <ul>
+      <li>level 2 item</li>
+      <li>level 2 item
+        <ul>
+          <li>level 3 item</li>
+          <li>level 3 item</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>level 1 item
+    <ul>
+      <li>level 2 item</li>
+      <li>level 2 item</li>
+      <li>level 2 item</li>
+    </ul>
+  </li>
+  <li>level 1 item
+    <ul>
+      <li>level 2 item</li>
+      <li>level 2 item</li>
+    </ul>
+  </li>
+  <li>level 1 item</li>
+</ul>
+
+<h3 id="small-image">Small image</h3>
+
+<p><img src="https://assets-cdn.github.com/images/icons/emoji/octocat.png" alt="" /></p>
+
+<h3 id="large-image">Large image</h3>
+
+<p><img src="https://guides.github.com/activities/hello-world/branching.png" alt="" /></p>
+
+<h3 id="definition-lists">Definition lists</h3>
+
+<dl>
+  <dt>Name</dt>
+  <dd>Godzilla</dd>
+  <dt>Born</dt>
+  <dd>1952</dd>
+  <dt>Birthplace</dt>
+  <dd>Japan</dd>
+  <dt>Color</dt>
+  <dd>Green</dd>
+</dl>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this. Or is it?
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>The final element.
+</code></pre></div></div>]]></content><author><name>Abonia Sojasingarayar</name><email>aboniaa@gmail.com</email></author><category term="blogs-TODEL" /><summary type="html"><![CDATA[A page showing how regular markdown content is styled in Hydejack.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/example-content-ii.jpg" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/example-content-ii.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Example Content</title><link href="http://localhost:4000/blogs-todel/2012-02-07-example-content/" rel="alternate" type="text/html" title="Example Content" /><published>2012-02-07T00:00:00+01:00</published><updated>2024-04-09T19:20:31+02:00</updated><id>http://localhost:4000/blogs-todel/example-content</id><content type="html" xml:base="http://localhost:4000/blogs-todel/2012-02-07-example-content/"><![CDATA[<p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. <em>Aenean eu leo quam.</em> Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+
+<blockquote>
+  <p>Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+</blockquote>
+
+<p>Etiam porta <strong>sem malesuada magna</strong> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+
+<h2 id="inline-html-elements">Inline <abbr title="HyperText Markup Language">HTML</abbr> elements</h2>
+
+<p><abbr title="HyperText Markup Language">HTML</abbr> defines a long list of available inline tags, a complete list of which can be found on the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">Mozilla Developer Network</a>.</p>
+
+<ul>
+  <li><strong>To bold text</strong>, use <code class="language-plaintext highlighter-rouge">**To bold text**</code>.</li>
+  <li><em>To italicize text</em>, use <code class="language-plaintext highlighter-rouge">*To italicize text*</code>.</li>
+  <li>Abbreviations, like <abbr title="HyperText Markup Language">HTML</abbr> should be defined like this <code class="language-plaintext highlighter-rouge">*[HTML]: HyperText Markup Language</code>.</li>
+  <li>Citations, like <cite>— Mark otto</cite>, should use <code class="language-plaintext highlighter-rouge">&lt;cite&gt;</code>.</li>
+  <li><del>Deleted</del> text should use <code class="language-plaintext highlighter-rouge">~~deleted~~</code> and <ins>inserted</ins> text should use <code class="language-plaintext highlighter-rouge">&lt;ins&gt;</code>.</li>
+  <li>Superscript <sup>text</sup> uses <code class="language-plaintext highlighter-rouge">&lt;sup&gt;</code> and subscript <sub>text</sub> uses <code class="language-plaintext highlighter-rouge">&lt;sub&gt;</code>.</li>
+</ul>
+
+<p>Most of these elements are styled by browsers with few modifications on our part.</p>
+
+<h2 id="heading-2">Heading 2</h2>
+<p>Vivamus sagittis lacus vel augue rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+
+<h3 id="heading-3">Heading 3</h3>
+<p>Vivamus sagittis lacus vel augue rutrum faucibus dolor auctor.</p>
+
+<h4 id="heading-4">Heading 4</h4>
+<p>Vivamus sagittis lacus vel augue rutrum faucibus dolor auctor.</p>
+
+<h5 id="heading-5">Heading 5</h5>
+<p>Vivamus sagittis lacus vel augue rutrum faucibus dolor auctor.</p>
+
+<h6 id="heading-6">Heading 6</h6>
+<p>Vivamus sagittis lacus vel augue rutrum faucibus dolor auctor.</p>
+
+<h2 id="code">Code</h2>
+
+<p>Cum sociis natoque penatibus et magnis dis <code class="language-plaintext highlighter-rouge">code element</code> montes, nascetur ridiculus mus.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Example can be run directly in your JavaScript console</span>
+
+<span class="c1">// Create a function that takes two arguments and returns the sum of those</span>
+<span class="c1">// arguments</span>
+<span class="kd">var</span> <span class="nx">adder</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Function</span><span class="p">(</span><span class="dl">"</span><span class="s2">a</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">b</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">return a + b</span><span class="dl">"</span><span class="p">);</span>
+
+<span class="c1">// Call the function</span>
+<span class="nf">adder</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">);</span>
+<span class="c1">// &gt; 8</span>
+</code></pre></div></div>
+
+<h2 id="lists">Lists</h2>
+
+<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+
+<ul>
+  <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
+  <li>Donec id elit non mi porta gravida at eget metus.</li>
+  <li>Nulla vitae elit libero, a pharetra augue.</li>
+</ul>
+
+<p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p>
+
+<ol>
+  <li>Vestibulum id ligula porta felis euismod semper.</li>
+  <li>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</li>
+  <li>Maecenas sed diam eget risus varius blandit sit amet non magna.</li>
+</ol>
+
+<p>Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.</p>
+
+<dl>
+  <dt>HyperText Markup Language (<abbr title="HyperText Markup Language">HTML</abbr>)</dt>
+  <dd>The language used to describe and define the content of a Web page</dd>
+  <dt>Cascading Style Sheets (<abbr title="Cascading Style Sheets">CSS</abbr>)</dt>
+  <dd>Used to describe the appearance of Web content</dd>
+  <dt>JavaScript (<abbr title="JavaScript">JS</abbr>)</dt>
+  <dd>The programming language used to build advanced Web sites and applications</dd>
+</dl>
+
+<p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+
+<h2 id="images">Images</h2>
+
+<p>Quisque consequat sapien eget quam rhoncus, sit amet laoreet diam tempus. Aliquam aliquam metus erat, a pulvinar turpis suscipit at.</p>
+
+<p><img src="https://via.placeholder.com/800x400" alt="800x400" title="Large example image" /></p>
+
+<p><img src="https://via.placeholder.com/400x200" alt="400x200" title="Medium example image" /></p>
+
+<p><img src="https://via.placeholder.com/200x200" alt="200x200" title="Small example image" /></p>
+
+<h2 id="tables">Tables</h2>
+
+<p>Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Name</th>
+      <th style="text-align: left">Upvotes</th>
+      <th style="text-align: left">Downvotes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Alice</td>
+      <td style="text-align: left">10</td>
+      <td style="text-align: left">11</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Bob</td>
+      <td style="text-align: left">4</td>
+      <td style="text-align: left">3</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Charlie</td>
+      <td style="text-align: left">7</td>
+      <td style="text-align: left">9</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td style="text-align: left">Totals</td>
+      <td style="text-align: left">21</td>
+      <td style="text-align: left">23</td>
+    </tr>
+  </tfoot>
+</table>
+
+<p>Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo.</p>]]></content><author><name>Abonia Sojasingarayar</name><email>aboniaa@gmail.com</email></author><category term="blogs-TODEL" /><summary type="html"><![CDATA[Howdy! This is an example blog post that shows several types of HTML content supported in this theme.]]></summary></entry></feed>
