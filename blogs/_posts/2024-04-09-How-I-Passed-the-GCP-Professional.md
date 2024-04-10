@@ -8,7 +8,7 @@ description: >
 sitemap: false
 ---
 
-  **Date:** 2024-05-24\
+  **Date:** 2024-04-09\
   **Reading_time:** 6 min\
   **Tags:** [GCP, Data Engineering, Cloud, Certification]
 - Table of Contents
@@ -211,7 +211,7 @@ I hope this will help you pass the exam. All in all, you need to have solid Goog
 
 **Wish you the very best with your GCP certifications. You can reach me via:**
 
-> **[LinkedIn](https://www.linkedin.com/in/aboniasojasingarayar/)**.
+
 
 >  **Connect with me on [Linkedin](https://www.linkedin.com/in/aboniasojasingarayar/)**
 

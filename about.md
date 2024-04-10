@@ -20,9 +20,17 @@ I used to create YouTube tutorials where I shared the cutting-edge AI knowledge 
 1. this list will be replaced by the toc
 {:toc .large-only}
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/watch?v=HiEjhVc_Dzc&t=23s" frameborder="0" allowfullscreen></iframe>
+<img src="/assets/img/blog/youtube.gif" alt="gif" width="560" height="315" >
 
 {:.video}
-
 Youtube - Abonia Sojasingarayar
 {:.figcaption}
+
+
+>  **Connect with me on [Linkedin](https://www.linkedin.com/in/aboniasojasingarayar/)**
+
+>  **Find me on [Github](https://github.com/Abonia1)**
+
+>  **Visit my technical channel on [Youtube](https://www.youtube.com/@AboniaSojasingarayar)**
+
+>  **Support: [Buy me a Cofee/Chai](https://www.buymeacoffee.com/abonia)**

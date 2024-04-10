@@ -1,0 +1,1097 @@
+<!DOCTYPE html>
+<html lang="en"><!--
+ __  __                __                                     __
+/\ \/\ \              /\ \             __                    /\ \
+\ \ \_\ \   __  __    \_\ \      __   /\_\      __       ___ \ \ \/'\
+ \ \  _  \ /\ \/\ \   /'_` \   /'__`\ \/\ \   /'__`\    /'___\\ \ , <
+  \ \ \ \ \\ \ \_\ \ /\ \L\ \ /\  __/  \ \ \ /\ \L\.\_ /\ \__/ \ \ \\`\
+   \ \_\ \_\\/`____ \\ \___,_\\ \____\ _\ \ \\ \__/.\_\\ \____\ \ \_\ \_\
+    \/_/\/_/ `/___/> \\/__,_ / \/____//\ \_\ \\/__/\/_/ \/____/  \/_/\/_/
+                /\___/                \ \____/
+                \/__/                  \/___/
+
+Powered by Hydejack v9.1.6 <https://hydejack.com/>
+-->
+
+
+
+
+
+
+
+<head>
+  
+
+
+
+
+  <meta name="robots" content="noindex">
+
+
+
+  
+    
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Deploying a RAG Application in AWS Lambda using Docker and ECR | Abonia Sojasingarayar</title>
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="Deploying a RAG Application in AWS Lambda using Docker and ECR" />
+<meta name="author" content="Abonia Sojasingarayar" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="Deploying a RAG (Retrieval-Augmented Generation) application in AWS Lambda using Docker and Amazon Elastic Container Registry (ECR) with LangChain." />
+<meta property="og:description" content="Deploying a RAG (Retrieval-Augmented Generation) application in AWS Lambda using Docker and Amazon Elastic Container Registry (ECR) with LangChain." />
+<link rel="canonical" href="http://localhost:4000/blogs/2024-03-05-Deploying-a-RAG-Application-in-AWS-Lambda-using-Docker-and-ECR/" />
+<meta property="og:url" content="http://localhost:4000/blogs/2024-03-05-Deploying-a-RAG-Application-in-AWS-Lambda-using-Docker-and-ECR/" />
+<meta property="og:site_name" content="Abonia Sojasingarayar" />
+<meta property="og:image" content="http://localhost:4000/assets/img/blog/aws-rag.webp" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-03-05T00:00:00+01:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="http://localhost:4000/assets/img/blog/aws-rag.webp" />
+<meta property="twitter:title" content="Deploying a RAG Application in AWS Lambda using Docker and ECR" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Abonia Sojasingarayar"},"dateModified":"2024-04-10T13:33:58+02:00","datePublished":"2024-03-05T00:00:00+01:00","description":"Deploying a RAG (Retrieval-Augmented Generation) application in AWS Lambda using Docker and Amazon Elastic Container Registry (ECR) with LangChain.","headline":"Deploying a RAG Application in AWS Lambda using Docker and ECR","image":"http://localhost:4000/assets/img/blog/aws-rag.webp","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blogs/2024-03-05-Deploying-a-RAG-Application-in-AWS-Lambda-using-Docker-and-ECR/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/img/blog/logo.jpeg"},"name":"Abonia Sojasingarayar"},"url":"http://localhost:4000/blogs/2024-03-05-Deploying-a-RAG-Application-in-AWS-Lambda-using-Docker-and-ECR/"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  
+
+  
+
+
+
+  <meta name="theme-color" content="rgb(25,55,71)">
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+<meta name="mobile-web-app-capable" content="yes">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Abonia Sojasingarayar">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+<meta name="application-name" content="Abonia Sojasingarayar">
+
+<meta name="generator" content="Hydejack v9.1.6" />
+
+
+<link rel="alternate" href="http://localhost:4000/blogs/2024-03-05-Deploying-a-RAG-Application-in-AWS-Lambda-using-Docker-and-ECR/" hreflang="en">
+
+<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Abonia Sojasingarayar" />
+
+
+<link rel="shortcut icon"    href="/assets/img/favicon.ico">
+<link rel="apple-touch-icon" href="/assets/icons/icon-192x192.png">
+
+<link rel="manifest" href="/assets/site.webmanifest">
+
+<link rel="dns-prefetch" href="https://fonts.googleapis.com"><link rel="dns-prefetch" href="https://fonts.gstatic.com">
+
+
+
+<link rel="preload" href="/assets/img/swipe.svg" as="image" id="_hrefSwipeSVG">
+
+
+
+
+
+
+<script>!function(r,c){"use strict";function a(e,t,n,o){e.addEventListener?e.addEventListener(t,n,o):e.attachEvent?e.attachEvent("on"+t,n):e["on"+t]=n}r.loadJS=function(e,t){var n=c.createElement("script"),e=(n.src=e,t&&a(n,"load",t,{once:!0}),c.scripts[0]);return e.parentNode.insertBefore(n,e),n},r._loaded=!1,r.loadJSDeferred=function(e,t){var n=c.createElement("script");function o(){r._loaded=!0,t&&a(n,"load",t,{once:!0});var e=c.scripts[0];e.parentNode.insertBefore(n,e)}return n.src=e,r._loaded?o():a(r,"load",o,{once:!0}),n},r.setRel=r.setRelStylesheet=function(e){a(c.getElementById(e),"load",function(){this.rel="stylesheet"},{once:!0})}}(window,document);
+!function(a){"use strict";var b=function(b,c,d){function e(a){return h.body?a():void setTimeout(function(){e(a)})}function f(){i.addEventListener&&i.removeEventListener("load",f),i.media=d||"all"}var g,h=a.document,i=h.createElement("link");if(c)g=c;else{var j=(h.body||h.getElementsByTagName("head")[0]).childNodes;g=j[j.length-1]}var k=h.styleSheets;i.rel="stylesheet",i.href=b,i.media="only x",e(function(){g.parentNode.insertBefore(i,c?g:g.nextSibling)});var l=function(a){for(var b=i.href,c=k.length;c--;)if(k[c].href===b)return a();setTimeout(function(){l(a)})};return i.addEventListener&&i.addEventListener("load",f),i.onloadcssdefined=l,l(f),i};"undefined"!=typeof exports?exports.loadCSS=b:a.loadCSS=b}("undefined"!=typeof global?global:this);
+!function(a){if(a.loadCSS){var b=loadCSS.relpreload={};if(b.support=function(){try{return a.document.createElement("link").relList.supports("preload")}catch(b){return!1}},b.poly=function(){for(var b=a.document.getElementsByTagName("link"),c=0;c<b.length;c++){var d=b[c];"preload"===d.rel&&"style"===d.getAttribute("as")&&(a.loadCSS(d.href,d,d.getAttribute("media")),d.rel=null)}},!b.support()){b.poly();var c=a.setInterval(b.poly,300);a.addEventListener&&a.addEventListener("load",function(){b.poly(),a.clearInterval(c)}),a.attachEvent&&a.attachEvent("onload",function(){a.clearInterval(c)})}}}(this);
+!function(w) {
+  w._baseURL = '/';
+  w._publicPath = '/assets/js/';
+  w._noPushState = false;
+  w._noDrawer = false;
+  w._noNavbar = false;
+  w._noToc = false;
+  w._noSearch = false;
+  w._search = {
+    DATA_URL: '/assets/sitedata.json?no-cache',
+    STORAGE_KEY: 'mini-search/',
+    INDEX_KEY: 'index--2024-04-10T13:33:59+02:00',
+  };
+  w._clapButton = true;
+}(window);</script>
+
+
+<script async src="/assets/bower_components/MathJax/es5/tex-mml-chtml.js" id="_MathJax"></script>
+
+
+<!--[if gt IE 8]><!---->
+
+  
+
+
+
+
+<link rel="stylesheet" href="/assets/css/hydejack-9.1.6.css" id="_stylePreload">
+<link rel="stylesheet" href="/assets/icomoon/style.css" id="_iconsPreload">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:700%7CNoto+Sans:400,400i,700,700i&display=swap" id="_fontsPreload">
+
+
+
+  <style id="_pageStyle">
+
+html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79, 177, 186, 0.5);--accent-color-highlight: rgba(79, 177, 186, 0.1);--accent-color-darkened: #409ba3;--theme-color: rgb(25,55,71)}
+</style>
+
+
+<!--<![endif]-->
+
+
+
+
+</head>
+
+<body class="no-break-layout">
+  
+
+
+<hy-push-state
+  id="_pushState"
+  replace-selector="#_main"
+  link-selector="a[href]:not([href^='/assets/']):not(.external):not(.no-push-state)"
+  script-selector="script"
+  duration="500"
+  hashchange
+>
+  
+  
+  <div id="_navbar" class="navbar fixed-top">
+  <div class="content">
+    <span class="sr-only">Jump to:</span>
+    <div class="nav-btn-bar">
+      <a id="_menu" class="nav-btn no-hover" href="#_drawer--opened">
+        <span class="sr-only">Navigation</span>
+        <span class="icon-menu"></span>
+      </a>
+      <div class="nav-span"></div>
+    </div>
+  </div>
+</div>
+<hr class="sr-only" hidden />
+
+  <main
+  id="_main"
+  class="content layout-post"
+  role="main"
+>
+  <nav id="breadcrumbs" class="screen-only"><ul>
+  
+  
+    <li><a href="/">home</a></li>
+    
+      <li>
+        
+          <span>/</span>
+          
+          
+          <a href="/blogs/">blogs</a>
+        
+      </li>
+    
+      <li>
+        
+          <span>/</span>
+          <span>2024-03-05-Deploying-a-RAG-Application-in-AWS-Lambda-using-Docker-and-ECR</span>
+        
+      </li>
+    
+  
+</ul></nav>
+  
+
+
+
+
+
+
+
+
+
+
+<article id="post-blogs-Deploying-a-RAG-Application-in-AWS-Lambda-using-Docker-and-ECR" class="page post mb6" role="article">
+  <header>
+    <h1 class="post-title flip-project-title">
+      
+        Deploying a RAG Application in AWS Lambda using Docker and ECR
+      
+    </h1>
+
+    <div class="post-date">
+      
+      <span class="ellipsis mr1">
+        <time datetime="2024-03-05T00:00:00+01:00">05 Mar 2024</time> in <a href="/example/" class="flip-title">Blogs</a> 
+      </span>
+      
+        
+          
+          
+          
+            
+            
+            <span class="ellipsis" data-tippy-content="Last modified at: 10 Apr 2024">
+              <span class="sr-only">Last modified at:</span>
+              <span class="icon-history"></span>
+              <time datetime="2024-04-10T13:33:58+02:00">2024-04-10</time>
+            </span>
+          
+        
+      
+    </div>
+
+    
+    
+      
+        <div class="img-wrapper lead aspect-ratio sixteen-nine flip-project-img">
+          
+
+
+<img
+  
+    src="/assets/img/blog/aws-rag.webp"
+    
+    
+  
+  alt="Deploying a RAG Application in AWS Lambda using Docker and ECR"
+  
+  
+  width="864"
+  height="486"
+  loading="lazy"
+/>
+
+        </div>
+      
+      
+    
+
+    
+
+
+
+  
+    <p class="note-sm" >
+      Deploying a RAG (Retrieval-Augmented Generation) application in AWS Lambda using Docker and Amazon Elastic Container Registry (ECR) with LangChain.
+
+    </p>
+  
+
+
+  </header>
+
+  
+    <p><strong>Date:</strong> 2024-03-05<br />
+  <strong>Reading_time:</strong> 6 min<br />
+  <strong>Tags:</strong> [AWS, Lambda , ECR ,Docker , LangChain, OpenAI]</p>
+<ul class="large-only" id="markdown-toc">
+  <li><a href="#lambda--ecr--docker--langchain--openai" id="markdown-toc-lambda--ecr--docker--langchain--openai">Lambda — ECR — Docker — LangChain — OpenAI</a></li>
+  <li><a href="#services-overview" id="markdown-toc-services-overview">Services Overview</a></li>
+  <li><a href="#integration-and-deployment-steps" id="markdown-toc-integration-and-deployment-steps">Integration and Deployment Steps</a></li>
+  <li><a href="#implementation" id="markdown-toc-implementation">Implementation</a>    <ul>
+      <li><a href="#environment-setup" id="markdown-toc-environment-setup">Environment Setup</a></li>
+      <li><a href="#data-loading-and-processing" id="markdown-toc-data-loading-and-processing">Data Loading and Processing</a></li>
+      <li><a href="#response-generation" id="markdown-toc-response-generation">Response Generation</a></li>
+      <li><a href="#aws-lambda-handler" id="markdown-toc-aws-lambda-handler">AWS Lambda Handler</a></li>
+    </ul>
+  </li>
+  <li><a href="#conclusion" id="markdown-toc-conclusion">Conclusion</a></li>
+  <li><a href="#thanks-for-reading" id="markdown-toc-thanks-for-reading"><em>Thanks for Reading!</em></a></li>
+</ul>
+
+<h3 id="lambda--ecr--docker--langchain--openai">Lambda — ECR — Docker — LangChain — OpenAI</h3>
+
+<p>Deploying a RAG (Retrieval-Augmented Generation) application in AWS Lambda using Docker and Amazon Elastic Container Registry (ECR) with LangChain involves several steps and services. This article will explain each service and how they work together in an integrated way, followed by the steps to deploy it.</p>
+
+<p>Here is the link to the complete tutorial on <strong><a href="https://youtu.be/gicsb9p7uj4?si=9F2l6z1rNpkUOoIR">Deploying RAG in AWS</a></strong>.</p>
+
+<p>Before proceeding further, I would like to kindly suggest that you take some time to read and watch the tutorial titled <strong><a href="https://medium.com/@abonia/build-and-deploy-llm-application-in-aws-cca46c662749">Build and Deploy LLM Application in AWS</a></strong>. This tutorial can provide you with a solid foundation on Lambda LLM application deployment.
+<strong><a href="https://medium.com/@abonia/build-and-deploy-llm-application-in-aws-cca46c662749">Build and Deploy LLM Application in AWS</a></strong></p>
+
+<h2 id="services-overview">Services Overview</h2>
+
+<p><img src="https://cdn-images-1.medium.com/max/3840/1*KBp2fuAVMvBfpE10p4nrrQ.png" alt="Architecture Overview — Image by Author" /></p>
+
+<p><a href="https://aws.amazon.com/lambda/getting-started/?gclid=CjwKCAjwzN-vBhAkEiwAYiO7oF7Q4aEK3hKUA0HVPEe3wXKen_tVUDmxun4s5PjasxZ-deFf-j19vxoCovkQAvD_BwE&amp;trk=65546593-a75a-4317-b5dc-80218abfdb10&amp;sc_channel=ps&amp;s_kwcid=AL!4422!3!651542249938!e!!g!!aws%20lambda&amp;ef_id=CjwKCAjwzN-vBhAkEiwAYiO7oF7Q4aEK3hKUA0HVPEe3wXKen_tVUDmxun4s5PjasxZ-deFf-j19vxoCovkQAvD_BwE:G:s&amp;s_kwcid=AL!4422!3!651542249938!e!!g!!aws%20lambda!19835810591!150095231954">AWS Lambda</a>: A serverless compute service that runs your code in response to events and automatically manages the underlying compute resources for you. It allows you to run code without provisioning or managing servers.</p>
+
+<ul>
+  <li>
+    <p><a href="https://aws.amazon.com/ecr/">Amazon ECR</a>: A fully-managed container registry that makes it easy for developers to store, manage, and deploy Docker container images. It’s integrated with Amazon ECS and AWS Fargate, simplifying your development to production workflow.</p>
+  </li>
+  <li><a href="https://www.docker.com/">Docker</a>: A platform that uses containerization to package up an application with all of the parts it needs, such as libraries and other dependencies, and ship it all out as one package. This ensures that the application runs quickly and reliably on any server.
+    <blockquote>
+      <p>Dowload Link: <a href="https://www.docker.com/products/docker-desktop/">https://www.docker.com/products/docker-desktop/</a></p>
+    </blockquote>
+  </li>
+  <li><a href="https://www.langchain.com/">LangChain</a>: A framework for building and deploying language models, providing tools for document loading, vector storage, embeddings, and more. It’s used here to facilitate the deployment of the RAG model.</li>
+</ul>
+
+<h2 id="integration-and-deployment-steps">Integration and Deployment Steps</h2>
+
+<ol>
+  <li><strong>Prepare Your Environment:</strong> Ensure you have the AWS CLI installed and configured, Docker installed, and Python 3.11 or later installed and configured. You’ll also need an active AWS account with the necessary permissions.
+    <blockquote>
+      <p>Download Link: <a href="https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html">https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html</a></p>
+    </blockquote>
+  </li>
+  <li>
+    <p><strong>Create a Dockerfile:</strong> This file defines the environment in which your Lambda function will run. It starts from a base image provided by AWS (<em><code class="language-plaintext highlighter-rouge">public.ecr.aws/lambda/python:3.12</code></em>) and copies your application code and dependencies into the image. It also installs any necessary Python packages from a <code class="language-plaintext highlighter-rouge">requirements.txt</code> file as below:</p>
+
+    <p>langchain_community
+ boto3==1.34.37
+ numpy
+ langchain
+ langchainhub
+ langchain-openai
+ chromadb
+ bs4
+ tiktoken
+ openai</p>
+  </li>
+</ol>
+
+<div class="language-docker highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="c"># Use the AWS base image for Python 3.12</span>
+    FROM public.ecr.aws/lambda/python:3.12
+    
+    <span class="c"># Install build-essential to get the C++ compiler and other necessary tools</span>
+    RUN microdnf update -y &amp;&amp; microdnf install -y gcc-c++ make
+    
+    <span class="c"># Copy requirements.txt</span>
+    COPY requirements.txt ${LAMBDA_TASK_ROOT}
+    
+    # Install the specified packages
+    RUN pip install -r requirements.txt
+    
+    <span class="c"># Copy function code</span>
+    COPY lambda_function.py ${LAMBDA_TASK_ROOT}
+    
+    # Set the permissions to make the file executable
+    RUN chmod +x lambda_function.py
+    
+    <span class="c"># Set the CMD to your handler</span>
+    CMD [ "lambda_function.lambda_handler" ]
+</code></pre></div></div>
+
+<ol>
+  <li>
+    <p><strong>Build and Push Your Docker Image to Amazon ECR:</strong> Use the AWS CLI to create a repository in ECR, build your Docker image, and push it to the repository. This step requires permissions to interact with ECR and S3.</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  aws ecr create-repository - repository-name my-rag-lambda
+  docker build <span class="nt">-t</span> my-test-lambda <span class="nb">.</span>
+  docker tag my-rag-lambda:latest &lt;aws_account_id&gt;.dkr.ecr.&lt;region&gt;.amazonaws.com/my-test-lambda:latest
+  docker push &lt;aws_account_id&gt;.dkr.ecr.&lt;region&gt;.amazonaws.com/my-test-lambda:latest
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p><strong>Create a Lambda Function</strong>: In the AWS Lambda console, create a new function using the container image option. Specify the URI of the image in ECR as the image source.</p>
+  </li>
+  <li>
+    <p><strong>Configure Your Lambda Function</strong>: Set the necessary environment variables, such as <code class="language-plaintext highlighter-rouge">OPENAI_API_KEY</code> for LangChain, and configure any other settings as needed.</p>
+  </li>
+  <li>
+    <p><strong>Test Your Lambda Function</strong>: Invoke your Lambda function to test it. You can do this from the AWS Lambda console or using the AWS CLI. Ensure that the function is correctly processing inputs and generating outputs as expected.</p>
+  </li>
+</ol>
+
+<h2 id="implementation">Implementation</h2>
+
+<p>Below code is designed to deploy a Retrieval-Augmented Generation (RAG) model using AWS Lambda, Docker, and Amazon ECR, with LangChain for language model deployment.</p>
+
+<h3 id="environment-setup">Environment Setup</h3>
+
+<p>First, imports necessary libraries and sets up the environment:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import boto3
+import bs4
+from langchain import hub
+from langchain_community.document_loaders import WebBaseLoader
+from langchain_community.vectorstores import Chroma
+from langchain_core.output_parsers import StrOutputParser
+from langchain_core.runnables import RunnablePassthrough
+from langchain_community.embeddings import OpenAIEmbeddings
+from langchain_community.chat_models import ChatOpenAI
+from langchain_text_splitters import RecursiveCharacterTextSplitter
+import os
+# Retrieve the OpenAI API key from environment variables
+OPENAI_API_KEY = os.environ['OPENAI_API_KEY']
+print(OPENAI_API_KEY)
+</code></pre></div></div>
+
+<ul>
+  <li>boto3: The AWS SDK for Python, allowing Python developers to write software that makes use of services like Amazon S3, Amazon EC2, and others.</li>
+  <li>bs4: Beautiful Soup, a library for pulling data out of HTML and XML files.</li>
+  <li>LangChain: A framework for building and deploying language models, providing tools for document loading, vector storage, embeddings, and more.</li>
+  <li>Environment Variables: The code retrieves the <code class="language-plaintext highlighter-rouge">OPENAI_API_KEY</code> from the environment variables, which is crucial for accessing OpenAI’s API.</li>
+</ul>
+
+<h3 id="data-loading-and-processing">Data Loading and Processing</h3>
+
+<p>The <code class="language-plaintext highlighter-rouge">load_data</code> function is responsible for loading, chunking, and indexing the contents of a web page:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>def load_data():
+ loader = WebBaseLoader(
+ web_paths=("https://lilianweng.github.io/posts/2023-06-23-agent/",),
+ bs_kwargs=dict(
+ parse_only=bs4.SoupStrainer(
+ class_=("post-content", "post-title", "post-header")
+ )
+ ),
+ )
+ docs = loader.load()
+ text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=200)
+ splits = text_splitter.split_documents(docs)
+ vectorstore = Chroma.from_documents(documents=splits, embedding=OpenAIEmbeddings())
+ retriever = vectorstore.as_retriever()
+ return retriever
+</code></pre></div></div>
+
+<ul>
+  <li>WebBaseLoader: Loads documents from web paths, using Beautiful Soup to parse and extract specific elements.</li>
+  <li>RecursiveCharacterTextSplitter: Splits documents into chunks based on character count and overlap.</li>
+  <li>Chroma: Creates a vector store from the split documents, using OpenAI embeddings for vectorization.</li>
+  <li>Retriever: A retriever object that can be used to retrieve relevant documents based on queries.</li>
+</ul>
+
+<h3 id="response-generation">Response Generation</h3>
+
+<p>The <code class="language-plaintext highlighter-rouge">get_response</code> function generates a response to a given query using the RAG model:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>def get_response(query):
+ prompt = hub.pull("rlm/rag-prompt")
+ llm = ChatOpenAI(model_name="gpt-3.5-turbo", temperature=0)
+ retriever = load_data()
+ rag_chain = (
+ {"context": retriever | format_docs, "question": RunnablePassthrough()}
+ | prompt
+ | llm
+ | StrOutputParser()
+ )
+ return rag_chain.invoke(query)
+</code></pre></div></div>
+
+<ul>
+  <li>hub.pull: Retrieves a prompt from <a href="https://smith.langchain.com/hub/rlm/rag-prompt">LangChain’s hub</a>.</li>
+  <li>ChatOpenAI: Initializes a chat model with GPT-3.5 Turbo.</li>
+  <li>RunnablePassthrough: A component that passes the input directly to the next component in the chain.</li>
+  <li>StrOutputParser: Parses the output of the RAG model into a string format.</li>
+</ul>
+
+<h3 id="aws-lambda-handler">AWS Lambda Handler</h3>
+
+<p>Finally, the <code class="language-plaintext highlighter-rouge">lambda_handler</code> function is the entry point for AWS Lambda, which receives an event and context, processes the query, and returns a response:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>def lambda_handler(event, context):
+ query = event.get("question")
+ response = get_response(query)
+ print("response:", response)
+ return {"body": response, "statusCode": 200}
+</code></pre></div></div>
+
+<ul>
+  <li>
+    <p>Event and Context: AWS Lambda passes an event object and a context object to the handler. The event object contains information about the triggering event, and the context object contains information about the runtime environment.</p>
+  </li>
+  <li>
+    <p>Query Processing: The function extracts the query from the event, generates a response using the <code class="language-plaintext highlighter-rouge">get_response</code> function, and prints the response and returns a response object containing the generated response and a status code of 200, indicating success.</p>
+  </li>
+</ul>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Deploying a RAG model in AWS Lambda using Docker and ECR with LangChain involves preparing your environment, creating a Dockerfile, building and pushing your Docker image to ECR, creating a Lambda function, configuring it, and testing it. This process leverages the serverless capabilities of AWS Lambda, the containerization benefits of Docker, and the language model deployment capability provided by LangChain.</p>
+
+<blockquote>
+  <p><strong>Connect with me on <a href="https://www.linkedin.com/in/aboniasojasingarayar/">Linkedin</a></strong></p>
+</blockquote>
+
+<blockquote>
+  <p><strong>Find me on <a href="https://github.com/Abonia1">Github</a></strong></p>
+</blockquote>
+
+<blockquote>
+  <p><strong>Visit my technical channel on <a href="https://www.youtube.com/@AboniaSojasingarayar">Youtube</a></strong></p>
+</blockquote>
+
+<blockquote>
+  <p><strong>Support: <a href="https://www.buymeacoffee.com/abonia">Buy me a Cofee/Chai</a></strong></p>
+</blockquote>
+
+<blockquote>
+  <h1 id="thanks-for-reading"><em>Thanks for Reading!</em></h1>
+</blockquote>
+
+  
+</article>
+
+
+
+  <hr class="dingbat related mb6" />
+
+
+
+
+
+
+  
+     
+
+
+  <aside class="about related mt4 mb4" role="complementary">
+    
+    
+
+<div class="author mt4">
+  
+
+  
+    
+
+
+<img
+  
+    src="/assets/img/blog/logo.jpeg"
+    srcset="https://via.placeholder.com/128x128 1x,/assets/img/blog/logo.jpeg 2x"
+    
+  
+  alt="Abonia Sojasingarayar"
+  class="avatar"
+  
+  width="120"
+  height="120"
+  loading="lazy"
+/>
+
+  
+
+  
+  
+  <h2  class="page-title hr-bottom">
+    About
+  </h2>
+
+  <p>I am distinguished Machine Learning Scientist, Data Scientist, Large Language Model Engineer, NLP Engineer, and Technical Book Reviewer, holds a Masters degree in Artificial Intelligence and boasts over 7 years of experience. With a robust background in crafting and implementing ML systems across diverse domains, including cybersecurity, banking, transit,cosmetics &amp; hygiene research, and e-commerce, 
+I hope, my multifaceted skills, coupled with a commitment to knowledge sharing, position me as a valuable Technical Book Reviewer and industry influencer. Find her insights on Medium, Google Scholar, GitHub, and LinkedIn, where I mentors others and communicates complex solutions effectively.</p>
+
+
+  <div class="sidebar-social">
+    <span class="sr-only">Social:</span>
+<ul>
+  
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://www.linkedin.com/in/aboniasojasingarayar" title="LinkedIn" class="no-mark-external">
+      <span class="icon-linkedin2"></span>
+      <span class="sr-only">LinkedIn</span>
+    </a>
+  </li>
+
+
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://github.com/Abonia1" title="GitHub" class="no-mark-external">
+      <span class="icon-github"></span>
+      <span class="sr-only">GitHub</span>
+    </a>
+  </li>
+
+
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://medium.com/@abonia" title="medium" class="no-mark-external">
+      <span class="icon-link"></span>
+      <span class="sr-only">medium</span>
+    </a>
+  </li>
+
+
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://www.youtube.com/channel/UCGphGM_oeR4r9dqVs71Jc5w" title="YouTube" class="no-mark-external">
+      <span class="icon-youtube"></span>
+      <span class="sr-only">YouTube</span>
+    </a>
+  </li>
+
+
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://twitter.com/AboniaJesse" title="Twitter" class="no-mark-external">
+      <span class="icon-twitter"></span>
+      <span class="sr-only">Twitter</span>
+    </a>
+  </li>
+
+
+    
+  
+</ul>
+
+  </div>
+</div>
+
+  </aside>
+
+
+  
+
+  
+  
+
+  
+    
+
+
+  <aside class="related mb4" role="complementary">  <h2 class="hr-bottom">Related Posts</h2>  <ul class="related-posts">                  <li class="h4">  <a href="/blogs/2024-04-09-How-I-Passed-the-GCP-Professional/" class="flip-title"><span>How I Passed the GCP Professional Data Engineer Exam</span></a>  <time class="faded fine" datetime="2024-04-09T00:00:00+02:00">09 Apr 2024</time></li>            </ul></aside>
+
+  
+
+  
+  
+
+  
+    
+
+  
+
+
+  
+<footer class="content" role="contentinfo">
+  <hr/>
+  
+    <p><small class="copyright">© 2024. All rights reserved.
+</small></p>
+  
+  
+    <nav class="legal"><small>
+    
+      
+      <a class="heading flip-title" href="/LICENSE/">LICENSE</a>
+      
+    
+    </small></nav>
+  
+    <p><small>Powered by <a class="external" href="https://hydejack.com/">Hydejack</a> v<span id="_version">9.1.6</span></small></p>
+  <hr class="sr-only"/>
+</footer>
+
+
+</main>
+
+  <hy-drawer
+  id="_drawer"
+  class=""
+  side="left"
+  threshold="10"
+  noscroll
+  
+>
+  <header id="_sidebar" class="sidebar" role="banner">
+    
+
+
+
+
+<div class="sidebar-bg sidebar-overlay" style="background-color:rgb(25,55,71);background-image:url(/assets/img/sidebar-bg.jpg)"></div>
+
+    <div class="sidebar-sticky">
+  <div class="sidebar-about">
+    
+      <a class="no-hover" href="/" tabindex="-1">
+        <img src="/assets/img/blog/logo.jpeg" class="avatar" alt="Abonia Sojasingarayar" width="120" height="120" loading="lazy" />
+      </a>
+    
+    <a class="sidebar-title" href="/"><h2 class="h1">Abonia Sojasingarayar</h2></a>
+    
+    
+      <p class="">
+        <table>
+  <tbody>
+    <tr>
+      <td>4x Linkedin Top Voice</td>
+      <td>Machine Learning, DS &amp; MLOps</td>
+      <td>Author</td>
+    </tr>
+  </tbody>
+</table>
+
+      </p>
+    
+  </div>
+
+  <nav class="sidebar-nav heading" role="navigation">
+    <span class="sr-only">Navigation:</span>
+<ul>
+  
+    
+      
+      <li>
+        <a
+          id="_drawer--opened"
+          href="/example/"
+          class="sidebar-nav-item "
+          
+        >
+          Blogs
+        </a>
+      </li>
+    
+      
+      <li>
+        <a
+          
+          href="/about/"
+          class="sidebar-nav-item "
+          
+        >
+          About
+        </a>
+      </li>
+    
+  
+</ul>
+
+  </nav>
+
+  
+  <div class="sidebar-social">
+    <span class="sr-only">Social:</span>
+<ul>
+  
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://www.linkedin.com/in/aboniasojasingarayar" title="LinkedIn" class="no-mark-external">
+      <span class="icon-linkedin2"></span>
+      <span class="sr-only">LinkedIn</span>
+    </a>
+  </li>
+
+
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://github.com/Abonia1" title="GitHub" class="no-mark-external">
+      <span class="icon-github"></span>
+      <span class="sr-only">GitHub</span>
+    </a>
+  </li>
+
+
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://medium.com/@abonia" title="medium" class="no-mark-external">
+      <span class="icon-link"></span>
+      <span class="sr-only">medium</span>
+    </a>
+  </li>
+
+
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://www.youtube.com/channel/UCGphGM_oeR4r9dqVs71Jc5w" title="YouTube" class="no-mark-external">
+      <span class="icon-youtube"></span>
+      <span class="sr-only">YouTube</span>
+    </a>
+  </li>
+
+
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://twitter.com/AboniaJesse" title="Twitter" class="no-mark-external">
+      <span class="icon-twitter"></span>
+      <span class="sr-only">Twitter</span>
+    </a>
+  </li>
+
+
+    
+  
+</ul>
+
+  </div>
+</div>
+  </header>
+</hy-drawer>
+<hr class="sr-only" hidden />
+
+</hy-push-state>
+
+
+  <!--[if gt IE 10]><!---->
+  <script nomodule>!function(){var t,n=document.createElement("script");!("noModule"in n)&&"onbeforeload"in n&&(t=!1,document.addEventListener("beforeload",function(e){if(e.target===n)t=!0;else if(!e.target.hasAttribute("nomodule")||!t)return;e.preventDefault()},!0),n.type="module",n.src=".",document.head.appendChild(n),n.remove())}();
+</script>
+  <script src="/assets/js/hydejack-9.1.6.js" type="module"></script>
+  <script src="/assets/js/LEGACY-hydejack-9.1.6.js" nomodule defer></script>
+  
+
+  
+
+<!--<![endif]-->
+  <!-- <script>
+  document.querySelector('hy-push-state').setAttribute('prefetch', '');
+
+  document.querySelectorAll('.sidebar a[href^="/"]').forEach(function (el) { 
+    el.addEventListener('click', function (e) {
+      if (el.pathname === window.location.pathname) {
+        e.preventDefault();
+        e.stopPropagation();
+        document.querySelector('hy-drawer').close();
+      }
+    });
+  });
+</script> -->
+
+<!--
+Code for integrating CloudFlare's email protection with Hydejack's single page app loading.
+-->
+<script>
+  document.getElementById('_pushState').addEventListener('hy-push-state-after', function (e) {
+    function e(e){
+      (console.error?console.error:console.log).call(console,e)
+    }
+
+    function t(e){
+      return l.innerHTML='<a href="'+e.replace(/"/g,"&quot;")+'"></a>',l.childNodes[0].getAttribute("href")
+    }
+
+    function r(e,t){
+      var r=e.substr(t,2);return parseInt(r,16)
+    }
+
+    function n(e,n){
+      for(var o="",c=r(e,n),a=n+2;a<e.length;a+=2){
+        var l=r(e,a)^c;
+        o+=String.fromCharCode(l)
+      }
+      return t(o)
+    }
+
+    var o="/cdn-cgi/l/email-protection#",
+        c=".__cf_email__",
+        a="data-cfemail",
+        l=document.createElement("div");
+
+    !function(){
+      for(var t=document.getElementsByTagName("a"),r=0;r<t.length;r++)
+        try{
+          var c=t[r],a=c.href.indexOf(o);
+          a>-1&&(c.href="mailto:"+n(c.href,a+o.length))
+        }catch(t){
+          e(t)
+        }
+    }(),
+    function(){
+      for(var t=document.querySelectorAll(c),r=0;r<t.length;r++)
+        try{
+          var o=t[r],l=n(o.getAttribute(a),0),i=document.createTextNode(l);
+          o.parentNode.replaceChild(i,o)
+        }catch(t){
+          e(t)
+        }
+    }()
+  });
+</script>
+
+
+
+
+
+<div hidden>
+  
+  <h2 class="sr-only">Templates (for web app):</h2>
+
+  <template id="_animation-template">
+  <div class="animation-main fixed-top">
+    <nav id="breadcrumbs" class="screen-only"><ul>
+  
+  
+</ul></nav>
+    <div class="content">
+      <div class="page"></div>
+    </div>
+  </div>
+</template>
+
+  <template id="_loading-template">
+  <div class="loading nav-btn fr">
+    <span class="sr-only">Loading…</span>
+    <span class="icon-cog"></span>
+  </div>
+</template>
+
+  <template id="_error-template">
+  <div class="page">
+    <h1 class="page-title">Error</h1>
+    
+    
+    <p class="lead">
+      Sorry, an error occurred while loading <a class="this-link" href=""></a>.
+
+    </p>
+  </div>
+</template>
+
+  <template id="_permalink-template">
+  <a href="#" class="permalink">
+    <span class="sr-only">Permalink</span>
+    <span class="content-hash"></span>
+  </a>
+</template>
+
+</div>
+
+
+</body>
+</html>
