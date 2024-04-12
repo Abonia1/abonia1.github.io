@@ -8,8 +8,7 @@ author1:
   # Used at the bottom of each page and at the top of the `about` layout
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
   about:             |
-    I am distinguished Machine Learning Scientist, Data Scientist, Large Language Model Engineer, NLP Engineer, and Technical Book Reviewer, holds a Masters degree in Artificial Intelligence and boasts over 7 years of experience. With a robust background in crafting and implementing ML systems across diverse domains, including cybersecurity, banking, transit,cosmetics & hygiene research, and e-commerce, 
-    I hope, my multifaceted skills, coupled with a commitment to knowledge sharing, position me as a valuable Technical Book Reviewer and industry influencer. Find her insights on Medium, Google Scholar, GitHub, and LinkedIn, where I mentors others and communicates complex solutions effectively.
+    I am distinguished Machine Learning Scientist, Data Scientist, Large Language Model Engineer, NLP Engineer, and Technical Book Reviewer, holds a Masters degree in Artificial Intelligence and boasts over 7 years of experience. With a robust background in crafting and implementing ML systems across diverse domains, including cybersecurity, banking, transit,cosmetics & hygiene research, and e-commerce. Find me on Medium, Google Scholar, GitHub, and LinkedIn, where I mentors others and communicates complex solutions effectively.
 
   # This photo will be used in the about section
   picture:

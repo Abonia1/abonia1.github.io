@@ -26,7 +26,6 @@ I used to create YouTube tutorials where I shared the cutting-edge AI knowledge 
 Youtube - Abonia Sojasingarayar
 {:.figcaption}
 
-
 >  **Connect with me on [Linkedin](https://www.linkedin.com/in/aboniasojasingarayar/)**
 
 >  **Find me on [Github](https://github.com/Abonia1)**
