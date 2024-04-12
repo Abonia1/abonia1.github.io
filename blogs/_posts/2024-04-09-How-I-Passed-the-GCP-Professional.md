@@ -8,7 +8,6 @@ description: >
 sitemap: false
 ---
 
-  **Date:** 2024-04-09\
   **Reading_time:** 6 min\
   **Tags:** [GCP, Data Engineering, Cloud, Certification]
 - Table of Contents

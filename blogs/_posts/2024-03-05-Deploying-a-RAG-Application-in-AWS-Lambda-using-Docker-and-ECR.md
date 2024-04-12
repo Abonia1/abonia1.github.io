@@ -8,7 +8,6 @@ description: >
 sitemap: false
 ---
 
-  **Date:** 2024-03-05\
   **Reading_time:** 6 min\
   **Tags:** [AWS, Lambda , ECR ,Docker , LangChain, OpenAI]
 - Table of Contents
