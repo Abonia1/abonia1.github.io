@@ -8,6 +8,11 @@ redirect_from:
   - /download/
 ---
 
+{% capture includeGuts %}
+{% include newsletter-form.html %}
+{% endcapture %}
+{{ includeGuts | replace: '    ', ''}}
+
 # About
 
 <!--author-->

@@ -9,4 +9,3 @@ no_excerpt: false
 hide_image: false
 cover: true
 ---
-
