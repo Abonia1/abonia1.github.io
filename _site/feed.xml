@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2024-04-15T19:07:12+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Abonia Sojasingarayar</title><subtitle>Holds a Masters degree in Artificial Intelligence and boasts over 7 years of experience. With a robust background in crafting and implementing ML systems across diverse domains, including cybersecurity, banking, transit,cosmetics &amp; hygiene research, and e-commerce.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2024-04-16T13:54:21+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Abonia Sojasingarayar</title><subtitle>Holds a Masters degree in Artificial Intelligence and boasts over 7 years of experience. With a robust background in crafting and implementing ML systems across diverse domains, including cybersecurity, banking, transit,cosmetics &amp; hygiene research, and e-commerce.
 </subtitle><author><name>Abonia Sojasingarayar</name><email>aboniaa@gmail.com</email></author><entry><title type="html">How I Passed the GCP Professional Data Engineer Exam</title><link href="http://localhost:4000/blogs/2024-04-09-How-I-Passed-the-GCP-Professional/" rel="alternate" type="text/html" title="How I Passed the GCP Professional Data Engineer Exam" /><published>2024-04-09T00:00:00+02:00</published><updated>2024-04-12T10:28:22+02:00</updated><id>http://localhost:4000/blogs/How-I-Passed-the-GCP-Professional</id><content type="html" xml:base="http://localhost:4000/blogs/2024-04-09-How-I-Passed-the-GCP-Professional/"><![CDATA[<p><strong>Reading_time:</strong> 6 min<br />
   <strong>Tags:</strong> [GCP, Data Engineering, Cloud, Certification]</p>
 <ul class="large-only" id="markdown-toc">
@@ -944,7 +944,201 @@ Learn advanced retrieval techniques to improve the relevancy of retrieved result
 
 <p>I hope you found this compilation of resources on large language models to be beneficial. We have included a variety of courses, books, reading lists, and other valuable resources and frameworks that can assist you in constructing your own impactful applications based on LLMs. Stay tune for another intresting article on LLM.</p>
 
-<p>Keep an eye out for future updates to this list, and stay tuned for another intriguing article on LLM.</p>]]></content><author><name>Abonia Sojasingarayar</name><email>aboniaa@gmail.com</email></author><category term="blogs" /><summary type="html"><![CDATA[Curated list of best courses, books, resources on large language model]]></summary></entry><entry><title type="html">YOLOv8 Fire and Smoke Detection</title><link href="http://localhost:4000/blogs/2023-02-10-YOLOv8-Fire-and-Smoke-Detection/" rel="alternate" type="text/html" title="YOLOv8 Fire and Smoke Detection" /><published>2023-02-10T00:00:00+01:00</published><updated>2024-04-15T19:07:11+02:00</updated><id>http://localhost:4000/blogs/YOLOv8-Fire-and-Smoke-Detection</id><content type="html" xml:base="http://localhost:4000/blogs/2023-02-10-YOLOv8-Fire-and-Smoke-Detection/"><![CDATA[<p><strong>Reading_time:</strong> 6 min<br />
+<p>Keep an eye out for future updates to this list, and stay tuned for another intriguing article on LLM.</p>]]></content><author><name>Abonia Sojasingarayar</name><email>aboniaa@gmail.com</email></author><category term="blogs" /><summary type="html"><![CDATA[Curated list of best courses, books, resources on large language model]]></summary></entry><entry><title type="html">Summarization-with-LangChain:Stuff — Map_reduce — Refine</title><link href="http://localhost:4000/blogs/2023-04-22-Summarization/" rel="alternate" type="text/html" title="Summarization-with-LangChain:Stuff — Map_reduce — Refine" /><published>2023-04-22T00:00:00+02:00</published><updated>2024-04-16T13:54:21+02:00</updated><id>http://localhost:4000/blogs/Summarization</id><content type="html" xml:base="http://localhost:4000/blogs/2023-04-22-Summarization/"><![CDATA[<p><strong><a href="https://youtu.be/w6wOhSThnoo">Link to the complete hands-on tutorial on Summarizer techniques</a></strong></p>
+
+<p><strong>Reading_time:</strong> 7 min<br />
+  <strong>Tags:</strong> [Langchain, LLM, GenAI, Summarizer]</p>
+<ul class="large-only" id="markdown-toc">
+  <li><a href="#summarization-techniques" id="markdown-toc-summarization-techniques">Summarization Techniques</a></li>
+  <li><a href="#stuff-chain" id="markdown-toc-stuff-chain">Stuff Chain</a></li>
+  <li><a href="#map-reduce-method" id="markdown-toc-map-reduce-method">Map-Reduce Method</a></li>
+  <li><a href="#refine-method" id="markdown-toc-refine-method">Refine Method</a></li>
+  <li><a href="#choosing-the-right-technique" id="markdown-toc-choosing-the-right-technique">Choosing the Right Technique</a></li>
+  <li><a href="#thanks-for-reading" id="markdown-toc-thanks-for-reading"><em>Thanks for Reading!</em></a></li>
+</ul>
+<p><strong>Table of Contents:</strong></p>
+<ul>
+  <li><a href="#stuff-chain">Stuff Chain Method</a></li>
+  <li><a href="#map-reduce-method">Map-Reduce Method)</a></li>
+  <li><a href="#refine-method">Refine Method</a></li>
+</ul>
+
+<p>I recently wrapped a tutorial on summarization techniques in LangChain. This article covers the basic usage of document summarization techniques and provides insights into various summarization methods. Additionally, to learn more and to explore how to validate intermediate results from the output of each of these techniques. For those interested in delving deeper into this topic, I invite you to explore the complete and comprehensive tutorial available <strong><a href="https://youtu.be/w6wOhSThnoo">here</a></strong>.</p>
+
+<p>Summarization is a critical aspect of natural language processing (NLP), enabling the condensation of large volumes of text into concise summaries. LangChain, a powerful tool in the NLP domain, offers three distinct summarization techniques: stuff, map_reduce, and refine. Each method has its unique advantages and limitations, making them suitable for different scenarios. This article delves into the details of these techniques, their pros and cons, and the ideal scenarios for their application.</p>
+
+<h2 id="summarization-techniques">Summarization Techniques</h2>
+
+<p><img src="https://cdn-images-1.medium.com/max/3310/0*F6xtU1qhHfVSqQdO.png" alt="Courtesy of langchain" />
+<strong><a href="https://python.langchain.com/docs/use_cases/summarization">Summarization | 🦜️🔗 Langchain</a></strong></p>
+
+<h2 id="stuff-chain">Stuff Chain</h2>
+
+<p>The stuff chain is particularly effective for handling large documents. It works by converting the document into smaller chunks, processing each chunk individually, and then combining the summaries to generate a final summary. This method is ideal for managing huge files and can be facilitated with the help of a recursive character text splitter.</p>
+
+<p><strong>Pros:</strong></p>
+
+<ul>
+  <li>
+    <p>Efficiently handles large documents.</p>
+  </li>
+  <li>
+    <p>Allows for chunk-wise summarization, making it suitable for managing huge files.</p>
+  </li>
+</ul>
+
+<p><strong>Cons:</strong></p>
+
+<ul>
+  <li>LLM context window</li>
+</ul>
+
+<p>Here’s an example of how to implement the stuff chain method:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>from langchain.chains.combine_documents.stuff import StuffDocumentsChain
+from langchain.chains.llm import LLMChain
+from langchain.prompts import PromptTemplate
+
+#Define prompt
+prompt_template = """Write a concise summary of the following:
+"{text}"
+CONCISE SUMMARY:"""
+prompt = PromptTemplate.from_template(prompt_template)
+#Define LLM chain
+llm = ChatOpenAI(temperature=0, model_name="gpt-3.5-turbo-16k")
+llm_chain = LLMChain(llm=llm, prompt=prompt)
+#Define StuffDocumentsChain
+stuff_chain = StuffDocumentsChain(llm_chain=llm_chain, document_variable_name="text")
+docs = loader.load()
+print(stuff_chain.run(docs))
+</code></pre></div></div>
+
+<h2 id="map-reduce-method">Map-Reduce Method</h2>
+
+<p>The Map-Reduce method involves summarizing each document individually (map step) and then combining these summaries into a final summary (reduce step). This approach is more scalable and can handle larger volumes of text.The map_reduce technique is designed for summarizing large documents that exceed the token limit of the language model. It involves dividing the document into chunks, generating summaries for each chunk, and then combining these summaries to create a final summary. This method is efficient for handling large files and significantly reduces processing time.</p>
+
+<p><strong>Pros:</strong></p>
+
+<ul>
+  <li>
+    <p>Effectively handles large documents by dividing them into manageable chunks.</p>
+  </li>
+  <li>
+    <p>Reduces processing time by processing chunks individually.</p>
+  </li>
+</ul>
+
+<p><strong>Cons:</strong></p>
+
+<ul>
+  <li>Requires extra steps in combining individual summaries, which can add complexity to the process.</li>
+</ul>
+
+<p>Here’s an example of how to implement the Map-Reduce method:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>from langchain.chains import MapReduceDocumentsChain, ReduceDocumentsChain
+from langchain_text_splitters import CharacterTextSplitter
+
+# Map
+map_template = """The following is a set of documents
+{docs}
+Based on this list of docs, please identify the main themes 
+Helpful Answer:"""
+map_prompt = PromptTemplate.from_template(map_template)
+map_chain = LLMChain(llm=llm, prompt=map_prompt)
+# Reduce
+reduce_template = """The following is set of summaries:
+{docs}
+Take these and distill it into a final, consolidated summary of the main themes. 
+Helpful Answer:"""
+reduce_prompt = PromptTemplate.from_template(reduce_template)
+reduce_chain = LLMChain(llm=llm, prompt=reduce_prompt)
+# Combine documents by mapping a chain over them, then combining results
+map_reduce_chain = MapReduceDocumentsChain(
+    llm_chain=map_chain,
+    reduce_documents_chain=reduce_documents_chain,
+    document_variable_name="docs",
+    return_intermediate_steps=False,
+)
+text_splitter = CharacterTextSplitter.from_tiktoken_encoder(chunk_size=1000, chunk_overlap=0)
+split_docs = text_splitter.split_documents(docs)
+print(map_reduce_chain.run(split_docs))
+</code></pre></div></div>
+
+<h2 id="refine-method">Refine Method</h2>
+
+<p>The Refine method iteratively updates its answer by looping over the input documents. For each document, it passes all non-document inputs, the current document, and the latest intermediate answer to an LLM chain to get a new answer. This method is useful for refining a summary based on new context.The refine technique is a simpler alternative to the map_reduce technique. It involves generating a summary for the first chunk, combining it with the second chunk, generating another summary, and continuing this process until a final summary is achieved. This method is suitable for large documents but requires less complexity compared to map_reduce.</p>
+
+<p><strong>Pros:</strong></p>
+
+<ul>
+  <li>
+    <p>Simpler than the map_reduce technique.</p>
+  </li>
+  <li>
+    <p>Achieves similar results for large documents with less complexity.</p>
+  </li>
+</ul>
+
+<p><strong>Cons:</strong></p>
+
+<ul>
+  <li>Limited functionality compared to other techniques.</li>
+</ul>
+
+<p>Here’s how you can implement the Refine method:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>from langchain.chains.summarize import load_summarize_chain
+prompt = """
+                  Please provide a summary of the following text.
+                  TEXT: {text}
+                  SUMMARY:
+                  """
+
+question_prompt = PromptTemplate(
+    template=question_prompt_template, input_variables=["text"]
+)
+
+refine_prompt_template = """
+              Write a concise summary of the following text delimited by triple backquotes.
+              Return your response in bullet points which covers the key points of the text.
+              ```{text}```
+              BULLET POINT SUMMARY:
+              """
+
+refine_template = PromptTemplate(
+    template=refine_prompt_template, input_variables=["text"]
+
+# Load refine chain
+chain = load_summarize_chain(
+    llm=llm,
+    chain_type="refine",
+    question_prompt=question_prompt,
+    refine_prompt=refine_prompt,
+    return_intermediate_steps=True,
+    input_key="input_documents",
+    output_key="output_text",
+)
+result = chain({"input_documents": split_docs}, return_only_outputs=True)
+</code></pre></div></div>
+
+<h2 id="choosing-the-right-technique">Choosing the Right Technique</h2>
+
+<p>The choice of summarization technique depends on the specific requirements of the task at hand. For large documents, the map_reduce and refine techniques are recommended due to their ability to handle chunk-wise summarization efficiently. The stuff chain is particularly useful for documents that are too large to be processed in a single go, offering a practical solution for managing huge files.</p>
+
+<p>Each method has its advantages and is suitable for different scenarios. The Stuff method is straightforward but may not scale well with large volumes of text. The Map-Reduce method is more scalable and can handle larger documents but requires more setup. The Refine method is useful for iteratively refining a summary based on new context, making it a good choice for dynamic summarization tasks.</p>
+
+<blockquote>
+  <h1 id="thanks-for-reading"><em>Thanks for Reading!</em></h1>
+</blockquote>
+
+<p>Connect with me on <strong><a href="https://www.linkedin.com/in/aboniasojasingarayar/">Linkedin</a></strong></p>
+
+<p>Find me on <strong><a href="https://github.com/Abonia1">Github</a></strong></p>
+
+<p>Visit my technical channel on <strong><a href="https://www.youtube.com/@AboniaSojasingarayar">Youtube</a></strong></p>
+
+<p>Support: <strong><a href="https://www.buymeacoffee.com/abonia">Buy me a Cofee/Chai</a></strong></p>]]></content><author><name>Abonia Sojasingarayar</name><email>aboniaa@gmail.com</email></author><category term="blogs" /><summary type="html"><![CDATA[I recently wrapped a tutorial on summarization techniques in LangChain. This article covers the basic usage of document summarization techniques and provides insights into various summarization methods. Additionally, to learn more and to explore how to validate intermediate results from the output of each of these techniques.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://cdn-images-1.medium.com/max/3840/1*uDxlmvrPL0X5i4yd8iDGBw.png" /><media:content medium="image" url="https://cdn-images-1.medium.com/max/3840/1*uDxlmvrPL0X5i4yd8iDGBw.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">YOLOv8 Fire and Smoke Detection</title><link href="http://localhost:4000/blogs/2023-02-10-YOLOv8-Fire-and-Smoke-Detection/" rel="alternate" type="text/html" title="YOLOv8 Fire and Smoke Detection" /><published>2023-02-10T00:00:00+01:00</published><updated>2024-04-15T19:07:47+02:00</updated><id>http://localhost:4000/blogs/YOLOv8-Fire-and-Smoke-Detection</id><content type="html" xml:base="http://localhost:4000/blogs/2023-02-10-YOLOv8-Fire-and-Smoke-Detection/"><![CDATA[<p><strong>Reading_time:</strong> 6 min<br />
   <strong>Tags:</strong> [Yolov8, Fireandsmokedetection, Machine Learning, Computer Vision, AI]</p>
 <ul class="large-only" id="markdown-toc">
   <li><a href="#yolov8" id="markdown-toc-yolov8">YOLOv8</a></li>
