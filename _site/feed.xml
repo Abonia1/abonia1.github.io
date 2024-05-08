@@ -1,5 +1,536 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2024-04-21T14:12:47+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Abonia Sojasingarayar</title><subtitle>Holds a Masters degree in Artificial Intelligence and boasts over 7 years of experience. With a robust background in crafting and implementing ML systems across diverse domains, including cybersecurity, banking, transit,cosmetics &amp; hygiene research, and e-commerce.
-</subtitle><author><name>Abonia Sojasingarayar</name><email>aboniaa@gmail.com</email></author><entry><title type="html">How I Passed the GCP Professional Data Engineer Exam</title><link href="http://localhost:4000/blogs/2024-04-09-How-I-Passed-the-GCP-Professional/" rel="alternate" type="text/html" title="How I Passed the GCP Professional Data Engineer Exam" /><published>2024-04-09T00:00:00+02:00</published><updated>2024-04-12T10:28:22+02:00</updated><id>http://localhost:4000/blogs/How-I-Passed-the-GCP-Professional</id><content type="html" xml:base="http://localhost:4000/blogs/2024-04-09-How-I-Passed-the-GCP-Professional/"><![CDATA[<p><strong>Reading_time:</strong> 6 min<br />
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2024-05-08T15:23:33+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Abonia Sojasingarayar</title><subtitle>Holds a Masters degree in Artificial Intelligence and boasts over 7 years of experience. With a robust background in crafting and implementing ML systems across diverse domains, including cybersecurity, banking, transit,cosmetics &amp; hygiene research, and e-commerce.
+</subtitle><author><name>Abonia Sojasingarayar</name><email>aboniaa@gmail.com</email></author><entry><title type="html">YOLO Segmentation Predictions to Labelme and Anylabeling-Compatible JSON</title><link href="http://localhost:4000/blogs/2024-05-08-YOLO-to-Labelme-and-Anylabeling-Compatible-JSON/" rel="alternate" type="text/html" title="YOLO Segmentation Predictions to Labelme and Anylabeling-Compatible JSON" /><published>2024-05-08T00:00:00+02:00</published><updated>2024-05-08T15:23:32+02:00</updated><id>http://localhost:4000/blogs/YOLO-to-Labelme-and-Anylabeling-Compatible-JSON</id><content type="html" xml:base="http://localhost:4000/blogs/2024-05-08-YOLO-to-Labelme-and-Anylabeling-Compatible-JSON/"><![CDATA[<p><strong>Reading_time:</strong> 5 min<br />
+  <strong>Tags:</strong> [YOLO, ,Annotation, LabelMe, AnyLbaeling, ComputerVision, Json]</p>
+<ul class="large-only" id="markdown-toc">
+  <li><a href="#installing-yolo-segment-to-labelme-converter" id="markdown-toc-installing-yolo-segment-to-labelme-converter">Installing YOLO Segment to LabelMe Converter</a></li>
+  <li><a href="#installing-yolo-segment-to-labelme-converter-1" id="markdown-toc-installing-yolo-segment-to-labelme-converter-1">Installing YOLO Segment to LabelMe Converter</a>    <ul>
+      <li><a href="#prerequisites" id="markdown-toc-prerequisites">Prerequisites</a></li>
+      <li><a href="#installation" id="markdown-toc-installation">Installation</a>        <ul>
+          <li><a href="#specifying-a-version" id="markdown-toc-specifying-a-version">Specifying a Version</a></li>
+        </ul>
+      </li>
+      <li><a href="#using-a-virtual-environment" id="markdown-toc-using-a-virtual-environment">Using a Virtual Environment</a>        <ul>
+          <li><a href="#creating-a-virtual-environment-with-venv" id="markdown-toc-creating-a-virtual-environment-with-venv">Creating a Virtual Environment with venv</a></li>
+        </ul>
+      </li>
+      <li><a href="#sample-usage" id="markdown-toc-sample-usage">Sample Usage</a>        <ul>
+          <li><a href="#customizing-the-model-and-confidence-score" id="markdown-toc-customizing-the-model-and-confidence-score">Customizing the Model and Confidence Score</a></li>
+          <li><a href="#run" id="markdown-toc-run">Run</a></li>
+        </ul>
+      </li>
+      <li><a href="#sample-output-in-anylabeling-annotation-tool" id="markdown-toc-sample-output-in-anylabeling-annotation-tool">Sample Output in Anylabeling Annotation Tool</a></li>
+    </ul>
+  </li>
+  <li><a href="#thanks-for-reading" id="markdown-toc-thanks-for-reading"><em>Thanks for Reading!</em></a></li>
+</ul>
+<p><strong>Table of Contents:</strong></p>
+<ul>
+  <li><a href="#using-a-virtual-environment">Setting your environment)</a></li>
+  <li><a href="#sample-usage">Sample Usage</a></li>
+  <li><a href="#sample-output-in-anylabeling-annotation-tool">Sample Output in Annotation tool</a></li>
+</ul>
+
+<h1 id="installing-yolo-segment-to-labelme-converter">Installing YOLO Segment to LabelMe Converter</h1>
+
+<p>I’m excited to announce the release of a new Python package, <strong><a href="https://github.com/Abonia1/yolosegment2labelme">yolosegment2labelme</a></strong>, which is now available on PyPI. This tool is specifically designed to streamline the conversion process of YOLO segmentation masks into a format that’s fully compatible with LabelMe and anylabeling, a widely recognized annotation tool for image segmentation tasks. In this guide, I’ll walk you through the installation process and provide you with a clear understanding of how to utilize this package effectively in your projects.</p>
+
+<p><strong><img src="/assets/img/blog/yolosegment2labelme.png" alt="Source-Image by Author: Github - yolosegment2labelme " /></strong></p>
+
+<h1 id="installing-yolo-segment-to-labelme-converter-1">Installing <a href="https://pypi.org/project/yolosegment2labelme/">YOLO Segment to LabelMe Converter</a></h1>
+
+<p>This guide will walk you through the process of installing the <strong><a href="https://pypi.org/project/yolosegment2labelme/">yolosegment2labelme</a></strong> package, a tool designed to convert YOLO segmentation masks into a format compatible with LabelMe, a popular annotation tool for image segmentation tasks.</p>
+
+<p>The source code for <code class="language-plaintext highlighter-rouge">yolosegment2labelme</code> can be found on <strong><a href="https://github.com/Abonia1/yolosegment2labelme">GitHub</a></strong>, where you can contribute, report issues, or explore the codebase.</p>
+
+<h2 id="prerequisites">Prerequisites</h2>
+
+<p>Before you begin, ensure you have the following prerequisites installed on your system:</p>
+
+<ul>
+  <li>Python 3.x</li>
+  <li>pip (Python package installer)</li>
+</ul>
+
+<h2 id="installation">Installation</h2>
+
+<p>To install the <code class="language-plaintext highlighter-rouge">yolosegment2labelme</code> package, you can use the <code class="language-plaintext highlighter-rouge">pip</code> command. Open your terminal or command prompt and execute the following command:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python <span class="nt">-m</span> pip <span class="nb">install </span>yolosegment2labelme
+</code></pre></div></div>
+
+<p>If you’re using Python 3 and have both Python 2 and Python 3 installed, you might need to use <code class="language-plaintext highlighter-rouge">python3</code> instead:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python3 <span class="nt">-m</span> pip <span class="nb">install </span>yolosegment2labelme
+</code></pre></div></div>
+
+<h3 id="specifying-a-version">Specifying a Version</h3>
+
+<p>If you need a specific version of the package, you can specify it by appending <code class="language-plaintext highlighter-rouge">==&lt;version&gt;</code> to the package name. For example, to install version 0.0.4, you would use:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python <span class="nt">-m</span> pip <span class="nb">install </span><span class="nv">yolosegment2labelme</span><span class="o">==</span>0.0.4
+</code></pre></div></div>
+
+<h2 id="using-a-virtual-environment">Using a Virtual Environment</h2>
+
+<p>It’s recommended to use a virtual environment when installing Python packages to avoid conflicts between package versions. You can create a virtual environment using <code class="language-plaintext highlighter-rouge">venv</code> (included in Python 3.3 and later) or <code class="language-plaintext highlighter-rouge">virtualenv</code>.</p>
+
+<h3 id="creating-a-virtual-environment-with-venv">Creating a Virtual Environment with venv</h3>
+
+<ol>
+  <li>Create a virtual environment:</li>
+</ol>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python3 <span class="nt">-m</span> venv myenv
+</code></pre></div></div>
+
+<ol>
+  <li>Activate the virtual environment:</li>
+</ol>
+
+<ul>
+  <li>On Windows:</li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>myenv<span class="se">\S</span>cripts<span class="se">\a</span>ctivate
+</code></pre></div></div>
+
+<ul>
+  <li>On macOS and Linux:</li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">source </span>myenv/bin/activate
+</code></pre></div></div>
+
+<ol>
+  <li>With the virtual environment activated, install the <code class="language-plaintext highlighter-rouge">yolosegment2labelme</code> package:</li>
+</ol>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python <span class="nt">-m</span> pip <span class="nb">install </span>yolosegment2labelme
+</code></pre></div></div>
+<h2 id="sample-usage">Sample Usage</h2>
+
+<p>To convert segmentation masks from a directory of images using the default model (<code class="language-plaintext highlighter-rouge">yolo8n-seg</code>) and a default confidence score of 0.2, you can use the following command:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python yolosegment2labelme.py <span class="nt">--images</span> ../images
+</code></pre></div></div>
+
+<p>In this example, replace <code class="language-plaintext highlighter-rouge">../images</code> with the path to the directory containing your YOLO segmentation mask images. The script will process all images in the specified directory, applying the default model and confidence score to generate LabelMe-compatible annotations.</p>
+
+<h3 id="customizing-the-model-and-confidence-score">Customizing the Model and Confidence Score</h3>
+
+<p>If you prefer to use a specific YOLO model or your custom fine-tuned model and adjust the confidence score for the predictions, you can do so by specifying the <code class="language-plaintext highlighter-rouge">--model</code> and <code class="language-plaintext highlighter-rouge">--conf</code> options:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python yolosegment2labelme.py <span class="nt">--model</span> yolov5n-seg.pt <span class="nt">--images</span> ../images <span class="nt">--conf</span> 0.3
+</code></pre></div></div>
+
+<p>In this command:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">--model yolov8n-seg.pt</code> specifies the path to the YOLO model file you wish to use. Replace <code class="language-plaintext highlighter-rouge">yolov8n-seg.pt</code> with the path to your desired model file.</li>
+  <li><code class="language-plaintext highlighter-rouge">--images ../images</code> indicates the directory containing the images you want to process. Replace <code class="language-plaintext highlighter-rouge">../images</code> with the actual path to your image directory.</li>
+  <li><code class="language-plaintext highlighter-rouge">--conf 0.3</code> sets the confidence score threshold for the predictions. Adjust this value according to your needs; higher values require more confident predictions to be considered.</li>
+</ul>
+
+<h3 id="run">Run</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">!</span><span class="n">yolosegment2labelme</span> <span class="o">--</span><span class="n">model</span> <span class="n">yolov8n</span><span class="o">-</span><span class="n">seg</span><span class="p">.</span><span class="n">pt</span> <span class="o">--</span><span class="n">images</span> <span class="p">..</span><span class="o">/</span><span class="n">images</span>  <span class="o">--</span><span class="n">conf</span> <span class="mf">0.3</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>image 1/10 /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/1.jpg: 448x640 1 bear, 118.4ms
+image 2/10 /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/10.jpg: 448x640 1 cup, 1 laptop, 1 cell phone, 2 books, 93.8ms
+image 3/10 /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/2.jpg: 640x448 1 dog, 83.3ms
+image 4/10 /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/3.jpg: 480x640 4 chairs, 97.9ms
+image 5/10 /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/4.jpg: 544x640 2 persons, 2 sports balls, 128.5ms
+image 6/10 /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/5.jpg: 448x640 4 persons, 1 sports ball, 3 kites, 81.2ms
+image 7/10 /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/6.jpg: 448x640 1 bird, 85.1ms
+image 8/10 /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/7.jpg: 416x640 1 person, 1 dog, 84.8ms
+image 9/10 /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg: 448x640 11 persons, 5 cars, 4 traffic lights, 88.8ms
+image 10/10 /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/9.jpg: 448x640 1 person, 79.8ms
+Speed: 1.5ms preprocess, 94.1ms inference, 78.1ms postprocess per image at shape (1, 3, 448, 640)
+Results saved to [1mruns/segment/predict7[0m
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/1.jpg with label bear
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/10.jpg with label cup
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/10.jpg with label laptop
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/10.jpg with label book
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/10.jpg with label cell phone
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/10.jpg with label book
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/2.jpg with label dog
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/3.jpg with label chair
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/3.jpg with label chair
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/3.jpg with label chair
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/3.jpg with label chair
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/4.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/4.jpg with label sports ball
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/4.jpg with label sports ball
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/4.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/5.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/5.jpg with label sports ball
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/5.jpg with label kite
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/5.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/5.jpg with label kite
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/5.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/5.jpg with label kite
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/5.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/6.jpg with label bird
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/7.jpg with label dog
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/7.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label car
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label car
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label car
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label traffic light
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label traffic light
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label traffic light
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label car
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label car
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label traffic light
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/9.jpg with label person
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">!</span><span class="n">python</span> <span class="n">yolosegment2labelme</span><span class="p">.</span><span class="n">py</span> <span class="o">--</span><span class="n">images</span> <span class="p">..</span><span class="o">/</span><span class="n">images</span> 
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>image 1/10 /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/1.jpg: 448x640 1 bear, 111.5ms
+image 2/10 /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/10.jpg: 448x640 1 cup, 1 laptop, 1 cell phone, 5 books, 149.6ms
+image 3/10 /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/2.jpg: 640x448 1 dog, 92.1ms
+image 4/10 /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/3.jpg: 480x640 4 chairs, 101.8ms
+image 5/10 /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/4.jpg: 544x640 2 persons, 2 sports balls, 119.7ms
+image 6/10 /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/5.jpg: 448x640 6 persons, 1 sports ball, 3 kites, 91.8ms
+image 7/10 /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/6.jpg: 448x640 1 bird, 83.4ms
+image 8/10 /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/7.jpg: 416x640 1 person, 1 dog, 78.1ms
+image 9/10 /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg: 448x640 19 persons, 7 cars, 4 traffic lights, 85.0ms
+image 10/10 /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/9.jpg: 448x640 1 person, 1 tv, 88.7ms
+Speed: 1.1ms preprocess, 100.2ms inference, 72.5ms postprocess per image at shape (1, 3, 448, 640)
+Results saved to [1mruns/segment/predict4[0m
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/1.jpg with label bear
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/10.jpg with label cup
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/10.jpg with label laptop
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/10.jpg with label book
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/10.jpg with label cell phone
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/10.jpg with label book
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/10.jpg with label book
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/10.jpg with label book
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/10.jpg with label book
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/2.jpg with label dog
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/3.jpg with label chair
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/3.jpg with label chair
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/3.jpg with label chair
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/3.jpg with label chair
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/4.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/4.jpg with label sports ball
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/4.jpg with label sports ball
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/4.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/5.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/5.jpg with label sports ball
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/5.jpg with label kite
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/5.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/5.jpg with label kite
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/5.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/5.jpg with label kite
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/5.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/5.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/5.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/6.jpg with label bird
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/7.jpg with label dog
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/7.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label car
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label car
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label car
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label traffic light
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label traffic light
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label traffic light
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label car
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label car
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label traffic light
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label car
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label car
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/9.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/9.jpg with label tv
+</code></pre></div></div>
+
+<div align="center">
+    📦 <a href="https://github.com/Abonia1/yolosegment2labelme/blob/main/yolosegment2labelme/example.ipynb" target="_blank"><b>Sample Notebook</b></a>
+</div>
+
+<h2 id="sample-output-in-anylabeling-annotation-tool">Sample Output in Anylabeling Annotation Tool</h2>
+
+<p>Below are examples of image annotations created in json using yolosegment2labelme and viewed in the <a href="https://github.com/vietanhdev/anylabeling">Anylabeling</a> annotation tool:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Sample Image 1</th>
+      <th>Sample Image 2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="https://raw.githubusercontent.com/Abonia1/yolosegment2labelme/main/images/labelme_test/sample1.png" alt="Sample Image 1" /></td>
+      <td><img src="https://raw.githubusercontent.com/Abonia1/yolosegment2labelme/main/images/labelme_test/sample2.png" alt="Sample Image 2" /></td>
+    </tr>
+    <tr>
+      <td>Sample Annotation for Image 1</td>
+      <td>Sample Annotation for Image 2</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>Sample Image 3</th>
+      <th>Sample Image 4</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="https://raw.githubusercontent.com/Abonia1/yolosegment2labelme/main/images/labelme_test/sample3.png" alt="Sample Image 3" /></td>
+      <td><img src="https://raw.githubusercontent.com/Abonia1/yolosegment2labelme/main/images/labelme_test/sample4.png" alt="Sample Image 4" /></td>
+    </tr>
+    <tr>
+      <td>Sample Annotation for Image 3</td>
+      <td>Sample Annotation for Image 4</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>By following these steps, you should now have the <code class="language-plaintext highlighter-rouge">yolosegment2labelme</code> package installed on your system, ready to convert YOLO segmentation masks into LabelMe-compatible formats.Hope this tool will be a helpful asset for researchers and developers working with image segmentation tasks, streamlining the process of preparing data for further analysis or model training.Stay tuned for our upcoming article! Until then, catch you in another exciting article!</p>
+
+<hr />
+<h1 id="thanks-for-reading"><em>Thanks for Reading!</em></h1>
+
+<p>Connect with me on <strong><a href="https://www.linkedin.com/in/aboniasojasingarayar/">Linkedin</a></strong></p>
+
+<p>Find me on <strong><a href="https://github.com/Abonia1">Github</a></strong></p>
+
+<p>Visit my technical channel on <strong><a href="https://www.youtube.com/@AboniaSojasingarayar">Youtube</a></strong></p>
+
+<p>Support: <strong><a href="https://www.buymeacoffee.com/abonia">Buy me a Cofee/Chai</a></strong></p>]]></content><author><name>Abonia Sojasingarayar</name><email>aboniaa@gmail.com</email></author><category term="blogs" /><summary type="html"><![CDATA[yolosegment2labelme - a Python package that allows you to convert YOLO segmentation prediction results to LabelMe and anylabeling JSON format. This tool facilitates the annotation easy.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://raw.githubusercontent.com/Abonia1/yolosegment2labelme/main/images/labelme_test/logo.png" /><media:content medium="image" url="https://raw.githubusercontent.com/Abonia1/yolosegment2labelme/main/images/labelme_test/logo.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Summarization-with-LangChain:Stuff — Map_reduce — Refine</title><link href="http://localhost:4000/blogs/2024-04-22-Summarization-with-LangChain/" rel="alternate" type="text/html" title="Summarization-with-LangChain:Stuff — Map_reduce — Refine" /><published>2024-04-22T00:00:00+02:00</published><updated>2024-04-16T13:58:55+02:00</updated><id>http://localhost:4000/blogs/Summarization-with-LangChain</id><content type="html" xml:base="http://localhost:4000/blogs/2024-04-22-Summarization-with-LangChain/"><![CDATA[<p><strong><a href="https://youtu.be/w6wOhSThnoo">Link to the complete hands-on tutorial on Summarizer techniques</a></strong></p>
+
+<p><strong>Reading_time:</strong> 7 min<br />
+  <strong>Tags:</strong> [Langchain, LLM, GenAI, Summarizer]</p>
+<ul class="large-only" id="markdown-toc">
+  <li><a href="#summarization-techniques" id="markdown-toc-summarization-techniques">Summarization Techniques</a></li>
+  <li><a href="#stuff-chain" id="markdown-toc-stuff-chain">Stuff Chain</a></li>
+  <li><a href="#map-reduce-method" id="markdown-toc-map-reduce-method">Map-Reduce Method</a></li>
+  <li><a href="#refine-method" id="markdown-toc-refine-method">Refine Method</a></li>
+  <li><a href="#choosing-the-right-technique" id="markdown-toc-choosing-the-right-technique">Choosing the Right Technique</a></li>
+  <li><a href="#thanks-for-reading" id="markdown-toc-thanks-for-reading"><em>Thanks for Reading!</em></a></li>
+</ul>
+<p><strong>Table of Contents:</strong></p>
+<ul>
+  <li><a href="#stuff-chain">Stuff Chain Method</a></li>
+  <li><a href="#map-reduce-method">Map-Reduce Method)</a></li>
+  <li><a href="#refine-method">Refine Method</a></li>
+</ul>
+
+<p>I recently wrapped a tutorial on summarization techniques in LangChain. This article covers the basic usage of document summarization techniques and provides insights into various summarization methods. Additionally, to learn more and to explore how to validate intermediate results from the output of each of these techniques. For those interested in delving deeper into this topic, I invite you to explore the complete and comprehensive tutorial available <strong><a href="https://youtu.be/w6wOhSThnoo">here</a></strong>.</p>
+
+<p>Summarization is a critical aspect of natural language processing (NLP), enabling the condensation of large volumes of text into concise summaries. LangChain, a powerful tool in the NLP domain, offers three distinct summarization techniques: stuff, map_reduce, and refine. Each method has its unique advantages and limitations, making them suitable for different scenarios. This article delves into the details of these techniques, their pros and cons, and the ideal scenarios for their application.</p>
+
+<p>Complete implementation code and data used in the tutorial available in the below <strong><a href="https://github.com/Abonia1/Langchain-Summarizer">repository</a></strong>.</p>
+
+<h2 id="summarization-techniques">Summarization Techniques</h2>
+
+<p><img src="https://cdn-images-1.medium.com/max/3310/0*F6xtU1qhHfVSqQdO.png" alt="Courtesy of langchain" />
+<strong><a href="https://python.langchain.com/docs/use_cases/summarization">Summarization | 🦜️🔗 Langchain</a></strong></p>
+
+<h2 id="stuff-chain">Stuff Chain</h2>
+
+<p>The stuff chain is particularly effective for handling large documents. It works by converting the document into smaller chunks, processing each chunk individually, and then combining the summaries to generate a final summary. This method is ideal for managing huge files and can be facilitated with the help of a recursive character text splitter.</p>
+
+<p><strong>Pros:</strong></p>
+
+<ul>
+  <li>
+    <p>Efficiently handles large documents.</p>
+  </li>
+  <li>
+    <p>Allows for chunk-wise summarization, making it suitable for managing huge files.</p>
+  </li>
+</ul>
+
+<p><strong>Cons:</strong></p>
+
+<ul>
+  <li>LLM context window</li>
+</ul>
+
+<p>Here’s an example of how to implement the stuff chain method:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>from langchain.chains.combine_documents.stuff import StuffDocumentsChain
+from langchain.chains.llm import LLMChain
+from langchain.prompts import PromptTemplate
+
+#Define prompt
+prompt_template = """Write a concise summary of the following:
+"{text}"
+CONCISE SUMMARY:"""
+prompt = PromptTemplate.from_template(prompt_template)
+#Define LLM chain
+llm = ChatOpenAI(temperature=0, model_name="gpt-3.5-turbo-16k")
+llm_chain = LLMChain(llm=llm, prompt=prompt)
+#Define StuffDocumentsChain
+stuff_chain = StuffDocumentsChain(llm_chain=llm_chain, document_variable_name="text")
+docs = loader.load()
+print(stuff_chain.run(docs))
+</code></pre></div></div>
+
+<h2 id="map-reduce-method">Map-Reduce Method</h2>
+
+<p>The Map-Reduce method involves summarizing each document individually (map step) and then combining these summaries into a final summary (reduce step). This approach is more scalable and can handle larger volumes of text.The map_reduce technique is designed for summarizing large documents that exceed the token limit of the language model. It involves dividing the document into chunks, generating summaries for each chunk, and then combining these summaries to create a final summary. This method is efficient for handling large files and significantly reduces processing time.</p>
+
+<p><strong>Pros:</strong></p>
+
+<ul>
+  <li>
+    <p>Effectively handles large documents by dividing them into manageable chunks.</p>
+  </li>
+  <li>
+    <p>Reduces processing time by processing chunks individually.</p>
+  </li>
+</ul>
+
+<p><strong>Cons:</strong></p>
+
+<ul>
+  <li>Requires extra steps in combining individual summaries, which can add complexity to the process.</li>
+</ul>
+
+<p>Here’s an example of how to implement the Map-Reduce method:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>from langchain.chains import MapReduceDocumentsChain, ReduceDocumentsChain
+from langchain_text_splitters import CharacterTextSplitter
+
+# Map
+map_template = """The following is a set of documents
+{docs}
+Based on this list of docs, please identify the main themes 
+Helpful Answer:"""
+map_prompt = PromptTemplate.from_template(map_template)
+map_chain = LLMChain(llm=llm, prompt=map_prompt)
+# Reduce
+reduce_template = """The following is set of summaries:
+{docs}
+Take these and distill it into a final, consolidated summary of the main themes. 
+Helpful Answer:"""
+reduce_prompt = PromptTemplate.from_template(reduce_template)
+reduce_chain = LLMChain(llm=llm, prompt=reduce_prompt)
+# Combine documents by mapping a chain over them, then combining results
+map_reduce_chain = MapReduceDocumentsChain(
+    llm_chain=map_chain,
+    reduce_documents_chain=reduce_documents_chain,
+    document_variable_name="docs",
+    return_intermediate_steps=False,
+)
+text_splitter = CharacterTextSplitter.from_tiktoken_encoder(chunk_size=1000, chunk_overlap=0)
+split_docs = text_splitter.split_documents(docs)
+print(map_reduce_chain.run(split_docs))
+</code></pre></div></div>
+
+<h2 id="refine-method">Refine Method</h2>
+
+<p>The Refine method iteratively updates its answer by looping over the input documents. For each document, it passes all non-document inputs, the current document, and the latest intermediate answer to an LLM chain to get a new answer. This method is useful for refining a summary based on new context.The refine technique is a simpler alternative to the map_reduce technique. It involves generating a summary for the first chunk, combining it with the second chunk, generating another summary, and continuing this process until a final summary is achieved. This method is suitable for large documents but requires less complexity compared to map_reduce.</p>
+
+<p><strong>Pros:</strong></p>
+
+<ul>
+  <li>
+    <p>Simpler than the map_reduce technique.</p>
+  </li>
+  <li>
+    <p>Achieves similar results for large documents with less complexity.</p>
+  </li>
+</ul>
+
+<p><strong>Cons:</strong></p>
+
+<ul>
+  <li>Limited functionality compared to other techniques.</li>
+</ul>
+
+<p>Here’s how you can implement the Refine method:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>from langchain.chains.summarize import load_summarize_chain
+prompt = """
+                  Please provide a summary of the following text.
+                  TEXT: {text}
+                  SUMMARY:
+                  """
+
+question_prompt = PromptTemplate(
+    template=question_prompt_template, input_variables=["text"]
+)
+
+refine_prompt_template = """
+              Write a concise summary of the following text delimited by triple backquotes.
+              Return your response in bullet points which covers the key points of the text.
+              ```{text}```
+              BULLET POINT SUMMARY:
+              """
+
+refine_template = PromptTemplate(
+    template=refine_prompt_template, input_variables=["text"]
+
+# Load refine chain
+chain = load_summarize_chain(
+    llm=llm,
+    chain_type="refine",
+    question_prompt=question_prompt,
+    refine_prompt=refine_prompt,
+    return_intermediate_steps=True,
+    input_key="input_documents",
+    output_key="output_text",
+)
+result = chain({"input_documents": split_docs}, return_only_outputs=True)
+</code></pre></div></div>
+
+<h2 id="choosing-the-right-technique">Choosing the Right Technique</h2>
+
+<p>The choice of summarization technique depends on the specific requirements of the task at hand. For large documents, the map_reduce and refine techniques are recommended due to their ability to handle chunk-wise summarization efficiently. The stuff chain is particularly useful for documents that are too large to be processed in a single go, offering a practical solution for managing huge files.</p>
+
+<p>Each method has its advantages and is suitable for different scenarios. The Stuff method is straightforward but may not scale well with large volumes of text. The Map-Reduce method is more scalable and can handle larger documents but requires more setup. The Refine method is useful for iteratively refining a summary based on new context, making it a good choice for dynamic summarization tasks.</p>
+
+<blockquote>
+  <h1 id="thanks-for-reading"><em>Thanks for Reading!</em></h1>
+</blockquote>
+
+<p>Connect with me on <strong><a href="https://www.linkedin.com/in/aboniasojasingarayar/">Linkedin</a></strong></p>
+
+<p>Find me on <strong><a href="https://github.com/Abonia1">Github</a></strong></p>
+
+<p>Visit my technical channel on <strong><a href="https://www.youtube.com/@AboniaSojasingarayar">Youtube</a></strong></p>
+
+<p>Support: <strong><a href="https://www.buymeacoffee.com/abonia">Buy me a Cofee/Chai</a></strong></p>]]></content><author><name>Abonia Sojasingarayar</name><email>aboniaa@gmail.com</email></author><category term="blogs" /><summary type="html"><![CDATA[I recently wrapped a tutorial on summarization techniques in LangChain. This article covers the basic usage of document summarization techniques and provides insights into various summarization methods. Additionally, to learn more and to explore how to validate intermediate results from the output of each of these techniques.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://cdn-images-1.medium.com/max/3840/1*uDxlmvrPL0X5i4yd8iDGBw.png" /><media:content medium="image" url="https://cdn-images-1.medium.com/max/3840/1*uDxlmvrPL0X5i4yd8iDGBw.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">How I Passed the GCP Professional Data Engineer Exam</title><link href="http://localhost:4000/blogs/2024-04-09-How-I-Passed-the-GCP-Professional/" rel="alternate" type="text/html" title="How I Passed the GCP Professional Data Engineer Exam" /><published>2024-04-09T00:00:00+02:00</published><updated>2024-04-12T10:28:22+02:00</updated><id>http://localhost:4000/blogs/How-I-Passed-the-GCP-Professional</id><content type="html" xml:base="http://localhost:4000/blogs/2024-04-09-How-I-Passed-the-GCP-Professional/"><![CDATA[<p><strong>Reading_time:</strong> 6 min<br />
   <strong>Tags:</strong> [GCP, Data Engineering, Cloud, Certification]</p>
 <ul class="large-only" id="markdown-toc">
   <li><a href="#1-basic-concept-from-udemy-courses" id="markdown-toc-1-basic-concept-from-udemy-courses">1. Basic concept from udemy courses</a></li>
@@ -944,203 +1475,7 @@ Learn advanced retrieval techniques to improve the relevancy of retrieved result
 
 <p>I hope you found this compilation of resources on large language models to be beneficial. We have included a variety of courses, books, reading lists, and other valuable resources and frameworks that can assist you in constructing your own impactful applications based on LLMs. Stay tune for another intresting article on LLM.</p>
 
-<p>Keep an eye out for future updates to this list, and stay tuned for another intriguing article on LLM.</p>]]></content><author><name>Abonia Sojasingarayar</name><email>aboniaa@gmail.com</email></author><category term="blogs" /><summary type="html"><![CDATA[Curated list of best courses, books, resources on large language model]]></summary></entry><entry><title type="html">Summarization-with-LangChain:Stuff — Map_reduce — Refine</title><link href="http://localhost:4000/blogs/2023-04-22-Summarization-with-LangChain/" rel="alternate" type="text/html" title="Summarization-with-LangChain:Stuff — Map_reduce — Refine" /><published>2023-04-22T00:00:00+02:00</published><updated>2024-04-16T13:58:55+02:00</updated><id>http://localhost:4000/blogs/Summarization-with-LangChain</id><content type="html" xml:base="http://localhost:4000/blogs/2023-04-22-Summarization-with-LangChain/"><![CDATA[<p><strong><a href="https://youtu.be/w6wOhSThnoo">Link to the complete hands-on tutorial on Summarizer techniques</a></strong></p>
-
-<p><strong>Reading_time:</strong> 7 min<br />
-  <strong>Tags:</strong> [Langchain, LLM, GenAI, Summarizer]</p>
-<ul class="large-only" id="markdown-toc">
-  <li><a href="#summarization-techniques" id="markdown-toc-summarization-techniques">Summarization Techniques</a></li>
-  <li><a href="#stuff-chain" id="markdown-toc-stuff-chain">Stuff Chain</a></li>
-  <li><a href="#map-reduce-method" id="markdown-toc-map-reduce-method">Map-Reduce Method</a></li>
-  <li><a href="#refine-method" id="markdown-toc-refine-method">Refine Method</a></li>
-  <li><a href="#choosing-the-right-technique" id="markdown-toc-choosing-the-right-technique">Choosing the Right Technique</a></li>
-  <li><a href="#thanks-for-reading" id="markdown-toc-thanks-for-reading"><em>Thanks for Reading!</em></a></li>
-</ul>
-<p><strong>Table of Contents:</strong></p>
-<ul>
-  <li><a href="#stuff-chain">Stuff Chain Method</a></li>
-  <li><a href="#map-reduce-method">Map-Reduce Method)</a></li>
-  <li><a href="#refine-method">Refine Method</a></li>
-</ul>
-
-<p>I recently wrapped a tutorial on summarization techniques in LangChain. This article covers the basic usage of document summarization techniques and provides insights into various summarization methods. Additionally, to learn more and to explore how to validate intermediate results from the output of each of these techniques. For those interested in delving deeper into this topic, I invite you to explore the complete and comprehensive tutorial available <strong><a href="https://youtu.be/w6wOhSThnoo">here</a></strong>.</p>
-
-<p>Summarization is a critical aspect of natural language processing (NLP), enabling the condensation of large volumes of text into concise summaries. LangChain, a powerful tool in the NLP domain, offers three distinct summarization techniques: stuff, map_reduce, and refine. Each method has its unique advantages and limitations, making them suitable for different scenarios. This article delves into the details of these techniques, their pros and cons, and the ideal scenarios for their application.</p>
-
-<p>Complete implementation code and data used in the tutorial available in the below <strong><a href="https://github.com/Abonia1/Langchain-Summarizer">repository</a></strong>.</p>
-
-<h2 id="summarization-techniques">Summarization Techniques</h2>
-
-<p><img src="https://cdn-images-1.medium.com/max/3310/0*F6xtU1qhHfVSqQdO.png" alt="Courtesy of langchain" />
-<strong><a href="https://python.langchain.com/docs/use_cases/summarization">Summarization | 🦜️🔗 Langchain</a></strong></p>
-
-<h2 id="stuff-chain">Stuff Chain</h2>
-
-<p>The stuff chain is particularly effective for handling large documents. It works by converting the document into smaller chunks, processing each chunk individually, and then combining the summaries to generate a final summary. This method is ideal for managing huge files and can be facilitated with the help of a recursive character text splitter.</p>
-
-<p><strong>Pros:</strong></p>
-
-<ul>
-  <li>
-    <p>Efficiently handles large documents.</p>
-  </li>
-  <li>
-    <p>Allows for chunk-wise summarization, making it suitable for managing huge files.</p>
-  </li>
-</ul>
-
-<p><strong>Cons:</strong></p>
-
-<ul>
-  <li>LLM context window</li>
-</ul>
-
-<p>Here’s an example of how to implement the stuff chain method:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>from langchain.chains.combine_documents.stuff import StuffDocumentsChain
-from langchain.chains.llm import LLMChain
-from langchain.prompts import PromptTemplate
-
-#Define prompt
-prompt_template = """Write a concise summary of the following:
-"{text}"
-CONCISE SUMMARY:"""
-prompt = PromptTemplate.from_template(prompt_template)
-#Define LLM chain
-llm = ChatOpenAI(temperature=0, model_name="gpt-3.5-turbo-16k")
-llm_chain = LLMChain(llm=llm, prompt=prompt)
-#Define StuffDocumentsChain
-stuff_chain = StuffDocumentsChain(llm_chain=llm_chain, document_variable_name="text")
-docs = loader.load()
-print(stuff_chain.run(docs))
-</code></pre></div></div>
-
-<h2 id="map-reduce-method">Map-Reduce Method</h2>
-
-<p>The Map-Reduce method involves summarizing each document individually (map step) and then combining these summaries into a final summary (reduce step). This approach is more scalable and can handle larger volumes of text.The map_reduce technique is designed for summarizing large documents that exceed the token limit of the language model. It involves dividing the document into chunks, generating summaries for each chunk, and then combining these summaries to create a final summary. This method is efficient for handling large files and significantly reduces processing time.</p>
-
-<p><strong>Pros:</strong></p>
-
-<ul>
-  <li>
-    <p>Effectively handles large documents by dividing them into manageable chunks.</p>
-  </li>
-  <li>
-    <p>Reduces processing time by processing chunks individually.</p>
-  </li>
-</ul>
-
-<p><strong>Cons:</strong></p>
-
-<ul>
-  <li>Requires extra steps in combining individual summaries, which can add complexity to the process.</li>
-</ul>
-
-<p>Here’s an example of how to implement the Map-Reduce method:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>from langchain.chains import MapReduceDocumentsChain, ReduceDocumentsChain
-from langchain_text_splitters import CharacterTextSplitter
-
-# Map
-map_template = """The following is a set of documents
-{docs}
-Based on this list of docs, please identify the main themes 
-Helpful Answer:"""
-map_prompt = PromptTemplate.from_template(map_template)
-map_chain = LLMChain(llm=llm, prompt=map_prompt)
-# Reduce
-reduce_template = """The following is set of summaries:
-{docs}
-Take these and distill it into a final, consolidated summary of the main themes. 
-Helpful Answer:"""
-reduce_prompt = PromptTemplate.from_template(reduce_template)
-reduce_chain = LLMChain(llm=llm, prompt=reduce_prompt)
-# Combine documents by mapping a chain over them, then combining results
-map_reduce_chain = MapReduceDocumentsChain(
-    llm_chain=map_chain,
-    reduce_documents_chain=reduce_documents_chain,
-    document_variable_name="docs",
-    return_intermediate_steps=False,
-)
-text_splitter = CharacterTextSplitter.from_tiktoken_encoder(chunk_size=1000, chunk_overlap=0)
-split_docs = text_splitter.split_documents(docs)
-print(map_reduce_chain.run(split_docs))
-</code></pre></div></div>
-
-<h2 id="refine-method">Refine Method</h2>
-
-<p>The Refine method iteratively updates its answer by looping over the input documents. For each document, it passes all non-document inputs, the current document, and the latest intermediate answer to an LLM chain to get a new answer. This method is useful for refining a summary based on new context.The refine technique is a simpler alternative to the map_reduce technique. It involves generating a summary for the first chunk, combining it with the second chunk, generating another summary, and continuing this process until a final summary is achieved. This method is suitable for large documents but requires less complexity compared to map_reduce.</p>
-
-<p><strong>Pros:</strong></p>
-
-<ul>
-  <li>
-    <p>Simpler than the map_reduce technique.</p>
-  </li>
-  <li>
-    <p>Achieves similar results for large documents with less complexity.</p>
-  </li>
-</ul>
-
-<p><strong>Cons:</strong></p>
-
-<ul>
-  <li>Limited functionality compared to other techniques.</li>
-</ul>
-
-<p>Here’s how you can implement the Refine method:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>from langchain.chains.summarize import load_summarize_chain
-prompt = """
-                  Please provide a summary of the following text.
-                  TEXT: {text}
-                  SUMMARY:
-                  """
-
-question_prompt = PromptTemplate(
-    template=question_prompt_template, input_variables=["text"]
-)
-
-refine_prompt_template = """
-              Write a concise summary of the following text delimited by triple backquotes.
-              Return your response in bullet points which covers the key points of the text.
-              ```{text}```
-              BULLET POINT SUMMARY:
-              """
-
-refine_template = PromptTemplate(
-    template=refine_prompt_template, input_variables=["text"]
-
-# Load refine chain
-chain = load_summarize_chain(
-    llm=llm,
-    chain_type="refine",
-    question_prompt=question_prompt,
-    refine_prompt=refine_prompt,
-    return_intermediate_steps=True,
-    input_key="input_documents",
-    output_key="output_text",
-)
-result = chain({"input_documents": split_docs}, return_only_outputs=True)
-</code></pre></div></div>
-
-<h2 id="choosing-the-right-technique">Choosing the Right Technique</h2>
-
-<p>The choice of summarization technique depends on the specific requirements of the task at hand. For large documents, the map_reduce and refine techniques are recommended due to their ability to handle chunk-wise summarization efficiently. The stuff chain is particularly useful for documents that are too large to be processed in a single go, offering a practical solution for managing huge files.</p>
-
-<p>Each method has its advantages and is suitable for different scenarios. The Stuff method is straightforward but may not scale well with large volumes of text. The Map-Reduce method is more scalable and can handle larger documents but requires more setup. The Refine method is useful for iteratively refining a summary based on new context, making it a good choice for dynamic summarization tasks.</p>
-
-<blockquote>
-  <h1 id="thanks-for-reading"><em>Thanks for Reading!</em></h1>
-</blockquote>
-
-<p>Connect with me on <strong><a href="https://www.linkedin.com/in/aboniasojasingarayar/">Linkedin</a></strong></p>
-
-<p>Find me on <strong><a href="https://github.com/Abonia1">Github</a></strong></p>
-
-<p>Visit my technical channel on <strong><a href="https://www.youtube.com/@AboniaSojasingarayar">Youtube</a></strong></p>
-
-<p>Support: <strong><a href="https://www.buymeacoffee.com/abonia">Buy me a Cofee/Chai</a></strong></p>]]></content><author><name>Abonia Sojasingarayar</name><email>aboniaa@gmail.com</email></author><category term="blogs" /><summary type="html"><![CDATA[I recently wrapped a tutorial on summarization techniques in LangChain. This article covers the basic usage of document summarization techniques and provides insights into various summarization methods. Additionally, to learn more and to explore how to validate intermediate results from the output of each of these techniques.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://cdn-images-1.medium.com/max/3840/1*uDxlmvrPL0X5i4yd8iDGBw.png" /><media:content medium="image" url="https://cdn-images-1.medium.com/max/3840/1*uDxlmvrPL0X5i4yd8iDGBw.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">YOLOv8 Fire and Smoke Detection</title><link href="http://localhost:4000/blogs/2023-02-10-YOLOv8-Fire-and-Smoke-Detection/" rel="alternate" type="text/html" title="YOLOv8 Fire and Smoke Detection" /><published>2023-02-10T00:00:00+01:00</published><updated>2024-04-15T19:07:47+02:00</updated><id>http://localhost:4000/blogs/YOLOv8-Fire-and-Smoke-Detection</id><content type="html" xml:base="http://localhost:4000/blogs/2023-02-10-YOLOv8-Fire-and-Smoke-Detection/"><![CDATA[<p><strong>Reading_time:</strong> 6 min<br />
+<p>Keep an eye out for future updates to this list, and stay tuned for another intriguing article on LLM.</p>]]></content><author><name>Abonia Sojasingarayar</name><email>aboniaa@gmail.com</email></author><category term="blogs" /><summary type="html"><![CDATA[Curated list of best courses, books, resources on large language model]]></summary></entry><entry><title type="html">YOLOv8 Fire and Smoke Detection</title><link href="http://localhost:4000/blogs/2023-02-10-YOLOv8-Fire-and-Smoke-Detection/" rel="alternate" type="text/html" title="YOLOv8 Fire and Smoke Detection" /><published>2023-02-10T00:00:00+01:00</published><updated>2024-04-15T19:07:47+02:00</updated><id>http://localhost:4000/blogs/YOLOv8-Fire-and-Smoke-Detection</id><content type="html" xml:base="http://localhost:4000/blogs/2023-02-10-YOLOv8-Fire-and-Smoke-Detection/"><![CDATA[<p><strong>Reading_time:</strong> 6 min<br />
   <strong>Tags:</strong> [Yolov8, Fireandsmokedetection, Machine Learning, Computer Vision, AI]</p>
 <ul class="large-only" id="markdown-toc">
   <li><a href="#yolov8" id="markdown-toc-yolov8">YOLOv8</a></li>

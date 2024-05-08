@@ -1,0 +1,1196 @@
+<!DOCTYPE html>
+<html lang="en"><!--
+ __  __                __                                     __
+/\ \/\ \              /\ \             __                    /\ \
+\ \ \_\ \   __  __    \_\ \      __   /\_\      __       ___ \ \ \/'\
+ \ \  _  \ /\ \/\ \   /'_` \   /'__`\ \/\ \   /'__`\    /'___\\ \ , <
+  \ \ \ \ \\ \ \_\ \ /\ \L\ \ /\  __/  \ \ \ /\ \L\.\_ /\ \__/ \ \ \\`\
+   \ \_\ \_\\/`____ \\ \___,_\\ \____\ _\ \ \\ \__/.\_\\ \____\ \ \_\ \_\
+    \/_/\/_/ `/___/> \\/__,_ / \/____//\ \_\ \\/__/\/_/ \/____/  \/_/\/_/
+                /\___/                \ \____/
+                \/__/                  \/___/
+
+Powered by Hydejack v9.1.6 <https://hydejack.com/>
+-->
+
+
+
+
+
+
+
+<head>
+  
+
+
+
+
+
+
+  
+    
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>YOLO Segmentation Predictions to Labelme and Anylabeling-Compatible JSON | Abonia Sojasingarayar</title>
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="YOLO Segmentation Predictions to Labelme and Anylabeling-Compatible JSON" />
+<meta name="author" content="Abonia Sojasingarayar" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="yolosegment2labelme - a Python package that allows you to convert YOLO segmentation prediction results to LabelMe and anylabeling JSON format. This tool facilitates the annotation easy." />
+<meta property="og:description" content="yolosegment2labelme - a Python package that allows you to convert YOLO segmentation prediction results to LabelMe and anylabeling JSON format. This tool facilitates the annotation easy." />
+<link rel="canonical" href="http://localhost:4000/blogs/2024-05-08-YOLO-to-Labelme-and-Anylabeling-Compatible-JSON/" />
+<meta property="og:url" content="http://localhost:4000/blogs/2024-05-08-YOLO-to-Labelme-and-Anylabeling-Compatible-JSON/" />
+<meta property="og:site_name" content="Abonia Sojasingarayar" />
+<meta property="og:image" content="https://raw.githubusercontent.com/Abonia1/yolosegment2labelme/main/images/labelme_test/logo.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-05-08T00:00:00+02:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://raw.githubusercontent.com/Abonia1/yolosegment2labelme/main/images/labelme_test/logo.png" />
+<meta property="twitter:title" content="YOLO Segmentation Predictions to Labelme and Anylabeling-Compatible JSON" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Abonia Sojasingarayar"},"dateModified":"2024-05-08T15:23:32+02:00","datePublished":"2024-05-08T00:00:00+02:00","description":"yolosegment2labelme - a Python package that allows you to convert YOLO segmentation prediction results to LabelMe and anylabeling JSON format. This tool facilitates the annotation easy.","headline":"YOLO Segmentation Predictions to Labelme and Anylabeling-Compatible JSON","image":"https://raw.githubusercontent.com/Abonia1/yolosegment2labelme/main/images/labelme_test/logo.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blogs/2024-05-08-YOLO-to-Labelme-and-Anylabeling-Compatible-JSON/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/img/blog/logo.jpeg"},"name":"Abonia Sojasingarayar"},"url":"http://localhost:4000/blogs/2024-05-08-YOLO-to-Labelme-and-Anylabeling-Compatible-JSON/"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  
+
+  
+
+
+
+  <meta name="theme-color" content="rgb(25,55,71)">
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+<meta name="mobile-web-app-capable" content="yes">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Abonia Sojasingarayar">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+<meta name="application-name" content="Abonia Sojasingarayar">
+
+<meta name="generator" content="Hydejack v9.1.6" />
+
+
+<link rel="alternate" href="http://localhost:4000/blogs/2024-05-08-YOLO-to-Labelme-and-Anylabeling-Compatible-JSON/" hreflang="en">
+
+<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Abonia Sojasingarayar" />
+
+
+<link rel="shortcut icon"    href="/assets/img/favicon.ico">
+<link rel="apple-touch-icon" href="/assets/icons/icon-192x192.png">
+
+<link rel="manifest" href="/assets/site.webmanifest">
+
+<link rel="dns-prefetch" href="https://fonts.googleapis.com"><link rel="dns-prefetch" href="https://fonts.gstatic.com">
+
+
+
+<link rel="preload" href="/assets/img/swipe.svg" as="image" id="_hrefSwipeSVG">
+
+
+
+
+
+
+<script>!function(r,c){"use strict";function a(e,t,n,o){e.addEventListener?e.addEventListener(t,n,o):e.attachEvent?e.attachEvent("on"+t,n):e["on"+t]=n}r.loadJS=function(e,t){var n=c.createElement("script"),e=(n.src=e,t&&a(n,"load",t,{once:!0}),c.scripts[0]);return e.parentNode.insertBefore(n,e),n},r._loaded=!1,r.loadJSDeferred=function(e,t){var n=c.createElement("script");function o(){r._loaded=!0,t&&a(n,"load",t,{once:!0});var e=c.scripts[0];e.parentNode.insertBefore(n,e)}return n.src=e,r._loaded?o():a(r,"load",o,{once:!0}),n},r.setRel=r.setRelStylesheet=function(e){a(c.getElementById(e),"load",function(){this.rel="stylesheet"},{once:!0})}}(window,document);
+!function(a){"use strict";var b=function(b,c,d){function e(a){return h.body?a():void setTimeout(function(){e(a)})}function f(){i.addEventListener&&i.removeEventListener("load",f),i.media=d||"all"}var g,h=a.document,i=h.createElement("link");if(c)g=c;else{var j=(h.body||h.getElementsByTagName("head")[0]).childNodes;g=j[j.length-1]}var k=h.styleSheets;i.rel="stylesheet",i.href=b,i.media="only x",e(function(){g.parentNode.insertBefore(i,c?g:g.nextSibling)});var l=function(a){for(var b=i.href,c=k.length;c--;)if(k[c].href===b)return a();setTimeout(function(){l(a)})};return i.addEventListener&&i.addEventListener("load",f),i.onloadcssdefined=l,l(f),i};"undefined"!=typeof exports?exports.loadCSS=b:a.loadCSS=b}("undefined"!=typeof global?global:this);
+!function(a){if(a.loadCSS){var b=loadCSS.relpreload={};if(b.support=function(){try{return a.document.createElement("link").relList.supports("preload")}catch(b){return!1}},b.poly=function(){for(var b=a.document.getElementsByTagName("link"),c=0;c<b.length;c++){var d=b[c];"preload"===d.rel&&"style"===d.getAttribute("as")&&(a.loadCSS(d.href,d,d.getAttribute("media")),d.rel=null)}},!b.support()){b.poly();var c=a.setInterval(b.poly,300);a.addEventListener&&a.addEventListener("load",function(){b.poly(),a.clearInterval(c)}),a.attachEvent&&a.attachEvent("onload",function(){a.clearInterval(c)})}}}(this);
+!function(w) {
+  w._baseURL = '/';
+  w._publicPath = '/assets/js/';
+  w._noPushState = false;
+  w._noDrawer = false;
+  w._noNavbar = false;
+  w._noToc = false;
+  w._noSearch = false;
+  w._search = {
+    DATA_URL: '/assets/sitedata.json?no-cache',
+    STORAGE_KEY: 'mini-search/',
+    INDEX_KEY: 'index--2024-05-08T15:23:33+02:00',
+  };
+  w._clapButton = true;
+}(window);</script>
+
+
+<script async src="/assets/bower_components/MathJax/es5/tex-mml-chtml.js" id="_MathJax"></script>
+
+
+<!--[if gt IE 8]><!---->
+
+  
+
+
+
+
+<link rel="stylesheet" href="/assets/css/hydejack-9.1.6.css" id="_stylePreload">
+<link rel="stylesheet" href="/assets/icomoon/style.css" id="_iconsPreload">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:700%7CNoto+Sans:400,400i,700,700i&display=swap" id="_fontsPreload">
+
+
+
+  <style id="_pageStyle">
+
+html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79, 177, 186, 0.5);--accent-color-highlight: rgba(79, 177, 186, 0.1);--accent-color-darkened: #409ba3;--theme-color: rgb(25,55,71)}
+</style>
+
+
+<!--<![endif]-->
+
+
+
+
+</head>
+
+<body class="no-break-layout">
+  
+
+
+<hy-push-state
+  id="_pushState"
+  replace-selector="#_main"
+  link-selector="a[href]:not([href^='/assets/']):not(.external):not(.no-push-state)"
+  script-selector="script"
+  duration="500"
+  hashchange
+>
+  
+  
+  <div id="_navbar" class="navbar fixed-top">
+  <div class="content">
+    <span class="sr-only">Jump to:</span>
+    <div class="nav-btn-bar">
+      <a id="_menu" class="nav-btn no-hover" href="#_drawer--opened">
+        <span class="sr-only">Navigation</span>
+        <span class="icon-menu"></span>
+      </a>
+      <div class="nav-span"></div>
+    </div>
+  </div>
+</div>
+<hr class="sr-only" hidden />
+
+  <main
+  id="_main"
+  class="content layout-post"
+  role="main"
+>
+  <nav id="breadcrumbs" class="screen-only"><ul>
+  
+  
+    <li><a href="/">home</a></li>
+    
+      <li>
+        
+          <span>/</span>
+          
+          
+          <a href="/blogs/">blogs</a>
+        
+      </li>
+    
+      <li>
+        
+          <span>/</span>
+          <span>2024-05-08-YOLO-to-Labelme-and-Anylabeling-Compatible-JSON</span>
+        
+      </li>
+    
+  
+</ul></nav>
+  
+
+
+
+
+
+
+
+
+
+
+<article id="post-blogs-YOLO-to-Labelme-and-Anylabeling-Compatible-JSON" class="page post mb6" role="article">
+  <header>
+    <h1 class="post-title flip-project-title">
+      
+        YOLO Segmentation Predictions to Labelme and Anylabeling-Compatible JSON
+      
+    </h1>
+
+    <div class="post-date">
+      
+      <span class="ellipsis mr1">
+        <time datetime="2024-05-08T00:00:00+02:00">08 May 2024</time> in <a href="/example/" class="flip-title">Blogs</a> 
+      </span>
+      
+        
+          
+          
+          
+        
+      
+    </div>
+
+    
+    
+      
+        <div class="img-wrapper lead aspect-ratio sixteen-nine flip-project-img">
+          
+
+
+<img
+  
+    src="https://raw.githubusercontent.com/Abonia1/yolosegment2labelme/main/images/labelme_test/logo.png"
+    
+    
+  
+  alt="YOLO Segmentation Predictions to Labelme and Anylabeling-Compatible JSON"
+  
+  
+  width="864"
+  height="486"
+  loading="lazy"
+/>
+
+        </div>
+      
+      
+    
+
+    
+
+
+
+  
+    <p class="note-sm" >
+      yolosegment2labelme - a Python package that allows you to convert YOLO segmentation prediction results to LabelMe and anylabeling JSON format. This tool facilitates the annotation easy.
+
+    </p>
+  
+
+
+  </header>
+
+  
+    <p><strong>Reading_time:</strong> 5 min<br />
+  <strong>Tags:</strong> [YOLO, ,Annotation, LabelMe, AnyLbaeling, ComputerVision, Json]</p>
+<ul class="large-only" id="markdown-toc">
+  <li><a href="#installing-yolo-segment-to-labelme-converter" id="markdown-toc-installing-yolo-segment-to-labelme-converter">Installing YOLO Segment to LabelMe Converter</a></li>
+  <li><a href="#installing-yolo-segment-to-labelme-converter-1" id="markdown-toc-installing-yolo-segment-to-labelme-converter-1">Installing YOLO Segment to LabelMe Converter</a>    <ul>
+      <li><a href="#prerequisites" id="markdown-toc-prerequisites">Prerequisites</a></li>
+      <li><a href="#installation" id="markdown-toc-installation">Installation</a>        <ul>
+          <li><a href="#specifying-a-version" id="markdown-toc-specifying-a-version">Specifying a Version</a></li>
+        </ul>
+      </li>
+      <li><a href="#using-a-virtual-environment" id="markdown-toc-using-a-virtual-environment">Using a Virtual Environment</a>        <ul>
+          <li><a href="#creating-a-virtual-environment-with-venv" id="markdown-toc-creating-a-virtual-environment-with-venv">Creating a Virtual Environment with venv</a></li>
+        </ul>
+      </li>
+      <li><a href="#sample-usage" id="markdown-toc-sample-usage">Sample Usage</a>        <ul>
+          <li><a href="#customizing-the-model-and-confidence-score" id="markdown-toc-customizing-the-model-and-confidence-score">Customizing the Model and Confidence Score</a></li>
+          <li><a href="#run" id="markdown-toc-run">Run</a></li>
+        </ul>
+      </li>
+      <li><a href="#sample-output-in-anylabeling-annotation-tool" id="markdown-toc-sample-output-in-anylabeling-annotation-tool">Sample Output in Anylabeling Annotation Tool</a></li>
+    </ul>
+  </li>
+  <li><a href="#thanks-for-reading" id="markdown-toc-thanks-for-reading"><em>Thanks for Reading!</em></a></li>
+</ul>
+<p><strong>Table of Contents:</strong></p>
+<ul>
+  <li><a href="#using-a-virtual-environment">Setting your environment)</a></li>
+  <li><a href="#sample-usage">Sample Usage</a></li>
+  <li><a href="#sample-output-in-anylabeling-annotation-tool">Sample Output in Annotation tool</a></li>
+</ul>
+
+<h1 id="installing-yolo-segment-to-labelme-converter">Installing YOLO Segment to LabelMe Converter</h1>
+
+<p>I’m excited to announce the release of a new Python package, <strong><a href="https://github.com/Abonia1/yolosegment2labelme">yolosegment2labelme</a></strong>, which is now available on PyPI. This tool is specifically designed to streamline the conversion process of YOLO segmentation masks into a format that’s fully compatible with LabelMe and anylabeling, a widely recognized annotation tool for image segmentation tasks. In this guide, I’ll walk you through the installation process and provide you with a clear understanding of how to utilize this package effectively in your projects.</p>
+
+<p><strong><img src="/assets/img/blog/yolosegment2labelme.png" alt="Source-Image by Author: Github - yolosegment2labelme " /></strong></p>
+
+<h1 id="installing-yolo-segment-to-labelme-converter-1">Installing <a href="https://pypi.org/project/yolosegment2labelme/">YOLO Segment to LabelMe Converter</a></h1>
+
+<p>This guide will walk you through the process of installing the <strong><a href="https://pypi.org/project/yolosegment2labelme/">yolosegment2labelme</a></strong> package, a tool designed to convert YOLO segmentation masks into a format compatible with LabelMe, a popular annotation tool for image segmentation tasks.</p>
+
+<p>The source code for <code class="language-plaintext highlighter-rouge">yolosegment2labelme</code> can be found on <strong><a href="https://github.com/Abonia1/yolosegment2labelme">GitHub</a></strong>, where you can contribute, report issues, or explore the codebase.</p>
+
+<h2 id="prerequisites">Prerequisites</h2>
+
+<p>Before you begin, ensure you have the following prerequisites installed on your system:</p>
+
+<ul>
+  <li>Python 3.x</li>
+  <li>pip (Python package installer)</li>
+</ul>
+
+<h2 id="installation">Installation</h2>
+
+<p>To install the <code class="language-plaintext highlighter-rouge">yolosegment2labelme</code> package, you can use the <code class="language-plaintext highlighter-rouge">pip</code> command. Open your terminal or command prompt and execute the following command:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python <span class="nt">-m</span> pip <span class="nb">install </span>yolosegment2labelme
+</code></pre></div></div>
+
+<p>If you’re using Python 3 and have both Python 2 and Python 3 installed, you might need to use <code class="language-plaintext highlighter-rouge">python3</code> instead:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python3 <span class="nt">-m</span> pip <span class="nb">install </span>yolosegment2labelme
+</code></pre></div></div>
+
+<h3 id="specifying-a-version">Specifying a Version</h3>
+
+<p>If you need a specific version of the package, you can specify it by appending <code class="language-plaintext highlighter-rouge">==&lt;version&gt;</code> to the package name. For example, to install version 0.0.4, you would use:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python <span class="nt">-m</span> pip <span class="nb">install </span><span class="nv">yolosegment2labelme</span><span class="o">==</span>0.0.4
+</code></pre></div></div>
+
+<h2 id="using-a-virtual-environment">Using a Virtual Environment</h2>
+
+<p>It’s recommended to use a virtual environment when installing Python packages to avoid conflicts between package versions. You can create a virtual environment using <code class="language-plaintext highlighter-rouge">venv</code> (included in Python 3.3 and later) or <code class="language-plaintext highlighter-rouge">virtualenv</code>.</p>
+
+<h3 id="creating-a-virtual-environment-with-venv">Creating a Virtual Environment with venv</h3>
+
+<ol>
+  <li>Create a virtual environment:</li>
+</ol>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python3 <span class="nt">-m</span> venv myenv
+</code></pre></div></div>
+
+<ol>
+  <li>Activate the virtual environment:</li>
+</ol>
+
+<ul>
+  <li>On Windows:</li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>myenv<span class="se">\S</span>cripts<span class="se">\a</span>ctivate
+</code></pre></div></div>
+
+<ul>
+  <li>On macOS and Linux:</li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">source </span>myenv/bin/activate
+</code></pre></div></div>
+
+<ol>
+  <li>With the virtual environment activated, install the <code class="language-plaintext highlighter-rouge">yolosegment2labelme</code> package:</li>
+</ol>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python <span class="nt">-m</span> pip <span class="nb">install </span>yolosegment2labelme
+</code></pre></div></div>
+<h2 id="sample-usage">Sample Usage</h2>
+
+<p>To convert segmentation masks from a directory of images using the default model (<code class="language-plaintext highlighter-rouge">yolo8n-seg</code>) and a default confidence score of 0.2, you can use the following command:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python yolosegment2labelme.py <span class="nt">--images</span> ../images
+</code></pre></div></div>
+
+<p>In this example, replace <code class="language-plaintext highlighter-rouge">../images</code> with the path to the directory containing your YOLO segmentation mask images. The script will process all images in the specified directory, applying the default model and confidence score to generate LabelMe-compatible annotations.</p>
+
+<h3 id="customizing-the-model-and-confidence-score">Customizing the Model and Confidence Score</h3>
+
+<p>If you prefer to use a specific YOLO model or your custom fine-tuned model and adjust the confidence score for the predictions, you can do so by specifying the <code class="language-plaintext highlighter-rouge">--model</code> and <code class="language-plaintext highlighter-rouge">--conf</code> options:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python yolosegment2labelme.py <span class="nt">--model</span> yolov5n-seg.pt <span class="nt">--images</span> ../images <span class="nt">--conf</span> 0.3
+</code></pre></div></div>
+
+<p>In this command:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">--model yolov8n-seg.pt</code> specifies the path to the YOLO model file you wish to use. Replace <code class="language-plaintext highlighter-rouge">yolov8n-seg.pt</code> with the path to your desired model file.</li>
+  <li><code class="language-plaintext highlighter-rouge">--images ../images</code> indicates the directory containing the images you want to process. Replace <code class="language-plaintext highlighter-rouge">../images</code> with the actual path to your image directory.</li>
+  <li><code class="language-plaintext highlighter-rouge">--conf 0.3</code> sets the confidence score threshold for the predictions. Adjust this value according to your needs; higher values require more confident predictions to be considered.</li>
+</ul>
+
+<h3 id="run">Run</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">!</span><span class="n">yolosegment2labelme</span> <span class="o">--</span><span class="n">model</span> <span class="n">yolov8n</span><span class="o">-</span><span class="n">seg</span><span class="p">.</span><span class="n">pt</span> <span class="o">--</span><span class="n">images</span> <span class="p">..</span><span class="o">/</span><span class="n">images</span>  <span class="o">--</span><span class="n">conf</span> <span class="mf">0.3</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>image 1/10 /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/1.jpg: 448x640 1 bear, 118.4ms
+image 2/10 /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/10.jpg: 448x640 1 cup, 1 laptop, 1 cell phone, 2 books, 93.8ms
+image 3/10 /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/2.jpg: 640x448 1 dog, 83.3ms
+image 4/10 /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/3.jpg: 480x640 4 chairs, 97.9ms
+image 5/10 /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/4.jpg: 544x640 2 persons, 2 sports balls, 128.5ms
+image 6/10 /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/5.jpg: 448x640 4 persons, 1 sports ball, 3 kites, 81.2ms
+image 7/10 /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/6.jpg: 448x640 1 bird, 85.1ms
+image 8/10 /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/7.jpg: 416x640 1 person, 1 dog, 84.8ms
+image 9/10 /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg: 448x640 11 persons, 5 cars, 4 traffic lights, 88.8ms
+image 10/10 /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/9.jpg: 448x640 1 person, 79.8ms
+Speed: 1.5ms preprocess, 94.1ms inference, 78.1ms postprocess per image at shape (1, 3, 448, 640)
+Results saved to [1mruns/segment/predict7[0m
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/1.jpg with label bear
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/10.jpg with label cup
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/10.jpg with label laptop
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/10.jpg with label book
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/10.jpg with label cell phone
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/10.jpg with label book
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/2.jpg with label dog
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/3.jpg with label chair
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/3.jpg with label chair
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/3.jpg with label chair
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/3.jpg with label chair
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/4.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/4.jpg with label sports ball
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/4.jpg with label sports ball
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/4.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/5.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/5.jpg with label sports ball
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/5.jpg with label kite
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/5.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/5.jpg with label kite
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/5.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/5.jpg with label kite
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/5.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/6.jpg with label bird
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/7.jpg with label dog
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/7.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label car
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label car
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label car
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label traffic light
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label traffic light
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label traffic light
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label car
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label car
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label traffic light
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/9.jpg with label person
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">!</span><span class="n">python</span> <span class="n">yolosegment2labelme</span><span class="p">.</span><span class="n">py</span> <span class="o">--</span><span class="n">images</span> <span class="p">..</span><span class="o">/</span><span class="n">images</span> 
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>image 1/10 /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/1.jpg: 448x640 1 bear, 111.5ms
+image 2/10 /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/10.jpg: 448x640 1 cup, 1 laptop, 1 cell phone, 5 books, 149.6ms
+image 3/10 /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/2.jpg: 640x448 1 dog, 92.1ms
+image 4/10 /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/3.jpg: 480x640 4 chairs, 101.8ms
+image 5/10 /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/4.jpg: 544x640 2 persons, 2 sports balls, 119.7ms
+image 6/10 /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/5.jpg: 448x640 6 persons, 1 sports ball, 3 kites, 91.8ms
+image 7/10 /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/6.jpg: 448x640 1 bird, 83.4ms
+image 8/10 /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/7.jpg: 416x640 1 person, 1 dog, 78.1ms
+image 9/10 /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg: 448x640 19 persons, 7 cars, 4 traffic lights, 85.0ms
+image 10/10 /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/9.jpg: 448x640 1 person, 1 tv, 88.7ms
+Speed: 1.1ms preprocess, 100.2ms inference, 72.5ms postprocess per image at shape (1, 3, 448, 640)
+Results saved to [1mruns/segment/predict4[0m
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/1.jpg with label bear
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/10.jpg with label cup
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/10.jpg with label laptop
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/10.jpg with label book
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/10.jpg with label cell phone
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/10.jpg with label book
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/10.jpg with label book
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/10.jpg with label book
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/10.jpg with label book
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/2.jpg with label dog
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/3.jpg with label chair
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/3.jpg with label chair
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/3.jpg with label chair
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/3.jpg with label chair
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/4.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/4.jpg with label sports ball
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/4.jpg with label sports ball
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/4.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/5.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/5.jpg with label sports ball
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/5.jpg with label kite
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/5.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/5.jpg with label kite
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/5.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/5.jpg with label kite
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/5.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/5.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/5.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/6.jpg with label bird
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/7.jpg with label dog
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/7.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label car
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label car
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label car
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label traffic light
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label traffic light
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label traffic light
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label car
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label car
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label traffic light
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label car
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label car
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/9.jpg with label person
+Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/9.jpg with label tv
+</code></pre></div></div>
+
+<div align="center">
+    📦 <a href="https://github.com/Abonia1/yolosegment2labelme/blob/main/yolosegment2labelme/example.ipynb" target="_blank"><b>Sample Notebook</b></a>
+</div>
+
+<h2 id="sample-output-in-anylabeling-annotation-tool">Sample Output in Anylabeling Annotation Tool</h2>
+
+<p>Below are examples of image annotations created in json using yolosegment2labelme and viewed in the <a href="https://github.com/vietanhdev/anylabeling">Anylabeling</a> annotation tool:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Sample Image 1</th>
+      <th>Sample Image 2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="https://raw.githubusercontent.com/Abonia1/yolosegment2labelme/main/images/labelme_test/sample1.png" alt="Sample Image 1" /></td>
+      <td><img src="https://raw.githubusercontent.com/Abonia1/yolosegment2labelme/main/images/labelme_test/sample2.png" alt="Sample Image 2" /></td>
+    </tr>
+    <tr>
+      <td>Sample Annotation for Image 1</td>
+      <td>Sample Annotation for Image 2</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>Sample Image 3</th>
+      <th>Sample Image 4</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="https://raw.githubusercontent.com/Abonia1/yolosegment2labelme/main/images/labelme_test/sample3.png" alt="Sample Image 3" /></td>
+      <td><img src="https://raw.githubusercontent.com/Abonia1/yolosegment2labelme/main/images/labelme_test/sample4.png" alt="Sample Image 4" /></td>
+    </tr>
+    <tr>
+      <td>Sample Annotation for Image 3</td>
+      <td>Sample Annotation for Image 4</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>By following these steps, you should now have the <code class="language-plaintext highlighter-rouge">yolosegment2labelme</code> package installed on your system, ready to convert YOLO segmentation masks into LabelMe-compatible formats.Hope this tool will be a helpful asset for researchers and developers working with image segmentation tasks, streamlining the process of preparing data for further analysis or model training.Stay tuned for our upcoming article! Until then, catch you in another exciting article!</p>
+
+<hr />
+<h1 id="thanks-for-reading"><em>Thanks for Reading!</em></h1>
+
+<p>Connect with me on <strong><a href="https://www.linkedin.com/in/aboniasojasingarayar/">Linkedin</a></strong></p>
+
+<p>Find me on <strong><a href="https://github.com/Abonia1">Github</a></strong></p>
+
+<p>Visit my technical channel on <strong><a href="https://www.youtube.com/@AboniaSojasingarayar">Youtube</a></strong></p>
+
+<p>Support: <strong><a href="https://www.buymeacoffee.com/abonia">Buy me a Cofee/Chai</a></strong></p>
+
+  
+</article>
+
+
+
+  <hr class="dingbat related mb6" />
+
+
+
+
+
+
+  
+     
+
+
+  <aside class="about related mt4 mb4" role="complementary">
+    
+    
+
+<div class="author mt4">
+  
+
+  
+    
+
+
+<img
+  
+    src="/assets/img/blog/logo.jpeg"
+    srcset="https://via.placeholder.com/128x128 1x,/assets/img/blog/logo.jpeg 2x"
+    
+  
+  alt="Abonia Sojasingarayar"
+  class="avatar"
+  
+  width="120"
+  height="120"
+  loading="lazy"
+/>
+
+  
+
+  
+  
+  <h2  class="page-title hr-bottom">
+    About
+  </h2>
+
+  <p>I am distinguished Machine Learning Scientist, Data Scientist, Large Language Model Engineer, NLP Engineer, and Technical Book Reviewer, holds a Masters degree in Artificial Intelligence and boasts over 7 years of experience. With a robust background in crafting and implementing ML systems across diverse domains, including cybersecurity, banking, transit,cosmetics &amp; hygiene research, and e-commerce. Find me on Medium, Google Scholar, GitHub, and LinkedIn, where I mentors others and communicates complex solutions effectively.</p>
+
+
+  <div class="sidebar-social">
+    <span class="sr-only">Social:</span>
+<ul>
+  
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://www.linkedin.com/in/aboniasojasingarayar" title="LinkedIn" class="no-mark-external">
+      <span class="icon-linkedin2"></span>
+      <span class="sr-only">LinkedIn</span>
+    </a>
+  </li>
+
+
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://github.com/Abonia1" title="GitHub" class="no-mark-external">
+      <span class="icon-github"></span>
+      <span class="sr-only">GitHub</span>
+    </a>
+  </li>
+
+
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://medium.com/@abonia" title="medium" class="no-mark-external">
+      <span class="icon-link"></span>
+      <span class="sr-only">medium</span>
+    </a>
+  </li>
+
+
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://www.youtube.com/channel/UCGphGM_oeR4r9dqVs71Jc5w" title="YouTube" class="no-mark-external">
+      <span class="icon-youtube"></span>
+      <span class="sr-only">YouTube</span>
+    </a>
+  </li>
+
+
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://twitter.com/AboniaJesse" title="Twitter" class="no-mark-external">
+      <span class="icon-twitter"></span>
+      <span class="sr-only">Twitter</span>
+    </a>
+  </li>
+
+
+    
+  
+</ul>
+
+  </div>
+</div>
+
+  </aside>
+
+
+  
+
+  
+  
+
+  
+    
+
+
+  <aside class="related mb4" role="complementary">  <h2 class="hr-bottom">Related Posts</h2>  <ul class="related-posts">                  <li class="h4">  <a href="/blogs/2024-04-22-Summarization-with-LangChain/" class="flip-title"><span>Summarization-with-LangChain:Stuff — Map_reduce — Refine</span></a>  <time class="faded fine" datetime="2024-04-22T00:00:00+02:00">22 Apr 2024</time></li>                        <li class="h4">  <a href="/blogs/2024-04-09-How-I-Passed-the-GCP-Professional/" class="flip-title"><span>How I Passed the GCP Professional Data Engineer Exam</span></a>  <time class="faded fine" datetime="2024-04-09T00:00:00+02:00">09 Apr 2024</time></li>                        <li class="h4">  <a href="/blogs/2024-03-05-Deploying-a-RAG-Application-in-AWS-Lambda-using-Docker-and-ECR/" class="flip-title"><span>Deploying a RAG Application in AWS Lambda using Docker and ECR</span></a>  <time class="faded fine" datetime="2024-03-05T00:00:00+01:00">05 Mar 2024</time></li>            </ul></aside>
+
+  
+
+  
+  
+
+  
+    
+
+  
+
+
+  
+<footer class="content" role="contentinfo">
+  <hr/>
+  
+    <p><small class="copyright">© 2024. All rights reserved.
+</small></p>
+  
+  
+    <nav class="legal"><small>
+    
+      
+      <a class="heading flip-title" href="/LICENSE/">LICENSE</a>
+      
+    
+    </small></nav>
+  
+    <p><small>Powered by <a class="external" href="https://hydejack.com/">Hydejack</a> v<span id="_version">9.1.6</span></small></p>
+  <hr class="sr-only"/>
+</footer>
+
+
+</main>
+
+  <hy-drawer
+  id="_drawer"
+  class=""
+  side="left"
+  threshold="10"
+  noscroll
+  
+>
+  <header id="_sidebar" class="sidebar" role="banner">
+    
+
+
+
+
+<div class="sidebar-bg sidebar-overlay" style="background-color:rgb(25,55,71);background-image:url(/assets/img/sidebar-bg.jpg)"></div>
+
+    <div class="sidebar-sticky">
+  <div class="sidebar-about">
+    
+      <a class="no-hover" href="/" tabindex="-1">
+        <img src="/assets/img/blog/logo.jpeg" class="avatar" alt="Abonia Sojasingarayar" width="120" height="120" loading="lazy" />
+      </a>
+    
+    <a class="sidebar-title" href="/"><h2 class="h1">Abonia Sojasingarayar</h2></a>
+    
+    
+      <p class="">
+        <table>
+  <tbody>
+    <tr>
+      <td>4x Linkedin Top Voice</td>
+      <td>Machine Learning, DS &amp; MLOps</td>
+      <td>Author</td>
+    </tr>
+  </tbody>
+</table>
+
+      </p>
+    
+  </div>
+
+  <nav class="sidebar-nav heading" role="navigation">
+    <span class="sr-only">Navigation:</span>
+<ul>
+  
+    
+      
+      <li>
+        <a
+          id="_drawer--opened"
+          href="/example/"
+          class="sidebar-nav-item "
+          
+        >
+          Blogs
+        </a>
+      </li>
+    
+      
+      <li>
+        <a
+          
+          href="/about/"
+          class="sidebar-nav-item "
+          
+        >
+          About
+        </a>
+      </li>
+    
+      
+      <li>
+        <a
+          
+          href="/newsletter/"
+          class="sidebar-nav-item "
+          
+        >
+          Newsletter
+        </a>
+      </li>
+    
+  
+</ul>
+
+  </nav>
+
+  
+  <div class="sidebar-social">
+    <span class="sr-only">Social:</span>
+<ul>
+  
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://www.linkedin.com/in/aboniasojasingarayar" title="LinkedIn" class="no-mark-external">
+      <span class="icon-linkedin2"></span>
+      <span class="sr-only">LinkedIn</span>
+    </a>
+  </li>
+
+
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://github.com/Abonia1" title="GitHub" class="no-mark-external">
+      <span class="icon-github"></span>
+      <span class="sr-only">GitHub</span>
+    </a>
+  </li>
+
+
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://medium.com/@abonia" title="medium" class="no-mark-external">
+      <span class="icon-link"></span>
+      <span class="sr-only">medium</span>
+    </a>
+  </li>
+
+
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://www.youtube.com/channel/UCGphGM_oeR4r9dqVs71Jc5w" title="YouTube" class="no-mark-external">
+      <span class="icon-youtube"></span>
+      <span class="sr-only">YouTube</span>
+    </a>
+  </li>
+
+
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://twitter.com/AboniaJesse" title="Twitter" class="no-mark-external">
+      <span class="icon-twitter"></span>
+      <span class="sr-only">Twitter</span>
+    </a>
+  </li>
+
+
+    
+  
+</ul>
+
+  </div>
+</div>
+  </header>
+</hy-drawer>
+<hr class="sr-only" hidden />
+
+</hy-push-state>
+
+
+  <!--[if gt IE 10]><!---->
+  <script nomodule>!function(){var t,n=document.createElement("script");!("noModule"in n)&&"onbeforeload"in n&&(t=!1,document.addEventListener("beforeload",function(e){if(e.target===n)t=!0;else if(!e.target.hasAttribute("nomodule")||!t)return;e.preventDefault()},!0),n.type="module",n.src=".",document.head.appendChild(n),n.remove())}();
+</script>
+  <script src="/assets/js/hydejack-9.1.6.js" type="module"></script>
+  <script src="/assets/js/LEGACY-hydejack-9.1.6.js" nomodule defer></script>
+  
+
+  
+
+<!--<![endif]-->
+  <!-- <script>
+  document.querySelector('hy-push-state').setAttribute('prefetch', '');
+
+  document.querySelectorAll('.sidebar a[href^="/"]').forEach(function (el) { 
+    el.addEventListener('click', function (e) {
+      if (el.pathname === window.location.pathname) {
+        e.preventDefault();
+        e.stopPropagation();
+        document.querySelector('hy-drawer').close();
+      }
+    });
+  });
+</script> -->
+
+<!--
+Code for integrating CloudFlare's email protection with Hydejack's single page app loading.
+-->
+<script>
+  document.getElementById('_pushState').addEventListener('hy-push-state-after', function (e) {
+    function e(e){
+      (console.error?console.error:console.log).call(console,e)
+    }
+
+    function t(e){
+      return l.innerHTML='<a href="'+e.replace(/"/g,"&quot;")+'"></a>',l.childNodes[0].getAttribute("href")
+    }
+
+    function r(e,t){
+      var r=e.substr(t,2);return parseInt(r,16)
+    }
+
+    function n(e,n){
+      for(var o="",c=r(e,n),a=n+2;a<e.length;a+=2){
+        var l=r(e,a)^c;
+        o+=String.fromCharCode(l)
+      }
+      return t(o)
+    }
+
+    var o="/cdn-cgi/l/email-protection#",
+        c=".__cf_email__",
+        a="data-cfemail",
+        l=document.createElement("div");
+
+    !function(){
+      for(var t=document.getElementsByTagName("a"),r=0;r<t.length;r++)
+        try{
+          var c=t[r],a=c.href.indexOf(o);
+          a>-1&&(c.href="mailto:"+n(c.href,a+o.length))
+        }catch(t){
+          e(t)
+        }
+    }(),
+    function(){
+      for(var t=document.querySelectorAll(c),r=0;r<t.length;r++)
+        try{
+          var o=t[r],l=n(o.getAttribute(a),0),i=document.createTextNode(l);
+          o.parentNode.replaceChild(i,o)
+        }catch(t){
+          e(t)
+        }
+    }()
+  });
+</script>
+
+
+
+
+
+<div hidden>
+  
+  <h2 class="sr-only">Templates (for web app):</h2>
+
+  <template id="_animation-template">
+  <div class="animation-main fixed-top">
+    <nav id="breadcrumbs" class="screen-only"><ul>
+  
+  
+</ul></nav>
+    <div class="content">
+      <div class="page"></div>
+    </div>
+  </div>
+</template>
+
+  <template id="_loading-template">
+  <div class="loading nav-btn fr">
+    <span class="sr-only">Loading…</span>
+    <span class="icon-cog"></span>
+  </div>
+</template>
+
+  <template id="_error-template">
+  <div class="page">
+    <h1 class="page-title">Error</h1>
+    
+    
+    <p class="lead">
+      Sorry, an error occurred while loading <a class="this-link" href=""></a>.
+
+    </p>
+  </div>
+</template>
+
+  <template id="_permalink-template">
+  <a href="#" class="permalink">
+    <span class="sr-only">Permalink</span>
+    <span class="content-hash"></span>
+  </a>
+</template>
+
+</div>
+
+
+</body>
+</html>
