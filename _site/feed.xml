@@ -1,5 +1,74 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2024-07-03T13:49:58+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Abonia Sojasingarayar</title><subtitle>Holds a Masters degree in Artificial Intelligence and boasts over 7 years of experience. With a robust background in crafting and implementing ML systems across diverse domains, including cybersecurity, banking, transit,cosmetics &amp; hygiene research, and e-commerce.
-</subtitle><author><name>Abonia Sojasingarayar</name><email>aboniaa@gmail.com</email></author><entry><title type="html">1-Introduction to NLP — AIMagazine</title><link href="http://localhost:4000/blogs/2024-07-02-Introduction-to-NLP-AIMagazine/" rel="alternate" type="text/html" title="1-Introduction to NLP — AIMagazine" /><published>2024-07-02T00:00:00+02:00</published><updated>2024-07-03T13:49:57+02:00</updated><id>http://localhost:4000/blogs/Introduction-to-NLP-AIMagazine</id><content type="html" xml:base="http://localhost:4000/blogs/2024-07-02-Introduction-to-NLP-AIMagazine/"><![CDATA[<p><strong>Reading_time:</strong> 5 min<br />
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2024-08-23T17:50:24+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Abonia Sojasingarayar</title><subtitle>Holds a Masters degree in Artificial Intelligence and boasts over 7 years of experience. With a robust background in crafting and implementing ML systems across diverse domains, including cybersecurity, banking, transit,cosmetics &amp; hygiene research, and e-commerce.
+</subtitle><author><name>Abonia Sojasingarayar</name><email>aboniaa@gmail.com</email></author><entry><title type="html">1-Introduction to LLM — AIMagazine</title><link href="http://localhost:4000/blogs/2024-08-23-Introduction-to-LLM-AIMagazine/" rel="alternate" type="text/html" title="1-Introduction to LLM — AIMagazine" /><published>2024-08-23T00:00:00+02:00</published><updated>2024-08-23T17:48:06+02:00</updated><id>http://localhost:4000/blogs/Introduction-to-LLM-AIMagazine</id><content type="html" xml:base="http://localhost:4000/blogs/2024-08-23-Introduction-to-LLM-AIMagazine/"><![CDATA[<p><strong>Reading_time:</strong> 5 min<br />
+  <strong>Tags:</strong> [LLM, GenAI, AI ,MachineLearning, NLP, ComputerVision, MLOps DeepLearning, DataScience, TechInnovation,FutureTech
+]</p>
+<ul class="large-only" id="markdown-toc">
+  <li><a href="#1-introduction-to-llm--aimagazine" id="markdown-toc-1-introduction-to-llm--aimagazine">1-Introduction to LLM — AIMagazine</a>    <ul>
+      <li><a href="#dive-into-the-world-of-llm" id="markdown-toc-dive-into-the-world-of-llm">Dive into the World of LLM</a></li>
+      <li><a href="#why-you-should-read-this" id="markdown-toc-why-you-should-read-this">Why You Should Read This</a></li>
+      <li><a href="#stay-updated" id="markdown-toc-stay-updated">Stay Updated</a></li>
+    </ul>
+  </li>
+  <li><a href="#read-more-on-aimagazine" id="markdown-toc-read-more-on-aimagazine"><strong>Read More on AIMagazine</strong></a></li>
+</ul>
+
+<h2 id="1-introduction-to-llm--aimagazine">1-Introduction to LLM — AIMagazine</h2>
+
+<h3 id="dive-into-the-world-of-llm">Dive into the World of LLM</h3>
+
+<p>Artificial intelligence, machine learning, natural language processing, (LLM), and MLOps are evolving at an incredible pace. Staying informed about the latest developments, research, and trends is crucial for anyone in the tech field. To help you keep up, I’ve published a detailed article on LLM on my Substack <strong><a href="https://aboniasojasingarayar.substack.com">AIMagazine</a></strong>.</p>
+
+<p><img src="/assets/img/blog/LLM.png" alt="" /></p>
+
+<p>Here’s a glimpse of what you can expect in this first chapter format article and what You’ll Learn:</p>
+
+<ul>
+  <li>
+    <p>Definition and overview of LLMs</p>
+  </li>
+  <li>
+    <p>Types of LLMs</p>
+  </li>
+  <li>
+    <p>Key technical concepts</p>
+  </li>
+  <li>
+    <p>Evaluating LLMs</p>
+  </li>
+  <li>
+    <p>Applications, Challenges Limitation</p>
+  </li>
+  <li>
+    <p>LLM Cheat Sheet</p>
+  </li>
+</ul>
+
+<p>👉 <strong>Read the full <a href="https://open.substack.com/pub/aboniasojasingarayar/p/introduction-to-large-language-models?r=92g95&amp;utm_campaign=post&amp;utm_medium=web&amp;showWelcomeOnShare=true">article on Substack AIMagazine </a></strong></p>
+
+<h3 id="why-you-should-read-this">Why You Should Read This</h3>
+
+<p>This article aims to provide a foundational understanding of LLM and its applications. By the end of the article, you’ll be able to identify the different components of an LLM system and grasp the challenges involved in developing these systems. Whether you’re a beginner or someone looking to refresh your knowledge, this article is designed to offer valuable insights.</p>
+
+<h3 id="stay-updated">Stay Updated</h3>
+
+<p>I’m planning to write articles in a chapter format for an in-depth exploration of each topic, covering aspects like NLP, LLMs, fine-tuning, evaluation, RAG, information retrieval, deployment, knowledge graphs, and more. There are many other concepts to be added, and I will update them in subsequent posts.</p>
+
+<h2 id="read-more-on-aimagazine"><strong>Read More on AIMagazine</strong></h2>
+
+<p>To dive deeper into these topics, I invite you to read the full article on my substack <strong><a href="https://aboniasojasingarayar.substack.com">AIMagazine</a></strong>. Your feedback and engagement are highly valued, and subscribing will ensure you get updates directly in your inbox whenever new articles are published.</p>
+
+<hr />
+<p><strong><em>Thanks for Reading!</em></strong></p>
+
+<p><strong><a href="https://abonia1.github.io/">Website/Newletter</a></strong></p>
+
+<p>Connect with me on <strong><a href="https://www.linkedin.com/in/aboniasojasingarayar/">Linkedin</a></strong></p>
+
+<p>Find me on <strong><a href="https://github.com/Abonia1">Github</a></strong></p>
+
+<p>Visit my technical channel on <strong><a href="https://www.youtube.com/@AboniaSojasingarayar">Youtube</a></strong></p>
+
+<p>Support: <strong><a href="https://www.buymeacoffee.com/abonia">Buy me a Cofee/Chai</a></strong></p>]]></content><author><name>Abonia Sojasingarayar</name><email>aboniaa@gmail.com</email></author><category term="blogs" /><summary type="html"><![CDATA[This chapter will be your comprehensive guide to navigating the fascinating world of LLMs. We'll delve into their core concepts, exploring different types like autoregressive models and encoder-decoder models. You'll discover the magic behind self-attention, a mechanism that allows LLMs to focus on relevant information, and delve into the pre-training strategies that give them their vast knowledge. Finally, we'll showcase the real-world applications of LLMs, from powering chatbots and generating realistic dialogue to creating marketing copy and summarizing complex topics.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/AIMagazine.png" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/AIMagazine.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">1-Introduction to NLP — AIMagazine</title><link href="http://localhost:4000/blogs/2024-07-02-Introduction-to-NLP-AIMagazine/" rel="alternate" type="text/html" title="1-Introduction to NLP — AIMagazine" /><published>2024-07-02T00:00:00+02:00</published><updated>2024-07-03T13:50:59+02:00</updated><id>http://localhost:4000/blogs/Introduction-to-NLP-AIMagazine</id><content type="html" xml:base="http://localhost:4000/blogs/2024-07-02-Introduction-to-NLP-AIMagazine/"><![CDATA[<p><strong>Reading_time:</strong> 5 min<br />
   <strong>Tags:</strong> [AI ,MachineLearning, NLP, ComputerVision, MLOps DeepLearning, DataScience, TechInnovation,FutureTech
 ]</p>
 <ul class="large-only" id="markdown-toc">
