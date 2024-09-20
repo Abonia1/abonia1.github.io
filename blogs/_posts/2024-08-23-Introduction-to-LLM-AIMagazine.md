@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 1-Introduction to LLM — AIMagazine
+title: 2-Introduction to LLM — [AIMagazine]
 image: 
   path: /assets/img/blog/AIMagazine.png
 description: >

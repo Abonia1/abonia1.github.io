@@ -1,5 +1,160 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2024-09-20T12:42:26+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Abonia Sojasingarayar</title><subtitle>Holds a Masters degree in Artificial Intelligence and boasts over 7 years of experience. With a robust background in crafting and implementing ML systems across diverse domains, including cybersecurity, banking, transit,cosmetics &amp; hygiene research, and e-commerce.
-</subtitle><author><name>Abonia Sojasingarayar</name><email>aboniaa@gmail.com</email></author><entry><title type="html">1-Introduction to LLM — AIMagazine</title><link href="http://localhost:4000/blogs/2024-08-23-Introduction-to-LLM-AIMagazine/" rel="alternate" type="text/html" title="1-Introduction to LLM — AIMagazine" /><published>2024-08-23T00:00:00+02:00</published><updated>2024-08-23T17:53:18+02:00</updated><id>http://localhost:4000/blogs/Introduction-to-LLM-AIMagazine</id><content type="html" xml:base="http://localhost:4000/blogs/2024-08-23-Introduction-to-LLM-AIMagazine/"><![CDATA[<p><strong>Reading_time:</strong> 5 min<br />
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2024-09-20T13:34:57+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Abonia Sojasingarayar</title><subtitle>Holds a Masters degree in Artificial Intelligence and boasts over 7 years of experience. With a robust background in crafting and implementing ML systems across diverse domains, including cybersecurity, banking, transit,cosmetics &amp; hygiene research, and e-commerce.
+</subtitle><author><name>Abonia Sojasingarayar</name><email>aboniaa@gmail.com</email></author><entry><title type="html">Running Ollama in Google Colab (Free Tier)</title><link href="http://localhost:4000/blogs/2024-09-20-Running-Ollama-in-Google-Colab-(FreeTier)/" rel="alternate" type="text/html" title="Running Ollama in Google Colab (Free Tier)" /><published>2024-09-20T00:00:00+02:00</published><updated>2024-09-20T13:34:55+02:00</updated><id>http://localhost:4000/blogs/Running-Ollama-in-Google-Colab-(FreeTier)</id><content type="html" xml:base="http://localhost:4000/blogs/2024-09-20-Running-Ollama-in-Google-Colab-(FreeTier)/"><![CDATA[<p><strong><a href="https://youtu.be/UIZ5kdjYNMA">Link to the complete hands-on tutorial on Running Ollama in Google Colab (Free Tier)</a></strong></p>
+
+<p><strong>Reading_time:</strong> 5 min<br />
+  <strong>Tags:</strong> [Ollama, colab, FreeTier, LLM, GenAI]</p>
+<ul class="large-only" id="markdown-toc">
+  <li><a href="#running-ollama-in-google-colab-free-tier" id="markdown-toc-running-ollama-in-google-colab-free-tier">Running Ollama in Google Colab (Free Tier)</a>    <ul>
+      <li><a href="#a-step-by-step-tutorial" id="markdown-toc-a-step-by-step-tutorial">A Step-by-Step Tutorial</a></li>
+    </ul>
+  </li>
+  <li><a href="#setting-up-the-environment" id="markdown-toc-setting-up-the-environment">Setting Up the Environment</a></li>
+  <li><a href="#installing-and-serving-ollama" id="markdown-toc-installing-and-serving-ollama">Installing and serving Ollama</a>    <ul>
+      <li><a href="#launching-xterm" id="markdown-toc-launching-xterm">Launching Xterm</a></li>
+      <li><a href="#installing-ollama" id="markdown-toc-installing-ollama">Installing Ollama</a></li>
+      <li><a href="#starting-the-ollama-server" id="markdown-toc-starting-the-ollama-server">Starting the Ollama Server</a></li>
+      <li><a href="#pulling-ai-models" id="markdown-toc-pulling-ai-models">Pulling AI Models</a></li>
+      <li><a href="#verifying-the-installation" id="markdown-toc-verifying-the-installation">Verifying the Installation</a></li>
+    </ul>
+  </li>
+  <li><a href="#running-ollama-commands" id="markdown-toc-running-ollama-commands">Running Ollama Commands</a>    <ul>
+      <li><a href="#sample-colab-notebook" id="markdown-toc-sample-colab-notebook">Sample Colab Notebook</a></li>
+    </ul>
+  </li>
+  <li><a href="#key-points-to-consider" id="markdown-toc-key-points-to-consider">Key Points to Consider</a></li>
+  <li><a href="#best-practices" id="markdown-toc-best-practices">Best Practices</a></li>
+</ul>
+
+<h2 id="running-ollama-in-google-colab-free-tier">Running Ollama in Google Colab (Free Tier)</h2>
+
+<h3 id="a-step-by-step-tutorial">A Step-by-Step Tutorial</h3>
+
+<p>Ollama empowers you to leverage powerful large language models (LLMs) like Llama2,Llama3,Phi3 etc. without needing a powerful local machine. Google Colab’s free tier provides a cloud environment perfectly suited for running these resource-intensive models. This tutorial details setting up and running Ollama on the free version of Google Colab, allowing you to explore the capabilities of LLMs without significant upfront costs.</p>
+
+<iframe width="900" height="500" src="https://www.youtube.com/embed/UIZ5kdjYNMA" frameborder="0" allowfullscreen=""></iframe>
+
+<p>You will learn:</p>
+
+<ul>
+  <li>
+    <p>Why run Ollama in, Google Colab</p>
+  </li>
+  <li>
+    <p>How to run Ollama in colab</p>
+  </li>
+</ul>
+
+<p>Google Colab provides an excellent environment for running machine learning models and tools like Ollama. While Colab offers a generous free tier, we need to take some extra steps to ensure we can run Ollama effectively. Let’s go through this process step-by-step.</p>
+
+<h2 id="setting-up-the-environment">Setting Up the Environment</h2>
+
+<p>First, we need to set up our Colab notebook to support command-line operations:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>!pip install colab-xterm
+%load_ext colabxterm
+</code></pre></div></div>
+
+<p>This code installs the <code class="language-plaintext highlighter-rouge">colab-xterm</code> library and enables the Colab XTerm extension, which allows us to run shell commands directly in our notebook .</p>
+
+<h2 id="installing-and-serving-ollama">Installing and serving Ollama</h2>
+
+<p>To get started with Ollama, we’ll need to install it using the official installation script. Here’s how to do it:</p>
+
+<h3 id="launching-xterm">Launching Xterm</h3>
+
+<p>Now, let’s launch the xterm terminal within our Colab cell:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>%xterm
+</code></pre></div></div>
+
+<p>This command opens a full-screen terminal window within your Colab notebook.</p>
+
+<h3 id="installing-ollama">Installing Ollama</h3>
+
+<p>Once the xterm is open, we can proceed with the installation of Ollama. Run the following commands:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl https://ollama.ai/install.sh | sh
+</code></pre></div></div>
+
+<p>This command downloads the installation script from the Ollama website and executes it. The script will handle the installation process automatically, including downloading and installing necessary dependencies.</p>
+
+<h3 id="starting-the-ollama-server">Starting the Ollama Server</h3>
+
+<p>Once Ollama is installed, we can start the server using the following command:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ollama serve &amp;
+</code></pre></div></div>
+
+<p>The <code class="language-plaintext highlighter-rouge">&amp;</code> at the end runs the command in the background, allowing you to continue using your terminal.</p>
+
+<h3 id="pulling-ai-models">Pulling AI Models</h3>
+
+<p>Now that the Ollama server is running, we can pull AI models to use with our server. Let’s pull the Mistral model as an example:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ollama pull mistral
+</code></pre></div></div>
+
+<p>This command downloads the Mistral model and makes it available for use with your Ollama server.</p>
+
+<h3 id="verifying-the-installation">Verifying the Installation</h3>
+
+<p>Let’s verify that Ollama has been installed correctly:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>!ollama - version
+</code></pre></div></div>
+
+<p>This should display the version number of Ollama if the installation was successful.</p>
+
+<h2 id="running-ollama-commands">Running Ollama Commands</h2>
+
+<p>Now that we have Ollama installed, we can start using it. Here are a few basic commands to get you started:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>!ollama pull llama
+!ollama generate "Hello, world!"
+</code></pre></div></div>
+
+<p>The first command pulls the “llama” model, and the second generates text using that model.</p>
+
+<h3 id="sample-colab-notebook">Sample Colab Notebook</h3>
+
+<script src="https://gist.github.com/Abonia1/48ea45c147d15621b3f4dcc6a6ca2a2f.js"></script>
+
+<h2 id="key-points-to-consider">Key Points to Consider</h2>
+
+<ul>
+  <li>While Ollama runs in Colab, it may not be as fast as running locally due to network latency and resource limitations of the free tier.</li>
+  <li>Be mindful of your usage limits, especially if you plan to run multiple models or generate large amounts of text.</li>
+  <li>Some advanced features of Ollama might not work perfectly in the Colab environment due to its virtual machine nature.</li>
+</ul>
+
+<h2 id="best-practices">Best Practices</h2>
+
+<ol>
+  <li>Use smaller models: Choose lighter models like “llama” or “llama2” for better performance in Colab.</li>
+  <li>Generate text incrementally: If you need longer outputs, consider generating text in chunks rather than all at once.</li>
+  <li>Save your work: Remember to save your notebook frequently, as Colab sessions can sometimes terminate unexpectedly.</li>
+  <li>
+    <p>Clean up: After your session ends, you might want to remove Ollama to free up space:</p>
+
+    <p>!rm -rf /usr/local/bin/ollama</p>
+  </li>
+</ol>
+
+<p>By following these steps and best practices, you can effectively run Ollama in Google Colab using the free tier. This setup provides a convenient way to experiment with language models without needing to manage a local server or worry about hardware requirements.</p>
+
+<hr />
+<p><strong><em>Thanks for Reading!</em></strong></p>
+
+<p><strong><a href="https://abonia1.github.io/">Website/Newletter</a></strong>
+<strong><a href="https://aboniasojasingarayar.substack.com">AIMagazine Substack</a></strong></p>
+
+<p>Connect with me on <strong><a href="https://www.linkedin.com/in/aboniasojasingarayar/">Linkedin</a></strong></p>
+
+<p>Find me on <strong><a href="https://github.com/Abonia1">Github</a></strong></p>
+
+<p>Visit my technical channel on <strong><a href="https://www.youtube.com/@AboniaSojasingarayar">Youtube</a></strong></p>
+
+<p>Support: <strong><a href="https://www.buymeacoffee.com/abonia">Buy me a Cofee/Chai</a></strong></p>]]></content><author><name>Abonia Sojasingarayar</name><email>aboniaa@gmail.com</email></author><category term="blogs" /><summary type="html"><![CDATA[Ollama empowers you to leverage powerful large language models (LLMs) like Llama2,Llama3,Phi3 etc. without needing a powerful local machine. Google Colab’s free tier provides a cloud environment perfectly suited for running these resource-intensive models. This tutorial details setting up and running Ollama on the free version of Google Colab, allowing you to explore the capabilities of LLMs without significant upfront costs.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/ollama-in-colab.png" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/ollama-in-colab.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">2-Introduction to LLM — [AIMagazine]</title><link href="http://localhost:4000/blogs/2024-08-23-Introduction-to-LLM-AIMagazine/" rel="alternate" type="text/html" title="2-Introduction to LLM — [AIMagazine]" /><published>2024-08-23T00:00:00+02:00</published><updated>2024-08-23T17:53:18+02:00</updated><id>http://localhost:4000/blogs/Introduction-to-LLM-AIMagazine</id><content type="html" xml:base="http://localhost:4000/blogs/2024-08-23-Introduction-to-LLM-AIMagazine/"><![CDATA[<p><strong>Reading_time:</strong> 5 min<br />
   <strong>Tags:</strong> [LLM, GenAI, AI ,MachineLearning, NLP, ComputerVision, MLOps DeepLearning, DataScience, TechInnovation,FutureTech
 ]</p>
 <ul class="large-only" id="markdown-toc">
@@ -68,7 +223,7 @@
 
 <p>Visit my technical channel on <strong><a href="https://www.youtube.com/@AboniaSojasingarayar">Youtube</a></strong></p>
 
-<p>Support: <strong><a href="https://www.buymeacoffee.com/abonia">Buy me a Cofee/Chai</a></strong></p>]]></content><author><name>Abonia Sojasingarayar</name><email>aboniaa@gmail.com</email></author><category term="blogs" /><summary type="html"><![CDATA[This chapter will be your comprehensive guide to navigating the fascinating world of LLMs. We'll delve into their core concepts, exploring different types like autoregressive models and encoder-decoder models. You'll discover the magic behind self-attention, a mechanism that allows LLMs to focus on relevant information, and delve into the pre-training strategies that give them their vast knowledge. Finally, we'll showcase the real-world applications of LLMs, from powering chatbots and generating realistic dialogue to creating marketing copy and summarizing complex topics.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/AIMagazine.png" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/AIMagazine.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">1-Introduction to NLP — AIMagazine</title><link href="http://localhost:4000/blogs/2024-07-02-Introduction-to-NLP-AIMagazine/" rel="alternate" type="text/html" title="1-Introduction to NLP — AIMagazine" /><published>2024-07-02T00:00:00+02:00</published><updated>2024-07-03T13:50:59+02:00</updated><id>http://localhost:4000/blogs/Introduction-to-NLP-AIMagazine</id><content type="html" xml:base="http://localhost:4000/blogs/2024-07-02-Introduction-to-NLP-AIMagazine/"><![CDATA[<p><strong>Reading_time:</strong> 5 min<br />
+<p>Support: <strong><a href="https://www.buymeacoffee.com/abonia">Buy me a Cofee/Chai</a></strong></p>]]></content><author><name>Abonia Sojasingarayar</name><email>aboniaa@gmail.com</email></author><category term="blogs" /><summary type="html"><![CDATA[This chapter will be your comprehensive guide to navigating the fascinating world of LLMs. We'll delve into their core concepts, exploring different types like autoregressive models and encoder-decoder models. You'll discover the magic behind self-attention, a mechanism that allows LLMs to focus on relevant information, and delve into the pre-training strategies that give them their vast knowledge. Finally, we'll showcase the real-world applications of LLMs, from powering chatbots and generating realistic dialogue to creating marketing copy and summarizing complex topics.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/AIMagazine.png" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/AIMagazine.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">1-Introduction to NLP — [AIMagazine]</title><link href="http://localhost:4000/blogs/2024-07-02-Introduction-to-NLP-AIMagazine/" rel="alternate" type="text/html" title="1-Introduction to NLP — [AIMagazine]" /><published>2024-07-02T00:00:00+02:00</published><updated>2024-07-03T13:50:59+02:00</updated><id>http://localhost:4000/blogs/Introduction-to-NLP-AIMagazine</id><content type="html" xml:base="http://localhost:4000/blogs/2024-07-02-Introduction-to-NLP-AIMagazine/"><![CDATA[<p><strong>Reading_time:</strong> 5 min<br />
   <strong>Tags:</strong> [AI ,MachineLearning, NLP, ComputerVision, MLOps DeepLearning, DataScience, TechInnovation,FutureTech
 ]</p>
 <ul class="large-only" id="markdown-toc">

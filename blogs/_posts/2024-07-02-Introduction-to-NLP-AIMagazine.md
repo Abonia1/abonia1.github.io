@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 1-Introduction to NLP — AIMagazine
+title: 1-Introduction to NLP — [AIMagazine]
 image: 
   path: /assets/img/blog/AIMagazine.png
 description: >
