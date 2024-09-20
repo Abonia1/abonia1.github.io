@@ -8,7 +8,7 @@ redirect_from:
   - /download/
 ---
 
-# Newsletter 
+# Newsletter
 
 {% capture includeGuts %}
 {% include newsletter-form.html %}
