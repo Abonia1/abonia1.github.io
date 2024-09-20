@@ -16,14 +16,11 @@ sitemap: false
 - Table of Contents
 {:toc .large-only}
 
-## Running Ollama in Google Colab (Free Tier)
-
 ### A Step-by-Step Tutorial
 
 Ollama empowers you to leverage powerful large language models (LLMs) like Llama2,Llama3,Phi3 etc. without needing a powerful local machine. Google Colab’s free tier provides a cloud environment perfectly suited for running these resource-intensive models. This tutorial details setting up and running Ollama on the free version of Google Colab, allowing you to explore the capabilities of LLMs without significant upfront costs.
 
 <iframe width="900" height="500" src="https://www.youtube.com/embed/UIZ5kdjYNMA" frameborder="0" allowfullscreen></iframe>
-
 
 
 You will learn:
