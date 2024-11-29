@@ -32,24 +32,24 @@ Powered by Hydejack v9.1.6 <https://hydejack.com/>
   
     
 <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>YOLOv8 Fire and Smoke Detection | Abonia Sojasingarayar</title>
+<title>Multi-Modal Retrieval - Bridging Text and Images with BGE and CLIP | Abonia Sojasingarayar</title>
 <meta name="generator" content="Jekyll v4.3.3" />
-<meta property="og:title" content="YOLOv8 Fire and Smoke Detection" />
+<meta property="og:title" content="Multi-Modal Retrieval - Bridging Text and Images with BGE and CLIP" />
 <meta name="author" content="Abonia Sojasingarayar" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="Fine-Tune YOLOv8 Fire-and-Smoke-Detection on custom data" />
-<meta property="og:description" content="Fine-Tune YOLOv8 Fire-and-Smoke-Detection on custom data" />
-<link rel="canonical" href="http://localhost:4000/blogs/2023-02-10-YOLOv8-Fire-and-Smoke-Detection/" />
-<meta property="og:url" content="http://localhost:4000/blogs/2023-02-10-YOLOv8-Fire-and-Smoke-Detection/" />
+<meta name="description" content="In today’s data-rich world, being able to retrieve relevant information across different modalities (text, images, audio) has become increasingly important. This post will guide you through creating a multi-modal retrieval system that combines text embeddings from BGE (Bidirectional Generative Encoder) and image embeddings from CLIP (Contrastive Language-Instrumental Pre-training) to index and query Wikipedia articles." />
+<meta property="og:description" content="In today’s data-rich world, being able to retrieve relevant information across different modalities (text, images, audio) has become increasingly important. This post will guide you through creating a multi-modal retrieval system that combines text embeddings from BGE (Bidirectional Generative Encoder) and image embeddings from CLIP (Contrastive Language-Instrumental Pre-training) to index and query Wikipedia articles." />
+<link rel="canonical" href="http://localhost:4000/blogs/2024-10-01-Multi-Modal-Retrieval-BGE-CLIP/" />
+<meta property="og:url" content="http://localhost:4000/blogs/2024-10-01-Multi-Modal-Retrieval-BGE-CLIP/" />
 <meta property="og:site_name" content="Abonia Sojasingarayar" />
-<meta property="og:image" content="https://cdn-images-1.medium.com/max/2000/1*HVm63Me_kPRNy0vxekCabw.gif" />
+<meta property="og:image" content="http://localhost:4000/assets/img/blog/Multi-ModalRetriever.png" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2023-02-10T00:00:00+01:00" />
+<meta property="article:published_time" content="2024-10-01T00:00:00+02:00" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="https://cdn-images-1.medium.com/max/2000/1*HVm63Me_kPRNy0vxekCabw.gif" />
-<meta property="twitter:title" content="YOLOv8 Fire and Smoke Detection" />
+<meta property="twitter:image" content="http://localhost:4000/assets/img/blog/Multi-ModalRetriever.png" />
+<meta property="twitter:title" content="Multi-Modal Retrieval - Bridging Text and Images with BGE and CLIP" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Abonia Sojasingarayar"},"dateModified":"2024-04-15T19:07:47+02:00","datePublished":"2023-02-10T00:00:00+01:00","description":"Fine-Tune YOLOv8 Fire-and-Smoke-Detection on custom data","headline":"YOLOv8 Fire and Smoke Detection","image":"https://cdn-images-1.medium.com/max/2000/1*HVm63Me_kPRNy0vxekCabw.gif","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blogs/2023-02-10-YOLOv8-Fire-and-Smoke-Detection/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/img/blog/logo.jpeg"},"name":"Abonia Sojasingarayar"},"url":"http://localhost:4000/blogs/2023-02-10-YOLOv8-Fire-and-Smoke-Detection/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Abonia Sojasingarayar"},"dateModified":"2024-09-25T15:43:26+02:00","datePublished":"2024-10-01T00:00:00+02:00","description":"In today’s data-rich world, being able to retrieve relevant information across different modalities (text, images, audio) has become increasingly important. This post will guide you through creating a multi-modal retrieval system that combines text embeddings from BGE (Bidirectional Generative Encoder) and image embeddings from CLIP (Contrastive Language-Instrumental Pre-training) to index and query Wikipedia articles.","headline":"Multi-Modal Retrieval - Bridging Text and Images with BGE and CLIP","image":"http://localhost:4000/assets/img/blog/Multi-ModalRetriever.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blogs/2024-10-01-Multi-Modal-Retrieval-BGE-CLIP/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/img/blog/logo.jpeg"},"name":"Abonia Sojasingarayar"},"url":"http://localhost:4000/blogs/2024-10-01-Multi-Modal-Retrieval-BGE-CLIP/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -77,7 +77,7 @@ Powered by Hydejack v9.1.6 <https://hydejack.com/>
 <meta name="generator" content="Hydejack v9.1.6" />
 
 
-<link rel="alternate" href="http://localhost:4000/blogs/2023-02-10-YOLOv8-Fire-and-Smoke-Detection/" hreflang="en">
+<link rel="alternate" href="http://localhost:4000/blogs/2024-10-01-Multi-Modal-Retrieval-BGE-CLIP/" hreflang="en">
 
 <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Abonia Sojasingarayar" />
 
@@ -197,7 +197,7 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79, 177, 186, 0.
       <li>
         
           <span>/</span>
-          <span>2023-02-10-YOLOv8-Fire-and-Smoke-Detection</span>
+          <span>2024-10-01-Multi-Modal-Retrieval-BGE-CLIP</span>
         
       </li>
     
@@ -214,18 +214,18 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79, 177, 186, 0.
 
 
 
-<article id="post-blogs-YOLOv8-Fire-and-Smoke-Detection" class="page post mb6" role="article">
+<article id="post-blogs-Multi-Modal-Retrieval-BGE-CLIP" class="page post mb6" role="article">
   <header>
     <h1 class="post-title flip-project-title">
       
-        YOLOv8 Fire and Smoke Detection
+        Multi-Modal Retrieval - Bridging Text and Images with BGE and CLIP
       
     </h1>
 
     <div class="post-date">
       
       <span class="ellipsis mr1">
-        <time datetime="2023-02-10T00:00:00+01:00">10 Feb 2023</time> in <a href="/example/" class="flip-title">Blogs</a> 
+        <time datetime="2024-10-01T00:00:00+02:00">01 Oct 2024</time> in <a href="/example/" class="flip-title">Blogs</a> 
       </span>
       
         
@@ -234,10 +234,10 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79, 177, 186, 0.
           
             
             
-            <span class="ellipsis" data-tippy-content="Last modified at: 15 Apr 2024">
+            <span class="ellipsis" data-tippy-content="Last modified at: 25 Sep 2024">
               <span class="sr-only">Last modified at:</span>
               <span class="icon-history"></span>
-              <time datetime="2024-04-15T19:07:47+02:00">2024-04-15</time>
+              <time datetime="2024-09-25T15:43:26+02:00">2024-09-25</time>
             </span>
           
         
@@ -253,11 +253,11 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79, 177, 186, 0.
 
 <img
   
-    src="https://cdn-images-1.medium.com/max/2000/1*HVm63Me_kPRNy0vxekCabw.gif"
+    src="/assets/img/blog/Multi-ModalRetriever.png"
     
     
   
-  alt="YOLOv8 Fire and Smoke Detection"
+  alt="Multi-Modal Retrieval - Bridging Text and Images with BGE and CLIP"
   
   
   width="864"
@@ -276,7 +276,7 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79, 177, 186, 0.
 
   
     <p class="note-sm" >
-      Fine-Tune YOLOv8 Fire-and-Smoke-Detection on custom data
+      In today’s data-rich world, being able to retrieve relevant information across different modalities (text, images, audio) has become increasingly important. This post will guide you through creating a multi-modal retrieval system that combines text embeddings from BGE (Bidirectional Generative Encoder) and image embeddings from CLIP (Contrastive Language-Instrumental Pre-training) to index and query Wikipedia articles.
 
     </p>
   
@@ -285,113 +285,162 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79, 177, 186, 0.
   </header>
 
   
-    <p><strong>Reading_time:</strong> 6 min<br />
-  <strong>Tags:</strong> [Yolov8, Fireandsmokedetection, Machine Learning, Computer Vision, AI]</p>
+    <p><strong><a href="https://youtu.be/9oogZrSTiM0?si=epr5kNKcrbzeZ52z">Link to the complete hands-on tutorial on Multi-Modal Retrieval - Bridging Text and Images with BGE and CLIP</a></strong></p>
+
+<p><strong>Reading_time:</strong> 5 min<br />
+  <strong>Tags:</strong> [MultimodalRetrieval, AI, MachineLearning, NLP, ComputerVision, CLIP, BGE, ArtificialIntelligence, CrossModalSearch, TextEmbedding, ImageEmbedding, VectorSearch]</p>
 <ul class="large-only" id="markdown-toc">
-  <li><a href="#yolov8" id="markdown-toc-yolov8">YOLOv8</a></li>
-  <li><a href="#dataset" id="markdown-toc-dataset">Dataset</a></li>
-  <li><a href="#model-training-and-evaluation" id="markdown-toc-model-training-and-evaluation">Model Training and Evaluation</a></li>
-  <li><a href="#inference" id="markdown-toc-inference">Inference</a></li>
-  <li><a href="#application-area" id="markdown-toc-application-area"><strong>Application Area</strong></a></li>
+  <li><a href="#multi-modal-retrieval-bridging-text-and-images-with-bge-and-clip" id="markdown-toc-multi-modal-retrieval-bridging-text-and-images-with-bge-and-clip">Multi-Modal Retrieval: Bridging Text and Images with BGE and CLIP</a>    <ul>
+      <li><a href="#building-and-testing-a-multi-modal-retriever--hands-on" id="markdown-toc-building-and-testing-a-multi-modal-retriever--hands-on">Building and Testing a Multi-Modal Retriever — Hands-On</a></li>
+    </ul>
+  </li>
+  <li><a href="#understanding-multi-modal-retrieval" id="markdown-toc-understanding-multi-modal-retrieval">Understanding Multi-Modal Retrieval</a>    <ul>
+      <li><a href="#technical-overview" id="markdown-toc-technical-overview">Technical Overview</a></li>
+      <li><a href="#data-preparation" id="markdown-toc-data-preparation">Data Preparation</a></li>
+      <li><a href="#building-the-vector-store" id="markdown-toc-building-the-vector-store">Building the Vector Store</a></li>
+      <li><a href="#query-processing-and-retrieval" id="markdown-toc-query-processing-and-retrieval">Query Processing and Retrieval</a></li>
+    </ul>
+  </li>
+  <li><a href="#tutorial" id="markdown-toc-tutorial">Tutorial</a></li>
+  <li><a href="#colab-notebook" id="markdown-toc-colab-notebook">Colab Notebook</a></li>
   <li><a href="#conclusion" id="markdown-toc-conclusion">Conclusion</a></li>
 </ul>
-<p><strong>Table of Contents:</strong></p>
+
+<h2 id="multi-modal-retrieval-bridging-text-and-images-with-bge-and-clip">Multi-Modal Retrieval: Bridging Text and Images with BGE and CLIP</h2>
+
+<h3 id="building-and-testing-a-multi-modal-retriever--hands-on">Building and Testing a Multi-Modal Retriever — Hands-On</h3>
+
+<p>In today’s data-rich world, being able to retrieve relevant information across different modalities (text, images, audio) has become increasingly important. This post will guide you through creating a multi-modal retrieval system that combines text embeddings from BGE (Bidirectional Generative Encoder) and image embeddings from CLIP (Contrastive Language-Instrumental Pre-training) to index and query Wikipedia articles.</p>
+
+<iframe width="900" height="500" src="https://www.youtube.com/embed/9oogZrSTiM0" frameborder="0" allowfullscreen=""></iframe>
+
+<p>In the rapidly evolving landscape of artificial intelligence and natural language processing, the ability to seamlessly integrate text and image information has become increasingly crucial. This article explores a cutting-edge approach to achieving this integration, leveraging state-of-the-art techniques to create a powerful demonstration of cross-modal retrieval capabilities.</p>
+
+<h2 id="understanding-multi-modal-retrieval">Understanding Multi-Modal Retrieval</h2>
+
+<p>Multi-modal retrieval allows us to search for information based on multiple types of input, such as text queries and image queries. It’s particularly useful for applications like visual search, content-based recommendation systems, and multimedia analysis.</p>
+
+<p>Key aspects of multi-modal retrieval include:</p>
+
 <ul>
-  <li><a href="#dataset">Dataset</a></li>
-  <li><a href="#model-training-and-evaluation">Model Training and Evaluation</a></li>
-  <li><a href="#Inference">Inference</a></li>
-  <li><a href="#application-area">Application Area</a></li>
+  <li>
+    <p>Indexing: Creating embeddings for both text and image data</p>
+  </li>
+  <li>
+    <p>Querying: Processing user inputs and finding similar matches</p>
+  </li>
+  <li>
+    <p>Ranking: Ordering results based on relevance</p>
+  </li>
 </ul>
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: center"><img src="https://cdn-images-1.medium.com/max/2000/1*HVm63Me_kPRNy0vxekCabw.gif" alt="Media by Author - Live Fire and smoke detection and tracking using YOLOv8" /></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: center"><i>Image Credits - Media by Author - Live Fire and smoke detection and tracking using YOLOv8</i></td>
-    </tr>
-  </tbody>
-</table>
+<h3 id="technical-overview">Technical Overview</h3>
 
-<p>Fire and smoke detection is a critical task for ensuring public safety and preventing property damage. With recent advances in computer vision and deep learning, it is possible to build accurate fire and smoke detection systems using custom datasets. One such system is YOLOv8, a state-of-the-art object detection model that can be trained on a custom dataset to detect fire and smoke.</p>
-
-<p>This article will redirect you to the <strong><a href="https://github.com/Abonia1/YOLOv8-Fire-and-Smoke-Detection">project</a></strong>.</p>
-
-<p><strong><a href="https://github.com/Abonia1/YOLOv8-Fire-and-Smoke-Detection">This repository contains the code for tracking and detecting fires and smokes in real-time video using YOLOv8.</a></strong></p>
-
-<h2 id="yolov8">YOLOv8</h2>
-
-<p><strong><a href="https://github.com/ultralytics/ultralytics">Ultralytics YOLOv8</a></strong>, developed by <strong><a href="https://ultralytics.com">Ultralytics</a></strong>. YOLOv8 stands for “You Only Look Once version 8” and it is an improvement over the previous YOLO models. It is a single-shot object detection model that can detect multiple objects in an image in real-time. Unlike other object detection models that divide the image into multiple regions and perform object detection on each region, YOLOv8 performs object detection on the entire image in one forward pass through the network. This makes it fast and efficient for real-time applications.</p>
-
-<h2 id="dataset">Dataset</h2>
-
-<p>We have used image dataset from roboflow where it was annoted for to find Fire, smoke and default with boxes.</p>
-
-<p>Link to Fire and Smoke detection <strong><em><a href="https://github.com/Abonia1/YOLOv8-Fire-and-Smoke-Detection/tree/main/datasets/fire-8">dataset</a>.</em></strong></p>
-
-<h2 id="model-training-and-evaluation">Model Training and Evaluation</h2>
-
-<p>The process of training YOLOv8 on a custom dataset involves several steps. First, a dataset of images containing fire and smoke should be collected and annotated. This involves marking the regions of interest in each image that correspond to fire and smoke. The annotated images can then be split into a training set and a validation set for use in the training process.I have useed <strong><em><a href="https://roboflow.com/">roboflow</a></em></strong> for the annotated dataset.</p>
-
-<p><strong>Complete code in Colab Notebook:</strong></p>
-
-<p><strong><a href="https://gist.github.com/Abonia1/eac0e5db887855bbab7875b914ebf429#file-train-yolov8-early-fire-smoke-detection-on-custom-dataset-ipynb"> Notebook Link </a></strong></p>
-
-<script src="https://gist.github.com/Abonia1/eac0e5db887855bbab7875b914ebf429.js"></script>
-
-<p>Once the model is trained, it can be evaluated on the validation set to measure its performance. This can be done by running the evaluation script, which outputs the mean Average Precision (mAP) score for the validation set. The mAP score is a measure of how well the model is able to detect the objects of interest in the validation set.</p>
-
-<p><img src="https://cdn-images-1.medium.com/max/6000/1*8bM1hbqo6yO3-431pTaTAg.png" alt="Source-Image by Author: Confusion Matrix" /></p>
-
-<p><img src="https://cdn-images-1.medium.com/max/4800/1*3-wM1-LMHxSb8PexVczhFg.png" alt="Source-Image by Author: Train,test,validation loss and mAP" /></p>
-
-<p><img src="https://cdn-images-1.medium.com/max/4500/1*xGI8pDGGspE-stuyTfNLvg.png" alt="Source-Image by Author: PR curve" /></p>
-
-<p>Finally, the trained model can be used for inference on new images/videos. This can be done by running the inference script and providing it with the path to an image. The script will display the detected fire and smoke regions on the input image.</p>
-
-<h2 id="inference">Inference</h2>
-
-<p>Sample Results :</p>
-
-<p><img src="https://cdn-images-1.medium.com/max/3840/1*MlsDxcNfuYKBN88T-Y7TzA.jpeg" alt="" /></p>
-
-<p><img src="https://cdn-images-1.medium.com/max/3840/1*0cI6BGRgIkBa7cMOHsn3CA.jpeg" alt="" /></p>
-
-<h2 id="application-area"><strong>Application Area</strong></h2>
-
-<p>Fire and smoke detection have a wide range of applications, including:</p>
-
-<p>1.<strong>Residential and commercial buildings</strong>: Fire and smoke detectors are mandatory in all buildings to ensure the safety of residents and workers. They can alert people in case of a fire and give them enough time to evacuate the building.</p>
-
-<ol>
-  <li><strong>Industrial facilities</strong>: Fire and smoke detectors are crucial in industrial facilities where dangerous chemicals or flammable materials are stored. They can prevent fire outbreaks and minimize damage to property and the environment.</li>
-</ol>
-
-<p>3.<strong>Public transportation</strong>: Fire and smoke detectors are essential in public transportation such as buses, trains, and airplanes. They can ensure the safety of passengers and prevent disasters.</p>
+<p>The proposed system utilizes several advanced techniques to enable efficient and accurate retrieval of both textual and visual content:</p>
 
 <ol>
   <li>
-    <p><strong>Power plants</strong>: Fire and smoke detectors are used in power plants to detect and prevent fires that can cause damage to critical equipment and disrupt power supply.</p>
+    <p>Text Embedding Index: 
+ — Utilizes BAAI/bge-small-en-v1.5 for text representation
+ — Employs Hugging Face (HF) embedding for query encoding</p>
   </li>
   <li>
-    <p><strong>Military and defense</strong>: Fire and smoke detectors are used in military and defense installations to detect and prevent fires that can damage sensitive equipment and compromise national security.</p>
+    <p>Image Embedding Index:
+ — Implements CLIP embeddings from sentence transformers
+ — Leverages CLIP embedding for image query encoding</p>
   </li>
   <li>
-    <p><strong>Mining and oil and gas industries:</strong> Fire and smoke detectors are used in mines and oil and gas facilities to detect and prevent fires that can pose a risk to workers and the environment.</p>
+    <p>Query Encoder:
+ — Processes text queries using HF embedding
+ — Processes image queries using CLIP embedding</p>
   </li>
   <li>
-    <p><strong>Forest Fire and Wildfire</strong>: Detect and alert in-case of forest fires.It helps to take the necessary steps to prevent forest fire and its negative effects.</p>
+    <p>Framework:
+ — Built on top of LlamaIndex for efficient vector storage and retrieval</p>
   </li>
 </ol>
 
-<p>In addition to these applications, fire and smoke detection systems are also used in museums, archives, and data centers to protect valuable and irreplaceable items. Overall, fire and smoke detection is a crucial component of public safety and disaster preparedness.</p>
+<h3 id="data-preparation">Data Preparation</h3>
+
+<p>Before implementing the retrieval system, a crucial step involves preparing the necessary datasets:</p>
+
+<ul>
+  <li>Download raw text and image files for Wikipedia articles</li>
+  <li>These files serve as the foundation for building comprehensive indexes</li>
+</ul>
+
+<h3 id="building-the-vector-store">Building the Vector Store</h3>
+
+<p>With the data at hand, the next step is to construct the vector store:</p>
+
+<ol>
+  <li>
+    <p>Text Index Construction:
+ — Apply BAAI/bge-small-en-v1.5 embeddings to text data
+ — Create a vector store using these embeddings</p>
+  </li>
+  <li>
+    <p>Image Index Construction:
+ — Generate CLIP embeddings for image data
+ — Build a separate vector store for the image embeddings</p>
+  </li>
+</ol>
+
+<h3 id="query-processing-and-retrieval">Query Processing and Retrieval</h3>
+
+<p>Once the vector store is populated, the system can handle various types of queries:</p>
+
+<ol>
+  <li>
+    <p>Text Queries:
+ — Encode input text using HF embedding
+ — Search the text index for relevant matches</p>
+  </li>
+  <li>
+    <p>Image Queries:
+ — Extract features from input images using CLIP embedding
+ — Search the image index for visually similar content</p>
+  </li>
+  <li>
+    <p>Cross-Modal Queries:
+ — Combine text and image queries for simultaneous retrieval
+ — Leverage the power of both indices to find relevant information</p>
+  </li>
+</ol>
+
+<h2 id="tutorial">Tutorial</h2>
+
+<p>A user searches for “Bat man” using a combination of text and image queries. The system would:</p>
+
+<ol>
+  <li>Process the text query using HF embedding</li>
+  <li>Retrieve relevant Wikipedia articles from the text index</li>
+  <li>Simultaneously process the image query (e.g., a photo of Mars, Batman)</li>
+  <li>Find visually similar images from the image index</li>
+  <li>Return a combined result set that includes both textually and visually relevant information</li>
+</ol>
+
+<p>This tutorial highlights the system’s ability to bridge the gap between linguistic and visual representations, providing users with a comprehensive understanding of complex topics through multimodal retrieval.</p>
+
+<h2 id="colab-notebook">Colab Notebook</h2>
+
+<p><strong><a href="https://github.com/Abonia1/Multi-Modal-Retriever/blob/main/multi_modal_retrieval.ipynb">Link to the complete Notebook</a></strong></p>
+
+<script src="https://gist.github.com/Abonia1/a0c555f6e53bc271fe305d29983af645.js"></script>
+
+<p><img src="https://cdn-images-1.medium.com/max/2360/1*xkAvz-IDGh9MVxcx7MBkXA.png" alt="" /></p>
 
 <h2 id="conclusion">Conclusion</h2>
 
-<p>YOLOv8 is a powerful tool for building fire and smoke detection systems using custom datasets. With its speed and accuracy, it is a promising solution for real-world applications that require fast and efficient fire and smoke detection.</p>
+<p>By integrating cutting-edge text and image embedding techniques within a unified framework, this system offers a powerful tool for information retrieval across modalities. Its potential applications extend beyond simple demonstrations, potentially revolutionizing how we interact with and understand complex information in various domains such as education, research, and entertainment. As AI technology continues to advance, such systems will play an increasingly important role in facilitating human-computer interaction and knowledge acquisition.</p>
+
+<p>Lets learn and grow together!</p>
+
+<hr />
+<p><strong><em>Thanks for Reading!</em></strong></p>
+
+<p><strong><a href="https://abonia1.github.io/">Website/Newletter</a></strong>
+<strong><a href="https://aboniasojasingarayar.substack.com">AIMagazine Substack</a></strong></p>
 
 <p>Connect with me on <strong><a href="https://www.linkedin.com/in/aboniasojasingarayar/">Linkedin</a></strong></p>
 
@@ -596,7 +645,7 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79, 177, 186, 0.
     
 
 
-  <aside class="related mb4" role="complementary">  <h2 class="hr-bottom">Related Posts</h2>  <ul class="related-posts">                  <li class="h4">  <a href="/blogs/2024-10-05-SAM2-Fine-Tuning-Custom-Dataset/" class="flip-title"><span>SAM 2 Advanced Object Segmentation for Images and Videos</span></a>  <time class="faded fine" datetime="2024-10-05T00:00:00+02:00">05 Oct 2024</time></li>                        <li class="h4">  <a href="/blogs/2024-10-01-Multi-Modal-Retrieval-BGE-CLIP/" class="flip-title"><span>Multi-Modal Retrieval - Bridging Text and Images with BGE and CLIP</span></a>  <time class="faded fine" datetime="2024-10-01T00:00:00+02:00">01 Oct 2024</time></li>                        <li class="h4">  <a href="/blogs/2024-09-20-Running-Ollama-in-Google-Colab-(FreeTier)/" class="flip-title"><span>Running Ollama in Google Colab (Free Tier)</span></a>  <time class="faded fine" datetime="2024-09-20T00:00:00+02:00">20 Sep 2024</time></li>            </ul></aside>
+  <aside class="related mb4" role="complementary">  <h2 class="hr-bottom">Related Posts</h2>  <ul class="related-posts">                  <li class="h4">  <a href="/blogs/2024-10-05-SAM2-Fine-Tuning-Custom-Dataset/" class="flip-title"><span>SAM 2 Advanced Object Segmentation for Images and Videos</span></a>  <time class="faded fine" datetime="2024-10-05T00:00:00+02:00">05 Oct 2024</time></li>                        <li class="h4">  <a href="/blogs/2024-09-20-Running-Ollama-in-Google-Colab-(FreeTier)/" class="flip-title"><span>Running Ollama in Google Colab (Free Tier)</span></a>  <time class="faded fine" datetime="2024-09-20T00:00:00+02:00">20 Sep 2024</time></li>                        <li class="h4">  <a href="/blogs/2024-08-23-Introduction-to-LLM-AIMagazine/" class="flip-title"><span>2-Introduction to LLM — [AIMagazine]</span></a>  <time class="faded fine" datetime="2024-08-23T00:00:00+02:00">23 Aug 2024</time></li>            </ul></aside>
 
   
 
