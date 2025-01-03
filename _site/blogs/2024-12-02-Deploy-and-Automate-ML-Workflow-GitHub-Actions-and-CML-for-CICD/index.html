@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="en"><!--
+ __  __                __                                     __
+/\ \/\ \              /\ \             __                    /\ \
+\ \ \_\ \   __  __    \_\ \      __   /\_\      __       ___ \ \ \/'\
+ \ \  _  \ /\ \/\ \   /'_` \   /'__`\ \/\ \   /'__`\    /'___\\ \ , <
+  \ \ \ \ \\ \ \_\ \ /\ \L\ \ /\  __/  \ \ \ /\ \L\.\_ /\ \__/ \ \ \\`\
+   \ \_\ \_\\/`____ \\ \___,_\\ \____\ _\ \ \\ \__/.\_\\ \____\ \ \_\ \_\
+    \/_/\/_/ `/___/> \\/__,_ / \/____//\ \_\ \\/__/\/_/ \/____/  \/_/\/_/
+                /\___/                \ \____/
+                \/__/                  \/___/
+
+Powered by Hydejack v9.1.6 <https://hydejack.com/>
+-->
+
+
+
+
+
+
+
+<head>
+  
+
+
+
+
+  <meta name="robots" content="noindex">
+
+
+
+  
+    
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Automate ML and LLM Workflow with GitHub Actions &amp; CML | Abonia Sojasingarayar</title>
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="Automate ML and LLM Workflow with GitHub Actions &amp; CML" />
+<meta name="author" content="Abonia Sojasingarayar" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="MLOps On GitHub Deploy and Automate ML Workflow Using GitHub Actions and CML for CI &amp; CD. Machine learning workflows are complex and time-consuming, involving tasks like data processing, model training, and evaluation. Integrating Continuous Integration (CI) and Continuous Deployment (CD) practices can automate these tasks, saving time, reducing errors, and improving collaboration." />
+<meta property="og:description" content="MLOps On GitHub Deploy and Automate ML Workflow Using GitHub Actions and CML for CI &amp; CD. Machine learning workflows are complex and time-consuming, involving tasks like data processing, model training, and evaluation. Integrating Continuous Integration (CI) and Continuous Deployment (CD) practices can automate these tasks, saving time, reducing errors, and improving collaboration." />
+<link rel="canonical" href="http://localhost:4000/blogs/2024-12-02-Deploy-and-Automate-ML-Workflow-GitHub-Actions-and-CML-for-CICD/" />
+<meta property="og:url" content="http://localhost:4000/blogs/2024-12-02-Deploy-and-Automate-ML-Workflow-GitHub-Actions-and-CML-for-CICD/" />
+<meta property="og:site_name" content="Abonia Sojasingarayar" />
+<meta property="og:image" content="https://cdn-images-1.medium.com/max/2560/1*y0qMmXhAevudLX23NgvkuA.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-12-02T00:00:00+01:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://cdn-images-1.medium.com/max/2560/1*y0qMmXhAevudLX23NgvkuA.png" />
+<meta property="twitter:title" content="Automate ML and LLM Workflow with GitHub Actions &amp; CML" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Abonia Sojasingarayar"},"dateModified":"2024-11-29T13:32:40+01:00","datePublished":"2024-12-02T00:00:00+01:00","description":"MLOps On GitHub Deploy and Automate ML Workflow Using GitHub Actions and CML for CI &amp; CD. Machine learning workflows are complex and time-consuming, involving tasks like data processing, model training, and evaluation. Integrating Continuous Integration (CI) and Continuous Deployment (CD) practices can automate these tasks, saving time, reducing errors, and improving collaboration.","headline":"Automate ML and LLM Workflow with GitHub Actions &amp; CML","image":"https://cdn-images-1.medium.com/max/2560/1*y0qMmXhAevudLX23NgvkuA.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blogs/2024-12-02-Deploy-and-Automate-ML-Workflow-GitHub-Actions-and-CML-for-CICD/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/img/blog/logo.jpeg"},"name":"Abonia Sojasingarayar"},"url":"http://localhost:4000/blogs/2024-12-02-Deploy-and-Automate-ML-Workflow-GitHub-Actions-and-CML-for-CICD/"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  
+
+  
+
+
+
+  <meta name="theme-color" content="rgb(25,55,71)">
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+<meta name="mobile-web-app-capable" content="yes">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Abonia Sojasingarayar">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+<meta name="application-name" content="Abonia Sojasingarayar">
+
+<meta name="generator" content="Hydejack v9.1.6" />
+
+
+<link rel="alternate" href="http://localhost:4000/blogs/2024-12-02-Deploy-and-Automate-ML-Workflow-GitHub-Actions-and-CML-for-CICD/" hreflang="en">
+
+<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Abonia Sojasingarayar" />
+
+
+<link rel="shortcut icon"    href="/assets/img/favicon.ico">
+<link rel="apple-touch-icon" href="/assets/icons/icon-192x192.png">
+
+<link rel="manifest" href="/assets/site.webmanifest">
+
+<link rel="dns-prefetch" href="https://fonts.googleapis.com"><link rel="dns-prefetch" href="https://fonts.gstatic.com">
+
+
+
+<link rel="preload" href="/assets/img/swipe.svg" as="image" id="_hrefSwipeSVG">
+
+
+
+
+
+
+<script>!function(r,c){"use strict";function a(e,t,n,o){e.addEventListener?e.addEventListener(t,n,o):e.attachEvent?e.attachEvent("on"+t,n):e["on"+t]=n}r.loadJS=function(e,t){var n=c.createElement("script"),e=(n.src=e,t&&a(n,"load",t,{once:!0}),c.scripts[0]);return e.parentNode.insertBefore(n,e),n},r._loaded=!1,r.loadJSDeferred=function(e,t){var n=c.createElement("script");function o(){r._loaded=!0,t&&a(n,"load",t,{once:!0});var e=c.scripts[0];e.parentNode.insertBefore(n,e)}return n.src=e,r._loaded?o():a(r,"load",o,{once:!0}),n},r.setRel=r.setRelStylesheet=function(e){a(c.getElementById(e),"load",function(){this.rel="stylesheet"},{once:!0})}}(window,document);
+!function(a){"use strict";var b=function(b,c,d){function e(a){return h.body?a():void setTimeout(function(){e(a)})}function f(){i.addEventListener&&i.removeEventListener("load",f),i.media=d||"all"}var g,h=a.document,i=h.createElement("link");if(c)g=c;else{var j=(h.body||h.getElementsByTagName("head")[0]).childNodes;g=j[j.length-1]}var k=h.styleSheets;i.rel="stylesheet",i.href=b,i.media="only x",e(function(){g.parentNode.insertBefore(i,c?g:g.nextSibling)});var l=function(a){for(var b=i.href,c=k.length;c--;)if(k[c].href===b)return a();setTimeout(function(){l(a)})};return i.addEventListener&&i.addEventListener("load",f),i.onloadcssdefined=l,l(f),i};"undefined"!=typeof exports?exports.loadCSS=b:a.loadCSS=b}("undefined"!=typeof global?global:this);
+!function(a){if(a.loadCSS){var b=loadCSS.relpreload={};if(b.support=function(){try{return a.document.createElement("link").relList.supports("preload")}catch(b){return!1}},b.poly=function(){for(var b=a.document.getElementsByTagName("link"),c=0;c<b.length;c++){var d=b[c];"preload"===d.rel&&"style"===d.getAttribute("as")&&(a.loadCSS(d.href,d,d.getAttribute("media")),d.rel=null)}},!b.support()){b.poly();var c=a.setInterval(b.poly,300);a.addEventListener&&a.addEventListener("load",function(){b.poly(),a.clearInterval(c)}),a.attachEvent&&a.attachEvent("onload",function(){a.clearInterval(c)})}}}(this);
+!function(w) {
+  w._baseURL = '/';
+  w._publicPath = '/assets/js/';
+  w._noPushState = false;
+  w._noDrawer = false;
+  w._noNavbar = false;
+  w._noToc = false;
+  w._noSearch = false;
+  w._search = {
+    DATA_URL: '/assets/sitedata.json?no-cache',
+    STORAGE_KEY: 'mini-search/',
+    INDEX_KEY: 'index--2025-01-03T19:19:58+01:00',
+  };
+  w._clapButton = true;
+}(window);</script>
+
+
+<script async src="/assets/bower_components/MathJax/es5/tex-mml-chtml.js" id="_MathJax"></script>
+
+
+<!--[if gt IE 8]><!---->
+
+  
+
+
+
+
+<link rel="stylesheet" href="/assets/css/hydejack-9.1.6.css" id="_stylePreload">
+<link rel="stylesheet" href="/assets/icomoon/style.css" id="_iconsPreload">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:700%7CNoto+Sans:400,400i,700,700i&display=swap" id="_fontsPreload">
+
+
+
+  <style id="_pageStyle">
+
+html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79, 177, 186, 0.5);--accent-color-highlight: rgba(79, 177, 186, 0.1);--accent-color-darkened: #409ba3;--theme-color: rgb(25,55,71)}
+</style>
+
+
+<!--<![endif]-->
+
+
+
+
+</head>
+
+<body class="no-break-layout">
+  
+
+
+<hy-push-state
+  id="_pushState"
+  replace-selector="#_main"
+  link-selector="a[href]:not([href^='/assets/']):not(.external):not(.no-push-state)"
+  script-selector="script"
+  duration="500"
+  hashchange
+>
+  
+  
+  <div id="_navbar" class="navbar fixed-top">
+  <div class="content">
+    <span class="sr-only">Jump to:</span>
+    <div class="nav-btn-bar">
+      <a id="_menu" class="nav-btn no-hover" href="#_drawer--opened">
+        <span class="sr-only">Navigation</span>
+        <span class="icon-menu"></span>
+      </a>
+      <div class="nav-span"></div>
+    </div>
+  </div>
+</div>
+<hr class="sr-only" hidden />
+
+  <main
+  id="_main"
+  class="content layout-post"
+  role="main"
+>
+  <nav id="breadcrumbs" class="screen-only"><ul>
+  
+  
+    <li><a href="/">home</a></li>
+    
+      <li>
+        
+          <span>/</span>
+          
+          
+          <a href="/blogs/">blogs</a>
+        
+      </li>
+    
+      <li>
+        
+          <span>/</span>
+          <span>2024-12-02-Deploy-and-Automate-ML-Workflow-GitHub-Actions-and-CML-for-CICD</span>
+        
+      </li>
+    
+  
+</ul></nav>
+  
+
+
+
+
+
+
+
+
+
+
+<article id="post-blogs-Deploy-and-Automate-ML-Workflow-GitHub-Actions-and-CML-for-CICD" class="page post mb6" role="article">
+  <header>
+    <h1 class="post-title flip-project-title">
+      
+        Automate ML and LLM Workflow with GitHub Actions & CML
+      
+    </h1>
+
+    <div class="post-date">
+      
+      <span class="ellipsis mr1">
+        <time datetime="2024-12-02T00:00:00+01:00">02 Dec 2024</time> in <a href="/example/" class="flip-title">Blogs</a> 
+      </span>
+      
+        
+          
+          
+          
+            
+            
+            <span class="ellipsis" data-tippy-content="Last modified at: 29 Nov 2024">
+              <span class="sr-only">Last modified at:</span>
+              <span class="icon-history"></span>
+              <time datetime="2024-11-29T13:32:40+01:00">2024-11-29</time>
+            </span>
+          
+        
+      
+    </div>
+
+    
+    
+      
+        <div class="img-wrapper lead aspect-ratio sixteen-nine flip-project-img">
+          
+
+
+<img
+  
+    src="https://cdn-images-1.medium.com/max/2560/1*y0qMmXhAevudLX23NgvkuA.png"
+    
+    
+  
+  alt="Automate ML and LLM Workflow with GitHub Actions & CML"
+  
+  
+  width="864"
+  height="486"
+  loading="lazy"
+/>
+
+        </div>
+      
+      
+    
+
+    
+
+
+
+  
+    <p class="note-sm" >
+      <table>
+  <tbody>
+    <tr>
+      <td>MLOps On GitHub</td>
+      <td>Deploy and Automate ML Workflow</td>
+      <td>Using GitHub Actions and CML for CI &amp; CD. Machine learning workflows are complex and time-consuming, involving tasks like data processing, model training, and evaluation. Integrating Continuous Integration (CI) and Continuous Deployment (CD) practices can automate these tasks, saving time, reducing errors, and improving collaboration.</td>
+    </tr>
+  </tbody>
+</table>
+
+    </p>
+  
+
+
+  </header>
+
+  
+    <p><strong>Reading_time:</strong> 10 min<br />
+  <strong>Tags:</strong> [GitHubActions, CML, MachineLearning, MLOps, DataScience, CICD, Automation, MLPipeline, AI, Scikitpipeline, MLModel
+MachineLearning, GitHubActions, CML, MLAutomation, ChurnPrediction]</p>
+<ul class="large-only" id="markdown-toc">
+  <li><a href="#automate-ml-and-llm-workflow-with-github-actions--cml" id="markdown-toc-automate-ml-and-llm-workflow-with-github-actions--cml">Automate ML and LLM Workflow with GitHub Actions &amp; CML</a>    <ul>
+      <li><a href="#a-complete-guide-to-cicd-for-machine-learning-or-llm-projects" id="markdown-toc-a-complete-guide-to-cicd-for-machine-learning-or-llm-projects">A Complete Guide to CI/CD for Machine Learning or LLM Projects</a></li>
+      <li><a href="#what-is-cicd-for-machine-learning" id="markdown-toc-what-is-cicd-for-machine-learning">What is CI/CD for Machine Learning?</a></li>
+    </ul>
+  </li>
+  <li><a href="#part-1-automating-ml-workflow-with-github-actions--cml" id="markdown-toc-part-1-automating-ml-workflow-with-github-actions--cml">Part 1: Automating ML Workflow with GitHub Actions &amp; CML</a>    <ul>
+      <li><a href="#step-by-step-tutorial-setting-up-cicd-for-a-churn-prediction-project" id="markdown-toc-step-by-step-tutorial-setting-up-cicd-for-a-churn-prediction-project">Step-by-Step Tutorial: Setting Up CI/CD for a Churn Prediction Project</a></li>
+    </ul>
+  </li>
+  <li><a href="#part-2-enhancing-the-ml-workflow-with-github-actions--cml" id="markdown-toc-part-2-enhancing-the-ml-workflow-with-github-actions--cml">Part 2: Enhancing the ML Workflow with GitHub Actions &amp; CML</a></li>
+  <li><a href="#what-is-github-actions" id="markdown-toc-what-is-github-actions">What is GitHub Actions?</a></li>
+  <li><a href="#key-features-of-github-actions" id="markdown-toc-key-features-of-github-actions">Key Features of GitHub Actions:</a></li>
+  <li><a href="#sample-github-actions-workflow-yaml" id="markdown-toc-sample-github-actions-workflow-yaml">Sample GitHub Actions Workflow YAML:</a></li>
+  <li><a href="#what-is-cml-continuous-machine-learning" id="markdown-toc-what-is-cml-continuous-machine-learning">What is CML (Continuous Machine Learning)?</a></li>
+  <li><a href="#key-features-of-cml" id="markdown-toc-key-features-of-cml">Key Features of CML:</a></li>
+  <li><a href="#sample-cml-workflow-with-github-actions" id="markdown-toc-sample-cml-workflow-with-github-actions">Sample CML Workflow with GitHub Actions:</a></li>
+  <li><a href="#explanation-of-the-workflow" id="markdown-toc-explanation-of-the-workflow">Explanation of the Workflow:</a>    <ul>
+      <li><a href="#key-benefits-of-automating-ml-workflows-with-github-actions--cml" id="markdown-toc-key-benefits-of-automating-ml-workflows-with-github-actions--cml">Key Benefits of Automating ML Workflows with GitHub Actions &amp; CML</a></li>
+      <li><a href="#conclusion" id="markdown-toc-conclusion">Conclusion</a></li>
+    </ul>
+  </li>
+  <li><a href="#thanks-for-reading" id="markdown-toc-thanks-for-reading"><em>Thanks for Reading!</em></a></li>
+</ul>
+
+<h2 id="automate-ml-and-llm-workflow-with-github-actions--cml">Automate ML and LLM Workflow with GitHub Actions &amp; CML</h2>
+
+<h3 id="a-complete-guide-to-cicd-for-machine-learning-or-llm-projects">A Complete Guide to CI/CD for Machine Learning or LLM Projects</h3>
+
+<p>Machine learning workflows are complex and time-consuming, involving tasks like data processing, model training, and evaluation. Integrating Continuous Integration (CI) and Continuous Deployment (CD) practices can automate these tasks, saving time, reducing errors, and improving collaboration.I have prepared a tutorial into two major parts as follow:</p>
+
+<p><strong><a href="https://youtu.be/DQIX7p5xx7c">Part 1 -  MLOps On GitHub - Deploy and Automate ML Workflow - Using GitHub Actions and CML for CI &amp; CD</a></strong>.</p>
+
+<p><strong><a href="https://youtu.be/u_rCPdZY2g4">Part 2: MLOps On GitHub - Deploy and Automate ML Workflow - Using GitHub Actions and CML for CI &amp; CD</a></strong>.</p>
+
+<p>Here is the link to the Part1 tutorial on</p>
+
+<p>In this comprehensive guide, we’ll explore how to automate ML workflow using GitHub Actions and Continuous Machine Learning (CML). We’ll focus on a churn prediction project and walk through the process of setting up an automated pipeline to handle training, evaluation, and reporting. By the end of this guide, you’ll have a fully automated CI/CD pipeline for ML project, enhancing workflow and making it easier to collaborate with team.</p>
+
+<h3 id="what-is-cicd-for-machine-learning">What is CI/CD for Machine Learning?</h3>
+
+<p>CI/CD is a set of practices that involve continuously integrating code changes and deploying them into production systems. For ML projects, CI/CD can automate various tasks such as model training, evaluation, testing, and deployment. The goal is to ensure that changes to the project — whether new data, code changes, or model updates — are automatically tested and deployed without manual intervention.</p>
+
+<p>Continuous Integration (CI) focuses on automatically testing and integrating code changes into the main branch. For ML projects, this involves testing the model’s accuracy, performance, and behavior with each update.</p>
+
+<p>Continuous Deployment (CD) automates the deployment of the model to a production environment. This ensures that the most recent version of the model is available for use, and any issues are detected quickly.</p>
+
+<p>For ML, CI/CD practices help ensure that models are continuously trained, tested, and deployed without manual intervention, allowing for faster iteration and a smoother workflow.</p>
+
+<h2 id="part-1-automating-ml-workflow-with-github-actions--cml">Part 1: Automating ML Workflow with GitHub Actions &amp; CML</h2>
+
+<p><strong>Introduction to GitHub Actions and CML</strong></p>
+
+<p>GitHub Actions is a tool that allows you to automate software workflows directly within GitHub repository. It is ideal for CI/CD purposes, where you can define workflows that automatically trigger when specific events occur (e.g., a code push, a pull request).</p>
+
+<p>Continuous Machine Learning (CML) is an open-source tool designed to help you incorporate continuous integration and delivery into ML projects. CML integrates seamlessly with GitHub Actions, allowing you to automate tasks such as model training, evaluation, and report generation.</p>
+
+<h3 id="step-by-step-tutorial-setting-up-cicd-for-a-churn-prediction-project">Step-by-Step Tutorial: Setting Up CI/CD for a Churn Prediction Project</h3>
+
+<p><strong>1. Setting Up the GitHub Repository</strong></p>
+
+<p>To get started, you’ll need to create a GitHub repository for churn prediction project. This repository will store code, datasets, and results. You’ll also configure GitHub Actions to automate the ML pipeline.</p>
+
+<ul>
+  <li>
+    <p>Create a GitHub repository for project.</p>
+  </li>
+  <li>
+    <p>Add a basic folder structure to organize code, data, and models.</p>
+  </li>
+  <li>
+    <p>Configure GitHub Actions in the repository by adding a workflow file (<code class="language-plaintext highlighter-rouge">.github/workflows</code>).</p>
+  </li>
+</ul>
+
+<p><strong>2. Dataset Preparation</strong></p>
+
+<p>The next step is preparing dataset. For this tutorial, we’ll use a churn prediction dataset. Since machine learning datasets can be large, Git LFS (Large File Storage) is essential for managing large files such as datasets and model weights.</p>
+
+<ul>
+  <li>
+    <p>Upload the dataset to GitHub repository using Git LFS.</p>
+  </li>
+  <li>
+    <p>If dataset is hosted elsewhere (e.g., cloud storage), make sure to automate the process of downloading the dataset within the workflow file.</p>
+  </li>
+</ul>
+
+<p><strong>3. Building the ML Model Pipeline</strong></p>
+
+<p>Here, we’ll build the machine learning pipeline for churn prediction. This includes tasks like data preprocessing, model training, and evaluation. With GitHub Actions, every time a change is pushed to the repository, the pipeline will automatically run to train the model and generate evaluation metrics.</p>
+
+<ul>
+  <li>
+    <p>Create Python scripts for data preprocessing, model training, and testing.</p>
+  </li>
+  <li>
+    <p>Define the machine learning algorithm (e.g., logistic regression, decision trees) for churn prediction.</p>
+  </li>
+</ul>
+
+<p><strong>4. Testing the Model</strong></p>
+
+<p>Once the model is trained, we’ll evaluate its performance. Using GitHub Actions and CML, we can automate the testing of the model’s accuracy and other metrics (e.g., confusion matrix, ROC curve). This ensures that the model’s performance is continuously monitored and automatically updated with every commit.</p>
+
+<ul>
+  <li>
+    <p>Use CML to generate detailed performance reports.</p>
+  </li>
+  <li>
+    <p>Set up automated testing for every commit to ensure the model is performing as expected.</p>
+  </li>
+</ul>
+
+<p><strong>5. Next Steps</strong></p>
+
+<p>After completing Part 1, you’ll have a fully automated pipeline for training and testing churn prediction model. In the next part, we’ll enhance the pipeline with visualizations, advanced metrics, and automated reports.</p>
+
+<h2 id="part-2-enhancing-the-ml-workflow-with-github-actions--cml">Part 2: Enhancing the ML Workflow with GitHub Actions &amp; CML</h2>
+
+<p><strong>1. Reviewing Model Evaluation Metrics</strong></p>
+
+<p>In this part of the tutorial, we’ll focus on enhancing our CI/CD pipeline by adding more advanced model evaluation metrics, such as confusion matrix and accuracy graphs. By integrating these into the workflow, we can automatically assess model performance after every update.</p>
+
+<ul>
+  <li>Review the confusion matrix to understand how well our model is performing in terms of true positives, false positives, true negatives, and false negatives.</li>
+</ul>
+
+<p><strong>2. Git LFS Setup</strong></p>
+
+<p>Git LFS (Large File Storage) ensures that large files like datasets and model weights are efficiently handled in our GitHub repository. It’s important to revisit Git LFS setup to ensure that everything works smoothly when training models on large datasets.</p>
+
+<ul>
+  <li>Install and configure Git LFS to handle large files in our project repository.</li>
+</ul>
+
+<p><strong>3. Creating the Workflow File (YAML Workflow Steps)</strong></p>
+
+<p>The heart of our automation is the YAML workflow file. In this file, you’ll define the steps for training the model, testing it, and generating reports. The workflow file also specifies when each task should run (e.g., on every push or pull request).</p>
+
+<ul>
+  <li>
+    <p>Define jobs in the workflow file for each step: data preparation, training, testing, and reporting.</p>
+  </li>
+  <li>
+    <p>Automate the process of checking the model’s performance with every commit or pull request.</p>
+  </li>
+</ul>
+
+<p><strong>4. Building the CI/CD Pipeline Job</strong></p>
+
+<p>Now that the workflow file is set up, we’ll define the build job to automate the entire pipeline. The job will pull the latest code, prepare the environment, and run the necessary tasks (such as model training and testing) automatically.</p>
+
+<ul>
+  <li>Automate testing to ensure that every commit passes the required checks before being merged into the main branch.</li>
+</ul>
+
+<p><strong>5. Model Metrics and Visualizations with CML</strong></p>
+
+<p>In this step, we’ll integrate CML to automatically generate performance visualizations (e.g., training accuracy, loss graphs) and display them directly within GitHub. These visualizations provide insights into model performance and can help track progress over time.</p>
+
+<ul>
+  <li>
+    <p>Use CML to generate visualizations and save them as images or reports.</p>
+  </li>
+  <li>
+    <p>Automatically upload and display these reports on GitHub.</p>
+  </li>
+</ul>
+
+<p><strong>6. Automated Reports in Pull Requests</strong></p>
+
+<p>Once the model is trained and tested, CML can be used to automatically generate a detailed report that is included in the pull request. This allows our team to review model performance directly from the GitHub interface without manually reviewing logs or results.</p>
+
+<ul>
+  <li>Set up CML to generate and attach reports in pull requests, making it easy for our team to monitor changes in model performance.</li>
+</ul>
+
+<p><strong>7. Conclusion and Next Steps</strong></p>
+
+<p>By the end of Part 2, you’ll have a robust CI/CD pipeline that automates not only the training and testing of models but also the reporting of metrics and visualizations. This enables our team to track changes in model performance automatically and collaborate seamlessly on improvements.</p>
+
+<p>Moving forward, you can scale this pipeline, integrate deployment workflows, and continuously improve the churn prediction model.</p>
+
+<h2 id="what-is-github-actions">What is GitHub Actions?</h2>
+
+<p><strong>GitHub Actions</strong> is a powerful tool provided by GitHub that allows you to automate workflows directly in our GitHub repository. It enables to define custom workflows for software development processes, such as Continuous Integration (CI), Continuous Deployment (CD), and automation of various tasks like testing, building, and deployment.</p>
+
+<p>With GitHub Actions, you can automate virtually any task, and the workflow can be triggered by different events such as pushing code to a repository, opening a pull request, creating a tag, or on a scheduled basis. GitHub Actions use <strong>YAML configuration files</strong> to define workflows and steps.</p>
+
+<h2 id="key-features-of-github-actions">Key Features of GitHub Actions:</h2>
+
+<ul>
+  <li>
+    <p><strong>Custom Workflows</strong>: Create workflows that automatically trigger when events happen in repository.</p>
+  </li>
+  <li>
+    <p><strong>Reusable Actions</strong>: You can reuse pre-built actions from the GitHub marketplace or create our own.</p>
+  </li>
+  <li>
+    <p><strong>Parallel Execution</strong>: Workflows can run multiple jobs in parallel, improving efficiency.</p>
+  </li>
+  <li>
+    <p><strong>Integration with Other Services</strong>: GitHub Actions can integrate with external services for additional tasks like sending notifications or deploying models to cloud platforms.</p>
+  </li>
+</ul>
+
+<h2 id="sample-github-actions-workflow-yaml">Sample GitHub Actions Workflow YAML:</h2>
+
+<p>Here’s a simple example of a GitHub Actions workflow file that runs tests on every push to the repository.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>name: Python CI
+on:
+  push:
+    branches:
+      - main  # Trigger this workflow on push to the main branch
+  pull_request:
+    branches:
+      - main  # Trigger on pull requests to the main branch
+jobs:
+  test:
+    runs-on: ubuntu-latest  # The machine that runs the workflow
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3  # This step checks out the repository
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.8'  # Set up Python 3.8 environment
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt  # Install dependencies from the requirements.txt
+      - name: Run tests
+        run: |
+          pytest  # Run tests with pytest
+</code></pre></div></div>
+
+<h2 id="what-is-cml-continuous-machine-learning">What is CML (Continuous Machine Learning)?</h2>
+
+<p><strong>Continuous Machine Learning (CML)</strong> is an open-source framework built by <strong>Iterative</strong> to bring continuous integration practices to machine learning (ML) workflows. CML allows you to automate aspects of machine learning lifecycle, such as training models, evaluating them, and generating reports, and integrates seamlessly with GitHub Actions.</p>
+
+<p>CML makes it easy to manage the often complex and resource-heavy ML workflows by automating tasks such as:</p>
+
+<ul>
+  <li>
+    <p>Training machine learning models</p>
+  </li>
+  <li>
+    <p>Generating visualizations and metrics</p>
+  </li>
+  <li>
+    <p>Creating automated reports</p>
+  </li>
+  <li>
+    <p>Storing and versioning large datasets</p>
+  </li>
+</ul>
+
+<p>With CML, you can ensure that models are constantly updated, evaluated, and tracked in an efficient, automated manner. It integrates well with GitHub Actions to enhance automation in ML projects.</p>
+
+<h2 id="key-features-of-cml">Key Features of CML:</h2>
+
+<ul>
+  <li>
+    <p><strong>Track Metrics and Visualizations</strong>: Automate the generation of charts, graphs, and other visualizations for model performance.</p>
+  </li>
+  <li>
+    <p><strong>Model Experimentation</strong>: Automatically manage and track different versions of machine learning models.</p>
+  </li>
+  <li>
+    <p><strong>Run and Report Model Evaluations</strong>: After training a model, automatically evaluate its performance and report metrics like accuracy, loss, confusion matrices, and more.</p>
+  </li>
+  <li>
+    <p><strong>Integration with GitHub</strong>: CML integrates directly into GitHub Actions workflows, allowing for seamless automation of model training, testing, and reporting.</p>
+  </li>
+</ul>
+
+<h2 id="sample-cml-workflow-with-github-actions">Sample CML Workflow with GitHub Actions:</h2>
+
+<p>Below is an example of how you can integrate <strong>CML</strong> with <strong>GitHub Actions</strong> to automate ML workflows, including training a model, evaluating it, and generating a performance report.</p>
+
+<p><strong>Define the CML Workflow in GitHub Actions</strong>:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>name: ML CI/CD Workflow
+on:
+  push:
+    branches:
+      - main  # Trigger workflow on push to main branch
+  pull_request:
+    branches:
+      - main  # Trigger workflow for pull requests to the main branch
+jobs:
+  train:
+    runs-on: ubuntu-latest  # Set the environment
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3  # Checkout code repository
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.8'  # Define the Python version
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt  # Install Python dependencies
+      - name: Set up Git LFS
+        run: |
+          git lfs install  # Enable Git LFS to manage large files
+      - name: Train model and log metrics with CML
+        run: |
+          python train_model.py  # Train model 
+          cml run -T "Training Results" --report metrics.json  # Run CML to log metrics
+      - name: Commit metrics and model results
+        run: |
+          git add metrics.json model.pkl  # Add metrics and model to Git
+          git commit -m "Update model and metrics"
+          git push
+</code></pre></div></div>
+
+<h2 id="explanation-of-the-workflow">Explanation of the Workflow:</h2>
+
+<ul>
+  <li>
+    <p><strong>on:</strong>: Defines the trigger for the workflow. Here, the workflow runs on push to the main branch or when a pull request is opened.</p>
+  </li>
+  <li>
+    <p><strong>jobs:</strong>: Defines the steps that run in the workflow. In this case, it includes:</p>
+  </li>
+</ul>
+
+<ol>
+  <li>
+    <p><strong>Checkout code</strong>: It checks out repository’s code.</p>
+  </li>
+  <li>
+    <p><strong>Set up Python</strong>: It sets up the Python environment for the workflow.</p>
+  </li>
+  <li>
+    <p><strong>Install dependencies</strong>: It installs the necessary Python packages listed in the requirements.txt file.</p>
+  </li>
+  <li>
+    <p><strong>Train the model</strong>: It runs the train_model.py script to train the model.</p>
+  </li>
+  <li>
+    <p><strong>CML integration</strong>: The cml run command trains the model and logs metrics in metrics.json. The metrics and results are then committed back to the repository.</p>
+  </li>
+  <li>
+    <p><strong>Push results</strong>: After the model is trained and metrics are generated, the results are committed and pushed to the repository.</p>
+  </li>
+</ol>
+
+<h3 id="key-benefits-of-automating-ml-workflows-with-github-actions--cml">Key Benefits of Automating ML Workflows with GitHub Actions &amp; CML</h3>
+
+<ol>
+  <li>
+    <p>Improved Efficiency: Automating repetitive tasks like model training, testing, and reporting saves valuable time and reduces the chances of human error.</p>
+  </li>
+  <li>
+    <p>Real-Time Feedback: Automated reporting provides real-time insights into model performance, allowing team to quickly identify issues and improve the model.</p>
+  </li>
+  <li>
+    <p>Collaborative Workflow: With GitHub Actions and CML, collaboration becomes seamless. Team members can contribute to the project, and every change is automatically tested and reviewed.</p>
+  </li>
+  <li>
+    <p>Scalability: As project grows, you can easily scale the pipeline to handle more models, larger datasets, and more complex workflows.</p>
+  </li>
+</ol>
+
+<h3 id="conclusion">Conclusion</h3>
+
+<p>Automating machine learning workflow with GitHub Actions and CML is a game-changer for data scientists, machine learning engineers, and developers. By following this guide, you’ll have a fully automated CI/CD pipeline that handles training, evaluation, and reporting for churn prediction model.</p>
+
+<p>Incorporating CI/CD into ML workflow ensures that team can work more efficiently, reduce errors, and stay up to date with the latest model improvements. So, what are you waiting for? Start automating ML projects today and enjoy the benefits of streamlined workflows and better collaboration. Happy coding!</p>
+
+<blockquote>
+  <p><strong>Connect with me on <a href="https://www.linkedin.com/in/aboniasojasingarayar/">Linkedin</a></strong></p>
+</blockquote>
+
+<blockquote>
+  <p><strong>Find me on <a href="https://github.com/Abonia1">Github</a></strong></p>
+</blockquote>
+
+<blockquote>
+  <p><strong>Visit my technical channel on <a href="https://www.youtube.com/@AboniaSojasingarayar">Youtube</a></strong></p>
+</blockquote>
+
+<blockquote>
+  <p><strong>Support: <a href="https://www.buymeacoffee.com/abonia">Buy me a Cofee/Chai</a></strong></p>
+</blockquote>
+
+<blockquote>
+  <h1 id="thanks-for-reading"><em>Thanks for Reading!</em></h1>
+</blockquote>
+
+  
+</article>
+
+
+
+  <hr class="dingbat related mb6" />
+
+
+
+
+
+
+  
+     
+
+
+  <aside class="about related mt4 mb4" role="complementary">
+    
+    
+
+<div class="author mt4">
+  
+
+  
+    
+
+
+<img
+  
+    src="/assets/img/blog/logo.jpeg"
+    srcset="https://via.placeholder.com/128x128 1x,/assets/img/blog/logo.jpeg 2x"
+    
+  
+  alt="Abonia Sojasingarayar"
+  class="avatar"
+  
+  width="120"
+  height="120"
+  loading="lazy"
+/>
+
+  
+
+  
+  
+  <h2  class="page-title hr-bottom">
+    About
+  </h2>
+
+  <p>I am distinguished Machine Learning Scientist, Data Scientist, Large Language Model Engineer, NLP Engineer, and Technical Book Reviewer, holds a Masters degree in Artificial Intelligence and boasts over 7 years of experience. With a robust background in crafting and implementing ML systems across diverse domains, including cybersecurity, banking, transit,cosmetics &amp; hygiene research, and e-commerce. Find me on Medium, Google Scholar, GitHub, and LinkedIn, where I mentors others and communicates complex solutions effectively.</p>
+
+
+  <div class="sidebar-social">
+    <span class="sr-only">Social:</span>
+<ul>
+  
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://www.linkedin.com/in/aboniasojasingarayar" title="LinkedIn" class="no-mark-external">
+      <span class="icon-linkedin2"></span>
+      <span class="sr-only">LinkedIn</span>
+    </a>
+  </li>
+
+
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://github.com/Abonia1" title="GitHub" class="no-mark-external">
+      <span class="icon-github"></span>
+      <span class="sr-only">GitHub</span>
+    </a>
+  </li>
+
+
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://medium.com/@abonia" title="medium" class="no-mark-external">
+      <span class="icon-link"></span>
+      <span class="sr-only">medium</span>
+    </a>
+  </li>
+
+
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://www.youtube.com/channel/UCGphGM_oeR4r9dqVs71Jc5w" title="YouTube" class="no-mark-external">
+      <span class="icon-youtube"></span>
+      <span class="sr-only">YouTube</span>
+    </a>
+  </li>
+
+
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://twitter.com/AboniaJesse" title="Twitter" class="no-mark-external">
+      <span class="icon-twitter"></span>
+      <span class="sr-only">Twitter</span>
+    </a>
+  </li>
+
+
+    
+  
+</ul>
+
+  </div>
+</div>
+
+  </aside>
+
+
+  
+
+  
+  
+
+  
+    
+
+
+  <aside class="related mb4" role="complementary">  <h2 class="hr-bottom">Related Posts</h2>  <ul class="related-posts">                  <li class="h4">  <a href="/blogs/2025-01-01-Join-the-Community-AI-Machine-Learning-ComputerVision-Data-Science-GenAI-NLP-MLOps-LLMOps/" class="flip-title"><span>Join the Community in AI, ML, Data Science, ,Computer Vision, Data Science, GenAI, NLP, MLOps,  LLMOps – Let’s Learn Together</span></a>  <time class="faded fine" datetime="2025-01-01T00:00:00+01:00">01 Jan 2025</time></li>                        <li class="h4">  <a href="/blogs/2024-10-05-SAM2-Fine-Tuning-Custom-Dataset/" class="flip-title"><span>SAM 2 Advanced Object Segmentation for Images and Videos</span></a>  <time class="faded fine" datetime="2024-10-05T00:00:00+02:00">05 Oct 2024</time></li>                        <li class="h4">  <a href="/blogs/2024-10-01-Multi-Modal-Retrieval-BGE-CLIP/" class="flip-title"><span>Multi-Modal Retrieval - Bridging Text and Images with BGE and CLIP</span></a>  <time class="faded fine" datetime="2024-10-01T00:00:00+02:00">01 Oct 2024</time></li>            </ul></aside>
+
+  
+
+  
+  
+
+  
+    
+
+  
+
+
+  
+<footer class="content" role="contentinfo">
+  <hr/>
+  
+    <p><small class="copyright">© 2024. All rights reserved.
+</small></p>
+  
+  
+    <nav class="legal"><small>
+    
+      
+      <a class="heading flip-title" href="/LICENSE/">LICENSE</a>
+      
+    
+    </small></nav>
+  
+    <p><small>Powered by <a class="external" href="https://hydejack.com/">Hydejack</a> v<span id="_version">9.1.6</span></small></p>
+  <hr class="sr-only"/>
+</footer>
+
+
+</main>
+
+  <hy-drawer
+  id="_drawer"
+  class=""
+  side="left"
+  threshold="10"
+  noscroll
+  
+>
+  <header id="_sidebar" class="sidebar" role="banner">
+    
+
+
+
+
+<div class="sidebar-bg sidebar-overlay" style="background-color:rgb(25,55,71);background-image:url(/assets/img/sidebar-bg.jpg)"></div>
+
+    <div class="sidebar-sticky">
+  <div class="sidebar-about">
+    
+      <a class="no-hover" href="/" tabindex="-1">
+        <img src="/assets/img/blog/logo.jpeg" class="avatar" alt="Abonia Sojasingarayar" width="120" height="120" loading="lazy" />
+      </a>
+    
+    <a class="sidebar-title" href="/"><h2 class="h1">Abonia Sojasingarayar</h2></a>
+    
+    
+      <p class="">
+        <table>
+  <tbody>
+    <tr>
+      <td>4x Linkedin Top Voice</td>
+      <td>Machine Learning, DS &amp; MLOps</td>
+      <td>Author</td>
+    </tr>
+  </tbody>
+</table>
+
+      </p>
+    
+  </div>
+
+  <nav class="sidebar-nav heading" role="navigation">
+    <span class="sr-only">Navigation:</span>
+<ul>
+  
+    
+      
+      <li>
+        <a
+          id="_drawer--opened"
+          href="/example/"
+          class="sidebar-nav-item "
+          
+        >
+          Blogs
+        </a>
+      </li>
+    
+      
+      <li>
+        <a
+          
+          href="/about/"
+          class="sidebar-nav-item "
+          
+        >
+          About
+        </a>
+      </li>
+    
+      
+      <li>
+        <a
+          
+          href="/newsletter/"
+          class="sidebar-nav-item "
+          
+        >
+          Newsletter
+        </a>
+      </li>
+    
+      
+      <li>
+        <a
+          
+          href="https://aboniasojasingarayar.substack.com/"
+          class="sidebar-nav-item "
+          
+        >
+          AI Magazine
+        </a>
+      </li>
+    
+  
+</ul>
+
+  </nav>
+
+  
+  <div class="sidebar-social">
+    <span class="sr-only">Social:</span>
+<ul>
+  
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://www.linkedin.com/in/aboniasojasingarayar" title="LinkedIn" class="no-mark-external">
+      <span class="icon-linkedin2"></span>
+      <span class="sr-only">LinkedIn</span>
+    </a>
+  </li>
+
+
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://github.com/Abonia1" title="GitHub" class="no-mark-external">
+      <span class="icon-github"></span>
+      <span class="sr-only">GitHub</span>
+    </a>
+  </li>
+
+
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://medium.com/@abonia" title="medium" class="no-mark-external">
+      <span class="icon-link"></span>
+      <span class="sr-only">medium</span>
+    </a>
+  </li>
+
+
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://www.youtube.com/channel/UCGphGM_oeR4r9dqVs71Jc5w" title="YouTube" class="no-mark-external">
+      <span class="icon-youtube"></span>
+      <span class="sr-only">YouTube</span>
+    </a>
+  </li>
+
+
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://twitter.com/AboniaJesse" title="Twitter" class="no-mark-external">
+      <span class="icon-twitter"></span>
+      <span class="sr-only">Twitter</span>
+    </a>
+  </li>
+
+
+    
+  
+</ul>
+
+  </div>
+</div>
+  </header>
+</hy-drawer>
+<hr class="sr-only" hidden />
+
+</hy-push-state>
+
+
+  <!--[if gt IE 10]><!---->
+  <script nomodule>!function(){var t,n=document.createElement("script");!("noModule"in n)&&"onbeforeload"in n&&(t=!1,document.addEventListener("beforeload",function(e){if(e.target===n)t=!0;else if(!e.target.hasAttribute("nomodule")||!t)return;e.preventDefault()},!0),n.type="module",n.src=".",document.head.appendChild(n),n.remove())}();
+</script>
+  <script src="/assets/js/hydejack-9.1.6.js" type="module"></script>
+  <script src="/assets/js/LEGACY-hydejack-9.1.6.js" nomodule defer></script>
+  
+
+  
+
+<!--<![endif]-->
+  <!-- <script>
+  document.querySelector('hy-push-state').setAttribute('prefetch', '');
+
+  document.querySelectorAll('.sidebar a[href^="/"]').forEach(function (el) { 
+    el.addEventListener('click', function (e) {
+      if (el.pathname === window.location.pathname) {
+        e.preventDefault();
+        e.stopPropagation();
+        document.querySelector('hy-drawer').close();
+      }
+    });
+  });
+</script> -->
+
+<!--
+Code for integrating CloudFlare's email protection with Hydejack's single page app loading.
+-->
+<script>
+  document.getElementById('_pushState').addEventListener('hy-push-state-after', function (e) {
+    function e(e){
+      (console.error?console.error:console.log).call(console,e)
+    }
+
+    function t(e){
+      return l.innerHTML='<a href="'+e.replace(/"/g,"&quot;")+'"></a>',l.childNodes[0].getAttribute("href")
+    }
+
+    function r(e,t){
+      var r=e.substr(t,2);return parseInt(r,16)
+    }
+
+    function n(e,n){
+      for(var o="",c=r(e,n),a=n+2;a<e.length;a+=2){
+        var l=r(e,a)^c;
+        o+=String.fromCharCode(l)
+      }
+      return t(o)
+    }
+
+    var o="/cdn-cgi/l/email-protection#",
+        c=".__cf_email__",
+        a="data-cfemail",
+        l=document.createElement("div");
+
+    !function(){
+      for(var t=document.getElementsByTagName("a"),r=0;r<t.length;r++)
+        try{
+          var c=t[r],a=c.href.indexOf(o);
+          a>-1&&(c.href="mailto:"+n(c.href,a+o.length))
+        }catch(t){
+          e(t)
+        }
+    }(),
+    function(){
+      for(var t=document.querySelectorAll(c),r=0;r<t.length;r++)
+        try{
+          var o=t[r],l=n(o.getAttribute(a),0),i=document.createTextNode(l);
+          o.parentNode.replaceChild(i,o)
+        }catch(t){
+          e(t)
+        }
+    }()
+  });
+</script>
+
+
+
+
+
+<div hidden>
+  
+  <h2 class="sr-only">Templates (for web app):</h2>
+
+  <template id="_animation-template">
+  <div class="animation-main fixed-top">
+    <nav id="breadcrumbs" class="screen-only"><ul>
+  
+  
+</ul></nav>
+    <div class="content">
+      <div class="page"></div>
+    </div>
+  </div>
+</template>
+
+  <template id="_loading-template">
+  <div class="loading nav-btn fr">
+    <span class="sr-only">Loading…</span>
+    <span class="icon-cog"></span>
+  </div>
+</template>
+
+  <template id="_error-template">
+  <div class="page">
+    <h1 class="page-title">Error</h1>
+    
+    
+    <p class="lead">
+      Sorry, an error occurred while loading <a class="this-link" href=""></a>.
+
+    </p>
+  </div>
+</template>
+
+  <template id="_permalink-template">
+  <a href="#" class="permalink">
+    <span class="sr-only">Permalink</span>
+    <span class="content-hash"></span>
+  </a>
+</template>
+
+</div>
+
+
+</body>
+</html>

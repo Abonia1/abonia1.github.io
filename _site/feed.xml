@@ -1,5 +1,472 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2024-11-29T13:31:46+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Abonia Sojasingarayar</title><subtitle>Holds a Masters degree in Artificial Intelligence and boasts over 7 years of experience. With a robust background in crafting and implementing ML systems across diverse domains, including cybersecurity, banking, transit,cosmetics &amp; hygiene research, and e-commerce.
-</subtitle><author><name>Abonia Sojasingarayar</name><email>aboniaa@gmail.com</email></author><entry><title type="html">SAM 2 Advanced Object Segmentation for Images and Videos</title><link href="http://localhost:4000/blogs/2024-10-05-SAM2-Fine-Tuning-Custom-Dataset/" rel="alternate" type="text/html" title="SAM 2 Advanced Object Segmentation for Images and Videos" /><published>2024-10-05T00:00:00+02:00</published><updated>2024-09-25T15:43:26+02:00</updated><id>http://localhost:4000/blogs/SAM2-Fine-Tuning-Custom-Dataset</id><content type="html" xml:base="http://localhost:4000/blogs/2024-10-05-SAM2-Fine-Tuning-Custom-Dataset/"><![CDATA[<p><strong><a href="https://youtu.be/93xJstG_zl8">Link to the complete hands-on tutorial on Advanced Object Segmentation for Images</a></strong></p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2025-01-03T19:19:58+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Abonia Sojasingarayar</title><subtitle>Holds a Masters degree in Artificial Intelligence and boasts over 7 years of experience. With a robust background in crafting and implementing ML systems across diverse domains, including cybersecurity, banking, transit,cosmetics &amp; hygiene research, and e-commerce.
+</subtitle><author><name>Abonia Sojasingarayar</name><email>aboniaa@gmail.com</email></author><entry><title type="html">Join the Community in AI, ML, Data Science, ,Computer Vision, Data Science, GenAI, NLP, MLOps, LLMOps – Let’s Learn Together</title><link href="http://localhost:4000/blogs/2025-01-01-Join-the-Community-AI-Machine-Learning-ComputerVision-Data-Science-GenAI-NLP-MLOps-LLMOps/" rel="alternate" type="text/html" title="Join the Community in AI, ML, Data Science, ,Computer Vision, Data Science, GenAI, NLP, MLOps, LLMOps – Let’s Learn Together" /><published>2025-01-01T00:00:00+01:00</published><updated>2025-01-03T19:19:58+01:00</updated><id>http://localhost:4000/blogs/Join-the-Community-AI-Machine%20Learning-ComputerVision-Data%20Science-GenAI-NLP-MLOps-LLMOps</id><content type="html" xml:base="http://localhost:4000/blogs/2025-01-01-Join-the-Community-AI-Machine-Learning-ComputerVision-Data-Science-GenAI-NLP-MLOps-LLMOps/"><![CDATA[<p><strong>Reading_time:</strong> 5 min<br />
+<strong>Tags:</strong> [AIJourney, LearnAI, MachineLearningForAll, DataScienceForBeginners, AICommunity, TechLearning, AIandML, GenerativeAI, AIExplained, LearnTogether, AIForEveryone, MLCommunity, DataScienceJourney, TechForGood, AIInsights]</p>
+
+<iframe width="900" height="500" src="https://www.youtube.com/embed/D0-k6EnRM7E" frameborder="0" allowfullscreen=""></iframe>
+
+<h3 id="lets-learn-together">Let’s Learn Together</h3>
+
+<p>I’m thrilled to share something that’s incredibly close to my heart. Over the past few years, I’ve had the privilege of working as a Data Scientist and AI Engineer. Every single day, I’m reminded of how vast and dynamic the field of Artificial Intelligence (AI), Machine Learning (ML), Data Science, GenAI, NLP, MLOps, LLMOps etc is.</p>
+
+<p>These fields have the power to transform industries, unlock creativity, and solve some of the world’s biggest challenges. But they can also feel overwhelming — especially if you’re just starting. That’s why I decided to create a space where we can explore this exciting world together.</p>
+
+<h2 id="introducing-my-youtube-channel">Introducing My YouTube Channel</h2>
+
+<p>After years of learning, experimenting, and growing, I’ve launched a <strong><a href="https://www.youtube.com/@AboniaSojasingarayar">YouTube channel</a></strong> dedicated to AI, ML, Data Science, Computer Vision, Data Science, GenAI, NLP, MLOps, LLMOps etc . My goal is simple: to make these topics more accessible, less intimidating, and more actionable for anyone who’s curious about them.</p>
+
+<p>Here’s what you can expect to find on the channel:</p>
+
+<ul>
+  <li>
+    <p><strong>Breaking Down Complex Concepts</strong>: AI and ML can seem daunting, but they don’t have to be. I’ll simplify topics like neural networks, transformers, and Generative AI to make them easier to understand.</p>
+  </li>
+  <li>
+    <p><strong>Hands-On Learning</strong>: Learning is about doing, so I’ll walk you through tutorials and projects. Whether it’s training a model or exploring MLOps, you’ll gain practical skills you can apply right away.</p>
+  </li>
+  <li>
+    <p><strong>Book Recommendations and Reviews</strong>: There are so many incredible books in AI, Data Science, and beyond. I’ll share honest reviews and key takeaways to help you decide which ones are worth your time.</p>
+  </li>
+  <li>
+    <p><strong>Conversations with Experts</strong>: I’ll be hosting thoughtful discussions with brilliant minds in AI, ML, Computer Vision, Data Science, GenAI, NLP, MLOps, LLMOps etc so we can all learn from their journeys and insights.</p>
+  </li>
+</ul>
+
+<h2 id="why-this-matters-to-me">Why This Matters to Me</h2>
+
+<p>When I first started in this field, I often felt lost. The technical jargon, the steep learning curves — it was a lot to take in. But I was fortunate to find resources and communities that made learning feel approachable and even fun.</p>
+
+<p>Now, I want to give back by creating a similar space for others. Whether you’re a student, a professional looking to pivot into AI, or just someone curious about the field, I hope this channel becomes a resource you can trust and enjoy.</p>
+
+<h2 id="learning-together">Learning Together</h2>
+
+<p>One thing I’ve learned is that AI is as much about the process as it is about the results. It’s okay to start small, ask questions, and make mistakes. Every bit of progress, no matter how small, is worth celebrating.</p>
+
+<p>This channel isn’t just about teaching; it’s about building a community of learners. Together, we can explore the latest advancements, tackle challenges, and uncover the limitless possibilities AI has to offer.</p>
+
+<h2 id="join-me-on-this-journey">Join Me on This Journey</h2>
+
+<p>If this resonates with you, I invite you to watch the channel trailer, subscribe, and be part of this adventure. Whether you’re new to AI or already experienced, there’s always more to learn, and I’d love for us to learn together.</p>
+
+<p>Thank you for taking the time to read this. I’m excited about what lies ahead and grateful to have you as part of this journey. Here’s to exploring, learning, and growing together!</p>
+
+<h2 id="connect-with-me">Connect with Me</h2>
+
+<p>If you have any inquiries, feel free to reach out via message or email.</p>
+<blockquote>
+  <p><strong><a href="https://abonia1.github.io/">Website/Newletter</a></strong></p>
+</blockquote>
+
+<blockquote>
+  <p><strong>Connect with me on <a href="https://www.linkedin.com/in/aboniasojasingarayar/">Linkedin</a></strong></p>
+</blockquote>
+
+<blockquote>
+  <p><strong>Find me on <a href="https://github.com/Abonia1">Github</a></strong></p>
+</blockquote>
+
+<blockquote>
+  <p><strong>Visit my technical channel on <a href="https://www.youtube.com/@AboniaSojasingarayar">Youtube</a></strong></p>
+</blockquote>
+
+<blockquote>
+  <h1 id="thanks-for-reading"><em>Thanks for Reading!</em></h1>
+</blockquote>]]></content><author><name>Abonia Sojasingarayar</name><email>aboniaa@gmail.com</email></author><category term="blogs" /><summary type="html"><![CDATA[Join me on an exciting journey exploring the world of Artificial Intelligence, Machine Learning, and Data Science. Whether you're just starting or have some experience, let's break down complex topics and learn together. My mission is to make AI and ML approachable and practical for everyone.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://cdn-images-1.medium.com/max/2560/1*UbGdFVOr9zIZV5wkpcaSzg.png" /><media:content medium="image" url="https://cdn-images-1.medium.com/max/2560/1*UbGdFVOr9zIZV5wkpcaSzg.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Automate ML and LLM Workflow with GitHub Actions &amp;amp; CML</title><link href="http://localhost:4000/blogs/2024-12-02-Deploy-and-Automate-ML-Workflow-GitHub-Actions-and-CML-for-CICD/" rel="alternate" type="text/html" title="Automate ML and LLM Workflow with GitHub Actions &amp;amp; CML" /><published>2024-12-02T00:00:00+01:00</published><updated>2024-11-29T13:32:40+01:00</updated><id>http://localhost:4000/blogs/Deploy-and-Automate-ML-Workflow-GitHub-Actions-and-CML-for-CICD</id><content type="html" xml:base="http://localhost:4000/blogs/2024-12-02-Deploy-and-Automate-ML-Workflow-GitHub-Actions-and-CML-for-CICD/"><![CDATA[<p><strong>Reading_time:</strong> 10 min<br />
+  <strong>Tags:</strong> [GitHubActions, CML, MachineLearning, MLOps, DataScience, CICD, Automation, MLPipeline, AI, Scikitpipeline, MLModel
+MachineLearning, GitHubActions, CML, MLAutomation, ChurnPrediction]</p>
+<ul class="large-only" id="markdown-toc">
+  <li><a href="#automate-ml-and-llm-workflow-with-github-actions--cml" id="markdown-toc-automate-ml-and-llm-workflow-with-github-actions--cml">Automate ML and LLM Workflow with GitHub Actions &amp; CML</a>    <ul>
+      <li><a href="#a-complete-guide-to-cicd-for-machine-learning-or-llm-projects" id="markdown-toc-a-complete-guide-to-cicd-for-machine-learning-or-llm-projects">A Complete Guide to CI/CD for Machine Learning or LLM Projects</a></li>
+      <li><a href="#what-is-cicd-for-machine-learning" id="markdown-toc-what-is-cicd-for-machine-learning">What is CI/CD for Machine Learning?</a></li>
+    </ul>
+  </li>
+  <li><a href="#part-1-automating-ml-workflow-with-github-actions--cml" id="markdown-toc-part-1-automating-ml-workflow-with-github-actions--cml">Part 1: Automating ML Workflow with GitHub Actions &amp; CML</a>    <ul>
+      <li><a href="#step-by-step-tutorial-setting-up-cicd-for-a-churn-prediction-project" id="markdown-toc-step-by-step-tutorial-setting-up-cicd-for-a-churn-prediction-project">Step-by-Step Tutorial: Setting Up CI/CD for a Churn Prediction Project</a></li>
+    </ul>
+  </li>
+  <li><a href="#part-2-enhancing-the-ml-workflow-with-github-actions--cml" id="markdown-toc-part-2-enhancing-the-ml-workflow-with-github-actions--cml">Part 2: Enhancing the ML Workflow with GitHub Actions &amp; CML</a></li>
+  <li><a href="#what-is-github-actions" id="markdown-toc-what-is-github-actions">What is GitHub Actions?</a></li>
+  <li><a href="#key-features-of-github-actions" id="markdown-toc-key-features-of-github-actions">Key Features of GitHub Actions:</a></li>
+  <li><a href="#sample-github-actions-workflow-yaml" id="markdown-toc-sample-github-actions-workflow-yaml">Sample GitHub Actions Workflow YAML:</a></li>
+  <li><a href="#what-is-cml-continuous-machine-learning" id="markdown-toc-what-is-cml-continuous-machine-learning">What is CML (Continuous Machine Learning)?</a></li>
+  <li><a href="#key-features-of-cml" id="markdown-toc-key-features-of-cml">Key Features of CML:</a></li>
+  <li><a href="#sample-cml-workflow-with-github-actions" id="markdown-toc-sample-cml-workflow-with-github-actions">Sample CML Workflow with GitHub Actions:</a></li>
+  <li><a href="#explanation-of-the-workflow" id="markdown-toc-explanation-of-the-workflow">Explanation of the Workflow:</a>    <ul>
+      <li><a href="#key-benefits-of-automating-ml-workflows-with-github-actions--cml" id="markdown-toc-key-benefits-of-automating-ml-workflows-with-github-actions--cml">Key Benefits of Automating ML Workflows with GitHub Actions &amp; CML</a></li>
+      <li><a href="#conclusion" id="markdown-toc-conclusion">Conclusion</a></li>
+    </ul>
+  </li>
+  <li><a href="#thanks-for-reading" id="markdown-toc-thanks-for-reading"><em>Thanks for Reading!</em></a></li>
+</ul>
+
+<h2 id="automate-ml-and-llm-workflow-with-github-actions--cml">Automate ML and LLM Workflow with GitHub Actions &amp; CML</h2>
+
+<h3 id="a-complete-guide-to-cicd-for-machine-learning-or-llm-projects">A Complete Guide to CI/CD for Machine Learning or LLM Projects</h3>
+
+<p>Machine learning workflows are complex and time-consuming, involving tasks like data processing, model training, and evaluation. Integrating Continuous Integration (CI) and Continuous Deployment (CD) practices can automate these tasks, saving time, reducing errors, and improving collaboration.I have prepared a tutorial into two major parts as follow:</p>
+
+<p><strong><a href="https://youtu.be/DQIX7p5xx7c">Part 1 -  MLOps On GitHub - Deploy and Automate ML Workflow - Using GitHub Actions and CML for CI &amp; CD</a></strong>.</p>
+
+<p><strong><a href="https://youtu.be/u_rCPdZY2g4">Part 2: MLOps On GitHub - Deploy and Automate ML Workflow - Using GitHub Actions and CML for CI &amp; CD</a></strong>.</p>
+
+<p>Here is the link to the Part1 tutorial on</p>
+
+<p>In this comprehensive guide, we’ll explore how to automate ML workflow using GitHub Actions and Continuous Machine Learning (CML). We’ll focus on a churn prediction project and walk through the process of setting up an automated pipeline to handle training, evaluation, and reporting. By the end of this guide, you’ll have a fully automated CI/CD pipeline for ML project, enhancing workflow and making it easier to collaborate with team.</p>
+
+<h3 id="what-is-cicd-for-machine-learning">What is CI/CD for Machine Learning?</h3>
+
+<p>CI/CD is a set of practices that involve continuously integrating code changes and deploying them into production systems. For ML projects, CI/CD can automate various tasks such as model training, evaluation, testing, and deployment. The goal is to ensure that changes to the project — whether new data, code changes, or model updates — are automatically tested and deployed without manual intervention.</p>
+
+<p>Continuous Integration (CI) focuses on automatically testing and integrating code changes into the main branch. For ML projects, this involves testing the model’s accuracy, performance, and behavior with each update.</p>
+
+<p>Continuous Deployment (CD) automates the deployment of the model to a production environment. This ensures that the most recent version of the model is available for use, and any issues are detected quickly.</p>
+
+<p>For ML, CI/CD practices help ensure that models are continuously trained, tested, and deployed without manual intervention, allowing for faster iteration and a smoother workflow.</p>
+
+<h2 id="part-1-automating-ml-workflow-with-github-actions--cml">Part 1: Automating ML Workflow with GitHub Actions &amp; CML</h2>
+
+<p><strong>Introduction to GitHub Actions and CML</strong></p>
+
+<p>GitHub Actions is a tool that allows you to automate software workflows directly within GitHub repository. It is ideal for CI/CD purposes, where you can define workflows that automatically trigger when specific events occur (e.g., a code push, a pull request).</p>
+
+<p>Continuous Machine Learning (CML) is an open-source tool designed to help you incorporate continuous integration and delivery into ML projects. CML integrates seamlessly with GitHub Actions, allowing you to automate tasks such as model training, evaluation, and report generation.</p>
+
+<h3 id="step-by-step-tutorial-setting-up-cicd-for-a-churn-prediction-project">Step-by-Step Tutorial: Setting Up CI/CD for a Churn Prediction Project</h3>
+
+<p><strong>1. Setting Up the GitHub Repository</strong></p>
+
+<p>To get started, you’ll need to create a GitHub repository for churn prediction project. This repository will store code, datasets, and results. You’ll also configure GitHub Actions to automate the ML pipeline.</p>
+
+<ul>
+  <li>
+    <p>Create a GitHub repository for project.</p>
+  </li>
+  <li>
+    <p>Add a basic folder structure to organize code, data, and models.</p>
+  </li>
+  <li>
+    <p>Configure GitHub Actions in the repository by adding a workflow file (<code class="language-plaintext highlighter-rouge">.github/workflows</code>).</p>
+  </li>
+</ul>
+
+<p><strong>2. Dataset Preparation</strong></p>
+
+<p>The next step is preparing dataset. For this tutorial, we’ll use a churn prediction dataset. Since machine learning datasets can be large, Git LFS (Large File Storage) is essential for managing large files such as datasets and model weights.</p>
+
+<ul>
+  <li>
+    <p>Upload the dataset to GitHub repository using Git LFS.</p>
+  </li>
+  <li>
+    <p>If dataset is hosted elsewhere (e.g., cloud storage), make sure to automate the process of downloading the dataset within the workflow file.</p>
+  </li>
+</ul>
+
+<p><strong>3. Building the ML Model Pipeline</strong></p>
+
+<p>Here, we’ll build the machine learning pipeline for churn prediction. This includes tasks like data preprocessing, model training, and evaluation. With GitHub Actions, every time a change is pushed to the repository, the pipeline will automatically run to train the model and generate evaluation metrics.</p>
+
+<ul>
+  <li>
+    <p>Create Python scripts for data preprocessing, model training, and testing.</p>
+  </li>
+  <li>
+    <p>Define the machine learning algorithm (e.g., logistic regression, decision trees) for churn prediction.</p>
+  </li>
+</ul>
+
+<p><strong>4. Testing the Model</strong></p>
+
+<p>Once the model is trained, we’ll evaluate its performance. Using GitHub Actions and CML, we can automate the testing of the model’s accuracy and other metrics (e.g., confusion matrix, ROC curve). This ensures that the model’s performance is continuously monitored and automatically updated with every commit.</p>
+
+<ul>
+  <li>
+    <p>Use CML to generate detailed performance reports.</p>
+  </li>
+  <li>
+    <p>Set up automated testing for every commit to ensure the model is performing as expected.</p>
+  </li>
+</ul>
+
+<p><strong>5. Next Steps</strong></p>
+
+<p>After completing Part 1, you’ll have a fully automated pipeline for training and testing churn prediction model. In the next part, we’ll enhance the pipeline with visualizations, advanced metrics, and automated reports.</p>
+
+<h2 id="part-2-enhancing-the-ml-workflow-with-github-actions--cml">Part 2: Enhancing the ML Workflow with GitHub Actions &amp; CML</h2>
+
+<p><strong>1. Reviewing Model Evaluation Metrics</strong></p>
+
+<p>In this part of the tutorial, we’ll focus on enhancing our CI/CD pipeline by adding more advanced model evaluation metrics, such as confusion matrix and accuracy graphs. By integrating these into the workflow, we can automatically assess model performance after every update.</p>
+
+<ul>
+  <li>Review the confusion matrix to understand how well our model is performing in terms of true positives, false positives, true negatives, and false negatives.</li>
+</ul>
+
+<p><strong>2. Git LFS Setup</strong></p>
+
+<p>Git LFS (Large File Storage) ensures that large files like datasets and model weights are efficiently handled in our GitHub repository. It’s important to revisit Git LFS setup to ensure that everything works smoothly when training models on large datasets.</p>
+
+<ul>
+  <li>Install and configure Git LFS to handle large files in our project repository.</li>
+</ul>
+
+<p><strong>3. Creating the Workflow File (YAML Workflow Steps)</strong></p>
+
+<p>The heart of our automation is the YAML workflow file. In this file, you’ll define the steps for training the model, testing it, and generating reports. The workflow file also specifies when each task should run (e.g., on every push or pull request).</p>
+
+<ul>
+  <li>
+    <p>Define jobs in the workflow file for each step: data preparation, training, testing, and reporting.</p>
+  </li>
+  <li>
+    <p>Automate the process of checking the model’s performance with every commit or pull request.</p>
+  </li>
+</ul>
+
+<p><strong>4. Building the CI/CD Pipeline Job</strong></p>
+
+<p>Now that the workflow file is set up, we’ll define the build job to automate the entire pipeline. The job will pull the latest code, prepare the environment, and run the necessary tasks (such as model training and testing) automatically.</p>
+
+<ul>
+  <li>Automate testing to ensure that every commit passes the required checks before being merged into the main branch.</li>
+</ul>
+
+<p><strong>5. Model Metrics and Visualizations with CML</strong></p>
+
+<p>In this step, we’ll integrate CML to automatically generate performance visualizations (e.g., training accuracy, loss graphs) and display them directly within GitHub. These visualizations provide insights into model performance and can help track progress over time.</p>
+
+<ul>
+  <li>
+    <p>Use CML to generate visualizations and save them as images or reports.</p>
+  </li>
+  <li>
+    <p>Automatically upload and display these reports on GitHub.</p>
+  </li>
+</ul>
+
+<p><strong>6. Automated Reports in Pull Requests</strong></p>
+
+<p>Once the model is trained and tested, CML can be used to automatically generate a detailed report that is included in the pull request. This allows our team to review model performance directly from the GitHub interface without manually reviewing logs or results.</p>
+
+<ul>
+  <li>Set up CML to generate and attach reports in pull requests, making it easy for our team to monitor changes in model performance.</li>
+</ul>
+
+<p><strong>7. Conclusion and Next Steps</strong></p>
+
+<p>By the end of Part 2, you’ll have a robust CI/CD pipeline that automates not only the training and testing of models but also the reporting of metrics and visualizations. This enables our team to track changes in model performance automatically and collaborate seamlessly on improvements.</p>
+
+<p>Moving forward, you can scale this pipeline, integrate deployment workflows, and continuously improve the churn prediction model.</p>
+
+<h2 id="what-is-github-actions">What is GitHub Actions?</h2>
+
+<p><strong>GitHub Actions</strong> is a powerful tool provided by GitHub that allows you to automate workflows directly in our GitHub repository. It enables to define custom workflows for software development processes, such as Continuous Integration (CI), Continuous Deployment (CD), and automation of various tasks like testing, building, and deployment.</p>
+
+<p>With GitHub Actions, you can automate virtually any task, and the workflow can be triggered by different events such as pushing code to a repository, opening a pull request, creating a tag, or on a scheduled basis. GitHub Actions use <strong>YAML configuration files</strong> to define workflows and steps.</p>
+
+<h2 id="key-features-of-github-actions">Key Features of GitHub Actions:</h2>
+
+<ul>
+  <li>
+    <p><strong>Custom Workflows</strong>: Create workflows that automatically trigger when events happen in repository.</p>
+  </li>
+  <li>
+    <p><strong>Reusable Actions</strong>: You can reuse pre-built actions from the GitHub marketplace or create our own.</p>
+  </li>
+  <li>
+    <p><strong>Parallel Execution</strong>: Workflows can run multiple jobs in parallel, improving efficiency.</p>
+  </li>
+  <li>
+    <p><strong>Integration with Other Services</strong>: GitHub Actions can integrate with external services for additional tasks like sending notifications or deploying models to cloud platforms.</p>
+  </li>
+</ul>
+
+<h2 id="sample-github-actions-workflow-yaml">Sample GitHub Actions Workflow YAML:</h2>
+
+<p>Here’s a simple example of a GitHub Actions workflow file that runs tests on every push to the repository.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>name: Python CI
+on:
+  push:
+    branches:
+      - main  # Trigger this workflow on push to the main branch
+  pull_request:
+    branches:
+      - main  # Trigger on pull requests to the main branch
+jobs:
+  test:
+    runs-on: ubuntu-latest  # The machine that runs the workflow
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3  # This step checks out the repository
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.8'  # Set up Python 3.8 environment
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt  # Install dependencies from the requirements.txt
+      - name: Run tests
+        run: |
+          pytest  # Run tests with pytest
+</code></pre></div></div>
+
+<h2 id="what-is-cml-continuous-machine-learning">What is CML (Continuous Machine Learning)?</h2>
+
+<p><strong>Continuous Machine Learning (CML)</strong> is an open-source framework built by <strong>Iterative</strong> to bring continuous integration practices to machine learning (ML) workflows. CML allows you to automate aspects of machine learning lifecycle, such as training models, evaluating them, and generating reports, and integrates seamlessly with GitHub Actions.</p>
+
+<p>CML makes it easy to manage the often complex and resource-heavy ML workflows by automating tasks such as:</p>
+
+<ul>
+  <li>
+    <p>Training machine learning models</p>
+  </li>
+  <li>
+    <p>Generating visualizations and metrics</p>
+  </li>
+  <li>
+    <p>Creating automated reports</p>
+  </li>
+  <li>
+    <p>Storing and versioning large datasets</p>
+  </li>
+</ul>
+
+<p>With CML, you can ensure that models are constantly updated, evaluated, and tracked in an efficient, automated manner. It integrates well with GitHub Actions to enhance automation in ML projects.</p>
+
+<h2 id="key-features-of-cml">Key Features of CML:</h2>
+
+<ul>
+  <li>
+    <p><strong>Track Metrics and Visualizations</strong>: Automate the generation of charts, graphs, and other visualizations for model performance.</p>
+  </li>
+  <li>
+    <p><strong>Model Experimentation</strong>: Automatically manage and track different versions of machine learning models.</p>
+  </li>
+  <li>
+    <p><strong>Run and Report Model Evaluations</strong>: After training a model, automatically evaluate its performance and report metrics like accuracy, loss, confusion matrices, and more.</p>
+  </li>
+  <li>
+    <p><strong>Integration with GitHub</strong>: CML integrates directly into GitHub Actions workflows, allowing for seamless automation of model training, testing, and reporting.</p>
+  </li>
+</ul>
+
+<h2 id="sample-cml-workflow-with-github-actions">Sample CML Workflow with GitHub Actions:</h2>
+
+<p>Below is an example of how you can integrate <strong>CML</strong> with <strong>GitHub Actions</strong> to automate ML workflows, including training a model, evaluating it, and generating a performance report.</p>
+
+<p><strong>Define the CML Workflow in GitHub Actions</strong>:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>name: ML CI/CD Workflow
+on:
+  push:
+    branches:
+      - main  # Trigger workflow on push to main branch
+  pull_request:
+    branches:
+      - main  # Trigger workflow for pull requests to the main branch
+jobs:
+  train:
+    runs-on: ubuntu-latest  # Set the environment
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3  # Checkout code repository
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.8'  # Define the Python version
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt  # Install Python dependencies
+      - name: Set up Git LFS
+        run: |
+          git lfs install  # Enable Git LFS to manage large files
+      - name: Train model and log metrics with CML
+        run: |
+          python train_model.py  # Train model 
+          cml run -T "Training Results" --report metrics.json  # Run CML to log metrics
+      - name: Commit metrics and model results
+        run: |
+          git add metrics.json model.pkl  # Add metrics and model to Git
+          git commit -m "Update model and metrics"
+          git push
+</code></pre></div></div>
+
+<h2 id="explanation-of-the-workflow">Explanation of the Workflow:</h2>
+
+<ul>
+  <li>
+    <p><strong>on:</strong>: Defines the trigger for the workflow. Here, the workflow runs on push to the main branch or when a pull request is opened.</p>
+  </li>
+  <li>
+    <p><strong>jobs:</strong>: Defines the steps that run in the workflow. In this case, it includes:</p>
+  </li>
+</ul>
+
+<ol>
+  <li>
+    <p><strong>Checkout code</strong>: It checks out repository’s code.</p>
+  </li>
+  <li>
+    <p><strong>Set up Python</strong>: It sets up the Python environment for the workflow.</p>
+  </li>
+  <li>
+    <p><strong>Install dependencies</strong>: It installs the necessary Python packages listed in the requirements.txt file.</p>
+  </li>
+  <li>
+    <p><strong>Train the model</strong>: It runs the train_model.py script to train the model.</p>
+  </li>
+  <li>
+    <p><strong>CML integration</strong>: The cml run command trains the model and logs metrics in metrics.json. The metrics and results are then committed back to the repository.</p>
+  </li>
+  <li>
+    <p><strong>Push results</strong>: After the model is trained and metrics are generated, the results are committed and pushed to the repository.</p>
+  </li>
+</ol>
+
+<h3 id="key-benefits-of-automating-ml-workflows-with-github-actions--cml">Key Benefits of Automating ML Workflows with GitHub Actions &amp; CML</h3>
+
+<ol>
+  <li>
+    <p>Improved Efficiency: Automating repetitive tasks like model training, testing, and reporting saves valuable time and reduces the chances of human error.</p>
+  </li>
+  <li>
+    <p>Real-Time Feedback: Automated reporting provides real-time insights into model performance, allowing team to quickly identify issues and improve the model.</p>
+  </li>
+  <li>
+    <p>Collaborative Workflow: With GitHub Actions and CML, collaboration becomes seamless. Team members can contribute to the project, and every change is automatically tested and reviewed.</p>
+  </li>
+  <li>
+    <p>Scalability: As project grows, you can easily scale the pipeline to handle more models, larger datasets, and more complex workflows.</p>
+  </li>
+</ol>
+
+<h3 id="conclusion">Conclusion</h3>
+
+<p>Automating machine learning workflow with GitHub Actions and CML is a game-changer for data scientists, machine learning engineers, and developers. By following this guide, you’ll have a fully automated CI/CD pipeline that handles training, evaluation, and reporting for churn prediction model.</p>
+
+<p>Incorporating CI/CD into ML workflow ensures that team can work more efficiently, reduce errors, and stay up to date with the latest model improvements. So, what are you waiting for? Start automating ML projects today and enjoy the benefits of streamlined workflows and better collaboration. Happy coding!</p>
+
+<blockquote>
+  <p><strong>Connect with me on <a href="https://www.linkedin.com/in/aboniasojasingarayar/">Linkedin</a></strong></p>
+</blockquote>
+
+<blockquote>
+  <p><strong>Find me on <a href="https://github.com/Abonia1">Github</a></strong></p>
+</blockquote>
+
+<blockquote>
+  <p><strong>Visit my technical channel on <a href="https://www.youtube.com/@AboniaSojasingarayar">Youtube</a></strong></p>
+</blockquote>
+
+<blockquote>
+  <p><strong>Support: <a href="https://www.buymeacoffee.com/abonia">Buy me a Cofee/Chai</a></strong></p>
+</blockquote>
+
+<blockquote>
+  <h1 id="thanks-for-reading"><em>Thanks for Reading!</em></h1>
+</blockquote>]]></content><author><name>Abonia Sojasingarayar</name><email>aboniaa@gmail.com</email></author><category term="blogs" /><summary type="html"><![CDATA[MLOps On GitHub | Deploy and Automate ML Workflow |Using GitHub Actions and CML for CI & CD. Machine learning workflows are complex and time-consuming, involving tasks like data processing, model training, and evaluation. Integrating Continuous Integration (CI) and Continuous Deployment (CD) practices can automate these tasks, saving time, reducing errors, and improving collaboration.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://cdn-images-1.medium.com/max/2560/1*y0qMmXhAevudLX23NgvkuA.png" /><media:content medium="image" url="https://cdn-images-1.medium.com/max/2560/1*y0qMmXhAevudLX23NgvkuA.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">SAM 2 Advanced Object Segmentation for Images and Videos</title><link href="http://localhost:4000/blogs/2024-10-05-SAM2-Fine-Tuning-Custom-Dataset/" rel="alternate" type="text/html" title="SAM 2 Advanced Object Segmentation for Images and Videos" /><published>2024-10-05T00:00:00+02:00</published><updated>2024-09-25T15:43:26+02:00</updated><id>http://localhost:4000/blogs/SAM2-Fine-Tuning-Custom-Dataset</id><content type="html" xml:base="http://localhost:4000/blogs/2024-10-05-SAM2-Fine-Tuning-Custom-Dataset/"><![CDATA[<p><strong><a href="https://youtu.be/93xJstG_zl8">Link to the complete hands-on tutorial on Advanced Object Segmentation for Images</a></strong></p>
 
 <p><strong>Reading_time:</strong> 5 min<br />
   <strong>Tags:</strong> [SAM, Object Segmentation, Segment Anything, Object Detection, Tracking , ComputerVision]</p>
@@ -1484,464 +1951,4 @@ result = chain({"input_documents": split_docs}, return_only_outputs=True)
 
 <blockquote>
   <p><strong>Support: <a href="https://www.buymeacoffee.com/abonia">Buy me a Cofee/Chai</a></strong></p>
-</blockquote>]]></content><author><name>Abonia Sojasingarayar</name><email>aboniaa@gmail.com</email></author><category term="blogs" /><summary type="html"><![CDATA[Learn about my journey of preparing for and passing the Google Cloud Certified Professional Data Engineer exam.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/gcp-exam.webp" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/gcp-exam.webp" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Deploying a RAG Application in AWS Lambda using Docker and ECR</title><link href="http://localhost:4000/blogs/2024-03-05-Deploying-a-RAG-Application-in-AWS-Lambda-using-Docker-and-ECR/" rel="alternate" type="text/html" title="Deploying a RAG Application in AWS Lambda using Docker and ECR" /><published>2024-03-05T00:00:00+01:00</published><updated>2024-04-12T10:28:22+02:00</updated><id>http://localhost:4000/blogs/Deploying-a-RAG-Application-in-AWS-Lambda-using-Docker-and-ECR</id><content type="html" xml:base="http://localhost:4000/blogs/2024-03-05-Deploying-a-RAG-Application-in-AWS-Lambda-using-Docker-and-ECR/"><![CDATA[<p><strong>Reading_time:</strong> 6 min<br />
-  <strong>Tags:</strong> [AWS, Lambda , ECR ,Docker , LangChain, OpenAI]</p>
-<ul class="large-only" id="markdown-toc">
-  <li><a href="#lambda--ecr--docker--langchain--openai" id="markdown-toc-lambda--ecr--docker--langchain--openai">Lambda — ECR — Docker — LangChain — OpenAI</a></li>
-  <li><a href="#services-overview" id="markdown-toc-services-overview">Services Overview</a></li>
-  <li><a href="#integration-and-deployment-steps" id="markdown-toc-integration-and-deployment-steps">Integration and Deployment Steps</a></li>
-  <li><a href="#implementation" id="markdown-toc-implementation">Implementation</a>    <ul>
-      <li><a href="#environment-setup" id="markdown-toc-environment-setup">Environment Setup</a></li>
-      <li><a href="#data-loading-and-processing" id="markdown-toc-data-loading-and-processing">Data Loading and Processing</a></li>
-      <li><a href="#response-generation" id="markdown-toc-response-generation">Response Generation</a></li>
-      <li><a href="#aws-lambda-handler" id="markdown-toc-aws-lambda-handler">AWS Lambda Handler</a></li>
-    </ul>
-  </li>
-  <li><a href="#conclusion" id="markdown-toc-conclusion">Conclusion</a></li>
-  <li><a href="#thanks-for-reading" id="markdown-toc-thanks-for-reading"><em>Thanks for Reading!</em></a></li>
-</ul>
-
-<h3 id="lambda--ecr--docker--langchain--openai">Lambda — ECR — Docker — LangChain — OpenAI</h3>
-
-<p>Deploying a RAG (Retrieval-Augmented Generation) application in AWS Lambda using Docker and Amazon Elastic Container Registry (ECR) with LangChain involves several steps and services. This article will explain each service and how they work together in an integrated way, followed by the steps to deploy it.</p>
-
-<p>Here is the link to the complete tutorial on <strong><a href="https://youtu.be/gicsb9p7uj4?si=9F2l6z1rNpkUOoIR">Deploying RAG in AWS</a></strong>.</p>
-
-<p>Before proceeding further, I would like to kindly suggest that you take some time to read and watch the tutorial titled <strong><a href="https://medium.com/@abonia/build-and-deploy-llm-application-in-aws-cca46c662749">Build and Deploy LLM Application in AWS</a></strong>. This tutorial can provide you with a solid foundation on Lambda LLM application deployment.
-<strong><a href="https://medium.com/@abonia/build-and-deploy-llm-application-in-aws-cca46c662749">Build and Deploy LLM Application in AWS</a></strong></p>
-
-<h2 id="services-overview">Services Overview</h2>
-
-<p><img src="https://cdn-images-1.medium.com/max/3840/1*KBp2fuAVMvBfpE10p4nrrQ.png" alt="Architecture Overview — Image by Author" /></p>
-
-<p><a href="https://aws.amazon.com/lambda/getting-started/?gclid=CjwKCAjwzN-vBhAkEiwAYiO7oF7Q4aEK3hKUA0HVPEe3wXKen_tVUDmxun4s5PjasxZ-deFf-j19vxoCovkQAvD_BwE&amp;trk=65546593-a75a-4317-b5dc-80218abfdb10&amp;sc_channel=ps&amp;s_kwcid=AL!4422!3!651542249938!e!!g!!aws%20lambda&amp;ef_id=CjwKCAjwzN-vBhAkEiwAYiO7oF7Q4aEK3hKUA0HVPEe3wXKen_tVUDmxun4s5PjasxZ-deFf-j19vxoCovkQAvD_BwE:G:s&amp;s_kwcid=AL!4422!3!651542249938!e!!g!!aws%20lambda!19835810591!150095231954">AWS Lambda</a>: A serverless compute service that runs your code in response to events and automatically manages the underlying compute resources for you. It allows you to run code without provisioning or managing servers.</p>
-
-<ul>
-  <li>
-    <p><a href="https://aws.amazon.com/ecr/">Amazon ECR</a>: A fully-managed container registry that makes it easy for developers to store, manage, and deploy Docker container images. It’s integrated with Amazon ECS and AWS Fargate, simplifying your development to production workflow.</p>
-  </li>
-  <li><a href="https://www.docker.com/">Docker</a>: A platform that uses containerization to package up an application with all of the parts it needs, such as libraries and other dependencies, and ship it all out as one package. This ensures that the application runs quickly and reliably on any server.
-    <blockquote>
-      <p>Dowload Link: <a href="https://www.docker.com/products/docker-desktop/">https://www.docker.com/products/docker-desktop/</a></p>
-    </blockquote>
-  </li>
-  <li><a href="https://www.langchain.com/">LangChain</a>: A framework for building and deploying language models, providing tools for document loading, vector storage, embeddings, and more. It’s used here to facilitate the deployment of the RAG model.</li>
-</ul>
-
-<h2 id="integration-and-deployment-steps">Integration and Deployment Steps</h2>
-
-<ol>
-  <li><strong>Prepare Your Environment:</strong> Ensure you have the AWS CLI installed and configured, Docker installed, and Python 3.11 or later installed and configured. You’ll also need an active AWS account with the necessary permissions.
-    <blockquote>
-      <p>Download Link: <a href="https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html">https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html</a></p>
-    </blockquote>
-  </li>
-  <li>
-    <p><strong>Create a Dockerfile:</strong> This file defines the environment in which your Lambda function will run. It starts from a base image provided by AWS (<em><code class="language-plaintext highlighter-rouge">public.ecr.aws/lambda/python:3.12</code></em>) and copies your application code and dependencies into the image. It also installs any necessary Python packages from a <code class="language-plaintext highlighter-rouge">requirements.txt</code> file as below:</p>
-
-    <p>langchain_community
- boto3==1.34.37
- numpy
- langchain
- langchainhub
- langchain-openai
- chromadb
- bs4
- tiktoken
- openai</p>
-  </li>
-</ol>
-
-<div class="language-docker highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="c"># Use the AWS base image for Python 3.12</span>
-    FROM public.ecr.aws/lambda/python:3.12
-    
-    <span class="c"># Install build-essential to get the C++ compiler and other necessary tools</span>
-    RUN microdnf update -y &amp;&amp; microdnf install -y gcc-c++ make
-    
-    <span class="c"># Copy requirements.txt</span>
-    COPY requirements.txt ${LAMBDA_TASK_ROOT}
-    
-    # Install the specified packages
-    RUN pip install -r requirements.txt
-    
-    <span class="c"># Copy function code</span>
-    COPY lambda_function.py ${LAMBDA_TASK_ROOT}
-    
-    # Set the permissions to make the file executable
-    RUN chmod +x lambda_function.py
-    
-    <span class="c"># Set the CMD to your handler</span>
-    CMD [ "lambda_function.lambda_handler" ]
-</code></pre></div></div>
-
-<ol>
-  <li>
-    <p><strong>Build and Push Your Docker Image to Amazon ECR:</strong> Use the AWS CLI to create a repository in ECR, build your Docker image, and push it to the repository. This step requires permissions to interact with ECR and S3.</p>
-
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  aws ecr create-repository - repository-name my-rag-lambda
-  docker build <span class="nt">-t</span> my-test-lambda <span class="nb">.</span>
-  docker tag my-rag-lambda:latest &lt;aws_account_id&gt;.dkr.ecr.&lt;region&gt;.amazonaws.com/my-test-lambda:latest
-  docker push &lt;aws_account_id&gt;.dkr.ecr.&lt;region&gt;.amazonaws.com/my-test-lambda:latest
-</code></pre></div>    </div>
-  </li>
-  <li>
-    <p><strong>Create a Lambda Function</strong>: In the AWS Lambda console, create a new function using the container image option. Specify the URI of the image in ECR as the image source.</p>
-  </li>
-  <li>
-    <p><strong>Configure Your Lambda Function</strong>: Set the necessary environment variables, such as <code class="language-plaintext highlighter-rouge">OPENAI_API_KEY</code> for LangChain, and configure any other settings as needed.</p>
-  </li>
-  <li>
-    <p><strong>Test Your Lambda Function</strong>: Invoke your Lambda function to test it. You can do this from the AWS Lambda console or using the AWS CLI. Ensure that the function is correctly processing inputs and generating outputs as expected.</p>
-  </li>
-</ol>
-
-<h2 id="implementation">Implementation</h2>
-
-<p>Below code is designed to deploy a Retrieval-Augmented Generation (RAG) model using AWS Lambda, Docker, and Amazon ECR, with LangChain for language model deployment.</p>
-
-<h3 id="environment-setup">Environment Setup</h3>
-
-<p>First, imports necessary libraries and sets up the environment:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import boto3
-import bs4
-from langchain import hub
-from langchain_community.document_loaders import WebBaseLoader
-from langchain_community.vectorstores import Chroma
-from langchain_core.output_parsers import StrOutputParser
-from langchain_core.runnables import RunnablePassthrough
-from langchain_community.embeddings import OpenAIEmbeddings
-from langchain_community.chat_models import ChatOpenAI
-from langchain_text_splitters import RecursiveCharacterTextSplitter
-import os
-# Retrieve the OpenAI API key from environment variables
-OPENAI_API_KEY = os.environ['OPENAI_API_KEY']
-print(OPENAI_API_KEY)
-</code></pre></div></div>
-
-<ul>
-  <li>boto3: The AWS SDK for Python, allowing Python developers to write software that makes use of services like Amazon S3, Amazon EC2, and others.</li>
-  <li>bs4: Beautiful Soup, a library for pulling data out of HTML and XML files.</li>
-  <li>LangChain: A framework for building and deploying language models, providing tools for document loading, vector storage, embeddings, and more.</li>
-  <li>Environment Variables: The code retrieves the <code class="language-plaintext highlighter-rouge">OPENAI_API_KEY</code> from the environment variables, which is crucial for accessing OpenAI’s API.</li>
-</ul>
-
-<h3 id="data-loading-and-processing">Data Loading and Processing</h3>
-
-<p>The <code class="language-plaintext highlighter-rouge">load_data</code> function is responsible for loading, chunking, and indexing the contents of a web page:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>def load_data():
- loader = WebBaseLoader(
- web_paths=("https://lilianweng.github.io/posts/2023-06-23-agent/",),
- bs_kwargs=dict(
- parse_only=bs4.SoupStrainer(
- class_=("post-content", "post-title", "post-header")
- )
- ),
- )
- docs = loader.load()
- text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=200)
- splits = text_splitter.split_documents(docs)
- vectorstore = Chroma.from_documents(documents=splits, embedding=OpenAIEmbeddings())
- retriever = vectorstore.as_retriever()
- return retriever
-</code></pre></div></div>
-
-<ul>
-  <li>WebBaseLoader: Loads documents from web paths, using Beautiful Soup to parse and extract specific elements.</li>
-  <li>RecursiveCharacterTextSplitter: Splits documents into chunks based on character count and overlap.</li>
-  <li>Chroma: Creates a vector store from the split documents, using OpenAI embeddings for vectorization.</li>
-  <li>Retriever: A retriever object that can be used to retrieve relevant documents based on queries.</li>
-</ul>
-
-<h3 id="response-generation">Response Generation</h3>
-
-<p>The <code class="language-plaintext highlighter-rouge">get_response</code> function generates a response to a given query using the RAG model:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>def get_response(query):
- prompt = hub.pull("rlm/rag-prompt")
- llm = ChatOpenAI(model_name="gpt-3.5-turbo", temperature=0)
- retriever = load_data()
- rag_chain = (
- {"context": retriever | format_docs, "question": RunnablePassthrough()}
- | prompt
- | llm
- | StrOutputParser()
- )
- return rag_chain.invoke(query)
-</code></pre></div></div>
-
-<ul>
-  <li>hub.pull: Retrieves a prompt from <a href="https://smith.langchain.com/hub/rlm/rag-prompt">LangChain’s hub</a>.</li>
-  <li>ChatOpenAI: Initializes a chat model with GPT-3.5 Turbo.</li>
-  <li>RunnablePassthrough: A component that passes the input directly to the next component in the chain.</li>
-  <li>StrOutputParser: Parses the output of the RAG model into a string format.</li>
-</ul>
-
-<h3 id="aws-lambda-handler">AWS Lambda Handler</h3>
-
-<p>Finally, the <code class="language-plaintext highlighter-rouge">lambda_handler</code> function is the entry point for AWS Lambda, which receives an event and context, processes the query, and returns a response:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>def lambda_handler(event, context):
- query = event.get("question")
- response = get_response(query)
- print("response:", response)
- return {"body": response, "statusCode": 200}
-</code></pre></div></div>
-
-<ul>
-  <li>
-    <p>Event and Context: AWS Lambda passes an event object and a context object to the handler. The event object contains information about the triggering event, and the context object contains information about the runtime environment.</p>
-  </li>
-  <li>
-    <p>Query Processing: The function extracts the query from the event, generates a response using the <code class="language-plaintext highlighter-rouge">get_response</code> function, and prints the response and returns a response object containing the generated response and a status code of 200, indicating success.</p>
-  </li>
-</ul>
-
-<h2 id="conclusion">Conclusion</h2>
-
-<p>Deploying a RAG model in AWS Lambda using Docker and ECR with LangChain involves preparing your environment, creating a Dockerfile, building and pushing your Docker image to ECR, creating a Lambda function, configuring it, and testing it. This process leverages the serverless capabilities of AWS Lambda, the containerization benefits of Docker, and the language model deployment capability provided by LangChain.</p>
-
-<blockquote>
-  <p><strong>Connect with me on <a href="https://www.linkedin.com/in/aboniasojasingarayar/">Linkedin</a></strong></p>
-</blockquote>
-
-<blockquote>
-  <p><strong>Find me on <a href="https://github.com/Abonia1">Github</a></strong></p>
-</blockquote>
-
-<blockquote>
-  <p><strong>Visit my technical channel on <a href="https://www.youtube.com/@AboniaSojasingarayar">Youtube</a></strong></p>
-</blockquote>
-
-<blockquote>
-  <p><strong>Support: <a href="https://www.buymeacoffee.com/abonia">Buy me a Cofee/Chai</a></strong></p>
-</blockquote>
-
-<blockquote>
-  <h1 id="thanks-for-reading"><em>Thanks for Reading!</em></h1>
-</blockquote>]]></content><author><name>Abonia Sojasingarayar</name><email>aboniaa@gmail.com</email></author><category term="blogs" /><summary type="html"><![CDATA[Deploying a RAG (Retrieval-Augmented Generation) application in AWS Lambda using Docker and Amazon Elastic Container Registry (ECR) with LangChain.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/aws-rag.webp" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/aws-rag.webp" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">EDA — Visualize Embeddings of RAG</title><link href="http://localhost:4000/blogs/2024-01-05-EDA-Visualize-Embeddings-of-RAG/" rel="alternate" type="text/html" title="EDA — Visualize Embeddings of RAG" /><published>2024-01-05T00:00:00+01:00</published><updated>2024-04-12T10:28:22+02:00</updated><id>http://localhost:4000/blogs/EDA%E2%80%94Visualize-Embeddings-of-RAG</id><content type="html" xml:base="http://localhost:4000/blogs/2024-01-05-EDA-Visualize-Embeddings-of-RAG/"><![CDATA[<p><strong>Reading_time:</strong> 6 min<br />
-  <strong>Tags:</strong> [UMAP,RAG,Visualization,Langchain,ChromaHuggingFaceEmbeddings]</p>
-<ul class="large-only" id="markdown-toc">
-  <li><a href="#introduction-to-rag" id="markdown-toc-introduction-to-rag">Introduction to RAG</a></li>
-  <li><a href="#setting-up-the-environment" id="markdown-toc-setting-up-the-environment">Setting Up the Environment</a></li>
-  <li><a href="#loading-the-model-and-vector-store" id="markdown-toc-loading-the-model-and-vector-store">Loading the Model and Vector Store</a></li>
-  <li><a href="#fetching-and-preparing-data" id="markdown-toc-fetching-and-preparing-data">Fetching and Preparing Data</a></li>
-  <li><a href="#calculating-distances" id="markdown-toc-calculating-distances">Calculating Distances</a></li>
-  <li><a href="#visualizing-embeddings" id="markdown-toc-visualizing-embeddings">Visualizing Embeddings</a>    <ul>
-      <li><a href="#1-using-spotlight" id="markdown-toc-1-using-spotlight">1. Using Spotlight</a></li>
-      <li><a href="#2-using-umap" id="markdown-toc-2-using-umap">2. Using UMAP</a></li>
-      <li><a href="#3-using-tensorboard" id="markdown-toc-3-using-tensorboard">3. Using Tensorboard</a></li>
-      <li><a href="#conclusion" id="markdown-toc-conclusion">Conclusion</a></li>
-    </ul>
-  </li>
-  <li><a href="#thanks-for-reading" id="markdown-toc-thanks-for-reading">Thanks for Reading!</a></li>
-</ul>
-
-<p>In this article, we delve into the how we can visualize Retrieval Augmented Generation (RAG) data using the langchain framework in conjunction with Hugging Face’s language models and embeddings. We’ll explore how to leverage the <code class="language-plaintext highlighter-rouge">HuggingFaceEmbeddings</code> and <code class="language-plaintext highlighter-rouge">Chroma</code> vector store for efficient embedding and document retrieval, followed by a practical example of visualizing these embeddings to understand their distribution and relevance to a given question.</p>
-
-<p>We’ll explore how to use the Hugging Face Embeddings for embedding text data and store it in chroma and then visualize it using UMAP (Uniform Manifold Approximation and Projection), a dimensionality reduction technique that helps in visualizing high-dimensional data in a more interpretable way.</p>
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: center"><img src="https://cdn-images-1.medium.com/max/2924/1*5nX7pJ5xOoMelSGm67hhHA.gif" alt="Courtesy of Spotlight" /></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: center"><i>Image Credits - Courtesy of Spotlight</i></td>
-    </tr>
-  </tbody>
-</table>
-
-<h3 id="introduction-to-rag">Introduction to RAG</h3>
-
-<p>RAG is a cutting-edge approach that combines the strengths of pretrained Large Language Models (LLMs) and your own data to generate responses. It retrieves documents, passes them through a sequence-to-sequence model, and then marginalizes to generate outputs. This method is particularly useful for querying specific documents or interacting with your own data in a conversational manner .</p>
-
-<h3 id="setting-up-the-environment">Setting Up the Environment</h3>
-
-<p>To begin, we’ll need to import the necessary libraries and set up our environment. We’ll use <code class="language-plaintext highlighter-rouge">pandas</code> for data manipulation, <code class="language-plaintext highlighter-rouge">langchain.embeddings</code> for handling embeddings, and <code class="language-plaintext highlighter-rouge">langchain.vectorstores</code> for our vector store.
-<a href="https://python.langchain.com/docs/get_started/introduction"><strong>Introduction | 🦜️🔗 Langchain</strong>
-<em>LangChain is a framework for developing applications powered by language models. It enables applications that:</em>python.langchain.com</a></p>
-
-<p>So do install as follow:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>!pip install pandas langchain renumics-spotlight umap-learn
-
-import pandas as pd
-from langchain.embeddings import HuggingFaceEmbeddings
-from langchain.vectorstores import Chroma
-</code></pre></div></div>
-
-<h3 id="loading-the-model-and-vector-store">Loading the Model and Vector Store</h3>
-
-<p>Next, we’ll specify the model path for our embeddings and create instances of <code class="language-plaintext highlighter-rouge">HuggingFaceEmbeddings</code> and <code class="language-plaintext highlighter-rouge">Chroma</code>. We’ll also configure the model to use the CPU/GPU for computations and ensure embeddings are not normalized for our visualization purposes.</p>
-
-<p>Before dive in we consider, you already have chroma db collection and see how we can visualize it.If no you can create one as follow:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>from langchain_community.document_loaders.recursive_url_loader import RecursiveUrlLoader
-from bs4 import BeautifulSoup as Soup
-from langchain.vectorstores import Chroma
-
-url = "https://www.freenews.fr/"
-loader = RecursiveUrlLoader(
-    url=url, max_depth=5, extractor=lambda x: Soup(x, "lxml").text
-)
-documents = loader.load()
-text_splitter = RecursiveCharacterTextSplitter(
-            chunk_size=1000, chunk_overlap=0
-        )
-texts = text_splitter.split_documents(documents)
-
-modelPath = "sentence-transformers/distiluse-base-multilingual-cased-v1"
-
-model_kwargs = {'device':'cpu'}
-#encode_kwargs = {'normalize_embeddings': False}
-
-embeddings = HuggingFaceEmbeddings(model_name=modelPath,model_kwargs=model_kwargs) 
-
-# SAVE
-docs_vectorstore = Chroma.from_documents(texts, embeddings, persist_directory="./chroma_db_multilingual")
-</code></pre></div></div>
-
-<p>Provide the link to your chroma persist_directory below:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>modelPath = "sentence-transformers/distiluse-base-multilingual-cased-v1"
-model_kwargs = {'device':'cpu'}
-encode_kwargs = {'normalize_embeddings': False}
-embeddings_model = HuggingFaceEmbeddings(model_name=modelPath, model_kwargs=model_kwargs)
-docs_vectorstore = Chroma(persist_directory="./chroma_db_multilingual", embedding_function=embeddings_model)
-</code></pre></div></div>
-
-<h3 id="fetching-and-preparing-data">Fetching and Preparing Data</h3>
-
-<p>We’ll retrieve our data from the vector store, including metadata, documents, and embeddings. Then, we’ll create a DataFrame to organize this data and add a column to indicate whether each document contains the answer to our query.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>response = docs_vectorstore.get(include=["metadatas", "documents", "embeddings"])
-df = pd.DataFrame({
- "id": response["ids"],
- "source": [metadata.get("source") for metadata in response["metadatas"]],
- "page": [metadata.get("page", -1) for metadata in response["metadatas"]],
- "document": response["documents"],
- "embedding": response["embeddings"],
-})
-df["contains_answer"] = df["document"].apply(lambda x: "Nœud Répartition Optique)" in x)
-</code></pre></div></div>
-
-<h2 id="calculating-distances">Calculating Distances</h2>
-
-<p>To find the closest match to our question, we calculate the Euclidean distance between the question embedding and each document embedding.</p>
-
-<p><img src="https://cdn-images-1.medium.com/max/4408/1*68cE3DuXYssA7tAvtYm7-Q.png" alt="Euclidean Distance" /></p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>question_embedding = embeddings_model.embed_query(question)
-df["dist"] = df.apply(
-    lambda row: np.linalg.norm(
-        np.array(row["embedding"]) - question_embedding
-    ),
-    axis=1,
-)
-</code></pre></div></div>
-
-<h2 id="visualizing-embeddings">Visualizing Embeddings</h2>
-
-<h3 id="1-using-spotlight">1. Using Spotlight</h3>
-
-<p>This visualization will help us understand how closely related documents are to our query and identify potential areas of improvement or further investigation.</p>
-
-<p>Finally, we use the spotlight module from renumics to visualize the data. This step is crucial for understanding the distribution of documents in relation to the question and the model’s response.
-<strong><a href="https://github.com/Renumics/spotlight">GitHub - Interactively explore unstructured datasets from your dataframe-Interactively explore unstructured datasets from your dataframe</a></strong></p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>from renumics import spotlight
-spotlight.show(df)
-</code></pre></div></div>
-
-<p><img src="https://cdn-images-1.medium.com/v2/resize:fit:6776/1*jOH05LoRaN3TnJwiB9V1Dg.png" alt="UMAP — Visualize the embeddings" /></p>
-
-<p><strong><a href="https://github.com/Renumics/rag-demo/blob/main/notebooks/visualize_rag_tutorial.ipynb">Notebook-Renumics/rag-demo.Retrieval-Augmented Generation Assistant Demo</a></strong></p>
-
-<h3 id="2-using-umap">2. Using UMAP</h3>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import umap
-# Find the  5 closest vectors
-closest_vectors_indices = df.nsmallest(5, 'dist')['id'].values
-
-# Prepare the embeddings for UMAP
-embeddings = np.array([np.array(x) for x in df["embedding"]])
-
-# Reduce dimensionality with UMAP
-reducer = umap.UMAP()
-embedding_reduced = reducer.fit_transform(embeddings)
-
-# Plot the reduced embeddings
-plt.scatter(embedding_reduced[:,  0], embedding_reduced[:,  1], c='gray', alpha=0.2)
-
-# Highlight the question embedding and the  5 closest vectors
-plt.scatter(embedding_reduced[df["id"].isin(closest_vectors_indices),  0], embedding_reduced[df["id"].isin(closest_vectors_indices),  1], c='red', alpha=1)
-plt.scatter(embedding_reduced[df["id"] == df[df["dist"] == df["dist"].min()]["id"].values[0],  0], embedding_reduced[df["id"] == df[df["dist"] == df["dist"].min()]["id"].values[0],  1], c='blue', alpha=1, marker='*')
-
-# Add labels and title
-plt.title("UMAP Visualization of Text Embeddings with Question Highlighted")
-plt.xlabel("UMAP  1")
-plt.ylabel("UMAP  2")
-plt.show()
-</code></pre></div></div>
-
-<p><img src="https://cdn-images-1.medium.com/max/2000/1*5q-fn2cWbzzJP6ielmyPxA.png" alt="UMAP — Visualize Text embedding — Blue point is the Question" /></p>
-
-<h3 id="3-using-tensorboard">3. Using Tensorboard</h3>
-
-<p>Another effective way to visualize embeddings, especially useful for gaining insights into word embeddings and the relationships between them, is by using TensorBoard. TensorBoard is a tool that allows for the visualization of machine learning models and their metrics, including word embeddings, in a user-friendly interface. It can be particularly beneficial when you want to explore the semantic similarities and relationships between words in your embeddings.</p>
-
-<p><strong>Setting Up TensorBoard</strong></p>
-
-<p>First, ensure you have TensorBoard installed. You can install it using pip:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip install tensorboard
-</code></pre></div></div>
-
-<p><strong>Visualizing Word Embeddings with TensorBoard</strong></p>
-
-<p>To visualize word embeddings using TensorBoard, you’ll typically need to convert your embeddings into a format that TensorBoard can understand. This often involves creating a metadata file that maps words to their embeddings and then using TensorBoard’s <code class="language-plaintext highlighter-rouge">Projector</code> to visualize these embeddings.
-<strong><a href="https://www.tensorflow.org/tensorboard/get_started">Get started with TensorBoard | TensorFlow</a></strong></p>
-
-<p>Here’s a simplified step-by-step guide on how to do this:</p>
-
-<ol>
-  <li>
-    <p>Prepare Your Embeddings: Ensure your embeddings are in a suitable format. For TensorBoard, you might need to convert your embeddings into a <code class="language-plaintext highlighter-rouge">.tsv</code> (Tab-Separated Values) file where each line contains a word and its corresponding embedding vector.</p>
-  </li>
-  <li>
-    <p>Create a Metadata File: Alongside your embeddings file, create a metadata file that maps each word to its index in the embeddings file. This file is also in <code class="language-plaintext highlighter-rouge">.tsv</code> format.</p>
-  </li>
-  <li>
-    <p>Use TensorBoard’s Projector:
- — Start TensorBoard by running <code class="language-plaintext highlighter-rouge">tensorboard — logdir=path/to/your/logs</code> in your terminal.
- — In your web browser, navigate to the TensorBoard interface (usually at <code class="language-plaintext highlighter-rouge">localhost:6006</code>).
- — Go to the <code class="language-plaintext highlighter-rouge">Projector</code> tab.
- — Click on <code class="language-plaintext highlighter-rouge">Load</code> under the <code class="language-plaintext highlighter-rouge">Embeddings</code> section.
- — Upload your embeddings file and metadata file.</p>
-  </li>
-  <li>
-    <p>Explore Your Embeddings:
- — Once your embeddings are loaded, you can explore them in various ways, such as through a 2D or 3D scatter plot, where each point represents a word and its position is determined by its embedding vector.
- — You can also use the <code class="language-plaintext highlighter-rouge">Word</code> search bar to find specific words and see how they are positioned relative to others in the embedding space.</p>
-  </li>
-</ol>
-
-<p><img src="https://cdn-images-1.medium.com/max/5200/0*Bk4Bf3VD8P2FKl9M" alt="" /></p>
-
-<p>-Semantic Similarity: TensorBoard makes it easier to visually inspect the semantic relationships between words by examining their positions in the embedding space.</p>
-<ul>
-  <li>Ease of Use: The user-friendly interface of TensorBoard allows for intuitive exploration of embeddings without the need for complex code.</li>
-  <li>Insight into Model Performance: Beyond visualizing embeddings, TensorBoard can also be used to track model metrics, network weight distributions, and other performance indicators, providing a comprehensive toolkit for monitoring and understanding your models.</li>
-</ul>
-
-<h3 id="conclusion">Conclusion</h3>
-
-<p>Visualizing RAG data provides valuable insights into the model’s decision-making process, helping us understand how it selects and interprets information from external documents.By visualizing RAG data, we gain valuable insights into the relationships between documents and our queries. This technique not only aids in understanding the performance of our RAG system but also guides us in refining models and datasets for better accuracy and relevance.</p>
-
-<blockquote>
-  <h1 id="thanks-for-reading">Thanks for Reading!</h1>
-</blockquote>]]></content><author><name>Abonia Sojasingarayar</name><email>aboniaa@gmail.com</email></author><category term="blogs" /><summary type="html"><![CDATA[Visualize Retrieval Augmented Generation (RAG) data using the langchain framework in conjunction with Hugging Face’s language models and embeddings and chromaDB.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/EDA-RAG.GIF" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/EDA-RAG.GIF" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+</blockquote>]]></content><author><name>Abonia Sojasingarayar</name><email>aboniaa@gmail.com</email></author><category term="blogs" /><summary type="html"><![CDATA[Learn about my journey of preparing for and passing the Google Cloud Certified Professional Data Engineer exam.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/gcp-exam.webp" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/gcp-exam.webp" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
