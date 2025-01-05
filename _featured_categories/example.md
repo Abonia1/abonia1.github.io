@@ -19,7 +19,3 @@ description: >
 # DON'T USE THIS SETTING IN YOUR CATEGORIES!
 sitemap: false
 ---
-{% capture includeGuts %}
-{% include newsletter-form.html %}
-{% endcapture %}
-{{ includeGuts | replace: '    ', ''}}
