@@ -1,5 +1,374 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2025-01-05T15:36:45+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Abonia Sojasingarayar</title><subtitle>Holds a Masters degree in Artificial Intelligence and boasts over 7 years of experience. With a robust background in crafting and implementing ML systems across diverse domains, including cybersecurity, banking, transit,cosmetics &amp; hygiene research, and e-commerce.
-</subtitle><author><name>Abonia Sojasingarayar</name><email>aboniaa@gmail.com</email></author><entry><title type="html">Join the Community in AI, ML, Data Science, ,Computer Vision, Data Science, GenAI, NLP, MLOps, LLMOps – Let’s Learn Together</title><link href="http://localhost:4000/blogs/2025-01-01-Join-the-Community-AI-Machine-Learning-ComputerVision-Data-Science-GenAI-NLP-MLOps-LLMOps/" rel="alternate" type="text/html" title="Join the Community in AI, ML, Data Science, ,Computer Vision, Data Science, GenAI, NLP, MLOps, LLMOps – Let’s Learn Together" /><published>2025-01-01T00:00:00+01:00</published><updated>2025-01-03T19:22:40+01:00</updated><id>http://localhost:4000/blogs/Join-the-Community-AI-Machine%20Learning-ComputerVision-Data%20Science-GenAI-NLP-MLOps-LLMOps</id><content type="html" xml:base="http://localhost:4000/blogs/2025-01-01-Join-the-Community-AI-Machine-Learning-ComputerVision-Data-Science-GenAI-NLP-MLOps-LLMOps/"><![CDATA[<p><strong>Reading_time:</strong> 5 min<br />
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2025-03-07T13:28:33+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Abonia Sojasingarayar</title><subtitle>Holds a Masters degree in Artificial Intelligence and boasts over 7 years of experience. With a robust background in crafting and implementing ML systems across diverse domains, including cybersecurity, banking, transit,cosmetics &amp; hygiene research, and e-commerce.
+</subtitle><author><name>Abonia Sojasingarayar</name><email>aboniaa@gmail.com</email></author><entry><title type="html">Building a Scalable data Processing Pipeline with Kafka and Docker Compose</title><link href="http://localhost:4000/blogs/2025-03-02-Kafka-Building-Scalable-data-Processing-Pipeline-with-Kafka-and-docker-compose/" rel="alternate" type="text/html" title="Building a Scalable data Processing Pipeline with Kafka and Docker Compose" /><published>2025-03-02T00:00:00+01:00</published><updated>2025-03-07T13:27:36+01:00</updated><id>http://localhost:4000/blogs/Kafka-Building-Scalable-data-Processing-Pipeline-with-Kafka-and-docker-compose</id><content type="html" xml:base="http://localhost:4000/blogs/2025-03-02-Kafka-Building-Scalable-data-Processing-Pipeline-with-Kafka-and-docker-compose/"><![CDATA[<p><strong>Reading_time:</strong> 10 min<br />
+  <strong>Tags:</strong> [ApacheKafka, DockerCompose, Dataprocessing, ImageProcessing, DataPipeline, RealTimeProcessing, Python]</p>
+<ul class="large-only" id="markdown-toc">
+  <li><a href="#comprehensive-guide--a-step-by-step-guide-to-efficient-asynchronous-kafka-image-processing" id="markdown-toc-comprehensive-guide--a-step-by-step-guide-to-efficient-asynchronous-kafka-image-processing">Comprehensive Guide — A Step-by-Step Guide to Efficient Asynchronous Kafka Image Processing</a></li>
+</ul>
+
+<h3 id="comprehensive-guide--a-step-by-step-guide-to-efficient-asynchronous-kafka-image-processing">Comprehensive Guide — A Step-by-Step Guide to Efficient Asynchronous Kafka Image Processing</h3>
+
+<p>Building a scalable data processing pipeline is crucial for applications that require efficient handling of large volumes of images in real-time. In this tutorial, we’ll guide you through the process of setting up an image processing pipeline using Apache Kafka for message brokering and Docker Compose for container orchestration. By the end of this guide, you’ll have a robust system capable of processing images asynchronously, ensuring scalability and resilience.</p>
+
+<iframe width="900" height="500" src="https://www.youtube.com/embed/VvOaA4uPa10" frameborder="0" allowfullscreen=""></iframe>
+
+<p><strong>Table of Contents:</strong></p>
+
+<ol>
+  <li>
+    <p>Introduction</p>
+  </li>
+  <li>
+    <p>System Architecture Overview</p>
+  </li>
+  <li>
+    <p>Setting Up the Development Environment</p>
+  </li>
+  <li>
+    <p>Building and Containerizing the Application</p>
+  </li>
+  <li>
+    <p>Configuring Apache Kafka</p>
+  </li>
+  <li>
+    <p>Deploying with Docker Compose</p>
+  </li>
+  <li>
+    <p>Running and Monitoring the Pipeline</p>
+  </li>
+  <li>
+    <p>Conclusion and Next Steps</p>
+  </li>
+</ol>
+
+<p>Complete code available in <strong><a href="https://github.com/Abonia1/Kafka-Image-Processing-Pipeline">here</a></strong></p>
+
+<p><strong>1. Introduction</strong></p>
+
+<p>In modern applications, processing images efficiently is essential, especially when dealing with large datasets or real-time requirements. A scalable image processing pipeline allows for the ingestion, processing, and storage of images in a manner that can handle increasing loads gracefully. By leveraging <strong><a href="https://kafka.apache.org/">Apache Kafka</a></strong>, <strong><a href="https://zookeeper.apache.org/">Zookeeper</a></strong> and <strong><a href="https://docs.docker.com/compose/">Docker Compose</a></strong>, we can create a system that is both scalable and easy to manage.</p>
+
+<p><img src="https://cdn-images-1.medium.com/max/5376/1*-XADVwHmil0R4Ksk7IIMPQ.png" alt="Image- Author" /></p>
+
+<p><strong>2. System Architecture Overview</strong></p>
+
+<p>Our pipeline consists of the following components:</p>
+
+<ul>
+  <li>
+    <p><strong>Image Source</strong>: The origin of images, which could be an application uploading images, a database, or an external service.</p>
+  </li>
+  <li>
+    <p><strong>Kafka Producer</strong>: Receives images from the source and publishes them to a Kafka topic.</p>
+  </li>
+  <li>
+    <p><strong>Kafka Broker</strong>: Acts as an intermediary, storing and forwarding messages from producers to consumers.</p>
+  </li>
+  <li>
+    <p><strong>Image Processing Service</strong>: Consumes images from the Kafka topic, processes them (e.g., background removal, background replacement, upscaling), and stores the results.</p>
+  </li>
+  <li>
+    <p><strong>Storage</strong>: A location to save the processed images, which could be a file system, database or cloud storage.</p>
+  </li>
+  <li>
+    <p><strong>Monitoring and Logging</strong>: Tools to track the performance and health of the pipeline.</p>
+  </li>
+</ul>
+
+<p><strong>3. Setting Up the Development Environment</strong></p>
+
+<p>Before we begin, ensure you have the following installed:</p>
+
+<ul>
+  <li>
+    <p><strong>Docker</strong>: For containerizing and running our services.</p>
+  </li>
+  <li>
+    <p><strong>Docker Compose</strong>: To orchestrate multi-container Docker applications.</p>
+  </li>
+  <li>
+    <p><strong>Python 3.x</strong>: For writing the image processing service.</p>
+  </li>
+  <li>
+    <p><strong>Kafka-Python Library</strong>: To interact with Kafka from our Python application.</p>
+  </li>
+</ul>
+
+<p><strong>4. Building and Containerizing the Application</strong></p>
+
+<p>We’ll create a Python application that processes images by performing tasks such as background removal, background replacement, and upscaling. Each of these tasks can be handled by separate services or combined into a single service, depending on your requirements.</p>
+
+<p><strong>a. Application Structure:</strong></p>
+
+<ul>
+  <li>
+    <p><strong>api/app.py</strong>: The entry point of the application.</p>
+  </li>
+  <li>
+    <p><strong>services/bg_removal_service.py</strong>: Handles background removal.</p>
+  </li>
+  <li>
+    <p><strong>services/bg_replace_service.py</strong>: Handles background replacement.</p>
+  </li>
+  <li>
+    <p><strong>services/upscale_service.py</strong>: Handles image upscaling.</p>
+  </li>
+  <li>
+    <p><strong>utils/constants.py</strong>: Contains constant values used across the application.</p>
+  </li>
+</ul>
+
+<p><strong>b. Dockerfile:</strong></p>
+
+<p>We’ll create a Dockerfile to containerize our application:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Use the official Python image from the Docker Hub
+FROM python:3.8-slim
+# Set the working directory in the container
+WORKDIR /app
+# Copy the requirements file into the container
+COPY requirements.txt .
+# Install the required Python packages
+RUN pip install --no-cache-dir -r requirements.txt
+# Copy the rest of the application code into the container
+COPY . .
+# Run the application
+CMD ["python", "main.py"]
+</code></pre></div></div>
+
+<p><strong>5. Configuring Apache Kafka</strong></p>
+
+<p>Apache Kafka is a distributed streaming platform that allows for building real-time data pipelines. We’ll set up Kafka using Docker Compose.</p>
+
+<p><strong>a. Docker Compose Configuration:</strong></p>
+
+<p>Create a docker-compose.yml file to define our services:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>version: '3.7'
+
+services:
+  zookeeper:
+    image: confluentinc/cp-zookeeper:latest
+    platform: linux/arm64
+    container_name: zookeeper
+    environment:
+      - ZOOKEEPER_CLIENT_PORT=2181
+    ports:
+      - "2181:2181"
+    networks:
+      - kafka_network  
+  
+  kafka:
+    image: confluentinc/cp-kafka:latest
+    platform: linux/arm64
+    container_name: kafka
+    environment:
+      - KAFKA_ADVERTISED_LISTENERS=INSIDE_KAFKA://kafka:9092,OUTSIDE_KAFKA://kafka:9093
+      - KAFKA_ADVERTISED_LISTENERS=INSIDE_KAFKA://kafka:9092,OUTSIDE_KAFKA://localhost:9093
+      - KAFKA_LISTENERS=INSIDE_KAFKA://0.0.0.0:9092,OUTSIDE_KAFKA://0.0.0.0:9093
+      - KAFKA_LISTENER_SECURITY_PROTOCOL_MAP=INSIDE_KAFKA:PLAINTEXT,OUTSIDE_KAFKA:PLAINTEXT
+      - KAFKA_LISTENER_SECURITY_PROTOCOL=PLAINTEXT 
+      - KAFKA_LISTENER_NAME_INSIDE_KAFKA_SECURITY_PROTOCOL=PLAINTEXT  
+      - KAFKA_LISTENER_NAME_OUTSIDE_KAFKA_SECURITY_PROTOCOL=PLAINTEXT 
+      - KAFKA_INTER_BROKER_LISTENER_NAME=INSIDE_KAFKA
+      - KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR=1
+      - KAFKA_ZOOKEEPER_CONNECT=zookeeper:2181
+    volumes:
+      - ./data/kafka:/var/lib/kafka/data 
+    depends_on:
+      - zookeeper 
+    networks:
+      - kafka_network
+    healthcheck:
+      test: ["CMD", "kafka-broker-api-versions", "--bootstrap-server", "kafka:9093"]
+      interval: 60s
+      retries: 5
+
+  image_processing_service:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile  
+    ports:
+      - "5000:5000"
+    depends_on:
+      kafka:
+        condition: service_healthy 
+    environment:
+      - KAFKA_BROKER=kafka:9093  # Internal broker address
+    networks:
+      - kafka_network
+
+networks:
+  kafka_network:
+    driver: bridge
+</code></pre></div></div>
+
+<p><strong>6. Deploying with Docker Compose</strong></p>
+
+<p>With our docker-compose.yml file in place, we can start our services:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker-compose up -d
+</code></pre></div></div>
+
+<p>This command will build and start the Zookeeper, Kafka, and application services in detached mode.</p>
+
+<p><strong>7. Running and Monitoring the Pipeline</strong></p>
+
+<p>Once the services are running, the application will begin consuming images from the Kafka topic, processing them, and storing the results.</p>
+
+<p><strong><em>Check Topics</em></strong></p>
+
+<p>List all topics in Kafka to ensure tasks are being published correctly:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker exec -it kafka kafka-topics - bootstrap-server kafka:9092 - list
+</code></pre></div></div>
+
+<p><strong>8. Monitoring:</strong></p>
+
+<p>To monitor the pipeline, you can use Kafka’s command-line tools or set up a monitoring stack with <strong><a href="https://prometheus.io/">Prometheus</a></strong> and <strong><a href="https://grafana.com/">Grafana</a></strong>. For a comprehensive guide on setting up such a monitoring stack.
+<strong><a href="https://www.confluent.io/blog/monitor-kafka-clusters-with-prometheus-grafana-and-confluent/">Monitor Apache Kafka Clusters with Prometheus, Grafana, and Confluent</a></strong></p>
+
+<p>​<strong>9. Scalability: Designing for High Throughput</strong></p>
+
+<p>To ensure that your image processing pipeline can handle increased workloads and maintain performance,consider the following strategies:</p>
+
+<p>Refer <strong><a href="https://github.com/Abonia1/Kafka-Image-Processing-Pipeline/blob/main/docs/scalability_design.md">here</a></strong> for more scalability options:</p>
+
+<p><strong>A. Horizontal Scaling</strong></p>
+
+<p><strong>Kafka Cluster</strong></p>
+
+<ul>
+  <li>
+    <p><strong>Cluster Deployment:</strong> Set up a <strong><a href="https://kafka.apache.org/">Kafka cluster</a></strong> with multiple brokers to manage higher message throughput.</p>
+  </li>
+  <li>
+    <p><strong>Replication and Partitioning:</strong> Implement a replication factor for fault tolerance and partition topics to distribute the load across brokers.</p>
+  </li>
+</ul>
+
+<p><strong>Application Instances</strong></p>
+
+<ul>
+  <li>
+    <p><strong>Orchestration:</strong> Utilize orchestrators like <strong><a href="https://kubernetes.io/">Kubernetes</a></strong> or <strong><a href="https://docs.docker.com/engine/swarm/">Docker Swarm</a></strong> to deploy multiple instances of your application.</p>
+  </li>
+  <li>
+    <p><strong>Consumer Groups:</strong> Configure these instances to subscribe to Kafka topics using consumer groups, enabling efficient distribution of message processing.</p>
+  </li>
+</ul>
+
+<p><strong>B. Cloud Deployment</strong></p>
+
+<p><strong>Managed Kafka Services</strong></p>
+
+<ul>
+  <li><strong>Service Selection:</strong> Opt for cloud-managed Kafka services such as <strong><a href="https://aws.amazon.com/msk/">AWS Managed Streaming for Apache Kafka (MSK)</a></strong>, <strong><a href="https://azure.microsoft.com/en-us/services/event-hubs/">Azure Event Hubs</a></strong>, or <strong><a href="https://www.confluent.io/confluent-cloud/">Confluent Cloud</a></strong> to minimize operational overhead and enhance reliability.</li>
+</ul>
+
+<p><strong>Serverless Compute</strong></p>
+
+<p><strong>Processing Service Migration:</strong> Transition your processing services to serverless platforms like <a href="https://aws.amazon.com/lambda/">AWS Lambda</a> or <a href="https://cloud.google.com/functions">Google Cloud Functions</a> to benefit from auto-scaling based on message volume.</p>
+
+<p><strong>Load Balancing</strong></p>
+
+<ul>
+  <li><strong>Load Balancer Deployment:</strong> Implement a load balancer (e.g., <a href="https://aws.amazon.com/elasticloadbalancing/">AWS Elastic Load Balancing</a>, <a href="https://cloud.google.com/load-balancing">Google Cloud Load Balancing</a>) in front of your application API to manage and route incoming requests efficiently.</li>
+</ul>
+
+<p><strong>C. Optimized Message Processing</strong></p>
+
+<p><strong>Batch Processing</strong></p>
+
+<ul>
+  <li><strong>Consumer Optimization:</strong> Implement batch processing for Kafka consumers to reduce the overhead of frequent I/O operations and improve throughput.</li>
+</ul>
+
+<p><strong>Message Filtering</strong></p>
+
+<ul>
+  <li><strong>Broker-Level Processing:</strong> Utilize <strong><a href="https://kafka.apache.org/documentation/streams/">Kafka Streams</a></strong> or <strong><a href="https://ksqldb.io/">ksqlDB</a></strong> to filter or preprocess messages at the broker level before they reach consumers.</li>
+</ul>
+
+<p><strong>Priority Queues</strong></p>
+
+<ul>
+  <li><strong>Topic Prioritization:</strong> Establish multiple Kafka topics with varying priorities for time-sensitive or critical tasks to ensure efficient processing.</li>
+</ul>
+
+<p><strong>D. Monitoring and Auto-Scaling</strong></p>
+
+<p><strong>Monitoring Tools</strong></p>
+
+<ul>
+  <li><strong>Integration:</strong> Incorporate monitoring tools like <strong><a href="https://prometheus.io/">Prometheus</a></strong>, <strong><a href="https://grafana.com/">Grafana</a></strong>, or cloud-native solutions (e.g., <strong><a href="https://aws.amazon.com/cloudwatch/">AWS CloudWatch</a></strong>) to track system health and monitor Kafka message lag and broker performance.</li>
+</ul>
+
+<p><strong>Auto-Scaling Policies</strong></p>
+
+<ul>
+  <li><strong>Configuration:</strong> Set up auto-scaling policies for both Kafka brokers and application instances based on metrics such as CPU usage, memory utilization, and Kafka consumer lag.</li>
+</ul>
+
+<p><strong>E. Data Persistence</strong></p>
+
+<p><strong>Data Lakes</strong></p>
+
+<ul>
+  <li><strong>Archiving:</strong> Use cloud-based storage solutions (e.g., <strong><a href="https://aws.amazon.com/s3/">Amazon S3</a>, <a href="https://cloud.google.com/storage">Google Cloud Storage</a></strong>) to archive processed images or messages for long-term retention and analytics.</li>
+</ul>
+
+<p><strong>Database Scaling</strong></p>
+
+<ul>
+  <li><strong>Metadata Storage:</strong> For metadata storage, migrate to a distributed database like <strong><a href="https://aws.amazon.com/rds/aurora/">Amazon Aurora</a></strong>, <strong><a href="https://www.mongodb.com/">MongoDB</a></strong>, or <strong><a href="https://cloud.google.com/spanner">Google Cloud Spanner</a></strong> to enable horizontal scalability.</li>
+</ul>
+
+<p><strong>F. Workflow Orchestration</strong></p>
+
+<p><strong>Orchestrator Integration</strong></p>
+
+<ul>
+  <li><strong>Tool Selection:</strong> Integrate workflow orchestrators like <strong><a href="https://airflow.apache.org/">Apache Airflow</a></strong>, <strong><a href="https://www.prefect.io/">Prefect</a></strong>, or <strong><a href="https://argoproj.github.io/argo-workflows/">Argo Workflows</a></strong> to manage complex pipelines, handle task dependencies, retries, and scheduling for streamlined processing.</li>
+</ul>
+
+<p><img src="https://cdn-images-1.medium.com/max/2748/1*Ea0BHjLwHaXvlgMWtToX_Q.png" alt="Image- Author" /></p>
+
+<p>By implementing these strategies, you can design an image processing pipeline that is both scalable and efficient, capable of handling high throughput in various deployment environments.</p>
+
+<p><strong>Conclusion</strong></p>
+
+<p>In this tutorial, we’ve walked through the process of building a scalable image processing pipeline using Apache Kafka for message brokering and Docker Compose for container orchestration. By leveraging these technologies, we’ve created a system capable of handling high-throughput image processing tasks efficiently.</p>
+
+<p>Implementing monitoring and logging with tools like Prometheus and Grafana further enhances the pipeline’s robustness, allowing for proactive issue detection and performance optimization. This setup ensures that the system remains resilient and can scale to meet increasing demands.</p>
+
+<p>As you continue to develop and optimize your image processing pipeline, consider exploring additional enhancements such as:</p>
+
+<p><strong>Scaling Services:</strong> Implementing auto-scaling mechanisms to handle varying workloads.</p>
+
+<p><strong>Advanced Monitoring:</strong> Setting up alerts and more detailed dashboards to monitor specific metrics.</p>
+
+<p><strong>Security Measures:</strong> Ensuring secure communication between services and implementing authentication where necessary.</p>
+
+<p>By continuously refining your pipeline and incorporating best practices, you’ll be well-equipped to handle complex image processing tasks in a scalable and efficient manner.</p>
+
+<hr />
+<p><strong><em>Thanks for Reading!</em></strong></p>
+
+<blockquote>
+  <p><strong><a href="https://abonia1.github.io/">Website/Newletter</a></strong>
+<strong><a href="https://aboniasojasingarayar.substack.com">AIMagazine Substack</a></strong></p>
+</blockquote>
+
+<blockquote>
+  <p>Connect with me on <strong><a href="https://www.linkedin.com/in/aboniasojasingarayar/">Linkedin</a></strong></p>
+</blockquote>
+
+<blockquote>
+  <p>Find me on <strong><a href="https://github.com/Abonia1">Github</a></strong></p>
+</blockquote>
+
+<blockquote>
+  <p>Visit my technical channel on <strong><a href="https://www.youtube.com/@AboniaSojasingarayar">Youtube</a></strong></p>
+</blockquote>]]></content><author><name>Abonia Sojasingarayar</name><email>aboniaa@gmail.com</email></author><category term="blogs" /><summary type="html"><![CDATA[Building a scalable data processing pipeline is crucial for applications that require efficient handling of large volumes of data in real-time.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/kafka.png" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/kafka.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Join the Community in AI, ML, Data Science, ,Computer Vision, Data Science, GenAI, NLP, MLOps, LLMOps – Let’s Learn Together</title><link href="http://localhost:4000/blogs/2025-01-01-Join-the-Community-AI-Machine-Learning-ComputerVision-Data-Science-GenAI-NLP-MLOps-LLMOps/" rel="alternate" type="text/html" title="Join the Community in AI, ML, Data Science, ,Computer Vision, Data Science, GenAI, NLP, MLOps, LLMOps – Let’s Learn Together" /><published>2025-01-01T00:00:00+01:00</published><updated>2025-01-03T19:22:40+01:00</updated><id>http://localhost:4000/blogs/Join-the-Community-AI-Machine%20Learning-ComputerVision-Data%20Science-GenAI-NLP-MLOps-LLMOps</id><content type="html" xml:base="http://localhost:4000/blogs/2025-01-01-Join-the-Community-AI-Machine-Learning-ComputerVision-Data-Science-GenAI-NLP-MLOps-LLMOps/"><![CDATA[<p><strong>Reading_time:</strong> 5 min<br />
 <strong>Tags:</strong> [AIJourney, LearnAI, MachineLearningForAll, DataScienceForBeginners, AICommunity, TechLearning, AIandML, GenerativeAI, AIExplained, LearnTogether, AIForEveryone, MLCommunity, DataScienceJourney, TechForGood, AIInsights]</p>
 
 <iframe width="900" height="500" src="https://www.youtube.com/embed/D0-k6EnRM7E" frameborder="0" allowfullscreen=""></iframe>
@@ -1642,313 +2011,4 @@ result = chain({"input_documents": split_docs}, return_only_outputs=True)
 
 <p>Visit my technical channel on <strong><a href="https://www.youtube.com/@AboniaSojasingarayar">Youtube</a></strong></p>
 
-<p>Support: <strong><a href="https://www.buymeacoffee.com/abonia">Buy me a Cofee/Chai</a></strong></p>]]></content><author><name>Abonia Sojasingarayar</name><email>aboniaa@gmail.com</email></author><category term="blogs" /><summary type="html"><![CDATA[I recently wrapped a tutorial on summarization techniques in LangChain. This article covers the basic usage of document summarization techniques and provides insights into various summarization methods. Additionally, to learn more and to explore how to validate intermediate results from the output of each of these techniques.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://cdn-images-1.medium.com/max/3840/1*uDxlmvrPL0X5i4yd8iDGBw.png" /><media:content medium="image" url="https://cdn-images-1.medium.com/max/3840/1*uDxlmvrPL0X5i4yd8iDGBw.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">How I Passed the GCP Professional Data Engineer Exam</title><link href="http://localhost:4000/blogs/2024-04-09-How-I-Passed-the-GCP-Professional/" rel="alternate" type="text/html" title="How I Passed the GCP Professional Data Engineer Exam" /><published>2024-04-09T00:00:00+02:00</published><updated>2024-04-12T10:28:22+02:00</updated><id>http://localhost:4000/blogs/How-I-Passed-the-GCP-Professional</id><content type="html" xml:base="http://localhost:4000/blogs/2024-04-09-How-I-Passed-the-GCP-Professional/"><![CDATA[<p><strong>Reading_time:</strong> 6 min<br />
-  <strong>Tags:</strong> [GCP, Data Engineering, Cloud, Certification]</p>
-<ul class="large-only" id="markdown-toc">
-  <li><a href="#1-basic-concept-from-udemy-courses" id="markdown-toc-1-basic-concept-from-udemy-courses">1. Basic concept from udemy courses</a></li>
-  <li><a href="#2google-official-video-coursestheory--practical" id="markdown-toc-2google-official-video-coursestheory--practical">2.Google official video courses(Theory + Practical)</a></li>
-  <li><a href="#3-books-and-resource" id="markdown-toc-3-books-and-resource">3. Books and resource</a></li>
-  <li><a href="#4-official-documentation" id="markdown-toc-4-official-documentation">4. Official documentation</a></li>
-  <li><a href="#5-quizzesexamtopicsmock-test" id="markdown-toc-5-quizzesexamtopicsmock-test">5. Quizzes/ExamTopics/Mock test</a></li>
-  <li><a href="#6-cheatsheet" id="markdown-toc-6-cheatsheet">6. <strong><em>Cheatsheet</em></strong></a></li>
-  <li><a href="#7-notes" id="markdown-toc-7-notes">7. Notes</a></li>
-  <li><a href="#8-tips" id="markdown-toc-8-tips">8. Tips</a></li>
-  <li><a href="#9-assessment" id="markdown-toc-9-assessment">9. Assessment</a></li>
-  <li><a href="#colclusion" id="markdown-toc-colclusion">Colclusion:</a></li>
-  <li><a href="#success-is-easy-to-achieve-once-you-set-your-mind-on-a-specific-goal" id="markdown-toc-success-is-easy-to-achieve-once-you-set-your-mind-on-a-specific-goal">Success is easy to achieve once you set your mind on a specific goal.</a></li>
-  <li><a href="#--atticus-aristotle" id="markdown-toc---atticus-aristotle">- Atticus Aristotle</a></li>
-</ul>
-<p><strong>Table of Contents:</strong></p>
-<ul>
-  <li><a href="#1-basic-concept-from-udemy-courses">Basic concept from udemy courses</a></li>
-  <li><a href="#2google-official-video-coursestheory--practical">Google official video courses(Theory + Practical)</a></li>
-</ul>
-
-<p><strong>In this article , I would like to share my experiences for preparing and taking the exam. I hope they’ll help you in one way or another.</strong></p>
-
-<p>Google Cloud Certified Professional Data Engineer exam tests your ability to design, deploy, monitor, and adapt services and infrastructure for data-driven decision-making.</p>
-
-<p>The whole preparation took me nearly 2 months , but with some more focus time I could’ve done it in 1 month. Following steps that I have taken to pass the exam :</p>
-
-<ul>
-  <li>
-    <p>Basic concept from udemy course</p>
-  </li>
-  <li>
-    <p>Google official video courses(Theory + Practical)</p>
-  </li>
-  <li>
-    <p>Books and resources</p>
-  </li>
-  <li>
-    <p>Official documentation</p>
-  </li>
-  <li>
-    <p>Quizzes/ExamTopics/Mock test</p>
-  </li>
-  <li>
-    <p>Cheatsheet</p>
-  </li>
-  <li>
-    <p>Notes</p>
-  </li>
-  <li>
-    <p>Assessment</p>
-  </li>
-  <li>
-    <p>Tips</p>
-  </li>
-</ul>
-
-<h3 id="1-basic-concept-from-udemy-courses">1. Basic concept from udemy courses</h3>
-
-<p>I have followed the course <strong><em><a href="https://www.udemy.com/course/google-cloud-professional-data-engineer-get-certified/">Google Cloud Professional Data Engineer: Get Certified 2022</a></em></strong> by Dan Sullivan. I have followed all the classes in this course.As for public it costs 79,99€ and it covers following topics:</p>
-
-<ul>
-  <li>
-    <p>Build scalable, reliable data pipelines</p>
-  </li>
-  <li>
-    <p>Choose appropriate storage systems, including relational, NoSQL and analytical databases</p>
-  </li>
-  <li>
-    <p>Apply multiple types of machine learning techniques to different use cases</p>
-  </li>
-  <li>
-    <p>Deploy machine learning models in production</p>
-  </li>
-  <li>
-    <p>Monitor data pipelines and machine learning models</p>
-  </li>
-  <li>
-    <p>Design scalable, resilient distributed data intensive applications</p>
-  </li>
-  <li>
-    <p>Migrate data warehouse from on-premises to Google Cloud</p>
-  </li>
-  <li>
-    <p>Evaluate and improve the quality of machine learning models</p>
-  </li>
-  <li>
-    <p>Grasp fundamental concepts in machine learning, such as backpropagation, feature engineering, overfitting and underfitting.</p>
-  </li>
-</ul>
-
-<p>At the end of the course there will be 50 sample questions to solve which gives you 2 hours as like you are in exam.</p>
-
-<h3 id="2google-official-video-coursestheory--practical">2.Google official video courses(Theory + Practical)</h3>
-
-<p>I recommend to go through all the <strong><em><a href="http://Professional Data Engineer">Professional Data Engineer Google course</a></em></strong> videos and practicals from the official site.</p>
-
-<p>Official guide for the data engineer exam is <a href="https://cloud.google.com/certification/guides/data-engineer">here</a>.</p>
-
-<p>This course covers following topics:</p>
-
-<ul>
-  <li>
-    <p>Design data processing systems</p>
-  </li>
-  <li>
-    <p>Ensure solution quality</p>
-  </li>
-  <li>
-    <p>Operationalize machine learning models</p>
-  </li>
-  <li>
-    <p>Build and operationalize data processing systems</p>
-  </li>
-</ul>
-
-<p>It has following 9 major classes with which you can attain a badge from google :</p>
-<blockquote>
-  <ol>
-    <li>Google Cloud Big Data and Machine Learning Fundamentals</li>
-    <li>Data Engineering on Google Cloud</li>
-    <li>Serverless Data Processing with Dataflow Specialization</li>
-    <li>Create and Manage Cloud Resources</li>
-    <li>Perform Foundational Data, ML, and AI Tasks in Google Cloud</li>
-    <li>Engineer Data in Google Cloud</li>
-    <li>Preparing for the Google Cloud Professional Data Engineer Exam</li>
-    <li>Professional Data Engineer</li>
-    <li>Register for your certification exam</li>
-  </ol>
-</blockquote>
-
-<p>I have followed the above courses using Partner account so it was completely free and there were free credits available to solve the lab.</p>
-
-<ul>
-  <li>
-    <p><strong><em><a href="https://linuxacademy.com/course/google-cloud-data-engineer/">Linux Academy course</a></em></strong> (Took 4 weeks + 2 weeks (revision)) — 75% success rate</p>
-  </li>
-  <li>
-    <p><strong><em><a href="https://www.coursera.org/professional-certificates/gcp-data-engineering">Coursera GCP Data Engineering Specialization</a></em></strong> (6 courses)(Took ~4 Weeks) — 20%</p>
-  </li>
-</ul>
-
-<h3 id="3-books-and-resource">3. Books and resource</h3>
-
-<p>I strongly recommend you to going through <strong><em><a href="https://www.oreilly.com/library/view/official-google-cloud/9781119618430/f07.xhtml#usec0005">Official Google Cloud Certified Professional Data Engineer Study Guide</a></em></strong> [Book] by Dan Sullivan. This study guide offers 100% coverage of every objective for the Google Cloud Certified Professional Data Engineer exam.</p>
-
-<p>This books covers most of the exam topics and there are around 20 quizzes for each chapter.</p>
-
-<h3 id="4-official-documentation">4. Official documentation</h3>
-
-<p>It is also very important to going through the <strong><em><a href="https://cloud.google.com/">official documentation</a></em></strong> to get updated information about the google products and services.</p>
-
-<p><em>For example,sometimes an old mock question’s answers will guide you in a wrong way. Access control on table level is now possible in BigQuery but it wasn’t before.</em> So please dont follow the quiz answers that were provided by default but also I recommend you to do your proper search in official docs , if you have doubt in it.I have used this scenerio as an example and there are other similar cases.</p>
-
-<h3 id="5-quizzesexamtopicsmock-test">5. Quizzes/ExamTopics/Mock test</h3>
-
-<p>Most important part of the preparation is going through as many quizzes as possible and verifing with reasonable answer. To pass the actual exam, you have to spend more time on learning &amp; re-learning through multiple practice tests.</p>
-
-<p>I recommend the following sites for preparing exam:</p>
-
-<ol>
-  <li>
-    <p><strong><em><a href="https://www.examtopics.com/exams/google/professional-data-engineer/">Examtopics</a></em></strong> : There will be robotic check once after 10 questions and we should pay to get rid of those check and which allow you to focus well in the preparation.Please be aware of wrong answers in Examtopics try to do a search by yourself to assure that its the correct one. Cost : <strong>FREE</strong></p>
-  </li>
-  <li>
-    <p><strong><em><a href="https://www.passnexam.com/google/google-data-engineer/01">PassExam</a></em></strong>: I have also prepared with PassExam which provides right answers for most of the questions with a reason in description and related offical links. Cost : <strong>FREE</strong></p>
-  </li>
-  <li>
-    <p><strong><em><a href="https://www.whizlabs.com/blog/google-cloud-professional-data-engineer-exam-questions/">WhizLabs</a></em></strong> : There are around 25 multiple choice questions with what we can able to get insights on the certification and feel a little more confident. Cost : <strong>FREE</strong></p>
-  </li>
-  <li>
-    <p><strong><em><a href="https://docs.google.com/forms/d/e/1FAIpQLSfkWEzBCP0wQ09ZuFm7G2_4qtkYbfmk_0getojdnPdCYmq37Q/viewform">Sample Questions fom Google</a></em></strong> : There are around 25 sample questions from google at the end of its official course.You can get the answer and explanation once you submit the form. But it is not guaranteed to help you pass the exam.</p>
-  </li>
-</ol>
-
-<h3 id="6-cheatsheet">6. <strong><em>Cheatsheet</em></strong></h3>
-
-<p>I recommend you to go through the <strong><em><a href="https://github.com/ml874/Data-Engineering-on-GCP-Cheatsheet/blob/master/data_engineering_on_GCP.pdf">Cheatsheet</a></em></strong> once. Cheatsheet is currently a 9-page reference Data Engineering on the Google Cloud Platform. It covers the data engineering lifecycle, machine learning, Google case studies, and GCP’s storage, compute, and big data products.</p>
-
-<p>Going through only this cheatsheet is not guaranteed to help you pass.But it can help you with your revision and refreshing the topics that you have pepared over the period before.</p>
-
-<h3 id="7-notes">7. Notes</h3>
-
-<p>Note taking app : [<strong>Notion](https://www.notion.so)</strong>. The best app for note taking.</p>
-
-<p>Notion has helped us to <strong>revise effectively before exams on all the essential topics.</strong>I recommend to take notes for following topics.</p>
-
-<p>These are the core GCP products that the assessment covers.</p>
-
-<ul>
-  <li>
-    <p><a href="https://cloud.google.com/ai-platform/docs/technical-overview">AI Platform</a> (+ general AI and ML concepts)</p>
-  </li>
-  <li>
-    <p><a href="https://cloud.google.com/bigquery">BigQuery</a></p>
-  </li>
-  <li>
-    <p><a href="https://cloud.google.com/bigtable">BigTable</a></p>
-  </li>
-  <li>
-    <p><a href="https://cloud.google.com/sql">Cloud SQL</a></p>
-  </li>
-  <li>
-    <p><a href="https://cloud.google.com/dataflow">Dataflow</a></p>
-  </li>
-  <li>
-    <p><a href="https://cloud.google.com/dataproc">Dataproc</a></p>
-  </li>
-  <li>
-    <p><a href="https://cloud.google.com/pubsub">Pub/Sub</a></p>
-  </li>
-</ul>
-
-<p>But there was some overlap with other Google tools too.</p>
-
-<ul>
-  <li>
-    <p><a href="https://cloud.google.com/storage">Cloud Storage</a></p>
-  </li>
-  <li>
-    <p><a href="https://cloud.google.com/spanner">Cloud Spanner</a></p>
-  </li>
-  <li>
-    <p><a href="https://cloud.google.com/composer">Composer</a></p>
-  </li>
-  <li>
-    <p><a href="https://cloud.google.com/compute">Compute Engine</a></p>
-  </li>
-  <li>
-    <p><a href="https://cloud.google.com/dlp">Data Loss Prevention</a></p>
-  </li>
-  <li>
-    <p><a href="https://cloud.google.com/dataprep">Dataprep</a></p>
-  </li>
-  <li>
-    <p><a href="https://cloud.google.com/datastore">Datastore</a></p>
-  </li>
-  <li>
-    <p><a href="https://firebase.google.com/docs/firestore">Firestore</a></p>
-  </li>
-  <li>
-    <p><a href="https://cloud.google.com/natural-language">Natural Language AI</a></p>
-  </li>
-  <li>
-    <p><a href="https://www.tensorflow.org/">Tensorflow</a></p>
-  </li>
-  <li>
-    <p><a href="https://cloud.google.com/text-to-speech">Text-to-speech</a></p>
-  </li>
-  <li>
-    <p><a href="https://cloud.google.com/video-intelligence">Video AI</a></p>
-  </li>
-</ul>
-
-<h3 id="8-tips">8. Tips</h3>
-
-<ul>
-  <li>
-    <p>Preparation is key to success. so many weekends, many holidays, I spent preparing for this exam.</p>
-  </li>
-  <li>
-    <p>You can eliminate all the answer that recommend <strong>non-GCP solutions</strong>.</p>
-  </li>
-  <li>
-    <p>As with many multiple-choice exams, <strong>eliminate</strong>. If you can’t eliminate to one possible answer, make a guess.</p>
-  </li>
-</ul>
-
-<h3 id="9-assessment">9. Assessment</h3>
-
-<p>I took the assessment via Kryterion’s <a href="https://www.webassessor.com/googlecloud/">Webassessor</a>. <strong>Exam Duration</strong>: 2 hours, <strong>Registration fee</strong>: $200 (plus tax where applicable) <strong>, Languages</strong>: English, Japanese and <strong>Exam format</strong>: Multiple choice and multiple select taken remotely or in person at a test center.</p>
-
-<p>On exam day, I had to show my surroundings via webcam, turn off my phone, empty my desk, If your name is not visible you should take photo from your mobile a,d then you should show it to the sponser staff at the other end etc. All this took ~ half an hour. I didn’t have to talk to the person behind the camera, but we can chat. The person also monitor you via webcam during the assessment.</p>
-
-<p>I found the questions are bit hard and challenging. In the end, I got a provisional <em>Pass</em>, but it should be confirmed by Google — for whatever reason. That confirmation came 4 –10 days later. So now I am officially Google Certified Professional Data Engineer 🎉 and here is my Official Google Certification!</p>
-
-<p><img src="https://cdn-images-1.medium.com/max/2548/1*73NRxlyIZ8OH_2-CSYK4dQ.png" alt="Image by Author on [Professional Data Engineer Certification](https://www.credential.net/4e184ed8-23eb-4783-810c-a3c3e4e10b7d)" /></p>
-
-<p>Tada 🎉</p>
-
-<p><img src="https://cdn-images-1.medium.com/max/2214/1*-kDC5Id6bejn-wY7aRlHAw.jpeg" alt="Image by Author" /></p>
-
-<p>Got this amazing <strong>Google hoodie</strong> for free from google, after a month from the date of ordering. You can order it via the link that they send you with your official confirmation mail.</p>
-
-<h2 id="colclusion">Colclusion:</h2>
-
-<p>I hope this will help you pass the exam. All in all, you need to have solid Google Cloud knowledge to start with. If you are not familiar with the technology, the advised courses will help you. To get well prepared for the exam, I encourage you to complete the Official Data Engineer course videos and read about the best practices of GCP products, followed by the ML Crash Course provided by Google or Coursera. You should be ready to pass the exam by combining your studies with your knowledge. Good luck!</p>
-<blockquote>
-  <h1 id="success-is-easy-to-achieve-once-you-set-your-mind-on-a-specific-goal">Success is easy to achieve once you set your mind on a specific goal.</h1>
-  <h1 id="--atticus-aristotle">- Atticus Aristotle</h1>
-</blockquote>
-
-<p><strong>Wish you the very best with your GCP certifications. You can reach me via:</strong></p>
-
-<blockquote>
-  <p><strong>Connect with me on <a href="https://www.linkedin.com/in/aboniasojasingarayar/">Linkedin</a></strong></p>
-</blockquote>
-
-<blockquote>
-  <p><strong>Find me on <a href="https://github.com/Abonia1">Github</a></strong></p>
-</blockquote>
-
-<blockquote>
-  <p><strong>Visit my technical channel on <a href="https://www.youtube.com/@AboniaSojasingarayar">Youtube</a></strong></p>
-</blockquote>
-
-<blockquote>
-  <p><strong>Support: <a href="https://www.buymeacoffee.com/abonia">Buy me a Cofee/Chai</a></strong></p>
-</blockquote>]]></content><author><name>Abonia Sojasingarayar</name><email>aboniaa@gmail.com</email></author><category term="blogs" /><summary type="html"><![CDATA[Learn about my journey of preparing for and passing the Google Cloud Certified Professional Data Engineer exam.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/gcp-exam.webp" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/gcp-exam.webp" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+<p>Support: <strong><a href="https://www.buymeacoffee.com/abonia">Buy me a Cofee/Chai</a></strong></p>]]></content><author><name>Abonia Sojasingarayar</name><email>aboniaa@gmail.com</email></author><category term="blogs" /><summary type="html"><![CDATA[I recently wrapped a tutorial on summarization techniques in LangChain. This article covers the basic usage of document summarization techniques and provides insights into various summarization methods. Additionally, to learn more and to explore how to validate intermediate results from the output of each of these techniques.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://cdn-images-1.medium.com/max/3840/1*uDxlmvrPL0X5i4yd8iDGBw.png" /><media:content medium="image" url="https://cdn-images-1.medium.com/max/3840/1*uDxlmvrPL0X5i4yd8iDGBw.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
