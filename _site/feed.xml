@@ -1,5 +1,214 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2025-03-07T13:28:33+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Abonia Sojasingarayar</title><subtitle>Holds a Masters degree in Artificial Intelligence and boasts over 7 years of experience. With a robust background in crafting and implementing ML systems across diverse domains, including cybersecurity, banking, transit,cosmetics &amp; hygiene research, and e-commerce.
-</subtitle><author><name>Abonia Sojasingarayar</name><email>aboniaa@gmail.com</email></author><entry><title type="html">Building a Scalable data Processing Pipeline with Kafka and Docker Compose</title><link href="http://localhost:4000/blogs/2025-03-02-Kafka-Building-Scalable-data-Processing-Pipeline-with-Kafka-and-docker-compose/" rel="alternate" type="text/html" title="Building a Scalable data Processing Pipeline with Kafka and Docker Compose" /><published>2025-03-02T00:00:00+01:00</published><updated>2025-03-07T13:27:36+01:00</updated><id>http://localhost:4000/blogs/Kafka-Building-Scalable-data-Processing-Pipeline-with-Kafka-and-docker-compose</id><content type="html" xml:base="http://localhost:4000/blogs/2025-03-02-Kafka-Building-Scalable-data-Processing-Pipeline-with-Kafka-and-docker-compose/"><![CDATA[<p><strong>Reading_time:</strong> 10 min<br />
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2025-06-16T12:36:11+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Abonia Sojasingarayar</title><subtitle>Holds a Masters degree in Artificial Intelligence and boasts over 7 years of experience. With a robust background in crafting and implementing ML systems across diverse domains, including cybersecurity, banking, transit,cosmetics &amp; hygiene research, and e-commerce.
+</subtitle><author><name>Abonia Sojasingarayar</name><email>aboniaa@gmail.com</email></author><entry><title type="html">Deploying a Scalable Machine Learning Service on Kubernetes</title><link href="http://localhost:4000/blogs/2025-05-01-Deploying-Scalable-Machine-Learning-Service-on-Kubernetes/" rel="alternate" type="text/html" title="Deploying a Scalable Machine Learning Service on Kubernetes" /><published>2025-05-01T00:00:00+02:00</published><updated>2025-06-16T12:36:11+02:00</updated><id>http://localhost:4000/blogs/Deploying-Scalable-Machine-Learning-Service-on-Kubernetes</id><content type="html" xml:base="http://localhost:4000/blogs/2025-05-01-Deploying-Scalable-Machine-Learning-Service-on-Kubernetes/"><![CDATA[<p><strong>Reading_time:</strong> 15 min<br />
+  <strong>Tags:</strong> [MLOps, Kubernetes, Machine Learning, FastAPI, Docker, Podman, Scikit-Learn, Sentiment Analysis, API Deployment, Model Serving, Auto-scaling, HPA, Prometheus, Monitoring, Containerization, Dev]</p>
+<ul class="large-only" id="markdown-toc">
+  <li><a href="#a-comprehensive-tutorial-on-deploying-a-scalable-machine-learning-service-on-kubernetes" id="markdown-toc-a-comprehensive-tutorial-on-deploying-a-scalable-machine-learning-service-on-kubernetes">A Comprehensive Tutorial on Deploying a Scalable Machine Learning Service on Kubernetes</a></li>
+  <li><a href="#overview-of-the-tutorial" id="markdown-toc-overview-of-the-tutorial">Overview of the Tutorial</a></li>
+  <li><a href="#what-youll-learn" id="markdown-toc-what-youll-learn">What You’ll Learn</a></li>
+  <li><a href="#technical-stack" id="markdown-toc-technical-stack">Technical Stack</a></li>
+  <li><a href="#topics-covered" id="markdown-toc-topics-covered">Topics Covered</a>    <ul>
+      <li><a href="#introduction--project-overview" id="markdown-toc-introduction--project-overview">Introduction &amp; Project Overview</a></li>
+      <li><a href="#setting-up-podman--kind" id="markdown-toc-setting-up-podman--kind">Setting Up Podman &amp; Kind</a></li>
+      <li><a href="#creating-a-kubernetes-cluster" id="markdown-toc-creating-a-kubernetes-cluster">Creating a Kubernetes Cluster</a></li>
+      <li><a href="#deploying-persistent-storage" id="markdown-toc-deploying-persistent-storage">Deploying Persistent Storage</a></li>
+      <li><a href="#setting-up-configmap" id="markdown-toc-setting-up-configmap">Setting Up ConfigMap</a></li>
+      <li><a href="#deploying-the-ml-application" id="markdown-toc-deploying-the-ml-application">Deploying the ML Application</a></li>
+      <li><a href="#exposing-the-service--auto-scaling" id="markdown-toc-exposing-the-service--auto-scaling">Exposing the Service &amp; Auto-Scaling</a></li>
+      <li><a href="#setting-up-prometheus-for-monitoring" id="markdown-toc-setting-up-prometheus-for-monitoring">Setting Up Prometheus for Monitoring</a></li>
+      <li><a href="#testing-the-api--metrics" id="markdown-toc-testing-the-api--metrics">Testing the API &amp; Metrics</a></li>
+      <li><a href="#debugging--troubleshooting" id="markdown-toc-debugging--troubleshooting">Debugging &amp; Troubleshooting</a></li>
+      <li><a href="#conclusion--next-steps" id="markdown-toc-conclusion--next-steps">Conclusion &amp; Next Steps</a></li>
+    </ul>
+  </li>
+  <li><a href="#video-tutorial-series" id="markdown-toc-video-tutorial-series">Video Tutorial Series</a></li>
+  <li><a href="#resources-used" id="markdown-toc-resources-used">Resources Used</a></li>
+  <li><a href="#conclusion" id="markdown-toc-conclusion">Conclusion</a></li>
+</ul>
+
+<h2 id="a-comprehensive-tutorial-on-deploying-a-scalable-machine-learning-service-on-kubernetes">A Comprehensive Tutorial on Deploying a Scalable Machine Learning Service on Kubernetes</h2>
+
+<iframe width="900" height="500" src="https://www.youtube.com/embed/hlntSaGY-dQ" frameborder="0" allowfullscreen=""></iframe>
+
+<h2 id="overview-of-the-tutorial">Overview of the Tutorial</h2>
+
+<p>This tutorial covers the entire pipeline of deploying a Sentiment Analysis model — from model development to scalable, monitored production deployment on Kubernetes.</p>
+
+<p><strong>Here’s a glimpse of what you will build and learn:</strong></p>
+
+<ul>
+  <li>Sentiment Analysis Model developed with Scikit-Learn for natural language processing tasks.</li>
+  <li>A FastAPI-based REST API serving the model, enabling easy, low-latency inference.</li>
+  <li>Containerization using Docker or Podman to package the application and dependencies.</li>
+  <li>Kubernetes Deployment, including setup of clusters, persistent storage for model artifacts, and auto-scaling using the Horizontal Pod Autoscaler (HPA).</li>
+  <li>Real-time monitoring using Prometheus to track application health and performance metrics.</li>
+</ul>
+
+<p>This project equips you with practical MLOps skills to deploy and maintain machine learning applications at scale.</p>
+
+<hr />
+
+<h2 id="what-youll-learn">What You’ll Learn</h2>
+<p><img src="/assets/img/blog/k8s.png" alt="Image- Author" /></p>
+
+<ul>
+  <li>Building and training a sentiment analysis model with Scikit-Learn.</li>
+  <li>Designing a RESTful API using FastAPI for seamless model inference.</li>
+  <li>Containerizing ML services with Docker or Podman for portability.</li>
+  <li>Creating and managing Kubernetes clusters with Kind (Kubernetes in Docker).</li>
+  <li>Configuring Persistent Volumes (PV) and Persistent Volume Claims (PVC) for reliable storage.</li>
+  <li>Managing application configurations with Kubernetes ConfigMaps.</li>
+  <li>Implementing Horizontal Pod Autoscaling (HPA) for dynamic load management.</li>
+  <li>Setting up Prometheus monitoring for real-time insights and alerts.</li>
+  <li>Testing APIs and Prometheus metrics along with common debugging practices.</li>
+</ul>
+
+<hr />
+
+<h2 id="technical-stack">Technical Stack</h2>
+
+<ul>
+  <li><strong>Machine Learning</strong>: Scikit-Learn</li>
+  <li><strong>API Framework</strong>: FastAPI</li>
+  <li><strong>Containerization</strong>: Docker, Podman</li>
+  <li><strong>Orchestration</strong>: Kubernetes, Kind</li>
+  <li><strong>Storage</strong>: Persistent Volumes in Kubernetes</li>
+  <li><strong>Auto-scaling</strong>: Horizontal Pod Autoscaler (HPA)</li>
+  <li><strong>Monitoring</strong>: Prometheus</li>
+</ul>
+
+<hr />
+
+<h2 id="topics-covered">Topics Covered</h2>
+
+<h3 id="introduction--project-overview">Introduction &amp; Project Overview</h3>
+<ul>
+  <li>Understand the scope and architecture of the deployment pipeline.</li>
+</ul>
+
+<h3 id="setting-up-podman--kind">Setting Up Podman &amp; Kind</h3>
+<ul>
+  <li>Install and configure Podman and Kind for local Kubernetes cluster management.</li>
+</ul>
+
+<h3 id="creating-a-kubernetes-cluster">Creating a Kubernetes Cluster</h3>
+<ul>
+  <li>Initialize and configure your Kubernetes environment.</li>
+</ul>
+
+<h3 id="deploying-persistent-storage">Deploying Persistent Storage</h3>
+<ul>
+  <li>Configure Persistent Volumes and Claims for storing model data.</li>
+</ul>
+
+<h3 id="setting-up-configmap">Setting Up ConfigMap</h3>
+<ul>
+  <li>Manage application settings with Kubernetes ConfigMaps.</li>
+</ul>
+
+<h3 id="deploying-the-ml-application">Deploying the ML Application</h3>
+<ul>
+  <li>Containerize and deploy your ML model API on Kubernetes.</li>
+</ul>
+
+<h3 id="exposing-the-service--auto-scaling">Exposing the Service &amp; Auto-Scaling</h3>
+<ul>
+  <li>Make your service accessible and configure HPA to handle varying workloads.</li>
+</ul>
+
+<h3 id="setting-up-prometheus-for-monitoring">Setting Up Prometheus for Monitoring</h3>
+<ul>
+  <li>Integrate Prometheus to monitor system and application metrics.</li>
+</ul>
+
+<h3 id="testing-the-api--metrics">Testing the API &amp; Metrics</h3>
+<ul>
+  <li>Validate the deployed API and monitor Prometheus outputs.</li>
+</ul>
+
+<h3 id="debugging--troubleshooting">Debugging &amp; Troubleshooting</h3>
+<ul>
+  <li>Identify and resolve common issues encountered in production deployments.</li>
+</ul>
+
+<h3 id="conclusion--next-steps">Conclusion &amp; Next Steps</h3>
+<ul>
+  <li>Summarize learnings and suggest paths for further enhancement.</li>
+</ul>
+
+<hr />
+
+<h2 id="video-tutorial-series">Video Tutorial Series</h2>
+
+<p>Follow along with my step-by-step tutorial series on <strong>Hands-On End-to-End ML Model Deployment on Kubernetes - Auto-Scaling &amp; Monitoring</strong> playlist:</p>
+
+<ul>
+  <li><strong>Part 1</strong>: <a href="https://youtu.be/hlntSaGY-dQ">Introduction &amp; Project Setup</a></li>
+</ul>
+<iframe width="900" height="500" src="https://www.youtube.com/embed/hlntSaGY-dQ" frameborder="0" allowfullscreen=""></iframe>
+<ul>
+  <li><strong>Part 2</strong>: <a href="https://youtu.be/sKWZY0GJSuE">Setup Podman and install Kind</a></li>
+</ul>
+<iframe width="900" height="500" src="https://www.youtube.com/embed/sKWZY0GJSuE" frameborder="0" allowfullscreen=""></iframe>
+<ul>
+  <li><strong>Part 3</strong>: <a href="https://youtu.be/pc6GCL41BXk">Building the Machine Learning Model &amp; API</a></li>
+</ul>
+<iframe width="900" height="500" src="https://www.youtube.com/embed/pc6GCL41BXk" frameborder="0" allowfullscreen=""></iframe>
+<ul>
+  <li><strong>Part 4</strong>: Containerization with Docker/Podman<br />
+<em>Coming Soon</em></li>
+  <li><strong>Part 5</strong>: Setting Up Kubernetes Cluster<br />
+<em>Coming Soon</em></li>
+  <li><strong>Part 6</strong>: Deploying the ML Service &amp; Auto-Scaling with HPA<br />
+<em>Coming Soon</em></li>
+  <li><strong>Part 7</strong>: Monitoring with Prometheus<br />
+<em>Coming Soon</em></li>
+  <li><strong>Part 8</strong>: Testing, Debugging &amp; Optimization<br />
+<em>Coming Soon</em></li>
+</ul>
+
+<hr />
+
+<h2 id="resources-used">Resources Used</h2>
+
+<ul>
+  <li><strong>GitHub Repository</strong>: <em>Coming soon – stay tuned!</em></li>
+  <li><strong>Docker Hub Image</strong>: <a href="https://hub.docker.com/r/abonia/ml-tutorial"><code class="language-plaintext highlighter-rouge">abonia/ml-tutorial</code></a></li>
+  <li><a href="https://podman.io/getting-started/installation">Podman Installation Guide</a></li>
+  <li><a href="https://www.docker.com/products/docker-desktop/">Docker Desktop Download</a></li>
+  <li><a href="https://kind.sigs.k8s.io/docs/user/quick-start/">Kind (Kubernetes in Docker) Quick Start</a></li>
+  <li><a href="https://kubernetes.io/docs/home/">Kubernetes Official Documentation</a></li>
+  <li><a href="https://prometheus.io/docs/introduction/overview/">Prometheus Documentation</a></li>
+  <li><a href="https://fastapi.tiangolo.com/">FastAPI Documentation</a></li>
+  <li><a href="https://scikit-learn.org/stable/supervised_learning.html">Scikit-Learn Supervised Learning</a></li>
+</ul>
+
+<hr />
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Mastering the deployment of machine learning models on Kubernetes unlocks the potential to build robust, scalable, and maintainable AI-powered applications. Whether you’re a beginner stepping into MLOps or a developer aiming to enhance your deployment pipeline, this tutorial offers practical insights to elevate your skills.</p>
+
+<p>Stay connected for updates, more tutorials, and guides by subscribing to my <a href="https://abonia1.github.io/newsletter/">newsletter</a> and following on <a href="https://www.linkedin.com/in/aboniasojasingarayar/">LinkedIn</a> and <a href="https://github.com/Abonia1">GitHub</a>.</p>
+
+<hr />
+<p><strong><em>Thanks for Reading!</em></strong></p>
+
+<blockquote>
+  <p><strong><a href="https://abonia1.github.io/">Website/Newletter</a></strong>
+<strong><a href="https://aboniasojasingarayar.substack.com">AIMagazine Substack</a></strong></p>
+</blockquote>
+
+<blockquote>
+  <p>Connect with me on <strong><a href="https://www.linkedin.com/in/aboniasojasingarayar/">Linkedin</a></strong></p>
+</blockquote>
+
+<blockquote>
+  <p>Find me on <strong><a href="https://github.com/Abonia1">Github</a></strong></p>
+</blockquote>
+
+<blockquote>
+  <p>Visit my technical channel on <strong><a href="https://www.youtube.com/@AboniaSojasingarayar">Youtube</a></strong></p>
+</blockquote>]]></content><author><name>Abonia Sojasingarayar</name><email>aboniaa@gmail.com</email></author><category term="blogs" /><summary type="html"><![CDATA[In today's rapidly evolving tech landscape, deploying machine learning models efficiently and reliably in production environments is a critical skill. This tutorial series provides a hands-on, end-to-end guide for deploying a machine learning service on Kubernetes, designed specifically for beginners eager to master MLOps practices.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/k8s-infra.png" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/k8s-infra.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Building a Scalable data Processing Pipeline with Kafka and Docker Compose</title><link href="http://localhost:4000/blogs/2025-03-02-Kafka-Building-Scalable-data-Processing-Pipeline-with-Kafka-and-docker-compose/" rel="alternate" type="text/html" title="Building a Scalable data Processing Pipeline with Kafka and Docker Compose" /><published>2025-03-02T00:00:00+01:00</published><updated>2025-03-07T13:29:27+01:00</updated><id>http://localhost:4000/blogs/Kafka-Building-Scalable-data-Processing-Pipeline-with-Kafka-and-docker-compose</id><content type="html" xml:base="http://localhost:4000/blogs/2025-03-02-Kafka-Building-Scalable-data-Processing-Pipeline-with-Kafka-and-docker-compose/"><![CDATA[<p><strong>Reading_time:</strong> 10 min<br />
   <strong>Tags:</strong> [ApacheKafka, DockerCompose, Dataprocessing, ImageProcessing, DataPipeline, RealTimeProcessing, Python]</p>
 <ul class="large-only" id="markdown-toc">
   <li><a href="#comprehensive-guide--a-step-by-step-guide-to-efficient-asynchronous-kafka-image-processing" id="markdown-toc-comprehensive-guide--a-step-by-step-guide-to-efficient-asynchronous-kafka-image-processing">Comprehensive Guide — A Step-by-Step Guide to Efficient Asynchronous Kafka Image Processing</a></li>
@@ -1815,200 +2024,4 @@ Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolos
 
 <p>Visit my technical channel on <strong><a href="https://www.youtube.com/@AboniaSojasingarayar">Youtube</a></strong></p>
 
-<p>Support: <strong><a href="https://www.buymeacoffee.com/abonia">Buy me a Cofee/Chai</a></strong></p>]]></content><author><name>Abonia Sojasingarayar</name><email>aboniaa@gmail.com</email></author><category term="blogs" /><summary type="html"><![CDATA[yolosegment2labelme - a Python package that allows you to convert YOLO segmentation prediction results to LabelMe and anylabeling JSON format. This tool facilitates the annotation easy.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://raw.githubusercontent.com/Abonia1/yolosegment2labelme/main/images/labelme_test/logo.png" /><media:content medium="image" url="https://raw.githubusercontent.com/Abonia1/yolosegment2labelme/main/images/labelme_test/logo.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Summarization-with-LangChain:Stuff — Map_reduce — Refine</title><link href="http://localhost:4000/blogs/2024-04-22-Summarization-with-LangChain/" rel="alternate" type="text/html" title="Summarization-with-LangChain:Stuff — Map_reduce — Refine" /><published>2024-04-22T00:00:00+02:00</published><updated>2024-05-08T15:24:55+02:00</updated><id>http://localhost:4000/blogs/Summarization-with-LangChain</id><content type="html" xml:base="http://localhost:4000/blogs/2024-04-22-Summarization-with-LangChain/"><![CDATA[<p><strong><a href="https://youtu.be/w6wOhSThnoo">Link to the complete hands-on tutorial on Summarizer techniques</a></strong></p>
-
-<p><strong>Reading_time:</strong> 7 min<br />
-  <strong>Tags:</strong> [Langchain, LLM, GenAI, Summarizer]</p>
-<ul class="large-only" id="markdown-toc">
-  <li><a href="#summarization-techniques" id="markdown-toc-summarization-techniques">Summarization Techniques</a></li>
-  <li><a href="#stuff-chain" id="markdown-toc-stuff-chain">Stuff Chain</a></li>
-  <li><a href="#map-reduce-method" id="markdown-toc-map-reduce-method">Map-Reduce Method</a></li>
-  <li><a href="#refine-method" id="markdown-toc-refine-method">Refine Method</a></li>
-  <li><a href="#choosing-the-right-technique" id="markdown-toc-choosing-the-right-technique">Choosing the Right Technique</a></li>
-  <li><a href="#thanks-for-reading" id="markdown-toc-thanks-for-reading"><em>Thanks for Reading!</em></a></li>
-</ul>
-<p><strong>Table of Contents:</strong></p>
-<ul>
-  <li><a href="#stuff-chain">Stuff Chain Method</a></li>
-  <li><a href="#map-reduce-method">Map-Reduce Method)</a></li>
-  <li><a href="#refine-method">Refine Method</a></li>
-</ul>
-
-<p>I recently wrapped a tutorial on summarization techniques in LangChain. This article covers the basic usage of document summarization techniques and provides insights into various summarization methods. Additionally, to learn more and to explore how to validate intermediate results from the output of each of these techniques. For those interested in delving deeper into this topic, I invite you to explore the complete and comprehensive tutorial available <strong><a href="https://youtu.be/w6wOhSThnoo">here</a></strong>.</p>
-
-<p>Summarization is a critical aspect of natural language processing (NLP), enabling the condensation of large volumes of text into concise summaries. LangChain, a powerful tool in the NLP domain, offers three distinct summarization techniques: stuff, map_reduce, and refine. Each method has its unique advantages and limitations, making them suitable for different scenarios. This article delves into the details of these techniques, their pros and cons, and the ideal scenarios for their application.</p>
-
-<p>Complete implementation code and data used in the tutorial available in the below <strong><a href="https://github.com/Abonia1/Langchain-Summarizer">repository</a></strong>.</p>
-
-<h2 id="summarization-techniques">Summarization Techniques</h2>
-
-<p><img src="https://cdn-images-1.medium.com/max/3310/0*F6xtU1qhHfVSqQdO.png" alt="Courtesy of langchain" />
-<strong><a href="https://python.langchain.com/docs/use_cases/summarization">Summarization | 🦜️🔗 Langchain</a></strong></p>
-
-<h2 id="stuff-chain">Stuff Chain</h2>
-
-<p>The stuff chain is particularly effective for handling large documents. It works by converting the document into smaller chunks, processing each chunk individually, and then combining the summaries to generate a final summary. This method is ideal for managing huge files and can be facilitated with the help of a recursive character text splitter.</p>
-
-<p><strong>Pros:</strong></p>
-
-<ul>
-  <li>
-    <p>Efficiently handles large documents.</p>
-  </li>
-  <li>
-    <p>Allows for chunk-wise summarization, making it suitable for managing huge files.</p>
-  </li>
-</ul>
-
-<p><strong>Cons:</strong></p>
-
-<ul>
-  <li>LLM context window</li>
-</ul>
-
-<p>Here’s an example of how to implement the stuff chain method:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>from langchain.chains.combine_documents.stuff import StuffDocumentsChain
-from langchain.chains.llm import LLMChain
-from langchain.prompts import PromptTemplate
-
-#Define prompt
-prompt_template = """Write a concise summary of the following:
-"{text}"
-CONCISE SUMMARY:"""
-prompt = PromptTemplate.from_template(prompt_template)
-#Define LLM chain
-llm = ChatOpenAI(temperature=0, model_name="gpt-3.5-turbo-16k")
-llm_chain = LLMChain(llm=llm, prompt=prompt)
-#Define StuffDocumentsChain
-stuff_chain = StuffDocumentsChain(llm_chain=llm_chain, document_variable_name="text")
-docs = loader.load()
-print(stuff_chain.run(docs))
-</code></pre></div></div>
-
-<h2 id="map-reduce-method">Map-Reduce Method</h2>
-
-<p>The Map-Reduce method involves summarizing each document individually (map step) and then combining these summaries into a final summary (reduce step). This approach is more scalable and can handle larger volumes of text.The map_reduce technique is designed for summarizing large documents that exceed the token limit of the language model. It involves dividing the document into chunks, generating summaries for each chunk, and then combining these summaries to create a final summary. This method is efficient for handling large files and significantly reduces processing time.</p>
-
-<p><strong>Pros:</strong></p>
-
-<ul>
-  <li>
-    <p>Effectively handles large documents by dividing them into manageable chunks.</p>
-  </li>
-  <li>
-    <p>Reduces processing time by processing chunks individually.</p>
-  </li>
-</ul>
-
-<p><strong>Cons:</strong></p>
-
-<ul>
-  <li>Requires extra steps in combining individual summaries, which can add complexity to the process.</li>
-</ul>
-
-<p>Here’s an example of how to implement the Map-Reduce method:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>from langchain.chains import MapReduceDocumentsChain, ReduceDocumentsChain
-from langchain_text_splitters import CharacterTextSplitter
-
-# Map
-map_template = """The following is a set of documents
-{docs}
-Based on this list of docs, please identify the main themes 
-Helpful Answer:"""
-map_prompt = PromptTemplate.from_template(map_template)
-map_chain = LLMChain(llm=llm, prompt=map_prompt)
-# Reduce
-reduce_template = """The following is set of summaries:
-{docs}
-Take these and distill it into a final, consolidated summary of the main themes. 
-Helpful Answer:"""
-reduce_prompt = PromptTemplate.from_template(reduce_template)
-reduce_chain = LLMChain(llm=llm, prompt=reduce_prompt)
-# Combine documents by mapping a chain over them, then combining results
-map_reduce_chain = MapReduceDocumentsChain(
-    llm_chain=map_chain,
-    reduce_documents_chain=reduce_documents_chain,
-    document_variable_name="docs",
-    return_intermediate_steps=False,
-)
-text_splitter = CharacterTextSplitter.from_tiktoken_encoder(chunk_size=1000, chunk_overlap=0)
-split_docs = text_splitter.split_documents(docs)
-print(map_reduce_chain.run(split_docs))
-</code></pre></div></div>
-
-<h2 id="refine-method">Refine Method</h2>
-
-<p>The Refine method iteratively updates its answer by looping over the input documents. For each document, it passes all non-document inputs, the current document, and the latest intermediate answer to an LLM chain to get a new answer. This method is useful for refining a summary based on new context.The refine technique is a simpler alternative to the map_reduce technique. It involves generating a summary for the first chunk, combining it with the second chunk, generating another summary, and continuing this process until a final summary is achieved. This method is suitable for large documents but requires less complexity compared to map_reduce.</p>
-
-<p><strong>Pros:</strong></p>
-
-<ul>
-  <li>
-    <p>Simpler than the map_reduce technique.</p>
-  </li>
-  <li>
-    <p>Achieves similar results for large documents with less complexity.</p>
-  </li>
-</ul>
-
-<p><strong>Cons:</strong></p>
-
-<ul>
-  <li>Limited functionality compared to other techniques.</li>
-</ul>
-
-<p>Here’s how you can implement the Refine method:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>from langchain.chains.summarize import load_summarize_chain
-prompt = """
-                  Please provide a summary of the following text.
-                  TEXT: {text}
-                  SUMMARY:
-                  """
-
-question_prompt = PromptTemplate(
-    template=question_prompt_template, input_variables=["text"]
-)
-
-refine_prompt_template = """
-              Write a concise summary of the following text delimited by triple backquotes.
-              Return your response in bullet points which covers the key points of the text.
-              ```{text}```
-              BULLET POINT SUMMARY:
-              """
-
-refine_template = PromptTemplate(
-    template=refine_prompt_template, input_variables=["text"]
-
-# Load refine chain
-chain = load_summarize_chain(
-    llm=llm,
-    chain_type="refine",
-    question_prompt=question_prompt,
-    refine_prompt=refine_prompt,
-    return_intermediate_steps=True,
-    input_key="input_documents",
-    output_key="output_text",
-)
-result = chain({"input_documents": split_docs}, return_only_outputs=True)
-</code></pre></div></div>
-
-<h2 id="choosing-the-right-technique">Choosing the Right Technique</h2>
-
-<p>The choice of summarization technique depends on the specific requirements of the task at hand. For large documents, the map_reduce and refine techniques are recommended due to their ability to handle chunk-wise summarization efficiently. The stuff chain is particularly useful for documents that are too large to be processed in a single go, offering a practical solution for managing huge files.</p>
-
-<p>Each method has its advantages and is suitable for different scenarios. The Stuff method is straightforward but may not scale well with large volumes of text. The Map-Reduce method is more scalable and can handle larger documents but requires more setup. The Refine method is useful for iteratively refining a summary based on new context, making it a good choice for dynamic summarization tasks.</p>
-
-<blockquote>
-  <h1 id="thanks-for-reading"><em>Thanks for Reading!</em></h1>
-</blockquote>
-
-<p>Connect with me on <strong><a href="https://www.linkedin.com/in/aboniasojasingarayar/">Linkedin</a></strong></p>
-
-<p>Find me on <strong><a href="https://github.com/Abonia1">Github</a></strong></p>
-
-<p>Visit my technical channel on <strong><a href="https://www.youtube.com/@AboniaSojasingarayar">Youtube</a></strong></p>
-
-<p>Support: <strong><a href="https://www.buymeacoffee.com/abonia">Buy me a Cofee/Chai</a></strong></p>]]></content><author><name>Abonia Sojasingarayar</name><email>aboniaa@gmail.com</email></author><category term="blogs" /><summary type="html"><![CDATA[I recently wrapped a tutorial on summarization techniques in LangChain. This article covers the basic usage of document summarization techniques and provides insights into various summarization methods. Additionally, to learn more and to explore how to validate intermediate results from the output of each of these techniques.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://cdn-images-1.medium.com/max/3840/1*uDxlmvrPL0X5i4yd8iDGBw.png" /><media:content medium="image" url="https://cdn-images-1.medium.com/max/3840/1*uDxlmvrPL0X5i4yd8iDGBw.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+<p>Support: <strong><a href="https://www.buymeacoffee.com/abonia">Buy me a Cofee/Chai</a></strong></p>]]></content><author><name>Abonia Sojasingarayar</name><email>aboniaa@gmail.com</email></author><category term="blogs" /><summary type="html"><![CDATA[yolosegment2labelme - a Python package that allows you to convert YOLO segmentation prediction results to LabelMe and anylabeling JSON format. This tool facilitates the annotation easy.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://raw.githubusercontent.com/Abonia1/yolosegment2labelme/main/images/labelme_test/logo.png" /><media:content medium="image" url="https://raw.githubusercontent.com/Abonia1/yolosegment2labelme/main/images/labelme_test/logo.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
