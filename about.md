@@ -2,16 +2,12 @@
 layout: about
 image: /assets/img/blog/hydejack-9.jpg
 description: >
-  Abonia - Data Scientist - ML Engineer - MLOps
+  Abonia - Data Scientist - ML Engineer - MLOps - AI, Machine Learning, Microsoft MVP, Deep Learning, Career Coaching. About: Abonia Sojasingarayar – AI Expert & Microsoft MVP. Learn about Abonia's AI tutorials, technical reviews, community work, career coaching etc."
 hide_description: true
 redirect_from:
   - /download/
----
 
-{% capture includeGuts %}
-{% include newsletter-form.html %}
-{% endcapture %}
-{{ includeGuts | replace: '    ', ''}}
+---
 
 # About
 
@@ -42,11 +38,20 @@ I am also involved in curating and contributing to an **[AI-focused magazine and
 - **Practical AI Applications**: Sharing real-world use cases and applications of AI in various industries.
 <img src="/assets/img/blog/AIMagazine.gif" alt="gif" width="1000" height="315" >
 
+
 ---
 
-# Career Milestone: Technical Book Reviewer Role
+# Career Milestone: Technical Book Writer and Reviewer 📚
 
-📚 **Deep Learning for Data Architects** 📚 
+## 1. E-Book: From Research to Production - Industrializing NLP and Large Language Models
+<p align="center">
+  <img src="/assets/img/blog/ebook-cover.webp" alt="E-Book Cover" width="700" height="300" />
+</p>
+I’m excited to share free eBook, which guides you through the journey of taking NLP and Large Language Models from research concepts to real-world production systems. This resource covers practical techniques, architectural patterns, and best practices for industrializing AI solutions.
+
+**Download or learn more:** [Get the eBook here](https://aboniasojasingarayar.substack.com/p/e-book-from-research-to-production?utm_source=activity_item)
+
+## 2. Technical Reviewer - Deep Learning for Data Architects  
 
 I had the privilege of serving as a **technical reviewer** for the book *Deep Learning for Data Architects*. This journey was not just about reviewing—it was a profound learning experience that allowed me to help shape a resource bridging the gap between **data architecture** and **deep learning**.  
 
@@ -94,6 +99,16 @@ I’ve also reviewed a variety of books related to AI, Data Science, LLM,  NLP ,
 <!-- Repeat for more books if necessary -->
 ---
 
+# Awards & Recognitions
+### 🎖️ Microsoft Most Valuable Professional (MVP)
+
+I am honored to have received the **Microsoft MVP Award**, recognizing the contributions to the technical community through content creation, speaking engagements, and sharing knowledge in the field of Artificial Intelligence and Data Science.
+
+<p align="center">
+  <img src="/assets/img/blog/Microsoft_MVP.jpeg" alt="Microsoft MVP" width="700" height="300">
+</p>
+---
+
 # Career Coaching
 
 💼 **Supporting Those on Their Career Journey**  
@@ -118,10 +133,45 @@ I offer career coaching on **[LinkedIn](https://www.linkedin.com/services/page/2
 
 ---
 
-Connect with me on **[Linkedin](https://www.linkedin.com/in/aboniasojasingarayar/)**
+# 📬 Get the Newsletter
 
-Find me on **[Github](https://github.com/Abonia1)**
+Stay updated with the latest in AI, Data Science, and MLOps. Subscribe to receive curated insights, tutorials etc straight to your inbox.
 
-Visit my technical channel on **[Youtube](https://www.youtube.com/@AboniaSojasingarayar)**
+{% capture includeGuts %}
+{% include newsletter-form.html %}
+{% endcapture %}
+{{ includeGuts | replace: '    ', ''}}
 
-Support: **[Buy me a Cofee/Chai](https://www.buymeacoffee.com/abonia)**
+---
+
+## Stay Connected
+
+<ul style="list-style: none; padding-left: 0; line-height: 2;">
+  <li>
+    <svg width="16" height="16" fill="currentColor" style="vertical-align: middle; margin-right: 8px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M100.28 448H7.4V148.9h92.88zm-46.44-341A53.62 53.62 0 1 1 107.46 59a53.64 53.64 0 0 1-53.62 48zM447.9 448h-92.4V302.4c0-34.7-.7-79.3-48.3-79.3-48.3 0-55.7 37.7-55.7 76.6V448h-92.4V148.9h88.7v40.8h1.3c12.3-23.2 42.3-48.3 87-48.3 93 0 110.1 61.2 110.1 140.7V448z"/></svg>
+    <a href="https://www.linkedin.com/in/aboniasojasingarayar/" target="_blank"><strong>Connect with me on LinkedIn</strong></a>
+  </li>
+   <li>
+   <svg width="16" height="16" fill="currentColor" style="vertical-align: middle; margin-right: 8px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0.297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577 
+      0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.089-.744.084-.729.084-.729 
+      1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.807 1.305 3.492.998.108-.775.42-1.305.763-1.605-2.665-.3-5.467-1.332-5.467-5.93 
+      0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23a11.5 11.5 0 0 1 3-.405c1.02.005 2.045.138 3 .405 
+      2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.435.375.81 1.11.81 2.235 
+      0 1.61-.015 2.9-.015 3.29 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+   <a href="https://github.com/Abonia1" target="_blank" rel="noopener noreferrer"><strong>GitHub</strong></a>
+   </li>
+  <li>
+    <svg width="16" height="16" fill="currentColor" style="vertical-align: middle; margin-right: 8px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M549.7 124.1c-6.3-23.8-24.9-42.5-48.7-48.7C456.7 64 288 64 288 64s-168.7 0-213.1 11.4c-23.8 6.3-42.5 24.9-48.7 48.7C16.8 168.6 16 256 16 256s.8 87.4 10.2 131.9c6.3 23.8 24.9 42.5 48.7 48.7C119.3 448 288 448 288 448s168.7 0 213.1-11.4c23.8-6.3 42.5-24.9 48.7-48.7C559.2 343.4 560 256 560 256s-.8-87.4-10.3-131.9zM232 336V176l142.7 80L232 336z"/></svg>
+    <a href="https://www.youtube.com/@AboniaSojasingarayar" target="_blank"><strong>YouTube channel</strong></a>
+  </li>
+  <li>
+  <a href="https://aboniasojasingarayar.substack.com/" target="_blank" style="display: flex; align-items: center; gap: 8px; text-decoration: none; color: inherit;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align: middle;"><rect x="2" y="5" width="20" height="14" rx="2" ry="2" stroke="currentColor" stroke-width="2" fill="none"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="2" fill="none"/>
+</svg>
+<strong>AI Magazine newsletter on Substack</strong>
+</a>
+</li>
+  <li>
+    <svg width="16" height="16" fill="currentColor" style="vertical-align: middle; margin-right: 8px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M192 384h192c0 53-43 96-96 96s-96-43-96-96zm-96 0h64c0 70.7 57.3 128 128 128s128-57.3 128-128h64a32 32 0 0 0 32-32v-64h10.8c14.6 0 26.5-10.3 31.2-24.4l40-120C597.1 123 585.3 96 563.3 96H80.6c-22 0-33.8 27-22.7 47.6l40 120C102.7 277.7 114.6 288 129.2 288H144v64a32 32 0 0 0 32 32z"/></svg>
+    <a href="https://www.buymeacoffee.com/abonia" target="_blank"><strong>Buy Me a Coffee</strong></a>
+  </li>
+</ul>
