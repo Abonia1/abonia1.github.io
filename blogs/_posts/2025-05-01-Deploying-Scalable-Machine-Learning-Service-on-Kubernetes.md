@@ -19,6 +19,8 @@ sitemap: false
 
 <iframe width="900" height="500" src="https://www.youtube.com/embed/hlntSaGY-dQ" frameborder="0" allowfullscreen></iframe>  
 
+**GitHub Repository**: [kubernetes-ml-deployment](https://github.com/Abonia1/kubernetes-ml-project) 
+
 ## Overview of the Tutorial
 
 This tutorial covers the entire pipeline of deploying a Sentiment Analysis model — from model development to scalable, monitored production deployment on Kubernetes.
@@ -103,28 +105,32 @@ This project equips you with practical MLOps skills to deploy and maintain machi
 
 Follow along with my step-by-step tutorial series on **Hands-On End-to-End ML Model Deployment on Kubernetes - Auto-Scaling & Monitoring** playlist:
 
-- **Part 1**: [Introduction & Project Setup](https://youtu.be/hlntSaGY-dQ)
+- **Part 1**: [Introduction & Project Setup](https://youtu.be/hlntSaGY-dQ)  
 <iframe width="900" height="500" src="https://www.youtube.com/embed/hlntSaGY-dQ" frameborder="0" allowfullscreen></iframe>  
-- **Part 2**: [Setup Podman and install Kind](https://youtu.be/sKWZY0GJSuE)
-<iframe width="900" height="500" src="https://www.youtube.com/embed/sKWZY0GJSuE" frameborder="0" allowfullscreen></iframe>
+
+- **Part 2**: [Setup Podman and Install Kind](https://youtu.be/sKWZY0GJSuE)  
+<iframe width="900" height="500" src="https://www.youtube.com/embed/sKWZY0GJSuE" frameborder="0" allowfullscreen></iframe>  
+
 - **Part 3**: [Building the Machine Learning Model & API](https://youtu.be/pc6GCL41BXk)  
-<iframe width="900" height="500" src="https://www.youtube.com/embed/pc6GCL41BXk" frameborder="0" allowfullscreen></iframe>
-- **Part 4**: Containerization with Docker/Podman  
-  _Coming Soon_  
-- **Part 5**: Setting Up Kubernetes Cluster  
-  _Coming Soon_  
-- **Part 6**: Deploying the ML Service & Auto-Scaling with HPA  
-  _Coming Soon_  
-- **Part 7**: Monitoring with Prometheus  
-  _Coming Soon_  
-- **Part 8**: Testing, Debugging & Optimization  
-  _Coming Soon_
+<iframe width="900" height="500" src="https://www.youtube.com/embed/pc6GCL41BXk" frameborder="0" allowfullscreen></iframe>  
+
+- **Part 4**: [Containerization with Docker/Podman](https://youtu.be/9mIu3DKJHhU)  
+<iframe width="900" height="500" src="https://www.youtube.com/embed/9mIu3DKJHhU" frameborder="0" allowfullscreen></iframe>  
+
+- **Part 5**: [Setting Up Kubernetes Cluster and Deploying the ML Service](https://youtu.be/_jqMRb6Mt-0)  
+<iframe width="900" height="500" src="https://www.youtube.com/embed/_jqMRb6Mt-0" frameborder="0" allowfullscreen></iframe>  
+
+- **Part 6**: [Auto-Scaling with HPA and Monitoring with Prometheus](https://youtu.be/ZG6BopWtvtE)  
+<iframe width="900" height="500" src="https://www.youtube.com/embed/ZG6BopWtvtE" frameborder="0" allowfullscreen></iframe>  
+
+- **Part 7**: [Scalable Options, Testing, Debugging & Optimization](https://youtu.be/3IGqEX-1ZhM)  
+<iframe width="900" height="500" src="https://www.youtube.com/embed/3IGqEX-1ZhM" frameborder="0" allowfullscreen></iframe>   
 
 ---
 
 ## Resources Used
 
-- **GitHub Repository**: _Coming soon – stay tuned!_  
+- **GitHub Repository**: [kubernetes-ml-deployment](https://github.com/Abonia1/kubernetes-ml-project) 
 - **Docker Hub Image**: [`abonia/ml-tutorial`](https://hub.docker.com/r/abonia/ml-tutorial)  
 - [Podman Installation Guide](https://podman.io/getting-started/installation)  
 - [Docker Desktop Download](https://www.docker.com/products/docker-desktop/)  
