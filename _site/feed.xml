@@ -1,5 +1,120 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2026-01-18T12:54:59+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Abonia Sojasingarayar - AI &amp;amp; ML Expert</title><subtitle>AI &amp; Machine Learning Expert with Masters degree and 7+ years experience in ML systems across cybersecurity, banking, transit, cosmetics &amp; e-commerce domains.
-</subtitle><author><name>Abonia Sojasingarayar</name><email>aboniaa@gmail.com</email></author><entry><title type="html">Deploying a Scalable Machine Learning Service on Kubernetes</title><link href="http://localhost:4000/blogs/2025-05-01-Deploying-Scalable-Machine-Learning-Service-on-Kubernetes/" rel="alternate" type="text/html" title="Deploying a Scalable Machine Learning Service on Kubernetes" /><published>2025-05-01T00:00:00+02:00</published><updated>2025-08-11T13:04:00+02:00</updated><id>http://localhost:4000/blogs/Deploying-Scalable-Machine-Learning-Service-on-Kubernetes</id><content type="html" xml:base="http://localhost:4000/blogs/2025-05-01-Deploying-Scalable-Machine-Learning-Service-on-Kubernetes/"><![CDATA[<p><strong>Reading_time:</strong> 15 min<br />
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2026-01-18T13:28:59+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Abonia Sojasingarayar - AI &amp;amp; ML Expert</title><subtitle>AI &amp; Machine Learning Expert with Masters degree and 7+ years experience in ML systems across cybersecurity, banking, transit, cosmetics &amp; e-commerce domains.
+</subtitle><author><name>Abonia Sojasingarayar</name><email>aboniaa@gmail.com</email></author><entry><title type="html">E-Book - From Research to Production - Industrializing NLP and Large Language Models</title><link href="http://localhost:4000/blogs/2026-01-18-E-book-release-From-Research-to-Production-Industrializing-NLP-and-Large-Language-Model/" rel="alternate" type="text/html" title="E-Book - From Research to Production - Industrializing NLP and Large Language Models" /><published>2026-01-18T00:00:00+01:00</published><updated>2026-01-18T13:28:59+01:00</updated><id>http://localhost:4000/blogs/E-book-release-From-Research-to-Production-Industrializing-NLP-and-Large-Language-Model</id><content type="html" xml:base="http://localhost:4000/blogs/2026-01-18-E-book-release-From-Research-to-Production-Industrializing-NLP-and-Large-Language-Model/"><![CDATA[<p><strong>Reading_time:</strong> 5 min<br />
+  <strong>Tags:</strong> [e-book, From Research to Production, LLM, LLMOps]</p>
+<ul class="large-only" id="markdown-toc">
+  <li><a href="#industrializing-nlp-and-large-language-models" id="markdown-toc-industrializing-nlp-and-large-language-models">Industrializing NLP and Large Language Models</a></li>
+  <li><a href="#-table-of-contents" id="markdown-toc--table-of-contents">📚 Table of Contents</a>    <ul>
+      <li><a href="#chapter-1-introduction-to-nlp" id="markdown-toc-chapter-1-introduction-to-nlp"><strong>Chapter 1: Introduction to NLP</strong></a></li>
+      <li><a href="#chapter-2-traditional-and-modern-text-representation-techniques" id="markdown-toc-chapter-2-traditional-and-modern-text-representation-techniques"><strong>Chapter 2: Traditional and Modern Text Representation Techniques</strong></a></li>
+      <li><a href="#chapter-3-advanced-language-modeling-and-transformers" id="markdown-toc-chapter-3-advanced-language-modeling-and-transformers"><strong>Chapter 3: Advanced Language Modeling and Transformers</strong></a></li>
+      <li><a href="#chapter-4-introduction-to-large-language-models" id="markdown-toc-chapter-4-introduction-to-large-language-models"><strong>Chapter 4: Introduction to Large Language Models</strong></a></li>
+      <li><a href="#chapter-5-fine-tuning-adaptation-evaluation-and-debugging-of-llms" id="markdown-toc-chapter-5-fine-tuning-adaptation-evaluation-and-debugging-of-llms"><strong>Chapter 5: Fine-Tuning, Adaptation, Evaluation, and Debugging of LLMs</strong></a></li>
+      <li><a href="#chapter-6-real-world-applications-of-rag-and-llms" id="markdown-toc-chapter-6-real-world-applications-of-rag-and-llms"><strong>Chapter 6: Real-World Applications of RAG and LLMs</strong></a></li>
+      <li><a href="#chapter-7-a-comprehensive-guide-to-llmops" id="markdown-toc-chapter-7-a-comprehensive-guide-to-llmops"><strong>Chapter 7: A Comprehensive Guide to LLMOps</strong></a></li>
+    </ul>
+  </li>
+  <li><a href="#whats-inside-the-ebook" id="markdown-toc-whats-inside-the-ebook">What’s Inside the eBook</a></li>
+  <li><a href="#-who-this-book-is-for" id="markdown-toc--who-this-book-is-for">👥 Who This Book Is For</a>    <ul>
+      <li><a href="#ideal-for" id="markdown-toc-ideal-for"><strong>Ideal for</strong></a></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="industrializing-nlp-and-large-language-models">Industrializing NLP and Large Language Models</h2>
+
+<p><strong>E-book release:</strong> <em>From Research to Production – Industrializing NLP and Large Language Models</em><br />
+<strong>Authors:</strong> Abonia Sojasingarayar &amp; Manan Thakkar<br />
+<strong>Release date:</strong> April 21, 2025</p>
+
+<p><img src="https://substackcdn.com/image/fetch/$s_!SXho!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3658c90a-8967-44c1-82fa-11208efe0c52_512x800.png" alt="" /></p>
+
+<p>After a year and a half of dedicated work, I’m truly excited to share that the eBook <strong>From Research to Production – Industrializing NLP and Large Language Models</strong> is now available.</p>
+
+<p>This <strong>free resource</strong> is a comprehensive guide that spans from core NLP techniques to the latest advancements in large language models. It is designed for beginners, intermediate practitioners, and experienced professionals alike — or anyone looking to deepen their understanding of NLP and LLMs.</p>
+
+<p>Our hope is that this book supports and inspires you on your journey in the world of Natural Language Processing and Large Language Models.</p>
+
+<hr />
+
+<h2 id="-table-of-contents">📚 Table of Contents</h2>
+
+<h3 id="chapter-1-introduction-to-nlp"><strong>Chapter 1: Introduction to NLP</strong></h3>
+<p>Introduces the fundamentals of NLP, covering its definition, key applications, challenges, and resources for further learning.</p>
+
+<h3 id="chapter-2-traditional-and-modern-text-representation-techniques"><strong>Chapter 2: Traditional and Modern Text Representation Techniques</strong></h3>
+<p>Explores traditional text representation methods such as Bag-of-Words and TF-IDF, along with modern techniques like Word2Vec and BERT.</p>
+
+<h3 id="chapter-3-advanced-language-modeling-and-transformers"><strong>Chapter 3: Advanced Language Modeling and Transformers</strong></h3>
+<p>Dives into language models, sequence architectures, and transformer-based innovations.</p>
+
+<h3 id="chapter-4-introduction-to-large-language-models"><strong>Chapter 4: Introduction to Large Language Models</strong></h3>
+<p>Provides an overview of LLMs, their types (e.g., GPT-3, BART), core technical concepts, and real-world applications such as text generation and translation.</p>
+
+<h3 id="chapter-5-fine-tuning-adaptation-evaluation-and-debugging-of-llms"><strong>Chapter 5: Fine-Tuning, Adaptation, Evaluation, and Debugging of LLMs</strong></h3>
+<p>Discusses methods for fine-tuning LLMs, adapting them to specific tasks, evaluating performance, and debugging models.</p>
+
+<h3 id="chapter-6-real-world-applications-of-rag-and-llms"><strong>Chapter 6: Real-World Applications of RAG and LLMs</strong></h3>
+<p>Demonstrates how Retrieval-Augmented Generation (RAG) and LLMs are applied across industries, including conversational AI, biomedical document understanding, and legal search.</p>
+
+<h3 id="chapter-7-a-comprehensive-guide-to-llmops"><strong>Chapter 7: A Comprehensive Guide to LLMOps</strong></h3>
+<p>Focuses on operationalizing Large Language Models across their lifecycle, covering data management, model optimization, deployment, monitoring, and security in the era of Generative AI.</p>
+
+<hr />
+
+<h2 id="whats-inside-the-ebook">What’s Inside the eBook</h2>
+
+<p>This eBook offers an in-depth exploration of text representation techniques, starting with traditional methods like Bag-of-Words and TF-IDF, and progressing to advanced models such as Word2Vec and BERT.</p>
+
+<p>It explains the transformative role of <strong>transformers and attention mechanisms</strong>, detailing how they have reshaped modern NLP. The book dives into transformer architectures and their applications in large-scale models like GPT and BERT, providing a solid foundation for understanding recent NLP breakthroughs.</p>
+
+<p>You’ll also find practical case studies demonstrating how NLP and LLMs are applied in real-world domains, including conversational AI, biomedical research, and the legal sector. In addition, the guide covers fine-tuning, evaluation, and debugging strategies, and introduces <strong>LLMOps</strong> best practices for deploying and maintaining models in production environments.</p>
+
+<hr />
+
+<h2 id="-who-this-book-is-for">👥 Who This Book Is For</h2>
+
+<p>This eBook is intended for anyone interested in understanding and applying <strong>NLP, Large Language Models, and LLMOps</strong>. Whether you’re a beginner or an experienced professional, there’s something here for you.</p>
+
+<h3 id="ideal-for"><strong>Ideal for</strong></h3>
+
+<ul>
+  <li>
+    <p><strong>Data Scientists &amp; Machine Learning Engineers</strong><br />
+Deepen your understanding of NLP techniques, transformer-based models, and LLMs, with practical insights for real-world use.</p>
+  </li>
+  <li>
+    <p><strong>AI Enthusiasts &amp; Researchers</strong><br />
+Gain a comprehensive view of NLP, from its traditional foundations to modern LLM-based systems and emerging applications.</p>
+  </li>
+  <li>
+    <p><strong>Software Developers</strong><br />
+Learn how to incorporate NLP and LLMs into software projects with clear explanations of key concepts, methods, and tools.</p>
+  </li>
+  <li>
+    <p><strong>Students &amp; Learners</strong><br />
+Build strong foundations while exploring advanced techniques, with a focus on practical application and hands-on learning.</p>
+  </li>
+  <li>
+    <p><strong>Business Leaders &amp; Decision-Makers</strong><br />
+Understand the capabilities and benefits of NLP and LLMs to make informed decisions about integrating them into products and services.</p>
+  </li>
+</ul>
+
+<p><strong>Happy reading! 📖✨</strong></p>
+
+<hr />
+<p><strong><em>Thanks for Reading!</em></strong></p>
+
+<p><strong><a href="https://abonia1.github.io/">Website/Newletter</a></strong>
+<strong><a href="https://aboniasojasingarayar.substack.com">AIMagazine Substack</a></strong></p>
+
+<p>Connect with me on <strong><a href="https://www.linkedin.com/in/aboniasojasingarayar/">Linkedin</a></strong></p>
+
+<p>Find me on <strong><a href="https://github.com/Abonia1">Github</a></strong></p>
+
+<p>Visit my technical channel on <strong><a href="https://www.youtube.com/@AboniaSojasingarayar">Youtube</a></strong></p>
+
+<p>Support: <strong><a href="https://www.buymeacoffee.com/abonia">Buy me a Cofee/Chai</a></strong></p>]]></content><author><name>Abonia Sojasingarayar</name><email>aboniaa@gmail.com</email></author><category term="blogs" /><summary type="html"><![CDATA[E-book release : From Research to Production - Industrializing NLP and Large Language Model]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://substackcdn.com/image/fetch/$s_!SXho!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3658c90a-8967-44c1-82fa-11208efe0c52_512x800.png" /><media:content medium="image" url="https://substackcdn.com/image/fetch/$s_!SXho!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3658c90a-8967-44c1-82fa-11208efe0c52_512x800.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Deploying a Scalable Machine Learning Service on Kubernetes</title><link href="http://localhost:4000/blogs/2025-05-01-Deploying-Scalable-Machine-Learning-Service-on-Kubernetes/" rel="alternate" type="text/html" title="Deploying a Scalable Machine Learning Service on Kubernetes" /><published>2025-05-01T00:00:00+02:00</published><updated>2025-08-11T13:04:00+02:00</updated><id>http://localhost:4000/blogs/Deploying-Scalable-Machine-Learning-Service-on-Kubernetes</id><content type="html" xml:base="http://localhost:4000/blogs/2025-05-01-Deploying-Scalable-Machine-Learning-Service-on-Kubernetes/"><![CDATA[<p><strong>Reading_time:</strong> 15 min<br />
   <strong>Tags:</strong> [MLOps, Kubernetes, Machine Learning, FastAPI, Docker, Podman, Scikit-Learn, Sentiment Analysis, API Deployment, Model Serving, Auto-scaling, HPA, Prometheus, Monitoring, Containerization, Dev]</p>
 <ul class="large-only" id="markdown-toc">
   <li><a href="#a-comprehensive-tutorial-on-deploying-a-scalable-machine-learning-service-on-kubernetes" id="markdown-toc-a-comprehensive-tutorial-on-deploying-a-scalable-machine-learning-service-on-kubernetes">A Comprehensive Tutorial on Deploying a Scalable Machine Learning Service on Kubernetes</a></li>
@@ -1701,339 +1816,4 @@ for image_name in image_names:
 
 <p>Visit my technical channel on <strong><a href="https://www.youtube.com/@AboniaSojasingarayar">Youtube</a></strong></p>
 
-<p>Support: <strong><a href="https://www.buymeacoffee.com/abonia">Buy me a Cofee/Chai</a></strong></p>]]></content><author><name>Abonia Sojasingarayar</name><email>aboniaa@gmail.com</email></author><category term="blogs" /><summary type="html"><![CDATA[Dive into the World of NLP.This article introduces the basics and scope of NLP, explaining what NLP is and why it matters in today's tech landscape. It explores real-world applications and provides historical context, showcasing the evolution and milestones of NLP. You'll also learn about the inner workings of NLP, including techniques like tokenization, stemming, and tagging. The article addresses the challenges and limitations in developing NLP systems, highlighting the technical hurdles and complexities. Additionally, it offers further resources, such as popular datasets, libraries, and online courses, to deepen your understanding.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/AIMagazine.png" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/AIMagazine.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">YOLO Segmentation Predictions to Labelme and Anylabeling-Compatible JSON</title><link href="http://localhost:4000/blogs/2024-05-08-YOLO-to-Labelme-and-Anylabeling-Compatible-JSON/" rel="alternate" type="text/html" title="YOLO Segmentation Predictions to Labelme and Anylabeling-Compatible JSON" /><published>2024-05-08T00:00:00+02:00</published><updated>2024-05-08T15:24:55+02:00</updated><id>http://localhost:4000/blogs/YOLO-to-Labelme-and-Anylabeling-Compatible-JSON</id><content type="html" xml:base="http://localhost:4000/blogs/2024-05-08-YOLO-to-Labelme-and-Anylabeling-Compatible-JSON/"><![CDATA[<p><strong>Reading_time:</strong> 5 min<br />
-  <strong>Tags:</strong> [YOLO, ,Annotation, LabelMe, AnyLbaeling, ComputerVision, Json]</p>
-<ul class="large-only" id="markdown-toc">
-  <li><a href="#installing-yolo-segment-to-labelme-converter" id="markdown-toc-installing-yolo-segment-to-labelme-converter">Installing YOLO Segment to LabelMe Converter</a></li>
-  <li><a href="#installing-yolo-segment-to-labelme-converter-1" id="markdown-toc-installing-yolo-segment-to-labelme-converter-1">Installing YOLO Segment to LabelMe Converter</a>    <ul>
-      <li><a href="#prerequisites" id="markdown-toc-prerequisites">Prerequisites</a></li>
-      <li><a href="#installation" id="markdown-toc-installation">Installation</a>        <ul>
-          <li><a href="#specifying-a-version" id="markdown-toc-specifying-a-version">Specifying a Version</a></li>
-        </ul>
-      </li>
-      <li><a href="#using-a-virtual-environment" id="markdown-toc-using-a-virtual-environment">Using a Virtual Environment</a>        <ul>
-          <li><a href="#creating-a-virtual-environment-with-venv" id="markdown-toc-creating-a-virtual-environment-with-venv">Creating a Virtual Environment with venv</a></li>
-        </ul>
-      </li>
-      <li><a href="#sample-usage" id="markdown-toc-sample-usage">Sample Usage</a>        <ul>
-          <li><a href="#customizing-the-model-and-confidence-score" id="markdown-toc-customizing-the-model-and-confidence-score">Customizing the Model and Confidence Score</a></li>
-          <li><a href="#run" id="markdown-toc-run">Run</a></li>
-        </ul>
-      </li>
-      <li><a href="#sample-output-in-anylabeling-annotation-tool" id="markdown-toc-sample-output-in-anylabeling-annotation-tool">Sample Output in Anylabeling Annotation Tool</a></li>
-    </ul>
-  </li>
-  <li><a href="#thanks-for-reading" id="markdown-toc-thanks-for-reading"><em>Thanks for Reading!</em></a></li>
-</ul>
-<p><strong>Table of Contents:</strong></p>
-<ul>
-  <li><a href="#using-a-virtual-environment">Setting your environment)</a></li>
-  <li><a href="#sample-usage">Sample Usage</a></li>
-  <li><a href="#sample-output-in-anylabeling-annotation-tool">Sample Output in Annotation tool</a></li>
-</ul>
-
-<h1 id="installing-yolo-segment-to-labelme-converter">Installing YOLO Segment to LabelMe Converter</h1>
-
-<p>I’m excited to announce the release of a new Python package, <strong><a href="https://github.com/Abonia1/yolosegment2labelme">yolosegment2labelme</a></strong>, which is now available on PyPI. This tool is specifically designed to streamline the conversion process of YOLO segmentation masks into a format that’s fully compatible with LabelMe and anylabeling, a widely recognized annotation tool for image segmentation tasks. In this guide, I’ll walk you through the installation process and provide you with a clear understanding of how to utilize this package effectively in your projects.</p>
-
-<p><strong><img src="/assets/img/blog/yolosegment2labelme.png" alt="Source-Image by Author: Github - yolosegment2labelme " /></strong></p>
-
-<h1 id="installing-yolo-segment-to-labelme-converter-1">Installing <a href="https://pypi.org/project/yolosegment2labelme/">YOLO Segment to LabelMe Converter</a></h1>
-
-<p>This guide will walk you through the process of installing the <strong><a href="https://pypi.org/project/yolosegment2labelme/">yolosegment2labelme</a></strong> package, a tool designed to convert YOLO segmentation masks into a format compatible with LabelMe, a popular annotation tool for image segmentation tasks.</p>
-
-<p>The source code for <code class="language-plaintext highlighter-rouge">yolosegment2labelme</code> can be found on <strong><a href="https://github.com/Abonia1/yolosegment2labelme">GitHub</a></strong>, where you can contribute, report issues, or explore the codebase.</p>
-
-<h2 id="prerequisites">Prerequisites</h2>
-
-<p>Before you begin, ensure you have the following prerequisites installed on your system:</p>
-
-<ul>
-  <li>Python 3.x</li>
-  <li>pip (Python package installer)</li>
-</ul>
-
-<h2 id="installation">Installation</h2>
-
-<p>To install the <code class="language-plaintext highlighter-rouge">yolosegment2labelme</code> package, you can use the <code class="language-plaintext highlighter-rouge">pip</code> command. Open your terminal or command prompt and execute the following command:</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python <span class="nt">-m</span> pip <span class="nb">install </span>yolosegment2labelme
-</code></pre></div></div>
-
-<p>If you’re using Python 3 and have both Python 2 and Python 3 installed, you might need to use <code class="language-plaintext highlighter-rouge">python3</code> instead:</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python3 <span class="nt">-m</span> pip <span class="nb">install </span>yolosegment2labelme
-</code></pre></div></div>
-
-<h3 id="specifying-a-version">Specifying a Version</h3>
-
-<p>If you need a specific version of the package, you can specify it by appending <code class="language-plaintext highlighter-rouge">==&lt;version&gt;</code> to the package name. For example, to install version 0.0.4, you would use:</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python <span class="nt">-m</span> pip <span class="nb">install </span><span class="nv">yolosegment2labelme</span><span class="o">==</span>0.0.4
-</code></pre></div></div>
-
-<h2 id="using-a-virtual-environment">Using a Virtual Environment</h2>
-
-<p>It’s recommended to use a virtual environment when installing Python packages to avoid conflicts between package versions. You can create a virtual environment using <code class="language-plaintext highlighter-rouge">venv</code> (included in Python 3.3 and later) or <code class="language-plaintext highlighter-rouge">virtualenv</code>.</p>
-
-<h3 id="creating-a-virtual-environment-with-venv">Creating a Virtual Environment with venv</h3>
-
-<ol>
-  <li>Create a virtual environment:</li>
-</ol>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python3 <span class="nt">-m</span> venv myenv
-</code></pre></div></div>
-
-<ol>
-  <li>Activate the virtual environment:</li>
-</ol>
-
-<ul>
-  <li>On Windows:</li>
-</ul>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>myenv<span class="se">\S</span>cripts<span class="se">\a</span>ctivate
-</code></pre></div></div>
-
-<ul>
-  <li>On macOS and Linux:</li>
-</ul>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">source </span>myenv/bin/activate
-</code></pre></div></div>
-
-<ol>
-  <li>With the virtual environment activated, install the <code class="language-plaintext highlighter-rouge">yolosegment2labelme</code> package:</li>
-</ol>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python <span class="nt">-m</span> pip <span class="nb">install </span>yolosegment2labelme
-</code></pre></div></div>
-<h2 id="sample-usage">Sample Usage</h2>
-
-<p>To convert segmentation masks from a directory of images using the default model (<code class="language-plaintext highlighter-rouge">yolo8n-seg</code>) and a default confidence score of 0.2, you can use the following command:</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python yolosegment2labelme.py <span class="nt">--images</span> ../images
-</code></pre></div></div>
-
-<p>In this example, replace <code class="language-plaintext highlighter-rouge">../images</code> with the path to the directory containing your YOLO segmentation mask images. The script will process all images in the specified directory, applying the default model and confidence score to generate LabelMe-compatible annotations.</p>
-
-<h3 id="customizing-the-model-and-confidence-score">Customizing the Model and Confidence Score</h3>
-
-<p>If you prefer to use a specific YOLO model or your custom fine-tuned model and adjust the confidence score for the predictions, you can do so by specifying the <code class="language-plaintext highlighter-rouge">--model</code> and <code class="language-plaintext highlighter-rouge">--conf</code> options:</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python yolosegment2labelme.py <span class="nt">--model</span> yolov5n-seg.pt <span class="nt">--images</span> ../images <span class="nt">--conf</span> 0.3
-</code></pre></div></div>
-
-<p>In this command:</p>
-
-<ul>
-  <li><code class="language-plaintext highlighter-rouge">--model yolov8n-seg.pt</code> specifies the path to the YOLO model file you wish to use. Replace <code class="language-plaintext highlighter-rouge">yolov8n-seg.pt</code> with the path to your desired model file.</li>
-  <li><code class="language-plaintext highlighter-rouge">--images ../images</code> indicates the directory containing the images you want to process. Replace <code class="language-plaintext highlighter-rouge">../images</code> with the actual path to your image directory.</li>
-  <li><code class="language-plaintext highlighter-rouge">--conf 0.3</code> sets the confidence score threshold for the predictions. Adjust this value according to your needs; higher values require more confident predictions to be considered.</li>
-</ul>
-
-<h3 id="run">Run</h3>
-
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">!</span><span class="n">yolosegment2labelme</span> <span class="o">--</span><span class="n">model</span> <span class="n">yolov8n</span><span class="o">-</span><span class="n">seg</span><span class="p">.</span><span class="n">pt</span> <span class="o">--</span><span class="n">images</span> <span class="p">..</span><span class="o">/</span><span class="n">images</span>  <span class="o">--</span><span class="n">conf</span> <span class="mf">0.3</span>
-</code></pre></div></div>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>image 1/10 /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/1.jpg: 448x640 1 bear, 118.4ms
-image 2/10 /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/10.jpg: 448x640 1 cup, 1 laptop, 1 cell phone, 2 books, 93.8ms
-image 3/10 /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/2.jpg: 640x448 1 dog, 83.3ms
-image 4/10 /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/3.jpg: 480x640 4 chairs, 97.9ms
-image 5/10 /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/4.jpg: 544x640 2 persons, 2 sports balls, 128.5ms
-image 6/10 /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/5.jpg: 448x640 4 persons, 1 sports ball, 3 kites, 81.2ms
-image 7/10 /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/6.jpg: 448x640 1 bird, 85.1ms
-image 8/10 /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/7.jpg: 416x640 1 person, 1 dog, 84.8ms
-image 9/10 /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg: 448x640 11 persons, 5 cars, 4 traffic lights, 88.8ms
-image 10/10 /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/9.jpg: 448x640 1 person, 79.8ms
-Speed: 1.5ms preprocess, 94.1ms inference, 78.1ms postprocess per image at shape (1, 3, 448, 640)
-Results saved to [1mruns/segment/predict7[0m
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/1.jpg with label bear
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/10.jpg with label cup
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/10.jpg with label laptop
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/10.jpg with label book
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/10.jpg with label cell phone
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/10.jpg with label book
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/2.jpg with label dog
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/3.jpg with label chair
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/3.jpg with label chair
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/3.jpg with label chair
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/3.jpg with label chair
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/4.jpg with label person
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/4.jpg with label sports ball
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/4.jpg with label sports ball
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/4.jpg with label person
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/5.jpg with label person
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/5.jpg with label sports ball
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/5.jpg with label kite
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/5.jpg with label person
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/5.jpg with label kite
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/5.jpg with label person
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/5.jpg with label kite
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/5.jpg with label person
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/6.jpg with label bird
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/7.jpg with label dog
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/7.jpg with label person
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label car
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label car
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label car
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label traffic light
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label traffic light
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label traffic light
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label car
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label car
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label traffic light
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/9.jpg with label person
-</code></pre></div></div>
-
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">!</span><span class="n">python</span> <span class="n">yolosegment2labelme</span><span class="p">.</span><span class="n">py</span> <span class="o">--</span><span class="n">images</span> <span class="p">..</span><span class="o">/</span><span class="n">images</span> 
-</code></pre></div></div>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>image 1/10 /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/1.jpg: 448x640 1 bear, 111.5ms
-image 2/10 /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/10.jpg: 448x640 1 cup, 1 laptop, 1 cell phone, 5 books, 149.6ms
-image 3/10 /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/2.jpg: 640x448 1 dog, 92.1ms
-image 4/10 /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/3.jpg: 480x640 4 chairs, 101.8ms
-image 5/10 /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/4.jpg: 544x640 2 persons, 2 sports balls, 119.7ms
-image 6/10 /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/5.jpg: 448x640 6 persons, 1 sports ball, 3 kites, 91.8ms
-image 7/10 /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/6.jpg: 448x640 1 bird, 83.4ms
-image 8/10 /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/7.jpg: 416x640 1 person, 1 dog, 78.1ms
-image 9/10 /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg: 448x640 19 persons, 7 cars, 4 traffic lights, 85.0ms
-image 10/10 /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/9.jpg: 448x640 1 person, 1 tv, 88.7ms
-Speed: 1.1ms preprocess, 100.2ms inference, 72.5ms postprocess per image at shape (1, 3, 448, 640)
-Results saved to [1mruns/segment/predict4[0m
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/1.jpg with label bear
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/10.jpg with label cup
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/10.jpg with label laptop
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/10.jpg with label book
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/10.jpg with label cell phone
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/10.jpg with label book
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/10.jpg with label book
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/10.jpg with label book
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/10.jpg with label book
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/2.jpg with label dog
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/3.jpg with label chair
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/3.jpg with label chair
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/3.jpg with label chair
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/3.jpg with label chair
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/4.jpg with label person
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/4.jpg with label sports ball
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/4.jpg with label sports ball
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/4.jpg with label person
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/5.jpg with label person
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/5.jpg with label sports ball
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/5.jpg with label kite
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/5.jpg with label person
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/5.jpg with label kite
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/5.jpg with label person
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/5.jpg with label kite
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/5.jpg with label person
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/5.jpg with label person
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/5.jpg with label person
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/6.jpg with label bird
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/7.jpg with label dog
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/7.jpg with label person
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label car
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label car
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label car
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label traffic light
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label traffic light
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label traffic light
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label car
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label car
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label traffic light
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label car
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label car
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/8.jpg with label person
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/9.jpg with label person
-Polygon information saved for /Users/aboniasojasingarayar/Documents/Github/yolosegment2labelme/yolosegment2labelme/../images/9.jpg with label tv
-</code></pre></div></div>
-
-<div align="center">
-    📦 <a href="https://github.com/Abonia1/yolosegment2labelme/blob/main/yolosegment2labelme/example.ipynb" target="_blank"><b>Sample Notebook</b></a>
-</div>
-
-<h2 id="sample-output-in-anylabeling-annotation-tool">Sample Output in Anylabeling Annotation Tool</h2>
-
-<p>Below are examples of image annotations created in json using yolosegment2labelme and viewed in the <a href="https://github.com/vietanhdev/anylabeling">Anylabeling</a> annotation tool:</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>Sample Image 1</th>
-      <th>Sample Image 2</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><img src="https://raw.githubusercontent.com/Abonia1/yolosegment2labelme/main/images/labelme_test/sample1.png" alt="Sample Image 1" /></td>
-      <td><img src="https://raw.githubusercontent.com/Abonia1/yolosegment2labelme/main/images/labelme_test/sample2.png" alt="Sample Image 2" /></td>
-    </tr>
-    <tr>
-      <td>Sample Annotation for Image 1</td>
-      <td>Sample Annotation for Image 2</td>
-    </tr>
-  </tbody>
-</table>
-
-<table>
-  <thead>
-    <tr>
-      <th>Sample Image 3</th>
-      <th>Sample Image 4</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><img src="https://raw.githubusercontent.com/Abonia1/yolosegment2labelme/main/images/labelme_test/sample3.png" alt="Sample Image 3" /></td>
-      <td><img src="https://raw.githubusercontent.com/Abonia1/yolosegment2labelme/main/images/labelme_test/sample4.png" alt="Sample Image 4" /></td>
-    </tr>
-    <tr>
-      <td>Sample Annotation for Image 3</td>
-      <td>Sample Annotation for Image 4</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>By following these steps, you should now have the <code class="language-plaintext highlighter-rouge">yolosegment2labelme</code> package installed on your system, ready to convert YOLO segmentation masks into LabelMe-compatible formats.Hope this tool will be a helpful asset for researchers and developers working with image segmentation tasks, streamlining the process of preparing data for further analysis or model training.Stay tuned for our upcoming article! Until then, catch you in another exciting article!</p>
-
-<hr />
-<h1 id="thanks-for-reading"><em>Thanks for Reading!</em></h1>
-
-<p>Connect with me on <strong><a href="https://www.linkedin.com/in/aboniasojasingarayar/">Linkedin</a></strong></p>
-
-<p>Find me on <strong><a href="https://github.com/Abonia1">Github</a></strong></p>
-
-<p>Visit my technical channel on <strong><a href="https://www.youtube.com/@AboniaSojasingarayar">Youtube</a></strong></p>
-
-<p>Support: <strong><a href="https://www.buymeacoffee.com/abonia">Buy me a Cofee/Chai</a></strong></p>]]></content><author><name>Abonia Sojasingarayar</name><email>aboniaa@gmail.com</email></author><category term="blogs" /><summary type="html"><![CDATA[yolosegment2labelme - a Python package that allows you to convert YOLO segmentation prediction results to LabelMe and anylabeling JSON format. This tool facilitates the annotation easy.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://raw.githubusercontent.com/Abonia1/yolosegment2labelme/main/images/labelme_test/logo.png" /><media:content medium="image" url="https://raw.githubusercontent.com/Abonia1/yolosegment2labelme/main/images/labelme_test/logo.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+<p>Support: <strong><a href="https://www.buymeacoffee.com/abonia">Buy me a Cofee/Chai</a></strong></p>]]></content><author><name>Abonia Sojasingarayar</name><email>aboniaa@gmail.com</email></author><category term="blogs" /><summary type="html"><![CDATA[Dive into the World of NLP.This article introduces the basics and scope of NLP, explaining what NLP is and why it matters in today's tech landscape. It explores real-world applications and provides historical context, showcasing the evolution and milestones of NLP. You'll also learn about the inner workings of NLP, including techniques like tokenization, stemming, and tagging. The article addresses the challenges and limitations in developing NLP systems, highlighting the technical hurdles and complexities. Additionally, it offers further resources, such as popular datasets, libraries, and online courses, to deepen your understanding.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/AIMagazine.png" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/AIMagazine.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
