@@ -125,7 +125,11 @@ I offer career coaching on **[LinkedIn](https://www.linkedin.com/services/page/2
 
 🎙️ **Speaker and Moderator**   
 
-- I am a part of the global **Data Science and AI community**, contributing as a speaker and sharing insights on topics such as **[Large Language Models (LLM), Natural Language Processing (NLP), and Generative AI (GenAI)](https://www.linkedin.com/events/leveraginglargelanguagemodels-u7108481109868392448/)** and discussing the latest advancements and trends in AI.  
+I am a part of the global **Data Science and AI community**, contributing as a speaker and sharing insights on topics such as **[Large Language Models (LLM), Natural Language Processing (NLP), and Generative AI (GenAI)](https://www.linkedin.com/events/leveraginglargelanguagemodels-u7108481109868392448/)** and discussing the latest advancements and trends in AI.  
+
+🎙️ **Speaker and Advisory Committee Member**
+
+Part of the ICRIET International Conference conducted by **[Sir Isaac Newton College of Engineering and Technology](https://www.linkedin.com/company/sir-issac-newton-college-of-engineering-and-technology/)**, contributing as a speaker and advisory committee member. Shared insights on the evolution of AI — from traditional machine learning to generative AI and advanced agentic systems.
 
 ### Special Contributions
 - **[Roosh Circle Paper Club](https://www.linkedin.com/company/roosh-circle/)**: Collaborate and speak with this incredible community of AI professionals.
