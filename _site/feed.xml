@@ -1,5 +1,179 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2026-05-13T18:55:02+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Abonia Sojasingarayar - AI &amp;amp; ML Expert</title><subtitle>AI &amp; Machine Learning Expert with Masters degree and 7+ years experience in ML systems across cybersecurity, banking, transit, cosmetics &amp; e-commerce domains.
-</subtitle><author><name>Abonia Sojasingarayar</name><email>aboniaa@gmail.com</email></author><entry><title type="html">E-Book - From Research to Production - Industrializing NLP and Large Language Models</title><link href="http://localhost:4000/blogs/2026-01-18-E-book-release-From-Research-to-Production-Industrializing-NLP-and-Large-Language-Model/" rel="alternate" type="text/html" title="E-Book - From Research to Production - Industrializing NLP and Large Language Models" /><published>2026-01-18T00:00:00+01:00</published><updated>2026-01-18T13:29:17+01:00</updated><id>http://localhost:4000/blogs/E-book-release-From-Research-to-Production-Industrializing-NLP-and-Large-Language-Model</id><content type="html" xml:base="http://localhost:4000/blogs/2026-01-18-E-book-release-From-Research-to-Production-Industrializing-NLP-and-Large-Language-Model/"><![CDATA[<p><strong>Reading_time:</strong> 5 min<br />
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2026-05-15T09:53:14+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Abonia Sojasingarayar - AI &amp;amp; ML Expert</title><subtitle>AI &amp; Machine Learning Expert with Masters degree and 7+ years experience in ML systems across cybersecurity, banking, transit, cosmetics &amp; e-commerce domains.
+</subtitle><author><name>Abonia Sojasingarayar</name><email>aboniaa@gmail.com</email></author><entry><title type="html">Vision-Language Models - MultimodalAI - From Foundations to a Fully Local SmolVLM Demo</title><link href="http://localhost:4000/blogs/2026-05-14-Vision-Language-Models-MultimodalAI-From-Foundations-to-a-Fully-Local-SmolVLM-Demo/" rel="alternate" type="text/html" title="Vision-Language Models - MultimodalAI - From Foundations to a Fully Local SmolVLM Demo" /><published>2026-05-14T00:00:00+02:00</published><updated>2026-05-13T18:55:36+02:00</updated><id>http://localhost:4000/blogs/Vision-Language-Models-MultimodalAI-From-Foundations-to-a-Fully-Local-SmolVLM-Demo</id><content type="html" xml:base="http://localhost:4000/blogs/2026-05-14-Vision-Language-Models-MultimodalAI-From-Foundations-to-a-Fully-Local-SmolVLM-Demo/"><![CDATA[<p><strong>Reading_time:</strong> 5 min<br />
+  <strong>Tags:</strong> [VisionLanguageModels, SmolVLM, #MultimodalAI, AIResearch, MachineLearning, DeepLearning, ComputerVision, NLP, OnDeviceAI, EdgeAI, AIEngineering, LLM, AI2026]</p>
+<ul class="large-only" id="markdown-toc">
+  <li><a href="#vision-language-models---from-foundations-to-a-fully-local-smolvlm-demo" id="markdown-toc-vision-language-models---from-foundations-to-a-fully-local-smolvlm-demo">Vision-Language Models - From Foundations to a Fully Local SmolVLM Demo</a>    <ul>
+      <li><a href="#video-structure-overview" id="markdown-toc-video-structure-overview">Video Structure Overview</a></li>
+      <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
+      <li><a href="#vlm-architectures-training-paradigms-and-evolution" id="markdown-toc-vlm-architectures-training-paradigms-and-evolution">VLM Architectures, Training Paradigms, and Evolution</a>        <ul>
+          <li><a href="#1-vision-encoder" id="markdown-toc-1-vision-encoder">1. Vision Encoder</a></li>
+          <li><a href="#2-multimodal-fusion-layer" id="markdown-toc-2-multimodal-fusion-layer">2. Multimodal Fusion Layer</a></li>
+          <li><a href="#3-language-model-decoder" id="markdown-toc-3-language-model-decoder">3. Language Model Decoder</a></li>
+          <li><a href="#evolution-of-training-paradigms" id="markdown-toc-evolution-of-training-paradigms">Evolution of Training Paradigms</a></li>
+        </ul>
+      </li>
+      <li><a href="#codebase-walkthrough" id="markdown-toc-codebase-walkthrough">Codebase Walkthrough</a>        <ul>
+          <li><a href="#key-components" id="markdown-toc-key-components">Key Components</a></li>
+          <li><a href="#pipeline-flow" id="markdown-toc-pipeline-flow">Pipeline Flow</a></li>
+        </ul>
+      </li>
+      <li><a href="#live-demo-smolvlm-local-captioning-system-01619" id="markdown-toc-live-demo-smolvlm-local-captioning-system-01619">Live Demo: SmolVLM Local Captioning System (0:16:19)</a>        <ul>
+          <li><a href="#key-characteristics" id="markdown-toc-key-characteristics">Key Characteristics</a></li>
+        </ul>
+      </li>
+      <li><a href="#why-this-design-works" id="markdown-toc-why-this-design-works">Why This Design Works</a></li>
+      <li><a href="#conclusion" id="markdown-toc-conclusion">Conclusion</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h1 id="vision-language-models---from-foundations-to-a-fully-local-smolvlm-demo">Vision-Language Models - From Foundations to a Fully Local SmolVLM Demo</h1>
+
+<iframe width="900" height="500" src="https://www.youtube.com/embed/oHi8reoGPZ8" frameborder="0" allowfullscreen=""></iframe>
+
+<p><strong>GitHub Repository</strong>: <a href="https://github.com/Abonia1/SmolVLM-vision-tutorial">vlm-deep-dive-demo</a></p>
+
+<p>Vision-Language Models (VLMs) represent one of the most important shifts in modern AI: the unification of visual perception and language reasoning into a single multimodal system. Instead of treating images and text as separate domains, VLMs allow models to “see” and “describe” the world using a shared representational space.</p>
+
+<p>This tutorial explores the core ideas behind VLMs, their architectural evolution, training paradigms, and practical implementation through a fully local SmolVLM-based captioning system. The entire demo runs on-device, showing that modern multimodal AI is no longer limited to cloud-scale infrastructure.</p>
+
+<hr />
+
+<h2 id="video-structure-overview">Video Structure Overview</h2>
+
+<ul>
+  <li>0:00:00 – Introduction</li>
+  <li>0:01:37 – VLM Architectures, Training Paradigms, and Evolution</li>
+  <li>0:09:52 – Codebase Walkthrough</li>
+  <li>0:16:19 – Live Demo (SmolVLM Local Captioning System)</li>
+  <li>0:17:56 – Conclusion and Key Takeaways</li>
+</ul>
+
+<hr />
+
+<h2 id="introduction">Introduction</h2>
+
+<p>Traditional AI systems treated vision and language as separate problems. Computer vision models focused on classification or detection, while language models handled reasoning and text generation. These systems were powerful individually but lacked a unified understanding of multimodal context.</p>
+
+<p>Vision-Language Models change this fundamentally. They enable a single system to interpret images and generate language grounded in visual input, bridging perception and reasoning in one pipeline.</p>
+
+<hr />
+
+<h2 id="vlm-architectures-training-paradigms-and-evolution">VLM Architectures, Training Paradigms, and Evolution</h2>
+
+<p>Modern VLMs are typically built using three core components:</p>
+
+<h3 id="1-vision-encoder">1. Vision Encoder</h3>
+<p>Most systems use Vision Transformers (ViTs) that split images into patches and convert them into token embeddings. This allows images to be processed similarly to text sequences.</p>
+
+<h3 id="2-multimodal-fusion-layer">2. Multimodal Fusion Layer</h3>
+<p>This layer aligns visual tokens with textual tokens. Early approaches used contrastive learning (for example CLIP-style objectives), while modern systems increasingly rely on generative training and instruction tuning.</p>
+
+<h3 id="3-language-model-decoder">3. Language Model Decoder</h3>
+<p>A transformer-based language model generates text conditioned on visual embeddings. This enables tasks such as captioning, visual question answering, and reasoning over images.</p>
+
+<hr />
+
+<h3 id="evolution-of-training-paradigms">Evolution of Training Paradigms</h3>
+
+<p>VLM development has gone through several key phases:</p>
+
+<ul>
+  <li>Contrastive learning phase: aligning image-text pairs in embedding space</li>
+  <li>Generative phase: directly generating language conditioned on images</li>
+  <li>Instruction-tuned phase: training models to follow natural language prompts</li>
+  <li>Parameter-efficient adaptation: using methods like LoRA and adapters to integrate vision into large language models efficiently</li>
+</ul>
+
+<p>The key shift is from classification-style outputs to reasoning-oriented generative models.</p>
+
+<hr />
+
+<h2 id="codebase-walkthrough">Codebase Walkthrough</h2>
+
+<p>The system in this demo is designed to be lightweight, efficient, and fully local.</p>
+
+<h3 id="key-components">Key Components</h3>
+
+<ul>
+  <li>Frontend (Browser camera input): captures frames from the webcam and sends periodic snapshots</li>
+  <li>Backend (Flask server): handles image reception and preprocessing</li>
+  <li>Model layer (SmolVLM): a compact Vision-Language Model optimized for efficient inference</li>
+</ul>
+
+<h3 id="pipeline-flow">Pipeline Flow</h3>
+
+<ol>
+  <li>Capture frame from webcam</li>
+  <li>Resize and compress image in browser</li>
+  <li>Send image to local Flask backend</li>
+  <li>Decode and preprocess image</li>
+  <li>Run inference through SmolVLM</li>
+  <li>Generate caption token by token</li>
+  <li>Return result to UI</li>
+</ol>
+
+<p>This architecture prioritizes simplicity and low latency while remaining fully on-device.</p>
+
+<hr />
+
+<h2 id="live-demo-smolvlm-local-captioning-system-01619">Live Demo: SmolVLM Local Captioning System (0:16:19)</h2>
+
+<p>The live demo demonstrates SmolVLM generating captions from a real-time camera feed.</p>
+
+<h3 id="key-characteristics">Key Characteristics</h3>
+
+<ul>
+  <li>Fully local inference with no cloud dependency</li>
+  <li>Real-time image-to-text generation</li>
+  <li>Lightweight model optimized for consumer hardware</li>
+  <li>Periodic frame processing instead of continuous video streaming</li>
+</ul>
+
+<p>Instead of processing every frame, the system samples snapshots, making inference efficient and stable.</p>
+
+<p>The model interprets each frame as a semantic snapshot and generates a natural language description of the scene.</p>
+
+<hr />
+
+<h2 id="why-this-design-works">Why This Design Works</h2>
+
+<p>This approach reflects an important principle in modern multimodal AI:</p>
+
+<p>Intelligence does not require continuous perception, but meaningful interpretation.</p>
+
+<p>By treating each frame as a discrete observation, the system mimics human-like perception: observe, interpret, describe.</p>
+
+<hr />
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Vision-Language Models represent a major step toward unified multimodal intelligence. They eliminate the separation between seeing and speaking by embedding both modalities into a shared reasoning framework.</p>
+
+<p>This demo shows that:</p>
+
+<ul>
+  <li>VLMs can run fully locally</li>
+  <li>Real-time captioning is feasible on consumer hardware</li>
+  <li>Efficient architectures like SmolVLM make deployment practical</li>
+  <li>Multimodal AI is shifting from research to usable systems</li>
+</ul>
+
+<p><strong>Happy reading! 📖✨</strong></p>
+
+<hr />
+<p><strong><em>Thanks for Reading!</em></strong></p>
+
+<p><strong><a href="https://abonia1.github.io/">Website/Newletter</a></strong>
+<strong><a href="https://aboniasojasingarayar.substack.com">AIMagazine Substack</a></strong></p>
+
+<p>Connect with me on <strong><a href="https://www.linkedin.com/in/aboniasojasingarayar/">Linkedin</a></strong></p>
+
+<p>Find me on <strong><a href="https://github.com/Abonia1">Github</a></strong></p>
+
+<p>Visit my technical channel on <strong><a href="https://www.youtube.com/@AboniaSojasingarayar">Youtube</a></strong></p>
+
+<p>Support: <strong><a href="https://www.buymeacoffee.com/abonia">Buy me a Cofee/Chai</a></strong></p>]]></content><author><name>Abonia Sojasingarayar</name><email>aboniaa@gmail.com</email></author><category term="blogs" /><summary type="html"><![CDATA[A deep, researcher-level exploration of Vision-Language Models in 2026, covering core architectures, training paradigms, and multimodal fusion mechanisms. The tutorial connects theory to practice through a fully local, real-time live demo system running entirely on-device, demonstrating how modern models unify visual perception and language reasoning without relying on cloud infrastructure. It also includes a SmolVLM-based local captioning demo, where a lightweight Vision-Language Model generates natural language descriptions from live camera input in real time.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/vlm-demo.png" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/vlm-demo.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">E-Book - From Research to Production - Industrializing NLP and Large Language Models</title><link href="http://localhost:4000/blogs/2026-01-18-E-book-release-From-Research-to-Production-Industrializing-NLP-and-Large-Language-Model/" rel="alternate" type="text/html" title="E-Book - From Research to Production - Industrializing NLP and Large Language Models" /><published>2026-01-18T00:00:00+01:00</published><updated>2026-01-18T13:29:17+01:00</updated><id>http://localhost:4000/blogs/E-book-release-From-Research-to-Production-Industrializing-NLP-and-Large-Language-Model</id><content type="html" xml:base="http://localhost:4000/blogs/2026-01-18-E-book-release-From-Research-to-Production-Industrializing-NLP-and-Large-Language-Model/"><![CDATA[<p><strong>Reading_time:</strong> 5 min<br />
   <strong>Tags:</strong> [e-book, From Research to Production, LLM, LLMOps]</p>
 <ul class="large-only" id="markdown-toc">
   <li><a href="#industrializing-nlp-and-large-language-models" id="markdown-toc-industrializing-nlp-and-large-language-models">Industrializing NLP and Large Language Models</a></li>
@@ -1734,86 +1908,4 @@ for image_name in image_names:
 
 <p>Visit my technical channel on <strong><a href="https://www.youtube.com/@AboniaSojasingarayar">Youtube</a></strong></p>
 
-<p>Support: <strong><a href="https://www.buymeacoffee.com/abonia">Buy me a Cofee/Chai</a></strong></p>]]></content><author><name>Abonia Sojasingarayar</name><email>aboniaa@gmail.com</email></author><category term="blogs" /><summary type="html"><![CDATA[This chapter will be your comprehensive guide to navigating the fascinating world of LLMs. We'll delve into their core concepts, exploring different types like autoregressive models and encoder-decoder models. You'll discover the magic behind self-attention, a mechanism that allows LLMs to focus on relevant information, and delve into the pre-training strategies that give them their vast knowledge. Finally, we'll showcase the real-world applications of LLMs, from powering chatbots and generating realistic dialogue to creating marketing copy and summarizing complex topics.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/AIMagazine.png" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/AIMagazine.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">1-Introduction to NLP — [AIMagazine]</title><link href="http://localhost:4000/blogs/2024-07-02-Introduction-to-NLP-AIMagazine/" rel="alternate" type="text/html" title="1-Introduction to NLP — [AIMagazine]" /><published>2024-07-02T00:00:00+02:00</published><updated>2024-09-20T13:36:27+02:00</updated><id>http://localhost:4000/blogs/Introduction-to-NLP-AIMagazine</id><content type="html" xml:base="http://localhost:4000/blogs/2024-07-02-Introduction-to-NLP-AIMagazine/"><![CDATA[<p><strong>Reading_time:</strong> 5 min<br />
-  <strong>Tags:</strong> [AI ,MachineLearning, NLP, ComputerVision, MLOps DeepLearning, DataScience, TechInnovation,FutureTech
-]</p>
-<ul class="large-only" id="markdown-toc">
-  <li><a href="#1-introduction-to-nlp--aimagazine" id="markdown-toc-1-introduction-to-nlp--aimagazine">1-Introduction to NLP — AIMagazine</a>    <ul>
-      <li><a href="#dive-into-the-world-of-nlp" id="markdown-toc-dive-into-the-world-of-nlp">Dive into the World of NLP</a></li>
-      <li><a href="#why-you-should-read-this" id="markdown-toc-why-you-should-read-this">Why You Should Read This</a></li>
-      <li><a href="#stay-updated" id="markdown-toc-stay-updated">Stay Updated</a></li>
-    </ul>
-  </li>
-  <li><a href="#read-more-on-aimagazine" id="markdown-toc-read-more-on-aimagazine"><strong>Read More on AIMagazine</strong></a></li>
-</ul>
-
-<h2 id="1-introduction-to-nlp--aimagazine">1-Introduction to NLP — AIMagazine</h2>
-
-<h3 id="dive-into-the-world-of-nlp">Dive into the World of NLP</h3>
-
-<p>Artificial intelligence, machine learning, natural language processing (NLP), and MLOps are evolving at an incredible pace. Staying informed about the latest developments, research, and trends is crucial for anyone in the tech field. To help you keep up, I’ve published a detailed article on NLP on my Substack <strong><a href="https://aboniasojasingarayar.substack.com">AIMagazine</a></strong>.</p>
-
-<p><img src="https://cdn-images-1.medium.com/max/2000/1*NQzXDZ5yb0S4DIRJcpR-VQ.jpeg" alt="" /></p>
-
-<p>Here’s a glimpse of what you can expect in this first chapter format article and what You’ll Learn:</p>
-
-<p><strong>Introduction to NLP</strong></p>
-
-<ul>
-  <li>Understanding the basics and scope of NLP.</li>
-</ul>
-
-<p><strong>Significance of NLP</strong></p>
-
-<ul>
-  <li>Why NLP is essential in today’s tech landscape.</li>
-</ul>
-
-<p><strong>Applications and Historical Context</strong></p>
-
-<ul>
-  <li>Real-world uses of NLP and its evolution over time.</li>
-</ul>
-
-<p><strong>Mechanics of NLP</strong></p>
-
-<ul>
-  <li>Key techniques like tokenization, stemming, and tagging.</li>
-</ul>
-
-<p><strong>Challenges and Limitations</strong></p>
-
-<ul>
-  <li>The technical hurdles and complexities involved in NLP development.</li>
-</ul>
-
-<p><strong>Further Resources</strong></p>
-
-<p>-Popular NLP datasets, libraries, and online courses to enhance your learning.</p>
-
-<h3 id="why-you-should-read-this">Why You Should Read This</h3>
-
-<p>This article aims to provide a foundational understanding of NLP and its applications. By the end of the article, you’ll be able to identify the different components of an NLP system and grasp the challenges involved in developing these systems. Whether you’re a beginner or someone looking to refresh your knowledge, this article is designed to offer valuable insights.</p>
-
-<h3 id="stay-updated">Stay Updated</h3>
-
-<p>I’m planning to write articles in a chapter format for an in-depth exploration of each topic, covering aspects like NLP, LLMs, fine-tuning, evaluation, RAG, information retrieval, deployment, knowledge graphs, and more. There are many other concepts to be added, and I will update them in subsequent posts.</p>
-
-<h2 id="read-more-on-aimagazine"><strong>Read More on AIMagazine</strong></h2>
-
-<p>To dive deeper into these topics, I invite you to read the full article on my substack <strong><a href="https://aboniasojasingarayar.substack.com">AIMagazine</a></strong>. Your feedback and engagement are highly valued, and subscribing will ensure you get updates directly in your inbox whenever new articles are published.</p>
-
-<p>👉 <strong>Read the full <a href="https://aboniasojasingarayar.substack.com/p/8e1b5cd1-21ac-41df-884b-0df2cb26f905">article on Substack AIMagazine </a></strong></p>
-
-<hr />
-<p><strong><em>Thanks for Reading!</em></strong></p>
-
-<p><strong><a href="https://abonia1.github.io/">Website/Newletter</a></strong></p>
-
-<p>Connect with me on <strong><a href="https://www.linkedin.com/in/aboniasojasingarayar/">Linkedin</a></strong></p>
-
-<p>Find me on <strong><a href="https://github.com/Abonia1">Github</a></strong></p>
-
-<p>Visit my technical channel on <strong><a href="https://www.youtube.com/@AboniaSojasingarayar">Youtube</a></strong></p>
-
-<p>Support: <strong><a href="https://www.buymeacoffee.com/abonia">Buy me a Cofee/Chai</a></strong></p>]]></content><author><name>Abonia Sojasingarayar</name><email>aboniaa@gmail.com</email></author><category term="blogs" /><summary type="html"><![CDATA[Dive into the World of NLP.This article introduces the basics and scope of NLP, explaining what NLP is and why it matters in today's tech landscape. It explores real-world applications and provides historical context, showcasing the evolution and milestones of NLP. You'll also learn about the inner workings of NLP, including techniques like tokenization, stemming, and tagging. The article addresses the challenges and limitations in developing NLP systems, highlighting the technical hurdles and complexities. Additionally, it offers further resources, such as popular datasets, libraries, and online courses, to deepen your understanding.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/AIMagazine.png" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/AIMagazine.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+<p>Support: <strong><a href="https://www.buymeacoffee.com/abonia">Buy me a Cofee/Chai</a></strong></p>]]></content><author><name>Abonia Sojasingarayar</name><email>aboniaa@gmail.com</email></author><category term="blogs" /><summary type="html"><![CDATA[This chapter will be your comprehensive guide to navigating the fascinating world of LLMs. We'll delve into their core concepts, exploring different types like autoregressive models and encoder-decoder models. You'll discover the magic behind self-attention, a mechanism that allows LLMs to focus on relevant information, and delve into the pre-training strategies that give them their vast knowledge. Finally, we'll showcase the real-world applications of LLMs, from powering chatbots and generating realistic dialogue to creating marketing copy and summarizing complex topics.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/AIMagazine.png" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/AIMagazine.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
