@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2026-05-15T10:39:27+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Abonia Sojasingarayar - AI &amp;amp; ML Expert</title><subtitle>AI &amp; Machine Learning Expert with Masters degree and 7+ years experience in ML systems across cybersecurity, banking, transit, cosmetics &amp; e-commerce domains.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2026-07-21T14:19:29+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Abonia Sojasingarayar - AI &amp;amp; ML Expert</title><subtitle>AI &amp; Machine Learning Expert with Masters degree and 7+ years experience in ML systems across cybersecurity, banking, transit, cosmetics &amp; e-commerce domains.
 </subtitle><author><name>Abonia Sojasingarayar</name><email>aboniaa@gmail.com</email></author><entry><title type="html">Vision-Language Models - MultimodalAI - From Foundations to a Fully Local SmolVLM Demo</title><link href="http://localhost:4000/blogs/2026-05-14-Vision-Language-Models-MultimodalAI-From-Foundations-to-a-Fully-Local-SmolVLM-Demo/" rel="alternate" type="text/html" title="Vision-Language Models - MultimodalAI - From Foundations to a Fully Local SmolVLM Demo" /><published>2026-05-14T00:00:00+02:00</published><updated>2026-05-13T18:55:36+02:00</updated><id>http://localhost:4000/blogs/Vision-Language-Models-MultimodalAI-From-Foundations-to-a-Fully-Local-SmolVLM-Demo</id><content type="html" xml:base="http://localhost:4000/blogs/2026-05-14-Vision-Language-Models-MultimodalAI-From-Foundations-to-a-Fully-Local-SmolVLM-Demo/"><![CDATA[<p><strong>Reading_time:</strong> 5 min<br />
   <strong>Tags:</strong> [VisionLanguageModels, SmolVLM, #MultimodalAI, AIResearch, MachineLearning, DeepLearning, ComputerVision, NLP, OnDeviceAI, EdgeAI, AIEngineering, LLM, AI2026]</p>
 <ul class="large-only" id="markdown-toc">
@@ -17,7 +17,7 @@
           <li><a href="#pipeline-flow" id="markdown-toc-pipeline-flow">Pipeline Flow</a></li>
         </ul>
       </li>
-      <li><a href="#live-demo-smolvlm-local-captioning-system-01619" id="markdown-toc-live-demo-smolvlm-local-captioning-system-01619">Live Demo: SmolVLM Local Captioning System (0:16:19)</a>        <ul>
+      <li><a href="#live-demo-smolvlm-local-captioning-system" id="markdown-toc-live-demo-smolvlm-local-captioning-system">Live Demo: SmolVLM Local Captioning System</a>        <ul>
           <li><a href="#key-characteristics" id="markdown-toc-key-characteristics">Key Characteristics</a></li>
         </ul>
       </li>
@@ -117,7 +117,7 @@
 
 <hr />
 
-<h2 id="live-demo-smolvlm-local-captioning-system-01619">Live Demo: SmolVLM Local Captioning System (0:16:19)</h2>
+<h2 id="live-demo-smolvlm-local-captioning-system">Live Demo: SmolVLM Local Captioning System</h2>
 
 <p>The live demo demonstrates SmolVLM generating captions from a real-time camera feed.</p>
 

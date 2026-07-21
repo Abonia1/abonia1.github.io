@@ -95,7 +95,7 @@ This architecture prioritizes simplicity and low latency while remaining fully o
 
 ---
 
-## Live Demo: SmolVLM Local Captioning System (0:16:19)
+## Live Demo: SmolVLM Local Captioning System
 
 The live demo demonstrates SmolVLM generating captions from a real-time camera feed.
 
