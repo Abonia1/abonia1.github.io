@@ -1,5 +1,182 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2026-07-21T14:19:29+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Abonia Sojasingarayar - AI &amp;amp; ML Expert</title><subtitle>AI &amp; Machine Learning Expert with Masters degree and 7+ years experience in ML systems across cybersecurity, banking, transit, cosmetics &amp; e-commerce domains.
-</subtitle><author><name>Abonia Sojasingarayar</name><email>aboniaa@gmail.com</email></author><entry><title type="html">Vision-Language Models - MultimodalAI - From Foundations to a Fully Local SmolVLM Demo</title><link href="http://localhost:4000/blogs/2026-05-14-Vision-Language-Models-MultimodalAI-From-Foundations-to-a-Fully-Local-SmolVLM-Demo/" rel="alternate" type="text/html" title="Vision-Language Models - MultimodalAI - From Foundations to a Fully Local SmolVLM Demo" /><published>2026-05-14T00:00:00+02:00</published><updated>2026-05-13T18:55:36+02:00</updated><id>http://localhost:4000/blogs/Vision-Language-Models-MultimodalAI-From-Foundations-to-a-Fully-Local-SmolVLM-Demo</id><content type="html" xml:base="http://localhost:4000/blogs/2026-05-14-Vision-Language-Models-MultimodalAI-From-Foundations-to-a-Fully-Local-SmolVLM-Demo/"><![CDATA[<p><strong>Reading_time:</strong> 5 min<br />
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2026-07-23T18:27:26+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Abonia Sojasingarayar - AI &amp;amp; ML Expert</title><subtitle>AI &amp; Machine Learning Expert with Masters degree and 7+ years experience in ML systems across cybersecurity, banking, transit, cosmetics &amp; e-commerce domains.
+</subtitle><author><name>Abonia Sojasingarayar</name><email>aboniaa@gmail.com</email></author><entry><title type="html">HuggingFace Cheatsheet</title><link href="http://localhost:4000/blogs/2026-07-23-Huggingface-Cheatsheet/" rel="alternate" type="text/html" title="HuggingFace Cheatsheet" /><published>2026-07-23T00:00:00+02:00</published><updated>2026-07-21T14:20:16+02:00</updated><id>http://localhost:4000/blogs/Huggingface-Cheatsheet</id><content type="html" xml:base="http://localhost:4000/blogs/2026-07-23-Huggingface-Cheatsheet/"><![CDATA[<p><strong>Reading_time:</strong> 5 min<br />
+  <strong>Tags:</strong> [Hugging Face, Transformers, Machine Learning, Deep Learning, LLM, NLP, Model Training, Fine-Tuning, Inference, Model Deployment, Generative AI, Multimodal AI, AI Agents, MLOps, Open Source]</p>
+<ul class="large-only" id="markdown-toc">
+  <li><a href="#-a-5-page-huggingface-cheatsheet" id="markdown-toc--a-5-page-huggingface-cheatsheet">🤗 A 5-Page HuggingFace Cheatsheet</a>    <ul>
+      <li><a href="#-download-the-cheatsheet-github-repository" id="markdown-toc--download-the-cheatsheet-github-repository">📥 <strong>Download the cheatsheet:</strong> GitHub-Repository</a></li>
+      <li><a href="#why-i-created-this-cheatsheet" id="markdown-toc-why-i-created-this-cheatsheet">Why I Created This Cheatsheet</a></li>
+      <li><a href="#-what-the-cheatsheet-covers" id="markdown-toc--what-the-cheatsheet-covers">📄 What the Cheatsheet Covers</a>        <ul>
+          <li><a href="#1️⃣-hugging-face-ecosystem--hub-architecture" id="markdown-toc-1️⃣-hugging-face-ecosystem--hub-architecture">1️⃣ Hugging Face Ecosystem &amp; Hub Architecture</a></li>
+          <li><a href="#2️⃣-transformers--model-execution" id="markdown-toc-2️⃣-transformers--model-execution">2️⃣ Transformers &amp; Model Execution</a></li>
+          <li><a href="#3️⃣-datasets--training-stack" id="markdown-toc-3️⃣-datasets--training-stack">3️⃣ Datasets &amp; Training Stack</a></li>
+          <li><a href="#4️⃣-inference-stack--deployment" id="markdown-toc-4️⃣-inference-stack--deployment">4️⃣ Inference Stack &amp; Deployment</a></li>
+          <li><a href="#5️⃣-agents-generative-models--hub-tooling" id="markdown-toc-5️⃣-agents-generative-models--hub-tooling">5️⃣ Agents, Generative Models &amp; Hub Tooling</a></li>
+        </ul>
+      </li>
+      <li><a href="#-the-structure" id="markdown-toc--the-structure">🧭 The Structure</a></li>
+      <li><a href="#-who-might-find-it-useful" id="markdown-toc--who-might-find-it-useful">🎯 Who Might Find It Useful?</a></li>
+      <li><a href="#-access-the-cheatsheet" id="markdown-toc--access-the-cheatsheet">📥 Access the Cheatsheet</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h1 id="-a-5-page-huggingface-cheatsheet">🤗 A 5-Page HuggingFace Cheatsheet</h1>
+
+<p>I’m happy to finally share this curated <strong>5-page Hugging Face Ecosystem Cheatsheet</strong> 🤗</p>
+
+<h2 id="-download-the-cheatsheet-github-repository">📥 <strong>Download the cheatsheet:</strong> <a href="https://github.com/Abonia1/HuggingFace-CheatSheet/">GitHub-Repository</a></h2>
+
+<h2 id="why-i-created-this-cheatsheet">Why I Created This Cheatsheet</h2>
+
+<p>While working with pretrained models, datasets, fine-tuning workflows, inference systems, and deployment tools, I found that the Hugging Face ecosystem covers many different parts of the machine learning lifecycle.</p>
+
+<p>There are libraries for specific tasks, platforms for sharing and versioning models and datasets, tools for training and fine-tuning, inference runtimes, deployment options, and frameworks for generative models and agents.</p>
+
+<p>For someone learning the ecosystem, it can be useful to first have a high-level map of how these components relate to each other.</p>
+
+<p>This is the reason I created this cheatsheet.</p>
+
+<p>It is not intended to replace the official documentation or provide a complete reference to every library and API.</p>
+
+<p>Instead, I tried to curate the core concepts into five pages that can be used as a visual reference.</p>
+
+<hr />
+
+<h2 id="-what-the-cheatsheet-covers">📄 What the Cheatsheet Covers</h2>
+
+<h3 id="1️⃣-hugging-face-ecosystem--hub-architecture">1️⃣ Hugging Face Ecosystem &amp; Hub Architecture</h3>
+
+<p>The first page introduces the main components of the Hugging Face ecosystem:</p>
+
+<p><strong>Hub → Models → Datasets → Spaces → Organizations → Collections → Papers → Inference → Leaderboards</strong></p>
+
+<p>It also covers model repository anatomy, common model artifacts, revisions, Dataset Cards, model discovery, filtering, licensing, hardware compatibility, and authentication.</p>
+
+<p><img src="/assets/img/blog/hf-slide1.PNG" alt="Hugging Face Ecosystem &amp; Hub Architecture" /></p>
+
+<hr />
+
+<h3 id="2️⃣-transformers--model-execution">2️⃣ Transformers &amp; Model Execution</h3>
+
+<p>The second page focuses on the execution path of pretrained transformer architectures.</p>
+
+<p>The basic flow is:</p>
+
+<p><strong>Input → Tokenizer / Processor → Model → Output</strong></p>
+
+<p>It covers Auto Classes, task-specific model heads, tokenization, padding, truncation, sequence-length constraints, multimodal processors, Pipelines, direct model APIs, generation configuration, and chat templates.</p>
+
+<p><img src="/assets/img/blog/hf-slide2.PNG" alt="Transformers &amp; Model Execution" /></p>
+
+<hr />
+
+<h3 id="3️⃣-datasets--training-stack">3️⃣ Datasets &amp; Training Stack</h3>
+
+<p>The third page focuses on the data and training workflow.</p>
+
+<p>It covers dataset loading, dataset splits, filtering, mapping, preprocessing, streaming, tokenization, batching, Data Collators, <code class="language-plaintext highlighter-rouge">Trainer</code>, <code class="language-plaintext highlighter-rouge">TrainingArguments</code>, <code class="language-plaintext highlighter-rouge">Accelerate</code>, PEFT, LoRA, QLoRA, evaluation, and Hub integration.</p>
+
+<p><img src="/assets/img/blog/hf-slide3.PNG" alt="Datasets &amp; Training Stack" /></p>
+
+<hr />
+
+<h3 id="4️⃣-inference-stack--deployment">4️⃣ Inference Stack &amp; Deployment</h3>
+
+<p>The fourth page focuses on how model artifacts can be executed and served.</p>
+
+<p>It covers local inference, <code class="language-plaintext highlighter-rouge">InferenceClient</code>, Text Generation Inference, continuous batching, streaming, tensor parallelism, Dedicated Endpoints, quantization, BitsAndBytes, AWQ, GPTQ, Optimum, hardware optimization, vLLM, llama.cpp, and Spaces.</p>
+
+<p><img src="/assets/img/blog/hf-slide4.PNG" alt="Inference Stack &amp; Deployment" /></p>
+
+<hr />
+
+<h3 id="5️⃣-agents-generative-models--hub-tooling">5️⃣ Agents, Generative Models &amp; Hub Tooling</h3>
+
+<p>The final page covers several higher-level components of the ecosystem.</p>
+
+<p>It includes <code class="language-plaintext highlighter-rouge">smolagents</code>, Diffusers, TRL, post-training and alignment methods, multimodal architectures, Hub CLI workflows, and Python utilities such as <code class="language-plaintext highlighter-rouge">hf_hub_download</code> and <code class="language-plaintext highlighter-rouge">snapshot_download</code>.</p>
+
+<p><img src="/assets/img/blog/hf-slide5.PNG" alt="Agents, Generative Models &amp; Hub Tooling" /></p>
+
+<hr />
+
+<h2 id="-the-structure">🧭 The Structure</h2>
+
+<p>The five pages are organized around a simplified development lifecycle:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Discover
+    ↓
+Load
+    ↓
+Prepare
+    ↓
+Train
+    ↓
+Fine-Tune
+    ↓
+Evaluate
+    ↓
+Optimize
+    ↓
+Serve
+    ↓
+Build
+</code></pre></div></div>
+
+<p>The purpose of this structure is to provide a starting point for understanding where different Hugging Face tools and services fit within a broader workflow.</p>
+
+<hr />
+
+<h2 id="-who-might-find-it-useful">🎯 Who Might Find It Useful?</h2>
+
+<p>I hope this cheatsheet can be useful for:</p>
+
+<ul>
+  <li>Machine Learning Engineers.</li>
+  <li>AI Engineers.</li>
+  <li>LLM Engineers.</li>
+  <li>Research Engineers.</li>
+  <li>Applied Scientists.</li>
+  <li>Data Scientists working with pretrained models.</li>
+  <li>Students and practitioners learning the Hugging Face ecosystem.</li>
+</ul>
+
+<p>It can be used as:</p>
+
+<ul>
+  <li>A quick reference while working with Hugging Face tools.</li>
+  <li>A learning aid for understanding the ecosystem.</li>
+  <li>A teaching resource.</li>
+  <li>A starting point for exploring the official documentation in more depth.</li>
+</ul>
+
+<hr />
+
+<h2 id="-access-the-cheatsheet">📥 Access the Cheatsheet</h2>
+
+<p>The complete cheatsheet is available here:</p>
+
+<p>🔗 <strong>Download:</strong> <a href="https://github.com/Abonia1/HuggingFace-CheatSheet/">HD-Version</a></p>
+
+<p>I hope this curated reference helps make the Hugging Face ecosystem a little easier to navigate and provides a useful starting point for further learning.</p>
+
+<p>🤗</p>
+
+<p><strong>Happy learning! 📖✨</strong></p>
+
+<hr />
+<p><strong><em>Thanks for Reading!</em></strong></p>
+
+<p><strong><a href="https://abonia1.github.io/">Website/Newletter</a></strong>
+<strong><a href="https://aboniasojasingarayar.substack.com">AIMagazine Substack</a></strong></p>
+
+<p>Connect with me on <strong><a href="https://www.linkedin.com/in/aboniasojasingarayar/">Linkedin</a></strong></p>
+
+<p>Find me on <strong><a href="https://github.com/Abonia1">Github</a></strong></p>
+
+<p>Visit my technical channel on <strong><a href="https://www.youtube.com/@AboniaSojasingarayar">Youtube</a></strong></p>
+
+<p>Support: <strong><a href="https://www.buymeacoffee.com/abonia">Buy me a Cofee/Chai</a></strong></p>]]></content><author><name>Abonia Sojasingarayar</name><email>aboniaa@gmail.com</email></author><category term="blogs" /><summary type="html"><![CDATA[A curated 5-page cheatsheet covering the core Hugging Face ecosystem, including the Hub, Transformers, Datasets, training, fine-tuning, inference, deployment, generative models, multimodal architectures, agents, and Hub tooling.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/hf_hub_core.png" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/hf_hub_core.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Vision-Language Models - MultimodalAI - From Foundations to a Fully Local SmolVLM Demo</title><link href="http://localhost:4000/blogs/2026-05-14-Vision-Language-Models-MultimodalAI-From-Foundations-to-a-Fully-Local-SmolVLM-Demo/" rel="alternate" type="text/html" title="Vision-Language Models - MultimodalAI - From Foundations to a Fully Local SmolVLM Demo" /><published>2026-05-14T00:00:00+02:00</published><updated>2026-07-21T14:20:16+02:00</updated><id>http://localhost:4000/blogs/Vision-Language-Models-MultimodalAI-From-Foundations-to-a-Fully-Local-SmolVLM-Demo</id><content type="html" xml:base="http://localhost:4000/blogs/2026-05-14-Vision-Language-Models-MultimodalAI-From-Foundations-to-a-Fully-Local-SmolVLM-Demo/"><![CDATA[<p><strong>Reading_time:</strong> 5 min<br />
   <strong>Tags:</strong> [VisionLanguageModels, SmolVLM, #MultimodalAI, AIResearch, MachineLearning, DeepLearning, ComputerVision, NLP, OnDeviceAI, EdgeAI, AIEngineering, LLM, AI2026]</p>
 <ul class="large-only" id="markdown-toc">
   <li><a href="#vision-language-models---from-foundations-to-a-fully-local-smolvlm-demo" id="markdown-toc-vision-language-models---from-foundations-to-a-fully-local-smolvlm-demo">Vision-Language Models - From Foundations to a Fully Local SmolVLM Demo</a>    <ul>
@@ -1839,73 +2016,4 @@ for image_name in image_names:
 
 <p>Visit my technical channel on <strong><a href="https://www.youtube.com/@AboniaSojasingarayar">Youtube</a></strong></p>
 
-<p>Support: <strong><a href="https://www.buymeacoffee.com/abonia">Buy me a Cofee/Chai</a></strong></p>]]></content><author><name>Abonia Sojasingarayar</name><email>aboniaa@gmail.com</email></author><category term="blogs" /><summary type="html"><![CDATA[Ollama empowers you to leverage powerful large language models (LLMs) like Llama2,Llama3,Phi3 etc. without needing a powerful local machine. Google Colab’s free tier provides a cloud environment perfectly suited for running these resource-intensive models. This tutorial details setting up and running Ollama on the free version of Google Colab, allowing you to explore the capabilities of LLMs without significant upfront costs.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/ollama-in-colab.png" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/ollama-in-colab.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">2-Introduction to LLM — [AIMagazine]</title><link href="http://localhost:4000/blogs/2024-08-23-Introduction-to-LLM-AIMagazine/" rel="alternate" type="text/html" title="2-Introduction to LLM — [AIMagazine]" /><published>2024-08-23T00:00:00+02:00</published><updated>2024-09-20T13:36:27+02:00</updated><id>http://localhost:4000/blogs/Introduction-to-LLM-AIMagazine</id><content type="html" xml:base="http://localhost:4000/blogs/2024-08-23-Introduction-to-LLM-AIMagazine/"><![CDATA[<p><strong>Reading_time:</strong> 5 min<br />
-  <strong>Tags:</strong> [LLM, GenAI, AI ,MachineLearning, NLP, ComputerVision, MLOps DeepLearning, DataScience, TechInnovation,FutureTech
-]</p>
-<ul class="large-only" id="markdown-toc">
-  <li><a href="#1-introduction-to-llm--aimagazine" id="markdown-toc-1-introduction-to-llm--aimagazine">1-Introduction to LLM — AIMagazine</a>    <ul>
-      <li><a href="#dive-into-the-world-of-llm" id="markdown-toc-dive-into-the-world-of-llm">Dive into the World of LLM</a></li>
-      <li><a href="#why-you-should-read-this" id="markdown-toc-why-you-should-read-this">Why You Should Read This</a></li>
-      <li><a href="#stay-updated" id="markdown-toc-stay-updated">Stay Updated</a></li>
-    </ul>
-  </li>
-  <li><a href="#read-more-on-aimagazine" id="markdown-toc-read-more-on-aimagazine"><strong>Read More on AIMagazine</strong></a></li>
-</ul>
-
-<h2 id="1-introduction-to-llm--aimagazine">1-Introduction to LLM — AIMagazine</h2>
-
-<h3 id="dive-into-the-world-of-llm">Dive into the World of LLM</h3>
-
-<p>Artificial intelligence, machine learning, natural language processing, (LLM), and MLOps are evolving at an incredible pace. Staying informed about the latest developments, research, and trends is crucial for anyone in the tech field. To help you keep up, I’ve published a detailed article on LLM on my Substack <strong><a href="https://aboniasojasingarayar.substack.com">AIMagazine</a></strong>.</p>
-
-<p><img src="/assets/img/blog/LLM.png" alt="" /></p>
-
-<p>Here’s a glimpse of what you can expect in this first chapter format article and what You’ll Learn:</p>
-
-<ul>
-  <li>
-    <p>Definition and overview of LLMs</p>
-  </li>
-  <li>
-    <p>Types of LLMs</p>
-  </li>
-  <li>
-    <p>Key technical concepts</p>
-  </li>
-  <li>
-    <p>Evaluating LLMs</p>
-  </li>
-  <li>
-    <p>Applications, Challenges Limitation</p>
-  </li>
-  <li>
-    <p>LLM Cheat Sheet</p>
-  </li>
-</ul>
-
-<p>👉 <strong>Read the full <a href="https://open.substack.com/pub/aboniasojasingarayar/p/introduction-to-large-language-models?r=92g95&amp;utm_campaign=post&amp;utm_medium=web&amp;showWelcomeOnShare=true">article on Substack AIMagazine </a></strong></p>
-
-<h3 id="why-you-should-read-this">Why You Should Read This</h3>
-
-<p>This article aims to provide a foundational understanding of LLM and its applications. By the end of the article, you’ll be able to identify the different components of an LLM system and grasp the challenges involved in developing these systems. Whether you’re a beginner or someone looking to refresh your knowledge, this article is designed to offer valuable insights.</p>
-
-<h3 id="stay-updated">Stay Updated</h3>
-
-<p>I’m planning to write articles in a chapter format for an in-depth exploration of each topic, covering aspects like NLP, LLMs, fine-tuning, evaluation, RAG, information retrieval, deployment, knowledge graphs, and more. There are many other concepts to be added, and I will update them in subsequent posts.</p>
-
-<h2 id="read-more-on-aimagazine"><strong>Read More on AIMagazine</strong></h2>
-
-<p>To dive deeper into these topics, I invite you to read the full article on my substack <strong><a href="https://aboniasojasingarayar.substack.com">AIMagazine</a></strong>. Your feedback and engagement are highly valued, and subscribing will ensure you get updates directly in your inbox whenever new articles are published.</p>
-
-<hr />
-<p><strong><em>Thanks for Reading!</em></strong></p>
-
-<p><strong><a href="https://abonia1.github.io/">Website/Newletter</a></strong></p>
-
-<p>Connect with me on <strong><a href="https://www.linkedin.com/in/aboniasojasingarayar/">Linkedin</a></strong></p>
-
-<p>Find me on <strong><a href="https://github.com/Abonia1">Github</a></strong></p>
-
-<p>Visit my technical channel on <strong><a href="https://www.youtube.com/@AboniaSojasingarayar">Youtube</a></strong></p>
-
-<p>Support: <strong><a href="https://www.buymeacoffee.com/abonia">Buy me a Cofee/Chai</a></strong></p>]]></content><author><name>Abonia Sojasingarayar</name><email>aboniaa@gmail.com</email></author><category term="blogs" /><summary type="html"><![CDATA[This chapter will be your comprehensive guide to navigating the fascinating world of LLMs. We'll delve into their core concepts, exploring different types like autoregressive models and encoder-decoder models. You'll discover the magic behind self-attention, a mechanism that allows LLMs to focus on relevant information, and delve into the pre-training strategies that give them their vast knowledge. Finally, we'll showcase the real-world applications of LLMs, from powering chatbots and generating realistic dialogue to creating marketing copy and summarizing complex topics.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/AIMagazine.png" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/AIMagazine.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+<p>Support: <strong><a href="https://www.buymeacoffee.com/abonia">Buy me a Cofee/Chai</a></strong></p>]]></content><author><name>Abonia Sojasingarayar</name><email>aboniaa@gmail.com</email></author><category term="blogs" /><summary type="html"><![CDATA[Ollama empowers you to leverage powerful large language models (LLMs) like Llama2,Llama3,Phi3 etc. without needing a powerful local machine. Google Colab’s free tier provides a cloud environment perfectly suited for running these resource-intensive models. This tutorial details setting up and running Ollama on the free version of Google Colab, allowing you to explore the capabilities of LLMs without significant upfront costs.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/ollama-in-colab.png" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/ollama-in-colab.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>

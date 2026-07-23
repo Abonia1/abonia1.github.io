@@ -32,24 +32,24 @@ Powered by Hydejack v9.1.6 <https://hydejack.com/>
   
     
 <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Multi-Modal Retrieval - Bridging Text and Images with BGE and CLIP | Abonia Sojasingarayar - AI &amp; ML Expert</title>
+<title>HuggingFace Cheatsheet | Abonia Sojasingarayar - AI &amp; ML Expert</title>
 <meta name="generator" content="Jekyll v4.3.3" />
-<meta property="og:title" content="Multi-Modal Retrieval - Bridging Text and Images with BGE and CLIP" />
+<meta property="og:title" content="HuggingFace Cheatsheet" />
 <meta name="author" content="Abonia Sojasingarayar" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="In today’s data-rich world, being able to retrieve relevant information across different modalities (text, images, audio) has become increasingly important. This post will guide you through creating a multi-modal retrieval system that combines text embeddings from BGE (Bidirectional Generative Encoder) and image embeddings from CLIP (Contrastive Language-Instrumental Pre-training) to index and query Wikipedia articles." />
-<meta property="og:description" content="In today’s data-rich world, being able to retrieve relevant information across different modalities (text, images, audio) has become increasingly important. This post will guide you through creating a multi-modal retrieval system that combines text embeddings from BGE (Bidirectional Generative Encoder) and image embeddings from CLIP (Contrastive Language-Instrumental Pre-training) to index and query Wikipedia articles." />
-<link rel="canonical" href="http://localhost:4000/blogs/2024-10-01-Multi-Modal-Retrieval-BGE-CLIP/" />
-<meta property="og:url" content="http://localhost:4000/blogs/2024-10-01-Multi-Modal-Retrieval-BGE-CLIP/" />
+<meta name="description" content="A curated 5-page cheatsheet covering the core Hugging Face ecosystem, including the Hub, Transformers, Datasets, training, fine-tuning, inference, deployment, generative models, multimodal architectures, agents, and Hub tooling." />
+<meta property="og:description" content="A curated 5-page cheatsheet covering the core Hugging Face ecosystem, including the Hub, Transformers, Datasets, training, fine-tuning, inference, deployment, generative models, multimodal architectures, agents, and Hub tooling." />
+<link rel="canonical" href="http://localhost:4000/blogs/2026-07-23-Huggingface-Cheatsheet/" />
+<meta property="og:url" content="http://localhost:4000/blogs/2026-07-23-Huggingface-Cheatsheet/" />
 <meta property="og:site_name" content="Abonia Sojasingarayar - AI &amp; ML Expert" />
-<meta property="og:image" content="http://localhost:4000/assets/img/blog/Multi-ModalRetriever.png" />
+<meta property="og:image" content="http://localhost:4000/assets/img/blog/hf_hub_core.png" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2024-10-01T00:00:00+02:00" />
+<meta property="article:published_time" content="2026-07-23T00:00:00+02:00" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="http://localhost:4000/assets/img/blog/Multi-ModalRetriever.png" />
-<meta property="twitter:title" content="Multi-Modal Retrieval - Bridging Text and Images with BGE and CLIP" />
+<meta property="twitter:image" content="http://localhost:4000/assets/img/blog/hf_hub_core.png" />
+<meta property="twitter:title" content="HuggingFace Cheatsheet" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Abonia Sojasingarayar"},"dateModified":"2024-09-25T15:43:26+02:00","datePublished":"2024-10-01T00:00:00+02:00","description":"In today’s data-rich world, being able to retrieve relevant information across different modalities (text, images, audio) has become increasingly important. This post will guide you through creating a multi-modal retrieval system that combines text embeddings from BGE (Bidirectional Generative Encoder) and image embeddings from CLIP (Contrastive Language-Instrumental Pre-training) to index and query Wikipedia articles.","headline":"Multi-Modal Retrieval - Bridging Text and Images with BGE and CLIP","image":"http://localhost:4000/assets/img/blog/Multi-ModalRetriever.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blogs/2024-10-01-Multi-Modal-Retrieval-BGE-CLIP/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/img/blog/logo.jpeg"},"name":"Abonia Sojasingarayar"},"url":"http://localhost:4000/blogs/2024-10-01-Multi-Modal-Retrieval-BGE-CLIP/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Abonia Sojasingarayar"},"dateModified":"2026-07-21T14:20:16+02:00","datePublished":"2026-07-23T00:00:00+02:00","description":"A curated 5-page cheatsheet covering the core Hugging Face ecosystem, including the Hub, Transformers, Datasets, training, fine-tuning, inference, deployment, generative models, multimodal architectures, agents, and Hub tooling.","headline":"HuggingFace Cheatsheet","image":"http://localhost:4000/assets/img/blog/hf_hub_core.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blogs/2026-07-23-Huggingface-Cheatsheet/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/img/blog/logo.jpeg"},"name":"Abonia Sojasingarayar"},"url":"http://localhost:4000/blogs/2026-07-23-Huggingface-Cheatsheet/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -77,7 +77,7 @@ Powered by Hydejack v9.1.6 <https://hydejack.com/>
 <meta name="generator" content="Hydejack v9.1.6" />
 
 
-<link rel="alternate" href="http://localhost:4000/blogs/2024-10-01-Multi-Modal-Retrieval-BGE-CLIP/" hreflang="en">
+<link rel="alternate" href="http://localhost:4000/blogs/2026-07-23-Huggingface-Cheatsheet/" hreflang="en">
 
 <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Abonia Sojasingarayar - AI &amp; ML Expert" />
 
@@ -199,7 +199,7 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79, 177, 186, 0.
       <li>
         
           <span>/</span>
-          <span>2024-10-01-Multi-Modal-Retrieval-BGE-CLIP</span>
+          <span>2026-07-23-Huggingface-Cheatsheet</span>
         
       </li>
     
@@ -216,18 +216,18 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79, 177, 186, 0.
 
 
 
-<article id="post-blogs-Multi-Modal-Retrieval-BGE-CLIP" class="page post mb6" role="article">
+<article id="post-blogs-Huggingface-Cheatsheet" class="page post mb6" role="article">
   <header>
     <h1 class="post-title flip-project-title">
       
-        Multi-Modal Retrieval - Bridging Text and Images with BGE and CLIP
+        HuggingFace Cheatsheet
       
     </h1>
 
     <div class="post-date">
       
       <span class="ellipsis mr1">
-        <time datetime="2024-10-01T00:00:00+02:00">01 Oct 2024</time> in <a href="/example/" class="flip-title">Blogs</a> 
+        <time datetime="2026-07-23T00:00:00+02:00">23 Jul 2026</time> in <a href="/example/" class="flip-title">Blogs</a> 
       </span>
       
         
@@ -236,10 +236,10 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79, 177, 186, 0.
           
             
             
-            <span class="ellipsis" data-tippy-content="Last modified at: 25 Sep 2024">
+            <span class="ellipsis" data-tippy-content="Last modified at: 21 Jul 2026">
               <span class="sr-only">Last modified at:</span>
               <span class="icon-history"></span>
-              <time datetime="2024-09-25T15:43:26+02:00">2024-09-25</time>
+              <time datetime="2026-07-21T14:20:16+02:00">2026-07-21</time>
             </span>
           
         
@@ -255,11 +255,11 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79, 177, 186, 0.
 
 <img
   
-    src="/assets/img/blog/Multi-ModalRetriever.png"
+    src="/assets/img/blog/hf_hub_core.png"
     
     
   
-  alt="Multi-Modal Retrieval - Bridging Text and Images with BGE and CLIP"
+  alt="HuggingFace Cheatsheet"
   
   
   width="864"
@@ -278,7 +278,7 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79, 177, 186, 0.
 
   
     <p class="note-sm" >
-      In today’s data-rich world, being able to retrieve relevant information across different modalities (text, images, audio) has become increasingly important. This post will guide you through creating a multi-modal retrieval system that combines text embeddings from BGE (Bidirectional Generative Encoder) and image embeddings from CLIP (Contrastive Language-Instrumental Pre-training) to index and query Wikipedia articles.
+      A curated 5-page cheatsheet covering the core Hugging Face ecosystem, including the Hub, Transformers, Datasets, training, fine-tuning, inference, deployment, generative models, multimodal architectures, agents, and Hub tooling.
 
     </p>
   
@@ -287,156 +287,170 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79, 177, 186, 0.
   </header>
 
   
-    <p><strong><a href="https://youtu.be/9oogZrSTiM0?si=epr5kNKcrbzeZ52z">Link to the complete hands-on tutorial on Multi-Modal Retrieval - Bridging Text and Images with BGE and CLIP</a></strong></p>
-
-<p><strong>Reading_time:</strong> 5 min<br />
-  <strong>Tags:</strong> [MultimodalRetrieval, AI, MachineLearning, NLP, ComputerVision, CLIP, BGE, ArtificialIntelligence, CrossModalSearch, TextEmbedding, ImageEmbedding, VectorSearch]</p>
+    <p><strong>Reading_time:</strong> 5 min<br />
+  <strong>Tags:</strong> [Hugging Face, Transformers, Machine Learning, Deep Learning, LLM, NLP, Model Training, Fine-Tuning, Inference, Model Deployment, Generative AI, Multimodal AI, AI Agents, MLOps, Open Source]</p>
 <ul class="large-only" id="markdown-toc">
-  <li><a href="#multi-modal-retrieval-bridging-text-and-images-with-bge-and-clip" id="markdown-toc-multi-modal-retrieval-bridging-text-and-images-with-bge-and-clip">Multi-Modal Retrieval: Bridging Text and Images with BGE and CLIP</a>    <ul>
-      <li><a href="#building-and-testing-a-multi-modal-retriever--hands-on" id="markdown-toc-building-and-testing-a-multi-modal-retriever--hands-on">Building and Testing a Multi-Modal Retriever — Hands-On</a></li>
+  <li><a href="#-a-5-page-huggingface-cheatsheet" id="markdown-toc--a-5-page-huggingface-cheatsheet">🤗 A 5-Page HuggingFace Cheatsheet</a>    <ul>
+      <li><a href="#-download-the-cheatsheet-github-repository" id="markdown-toc--download-the-cheatsheet-github-repository">📥 <strong>Download the cheatsheet:</strong> GitHub-Repository</a></li>
+      <li><a href="#why-i-created-this-cheatsheet" id="markdown-toc-why-i-created-this-cheatsheet">Why I Created This Cheatsheet</a></li>
+      <li><a href="#-what-the-cheatsheet-covers" id="markdown-toc--what-the-cheatsheet-covers">📄 What the Cheatsheet Covers</a>        <ul>
+          <li><a href="#1️⃣-hugging-face-ecosystem--hub-architecture" id="markdown-toc-1️⃣-hugging-face-ecosystem--hub-architecture">1️⃣ Hugging Face Ecosystem &amp; Hub Architecture</a></li>
+          <li><a href="#2️⃣-transformers--model-execution" id="markdown-toc-2️⃣-transformers--model-execution">2️⃣ Transformers &amp; Model Execution</a></li>
+          <li><a href="#3️⃣-datasets--training-stack" id="markdown-toc-3️⃣-datasets--training-stack">3️⃣ Datasets &amp; Training Stack</a></li>
+          <li><a href="#4️⃣-inference-stack--deployment" id="markdown-toc-4️⃣-inference-stack--deployment">4️⃣ Inference Stack &amp; Deployment</a></li>
+          <li><a href="#5️⃣-agents-generative-models--hub-tooling" id="markdown-toc-5️⃣-agents-generative-models--hub-tooling">5️⃣ Agents, Generative Models &amp; Hub Tooling</a></li>
+        </ul>
+      </li>
+      <li><a href="#-the-structure" id="markdown-toc--the-structure">🧭 The Structure</a></li>
+      <li><a href="#-who-might-find-it-useful" id="markdown-toc--who-might-find-it-useful">🎯 Who Might Find It Useful?</a></li>
+      <li><a href="#-access-the-cheatsheet" id="markdown-toc--access-the-cheatsheet">📥 Access the Cheatsheet</a></li>
     </ul>
   </li>
-  <li><a href="#understanding-multi-modal-retrieval" id="markdown-toc-understanding-multi-modal-retrieval">Understanding Multi-Modal Retrieval</a>    <ul>
-      <li><a href="#technical-overview" id="markdown-toc-technical-overview">Technical Overview</a></li>
-      <li><a href="#data-preparation" id="markdown-toc-data-preparation">Data Preparation</a></li>
-      <li><a href="#building-the-vector-store" id="markdown-toc-building-the-vector-store">Building the Vector Store</a></li>
-      <li><a href="#query-processing-and-retrieval" id="markdown-toc-query-processing-and-retrieval">Query Processing and Retrieval</a></li>
-    </ul>
-  </li>
-  <li><a href="#tutorial" id="markdown-toc-tutorial">Tutorial</a></li>
-  <li><a href="#colab-notebook" id="markdown-toc-colab-notebook">Colab Notebook</a></li>
-  <li><a href="#conclusion" id="markdown-toc-conclusion">Conclusion</a></li>
 </ul>
 
-<h2 id="multi-modal-retrieval-bridging-text-and-images-with-bge-and-clip">Multi-Modal Retrieval: Bridging Text and Images with BGE and CLIP</h2>
+<h1 id="-a-5-page-huggingface-cheatsheet">🤗 A 5-Page HuggingFace Cheatsheet</h1>
 
-<h3 id="building-and-testing-a-multi-modal-retriever--hands-on">Building and Testing a Multi-Modal Retriever — Hands-On</h3>
+<p>I’m happy to finally share this curated <strong>5-page Hugging Face Ecosystem Cheatsheet</strong> 🤗</p>
 
-<p>In today’s data-rich world, being able to retrieve relevant information across different modalities (text, images, audio) has become increasingly important. This post will guide you through creating a multi-modal retrieval system that combines text embeddings from BGE (Bidirectional Generative Encoder) and image embeddings from CLIP (Contrastive Language-Instrumental Pre-training) to index and query Wikipedia articles.</p>
+<h2 id="-download-the-cheatsheet-github-repository">📥 <strong>Download the cheatsheet:</strong> <a href="https://github.com/Abonia1/HuggingFace-CheatSheet/">GitHub-Repository</a></h2>
 
-<iframe width="900" height="500" src="https://www.youtube.com/embed/9oogZrSTiM0" frameborder="0" allowfullscreen=""></iframe>
+<h2 id="why-i-created-this-cheatsheet">Why I Created This Cheatsheet</h2>
 
-<p>In the rapidly evolving landscape of artificial intelligence and natural language processing, the ability to seamlessly integrate text and image information has become increasingly crucial. This article explores a cutting-edge approach to achieving this integration, leveraging state-of-the-art techniques to create a powerful demonstration of cross-modal retrieval capabilities.</p>
+<p>While working with pretrained models, datasets, fine-tuning workflows, inference systems, and deployment tools, I found that the Hugging Face ecosystem covers many different parts of the machine learning lifecycle.</p>
 
-<h2 id="understanding-multi-modal-retrieval">Understanding Multi-Modal Retrieval</h2>
+<p>There are libraries for specific tasks, platforms for sharing and versioning models and datasets, tools for training and fine-tuning, inference runtimes, deployment options, and frameworks for generative models and agents.</p>
 
-<p>Multi-modal retrieval allows us to search for information based on multiple types of input, such as text queries and image queries. It’s particularly useful for applications like visual search, content-based recommendation systems, and multimedia analysis.</p>
+<p>For someone learning the ecosystem, it can be useful to first have a high-level map of how these components relate to each other.</p>
 
-<p>Key aspects of multi-modal retrieval include:</p>
+<p>This is the reason I created this cheatsheet.</p>
+
+<p>It is not intended to replace the official documentation or provide a complete reference to every library and API.</p>
+
+<p>Instead, I tried to curate the core concepts into five pages that can be used as a visual reference.</p>
+
+<hr />
+
+<h2 id="-what-the-cheatsheet-covers">📄 What the Cheatsheet Covers</h2>
+
+<h3 id="1️⃣-hugging-face-ecosystem--hub-architecture">1️⃣ Hugging Face Ecosystem &amp; Hub Architecture</h3>
+
+<p>The first page introduces the main components of the Hugging Face ecosystem:</p>
+
+<p><strong>Hub → Models → Datasets → Spaces → Organizations → Collections → Papers → Inference → Leaderboards</strong></p>
+
+<p>It also covers model repository anatomy, common model artifacts, revisions, Dataset Cards, model discovery, filtering, licensing, hardware compatibility, and authentication.</p>
+
+<p><img src="/assets/img/blog/hf-slide1.PNG" alt="Hugging Face Ecosystem &amp; Hub Architecture" /></p>
+
+<hr />
+
+<h3 id="2️⃣-transformers--model-execution">2️⃣ Transformers &amp; Model Execution</h3>
+
+<p>The second page focuses on the execution path of pretrained transformer architectures.</p>
+
+<p>The basic flow is:</p>
+
+<p><strong>Input → Tokenizer / Processor → Model → Output</strong></p>
+
+<p>It covers Auto Classes, task-specific model heads, tokenization, padding, truncation, sequence-length constraints, multimodal processors, Pipelines, direct model APIs, generation configuration, and chat templates.</p>
+
+<p><img src="/assets/img/blog/hf-slide2.PNG" alt="Transformers &amp; Model Execution" /></p>
+
+<hr />
+
+<h3 id="3️⃣-datasets--training-stack">3️⃣ Datasets &amp; Training Stack</h3>
+
+<p>The third page focuses on the data and training workflow.</p>
+
+<p>It covers dataset loading, dataset splits, filtering, mapping, preprocessing, streaming, tokenization, batching, Data Collators, <code class="language-plaintext highlighter-rouge">Trainer</code>, <code class="language-plaintext highlighter-rouge">TrainingArguments</code>, <code class="language-plaintext highlighter-rouge">Accelerate</code>, PEFT, LoRA, QLoRA, evaluation, and Hub integration.</p>
+
+<p><img src="/assets/img/blog/hf-slide3.PNG" alt="Datasets &amp; Training Stack" /></p>
+
+<hr />
+
+<h3 id="4️⃣-inference-stack--deployment">4️⃣ Inference Stack &amp; Deployment</h3>
+
+<p>The fourth page focuses on how model artifacts can be executed and served.</p>
+
+<p>It covers local inference, <code class="language-plaintext highlighter-rouge">InferenceClient</code>, Text Generation Inference, continuous batching, streaming, tensor parallelism, Dedicated Endpoints, quantization, BitsAndBytes, AWQ, GPTQ, Optimum, hardware optimization, vLLM, llama.cpp, and Spaces.</p>
+
+<p><img src="/assets/img/blog/hf-slide4.PNG" alt="Inference Stack &amp; Deployment" /></p>
+
+<hr />
+
+<h3 id="5️⃣-agents-generative-models--hub-tooling">5️⃣ Agents, Generative Models &amp; Hub Tooling</h3>
+
+<p>The final page covers several higher-level components of the ecosystem.</p>
+
+<p>It includes <code class="language-plaintext highlighter-rouge">smolagents</code>, Diffusers, TRL, post-training and alignment methods, multimodal architectures, Hub CLI workflows, and Python utilities such as <code class="language-plaintext highlighter-rouge">hf_hub_download</code> and <code class="language-plaintext highlighter-rouge">snapshot_download</code>.</p>
+
+<p><img src="/assets/img/blog/hf-slide5.PNG" alt="Agents, Generative Models &amp; Hub Tooling" /></p>
+
+<hr />
+
+<h2 id="-the-structure">🧭 The Structure</h2>
+
+<p>The five pages are organized around a simplified development lifecycle:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Discover
+    ↓
+Load
+    ↓
+Prepare
+    ↓
+Train
+    ↓
+Fine-Tune
+    ↓
+Evaluate
+    ↓
+Optimize
+    ↓
+Serve
+    ↓
+Build
+</code></pre></div></div>
+
+<p>The purpose of this structure is to provide a starting point for understanding where different Hugging Face tools and services fit within a broader workflow.</p>
+
+<hr />
+
+<h2 id="-who-might-find-it-useful">🎯 Who Might Find It Useful?</h2>
+
+<p>I hope this cheatsheet can be useful for:</p>
 
 <ul>
-  <li>
-    <p>Indexing: Creating embeddings for both text and image data</p>
-  </li>
-  <li>
-    <p>Querying: Processing user inputs and finding similar matches</p>
-  </li>
-  <li>
-    <p>Ranking: Ordering results based on relevance</p>
-  </li>
+  <li>Machine Learning Engineers.</li>
+  <li>AI Engineers.</li>
+  <li>LLM Engineers.</li>
+  <li>Research Engineers.</li>
+  <li>Applied Scientists.</li>
+  <li>Data Scientists working with pretrained models.</li>
+  <li>Students and practitioners learning the Hugging Face ecosystem.</li>
 </ul>
 
-<h3 id="technical-overview">Technical Overview</h3>
-
-<p>The proposed system utilizes several advanced techniques to enable efficient and accurate retrieval of both textual and visual content:</p>
-
-<ol>
-  <li>
-    <p>Text Embedding Index: 
- — Utilizes BAAI/bge-small-en-v1.5 for text representation
- — Employs Hugging Face (HF) embedding for query encoding</p>
-  </li>
-  <li>
-    <p>Image Embedding Index:
- — Implements CLIP embeddings from sentence transformers
- — Leverages CLIP embedding for image query encoding</p>
-  </li>
-  <li>
-    <p>Query Encoder:
- — Processes text queries using HF embedding
- — Processes image queries using CLIP embedding</p>
-  </li>
-  <li>
-    <p>Framework:
- — Built on top of LlamaIndex for efficient vector storage and retrieval</p>
-  </li>
-</ol>
-
-<h3 id="data-preparation">Data Preparation</h3>
-
-<p>Before implementing the retrieval system, a crucial step involves preparing the necessary datasets:</p>
+<p>It can be used as:</p>
 
 <ul>
-  <li>Download raw text and image files for Wikipedia articles</li>
-  <li>These files serve as the foundation for building comprehensive indexes</li>
+  <li>A quick reference while working with Hugging Face tools.</li>
+  <li>A learning aid for understanding the ecosystem.</li>
+  <li>A teaching resource.</li>
+  <li>A starting point for exploring the official documentation in more depth.</li>
 </ul>
 
-<h3 id="building-the-vector-store">Building the Vector Store</h3>
+<hr />
 
-<p>With the data at hand, the next step is to construct the vector store:</p>
+<h2 id="-access-the-cheatsheet">📥 Access the Cheatsheet</h2>
 
-<ol>
-  <li>
-    <p>Text Index Construction:
- — Apply BAAI/bge-small-en-v1.5 embeddings to text data
- — Create a vector store using these embeddings</p>
-  </li>
-  <li>
-    <p>Image Index Construction:
- — Generate CLIP embeddings for image data
- — Build a separate vector store for the image embeddings</p>
-  </li>
-</ol>
+<p>The complete cheatsheet is available here:</p>
 
-<h3 id="query-processing-and-retrieval">Query Processing and Retrieval</h3>
+<p>🔗 <strong>Download:</strong> <a href="https://github.com/Abonia1/HuggingFace-CheatSheet/">HD-Version</a></p>
 
-<p>Once the vector store is populated, the system can handle various types of queries:</p>
+<p>I hope this curated reference helps make the Hugging Face ecosystem a little easier to navigate and provides a useful starting point for further learning.</p>
 
-<ol>
-  <li>
-    <p>Text Queries:
- — Encode input text using HF embedding
- — Search the text index for relevant matches</p>
-  </li>
-  <li>
-    <p>Image Queries:
- — Extract features from input images using CLIP embedding
- — Search the image index for visually similar content</p>
-  </li>
-  <li>
-    <p>Cross-Modal Queries:
- — Combine text and image queries for simultaneous retrieval
- — Leverage the power of both indices to find relevant information</p>
-  </li>
-</ol>
+<p>🤗</p>
 
-<h2 id="tutorial">Tutorial</h2>
-
-<p>A user searches for “Bat man” using a combination of text and image queries. The system would:</p>
-
-<ol>
-  <li>Process the text query using HF embedding</li>
-  <li>Retrieve relevant Wikipedia articles from the text index</li>
-  <li>Simultaneously process the image query (e.g., a photo of Mars, Batman)</li>
-  <li>Find visually similar images from the image index</li>
-  <li>Return a combined result set that includes both textually and visually relevant information</li>
-</ol>
-
-<p>This tutorial highlights the system’s ability to bridge the gap between linguistic and visual representations, providing users with a comprehensive understanding of complex topics through multimodal retrieval.</p>
-
-<h2 id="colab-notebook">Colab Notebook</h2>
-
-<p><strong><a href="https://github.com/Abonia1/Multi-Modal-Retriever/blob/main/multi_modal_retrieval.ipynb">Link to the complete Notebook</a></strong></p>
-
-<script src="https://gist.github.com/Abonia1/a0c555f6e53bc271fe305d29983af645.js"></script>
-
-<p><img src="https://cdn-images-1.medium.com/max/2360/1*xkAvz-IDGh9MVxcx7MBkXA.png" alt="" /></p>
-
-<h2 id="conclusion">Conclusion</h2>
-
-<p>By integrating cutting-edge text and image embedding techniques within a unified framework, this system offers a powerful tool for information retrieval across modalities. Its potential applications extend beyond simple demonstrations, potentially revolutionizing how we interact with and understand complex information in various domains such as education, research, and entertainment. As AI technology continues to advance, such systems will play an increasingly important role in facilitating human-computer interaction and knowledge acquisition.</p>
-
-<p>Lets learn and grow together!</p>
+<p><strong>Happy learning! 📖✨</strong></p>
 
 <hr />
 <p><strong><em>Thanks for Reading!</em></strong></p>
@@ -647,7 +661,7 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79, 177, 186, 0.
     
 
 
-  <aside class="related mb4" role="complementary">  <h2 class="hr-bottom">Related Posts</h2>  <ul class="related-posts">                  <li class="h4">  <a href="/blogs/2026-07-23-Huggingface-Cheatsheet/" class="flip-title"><span>HuggingFace Cheatsheet</span></a>  <time class="faded fine" datetime="2026-07-23T00:00:00+02:00">23 Jul 2026</time></li>                        <li class="h4">  <a href="/blogs/2026-05-14-Vision-Language-Models-MultimodalAI-From-Foundations-to-a-Fully-Local-SmolVLM-Demo/" class="flip-title"><span>Vision-Language Models - MultimodalAI - From Foundations to a Fully Local SmolVLM Demo</span></a>  <time class="faded fine" datetime="2026-05-14T00:00:00+02:00">14 May 2026</time></li>                        <li class="h4">  <a href="/blogs/2026-01-18-E-book-release-From-Research-to-Production-Industrializing-NLP-and-Large-Language-Model/" class="flip-title"><span>E-Book - From Research to Production - Industrializing NLP and Large Language Models</span></a>  <time class="faded fine" datetime="2026-01-18T00:00:00+01:00">18 Jan 2026</time></li>            </ul></aside>
+  <aside class="related mb4" role="complementary">  <h2 class="hr-bottom">Related Posts</h2>  <ul class="related-posts">                  <li class="h4">  <a href="/blogs/2026-05-14-Vision-Language-Models-MultimodalAI-From-Foundations-to-a-Fully-Local-SmolVLM-Demo/" class="flip-title"><span>Vision-Language Models - MultimodalAI - From Foundations to a Fully Local SmolVLM Demo</span></a>  <time class="faded fine" datetime="2026-05-14T00:00:00+02:00">14 May 2026</time></li>                        <li class="h4">  <a href="/blogs/2026-01-18-E-book-release-From-Research-to-Production-Industrializing-NLP-and-Large-Language-Model/" class="flip-title"><span>E-Book - From Research to Production - Industrializing NLP and Large Language Models</span></a>  <time class="faded fine" datetime="2026-01-18T00:00:00+01:00">18 Jan 2026</time></li>                        <li class="h4">  <a href="/blogs/2025-05-01-Deploying-Scalable-Machine-Learning-Service-on-Kubernetes/" class="flip-title"><span>Deploying a Scalable Machine Learning Service on Kubernetes</span></a>  <time class="faded fine" datetime="2025-05-01T00:00:00+02:00">01 May 2025</time></li>            </ul></aside>
 
   
 
