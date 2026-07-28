@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2026-07-23T18:27:26+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Abonia Sojasingarayar - AI &amp;amp; ML Expert</title><subtitle>AI &amp; Machine Learning Expert with Masters degree and 7+ years experience in ML systems across cybersecurity, banking, transit, cosmetics &amp; e-commerce domains.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2026-07-28T20:02:54+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Abonia Sojasingarayar - AI &amp;amp; ML Expert</title><subtitle>AI &amp; Machine Learning Expert with Masters degree and 7+ years experience in ML systems across cybersecurity, banking, transit, cosmetics &amp; e-commerce domains.
 </subtitle><author><name>Abonia Sojasingarayar</name><email>aboniaa@gmail.com</email></author><entry><title type="html">HuggingFace Cheatsheet</title><link href="http://localhost:4000/blogs/2026-07-23-Huggingface-Cheatsheet/" rel="alternate" type="text/html" title="HuggingFace Cheatsheet" /><published>2026-07-23T00:00:00+02:00</published><updated>2026-07-21T14:20:16+02:00</updated><id>http://localhost:4000/blogs/Huggingface-Cheatsheet</id><content type="html" xml:base="http://localhost:4000/blogs/2026-07-23-Huggingface-Cheatsheet/"><![CDATA[<p><strong>Reading_time:</strong> 5 min<br />
   <strong>Tags:</strong> [Hugging Face, Transformers, Machine Learning, Deep Learning, LLM, NLP, Model Training, Fine-Tuning, Inference, Model Deployment, Generative AI, Multimodal AI, AI Agents, MLOps, Open Source]</p>
 <ul class="large-only" id="markdown-toc">
@@ -21,8 +21,7 @@
 </ul>
 
 <h1 id="-a-5-page-huggingface-cheatsheet">🤗 A 5-Page HuggingFace Cheatsheet</h1>
-
-<p>I’m happy to finally share this curated <strong>5-page Hugging Face Ecosystem Cheatsheet</strong> 🤗</p>
+<p>Recently curated this <strong>5-page Hugging Face Ecosystem Cheatsheet</strong> 🤗</p>
 
 <h2 id="-download-the-cheatsheet-github-repository">📥 <strong>Download the cheatsheet:</strong> <a href="https://github.com/Abonia1/HuggingFace-CheatSheet/">GitHub-Repository</a></h2>
 

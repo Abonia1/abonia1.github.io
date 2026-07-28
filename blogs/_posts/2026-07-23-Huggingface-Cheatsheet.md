@@ -14,8 +14,7 @@ sitemap: false
 {:toc .large-only}
 
 # 🤗 A 5-Page HuggingFace Cheatsheet
-
-I’m happy to finally share this curated **5-page Hugging Face Ecosystem Cheatsheet** 🤗
+ Recently curated this **5-page Hugging Face Ecosystem Cheatsheet** 🤗
 
 📥 **Download the cheatsheet:** [GitHub-Repository](https://github.com/Abonia1/HuggingFace-CheatSheet/)
 ---
