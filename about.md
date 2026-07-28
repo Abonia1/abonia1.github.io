@@ -2,7 +2,7 @@
 layout: about
 image: /assets/img/blog/hydejack-9.jpg
 description: >
-  Abonia - Data Scientist - ML Engineer - MLOps - AI, Machine Learning, Microsoft MVP, Deep Learning, Career Coaching. About: Abonia Sojasingarayar – AI Expert & Microsoft MVP. Learn about Abonia's AI tutorials, technical reviews, community work, career coaching etc."
+  Abonia - Data Scientist - ML Engineer - MLOps - AI, Machine Learning, Deep Learning, Career Coaching. About: Abonia Sojasingarayar. Learn about Abonia's AI tutorials, technical reviews, community work, career coaching etc."
 hide_description: true
 redirect_from:
   - /download/
@@ -102,7 +102,7 @@ I’ve also reviewed a variety of books related to AI, Data Science, LLM,  NLP ,
 # Awards & Recognitions
 ### 🎖️ Microsoft Most Valuable Professional (MVP)
 
-I am honored to have received the **Microsoft MVP Award**, recognizing the contributions to the technical community through content creation, speaking engagements, and sharing knowledge in the field of Artificial Intelligence and Data Science.
+I am honored to have received the **Microsoft MVP Award** 2025, recognizing the contributions to the technical community through content creation, speaking engagements, and sharing knowledge in the field of Artificial Intelligence and Data Science.
 
 <p align="center">
   <img src="/assets/img/blog/Microsoft_MVP.jpeg" alt="Microsoft MVP" width="700" height="300">
